@@ -1,13 +1,13 @@
 # MkDocs configuration for Percona website builds
 
-site_name: Percona Software Repositories 
+site_name: Percona Platform
 site_description: Documentation
 site_author: Percona LLC
 copyright: Percona LLC, &#169; 2021
 
-site_url: 'https://www.percona.com/doc/percona-repo-config/'
-repo_name: /percona/repo-config-docs
-repo_url: https://github.com/percona/repo-config-docs
+site_url: 'https://www.percona.com/doc/percona-platform/'
+repo_name: /percona/percona-platform
+repo_url: https://github.com/catalinaadam/percona-platform
 edit_uri: edit/master/docs/
 
 use_directory_urls: false
@@ -89,14 +89,14 @@ extra: # Used in main.html template and can't be externalised
 
 nav:
   - index.md
-  - Installation and update:
-    - installation-and-update.md
-    - installing.md
-    - updating.md
-  - Usage:
-    - usage.md
-    - percona-release.md
-    - repository-location.md
-  - Reference:
-    - copyright.md
-    - trademark-policy.md
+  # - Installation and update:
+  #   - installation-and-update.md
+  #   - installing.md
+  #   - updating.md
+  # - Usage:
+  #   - usage.md
+  #   - percona-release.md
+  #   - repository-location.md
+  # - Reference:
+  #   - copyright.md
+  #   - trademark-policy.md
