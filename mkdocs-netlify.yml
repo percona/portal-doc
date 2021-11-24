@@ -90,7 +90,7 @@ extra:
 
 nav:
   - index.md
-  - Logging in Help:
+  - Logging in:
     - percona-account-help.md
    
 
