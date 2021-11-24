@@ -157,8 +157,8 @@ html_theme_path = ['.', './percona-theme']
 
 # Redirect info for Edit on Github link
 html_context = {
-    'repo_name': '/percona/repo-config-docs',
-    'repo_url': 'https://github.com/percona/repo-config-docs',
+    'repo_name': '/percona/percona-platform',
+    'repo_url': 'https://github.com/percona/percona-platform',
     'edit_uri': 'edit/master/source'
 }
 
