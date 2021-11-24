@@ -34,6 +34,7 @@ To disable an authenticator app, simply click **Remove** next to its name in the
 ###Change your password
 
 To change your current password for your Percona Account:
+
 1. Go to your **Account** page **> Change Password** section.
 2. Enter your current password then specify and confirm your new password.
 3. Click **Change Password**.
@@ -46,4 +47,4 @@ If you need to change the display language for your account, click **Edit** in t
 
 
 ##Report security issues
-Percona welcomes responsible disclosure and inquiries about the security of Percona products and services. Send us an email at security@percona.com or visit [our security page](https://www.percona.com/security) for more information.
+Percona welcomes responsible disclosure and inquiries about the security of Percona products and services. Send us an email at <security@percona.com> or visit [our security page](https://www.percona.com/security) for more information.

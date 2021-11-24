@@ -47,7 +47,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Percona Software Repositories'
+project = u'Percona Platform Portal'
 copyright = u'Percona LLC and/or its affiliates 2009-2021'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -94,7 +94,7 @@ pygments_style = 'sphinx'
 
 rst_prolog = '''
 
-.. |PSR| replace:: *Percona Software Repositories*
+.. |PSR| replace:: *Percona Platform Portal*
 
 .. |check|  replace:: ``|[[---CHECK---]]|``
 
@@ -165,10 +165,10 @@ html_context = {
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = 'Percona Software Repositories Documentation'
+html_title = 'Percona Platform Portal Documentation'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = 'Percona Software Repositories'
+html_short_title = 'Percona Platform Portal'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
@@ -243,7 +243,7 @@ htmlhelp_basename = 'PerconaSoftwareRepoDocs'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'Percona-Software-repositories.tex', u'Percona Software Repositories Documentation',
+  ('index', 'Percona-Software-repositories.tex', u'Percona Platform Portal Documentation',
    u'Percona LLC and/or its affiliates 2021', 'manual'),
 ]
 

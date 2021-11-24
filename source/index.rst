@@ -1,7 +1,7 @@
 .. _dochome:
 
 ===========================================
-Percona Software Repositories Documentation
+Percona Platform Portal Documentation
 ===========================================
 
 Percona provides software repositories for all supported Linux distributions.
