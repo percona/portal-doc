@@ -1,6 +1,7 @@
 #Percona Account Help
 ##What is a Percona Account?
 A Percona Account is your all-access pass to various Percona services, including Percona Platform, Percona Customer Portal and Community Forum.
+
 With a Percona Account, you can sign in to any Percona service using the same email address and password. This means that you don’t need to manage separate login accounts for each service.
 
 ##Sign up for a Percona Account
@@ -26,6 +27,7 @@ Two-factor authentication significantly increases the security of your Percona A
 * Google Authenticator
 
 To turn on or manage two-factor authentication:
+
 1. On your **Account** page, scroll down to the **Extra Verification** section. 
 2. Click **Set up** next to the security method you want to configure, and follow the on-screen instructions.
 
