@@ -14,11 +14,13 @@ Because your Percona Account is used across all your Percona services, it’s im
 
 
 To manage your account:
+
 1. Sign in to your Percona Account and click your user icon on the right hand-side of the screen.
 2. Choose **Profile > Edit Profile**. This displays the **Account** page where you can update your account information and set up two-factor authentication (2FA). 
 
 ###Set up two-factor authentication###
 Two-factor authentication significantly increases the security of your Percona Account. After enabling 2FA, signing into your account will require both your password and access to a trusted device via one or more of the following authenticators:
+
 * Okta Verify
 * Security key or a biometric authenticator like Windows Hello, Touch ID, etc.
 * Google Authenticator

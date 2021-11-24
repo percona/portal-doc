@@ -1,3 +1,3 @@
-# Percona Software Repositories Documentation
+# Percona Platform Documentation
 
 

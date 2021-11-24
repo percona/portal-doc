@@ -90,14 +90,10 @@ extra:
 
 nav:
   - index.md
-  - Installation and update:
-    - installation-and-update.md
-    - installing.md
-    - updating.md
-  - Usage:
-    - usage.md
-    - percona-release.md
-    - repository-location.md
+  - Signing Up Help:
+    - percona-account-help.md
+   
+
   - Reference:
     - copyright.md
     - trademark-policy.md
