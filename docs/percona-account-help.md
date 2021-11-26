@@ -5,10 +5,10 @@ A Percona Account is your all-access pass to various Percona services, including
 With a Percona Account, you can sign in to any Percona service using the same email address and password. This means that you don’t need to manage separate login accounts for each service.
 
 ##Sign up for a Percona Account
-1. Go to the [Percona Account page](https://id.percona.com/) and click **Sign up**.
+1. Go to the [Percona Account Sign Up page](https://id.percona.com/).
 2. Enter the email address that you want to associate with your Percona Account and specify a valid password.
 3. Enter your first and last name, then click **Register** once you’ve accepted the Terms of Service and Privacy Policy. 
-4. Check your email for a verification message and activate your account. 
+4. Check your email for a verification message and follow the instructions to activate your account. 
 
 ##Manage your Percona Account 
 Because your Percona Account is used across all your Percona services, it’s important to keep your account safe and your information up-to-date. 
