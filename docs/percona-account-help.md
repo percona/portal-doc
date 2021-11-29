@@ -5,7 +5,7 @@ A Percona Account is your all-access pass to various Percona services, including
 With a Percona Account, you can sign in to any Percona service using the same email address and password. This means that you don’t need to manage separate login accounts for each service.
 
 ##Sign up for a Percona Account
-1. Go to the [Percona Account Sign Up page](https://id.percona.com/).
+1. Go to the [Percona Account Sign Up page](https://id.percona.com/signin/register/).
 2. Enter the email address that you want to associate with your Percona Account and specify a valid password.
 3. Enter your first and last name, then click **Register** once you’ve accepted the Terms of Service and Privacy Policy. 
 4. Check your email for a verification message and follow the instructions to activate your account. 
@@ -22,9 +22,9 @@ To manage your account:
 ###Set up two-factor authentication###
 Two-factor authentication significantly increases the security of your Percona Account. After enabling 2FA, signing into your account will require both your password and access to a trusted device via one or more of the following authenticators:
 
-* Okta Verify
+* Okta Verify[for Android](https://play.google.com/store/apps/details?id=com.okta.android.auth) or [Apple iOS](https://play.google.com/store/apps/details?id=com.okta.android.auth) 
+* [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)
 * Security key or a biometric authenticator like Windows Hello, Touch ID, etc.
-* Google Authenticator
 
 To turn on or manage two-factor authentication:
 
