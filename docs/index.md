@@ -1,0 +1,2 @@
+Percona Platform is the command centre for all your Percona software and services. 
+This documentation portal contains information on using the tools available on the Percona Platform to help you run your database environment at peak performance.
