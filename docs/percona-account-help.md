@@ -22,7 +22,7 @@ To manage your account:
 ###Set up two-factor authentication###
 Two-factor authentication significantly increases the security of your Percona Account. After enabling 2FA, signing into your account will require both your password and access to a trusted device via one or more of the following authenticators:
 
-* Okta Verify[for Android](https://play.google.com/store/apps/details?id=com.okta.android.auth) or [Apple iOS](https://play.google.com/store/apps/details?id=com.okta.android.auth) 
+* [Okta Verify for Android](https://play.google.com/store/apps/details?id=com.okta.android.auth) or [Okta Verify for iOS](https://play.google.com/store/apps/details?id=com.okta.android.auth) 
 * [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)
 * Security key or a biometric authenticator like Windows Hello, Touch ID, etc.
 
