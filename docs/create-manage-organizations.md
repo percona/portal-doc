@@ -11,11 +11,11 @@ This creates the new organization and displays its general details like name and
 
 
 ##Existing organizations for Percona customers
-If you are an existing Percona Support customer, you do not need to create or join organizations manually. Percona Platform can recreate existing Percona Customer organizations based on the details available on your Percona Customer account.<br /><br />
-Your Customer Portal organization is automatically recreated the first time that the account administrator logs into Percona Platform. <br />
-Other organization members subsequently logging in to the Platform will be automatically added as members of the existing organization. <br /><br />
+If you are an existing Percona Support customer, you do not need to create or join organizations manually. Percona Platform can automatically recreate existing Percona Customer organizations based on the details available on Percona Customer accounts.<br /><br />
+Your Customer Portal organization is automatically linked to Percona Platform the first time that the account administrator logs into Percona Platform. <br />
+Other organization members subsequently logging in to the Platform will be automatically added as members of the existing organization. <br />
 
-All the information about the organization like available Support entitlements, tickets, and contacts is also automatically copied over to your new Platform organization. <br /><br />
+Information about Support entitlements, tickets, and contacts is also automatically copied over to your new Platform organization. <br /><br />
 As an account administrator, finish setting up your Percona Platform organization by making sure all your organization members register for a Percona Account and log in to the Portal. <br />
 This ensures that your new Platform organization mirrors the hierarchy of your organization on Customer Portal. 
 
@@ -29,7 +29,7 @@ After creating or joining an organization, you can check its details at any time
 
 
 ##Roles and permissions
-When you create an organization, you are automatically assigned the role of Admin for that organization.
+When you create an organization, you are automatically assigned the role of **Admin** for that organization.
 You can add people to your organization as **Admins** or **Technical users**.  <br />
 Here are the different permissions available for these roles:<br />
 
@@ -55,7 +55,7 @@ To add a user to your organization:
 5. Click **Save** to send the invitation to join your organization. 
 
 
-##Edit roles<br />
+##Edit roles
 Currently, organization users cannot change their own role. However, Administrators can change the user role for all the other members in their organization. <br />
 To do so:
 
