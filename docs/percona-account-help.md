@@ -1,5 +1,4 @@
 #Percona Account Help
-##What is a Percona Account?
 A Percona Account is your all-access pass to various Percona services, including Percona Platform, Percona Customer Portal and Community Forum.
 
 With a Percona Account, you can sign in to any Percona service using the same email address and password. This means that you don’t need to manage separate login accounts for each service.

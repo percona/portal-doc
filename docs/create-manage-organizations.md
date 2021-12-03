@@ -3,7 +3,7 @@ Organizations are linked to Percona Accounts. Each Percona Account gives access 
 
 To create an organization: 
 
-1. Log in to [Percona Platform](https://portal.percona.com/percona) using your Percona Account.
+1. Log in to [Percona Platform](https://portal.percona.com) using your Percona Account.
 2. On the **Getting Started** page, click **Add Organization**. <br />
 Existing Percona Support customers and Percona Accounts that are already associated with an organization will see an option to view their existing organization instead. 
 3. Enter a relevant name for your new organization, then click **Save**. <br />
@@ -15,7 +15,7 @@ If you are an existing Percona Support customer, you do not need to create or jo
 Your Customer Portal organization is automatically linked to Percona Platform the first time that the account administrator logs into Percona Platform. <br />
 Other organization members subsequently logging in to the Platform will be automatically added as members of the existing organization. <br />
 
-Information about Support entitlements, tickets, and contacts is also automatically copied over to your new Platform organization. <br /><br />
+Information about Support entitlements, tickets, and contacts is automatically copied over to your new Platform organization. <br />
 As an account administrator, finish setting up your Percona Platform organization by making sure all your organization members register for a Percona Account and log in to the Portal. <br />
 This ensures that your new Platform organization mirrors the hierarchy of your organization on Customer Portal. 
 
@@ -37,8 +37,8 @@ Here are the different permissions available for these roles:<br />
 | :----------| :----------- |:----------- |
 |View users and organization|<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
 |Manage users and organization       | <input type="checkbox" disabled checked />    |  <input type="checkbox" disabled />|
-|Invite members|<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
-|Change user role |    <input type="checkbox" disabled checked />     |   <input type="checkbox" disabled checked /> |
+|Invite members|<input type="checkbox" disabled checked /> | <input type="checkbox" disabled />|
+|Change other user's role |    <input type="checkbox" disabled checked />     |   <input type="checkbox" disabled /> |
 |View Customer data (entitlements, Support contacts, tickets)| <input type="checkbox" disabled checked />    |   <input type="checkbox" disabled checked /> |
 |Connect PMM server| <input type="checkbox" disabled checked />| <input type="checkbox" disabled checked />|
 |Raise Support tickets| <input type="checkbox" disabled checked />  |<input type="checkbox" disabled checked />  |
@@ -48,7 +48,7 @@ Here are the different permissions available for these roles:<br />
 Administrators can add any number of Technical users to the organization and even add other Admins if necessary. <br /><br />
 To add a user to your organization:
 
-1. Log in to Percona Platform Portal.
+1. Log in to [Percona Platform](https://portal.percona.com).
 2. Click **View Organization** on the **Getting Started** page. 
 3. On the **Members** tab, click the **Invite Member** button. 
 4. Enter your team member's corporate email address and select a role.
