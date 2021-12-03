@@ -89,7 +89,7 @@ extra:
 
 
 nav:
-  - Welcome to the Platform documentation:
+  - Welcome:
     - index.md
   - Logging in:
     - percona-account-help.md
