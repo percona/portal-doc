@@ -3,5 +3,4 @@ This documentation portal contains information on using Percona Platform to run 
 
 [Percona Account Help]
 [Create and manage organizations]
-[Existing organizations for Percona customers]
 [Connect PPM server]

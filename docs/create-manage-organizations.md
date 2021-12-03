@@ -1,3 +1,4 @@
+# Create and manage organizations
 Create an organization to collaborate with members of your team and share access to the software and services available for your Percona Platform account. <br /><br />
 Organizations are linked to Percona Accounts. Each Percona Account gives access to only one organization. This means that you cannot be member of multiple organizations or create more than one organization for a Percona Account. 
 
@@ -14,12 +15,10 @@ This creates the new organization and displays its general details like name and
 If you are an existing Percona Support customer, you do not need to create or join organizations manually. Percona Platform can automatically recreate existing Percona Customer organizations based on the details available on Percona Customer accounts.<br /><br />
 Your Customer Portal organization is automatically linked to Percona Platform the first time that the account administrator logs into Percona Platform. <br />
 Other organization members subsequently logging in to the Platform will be automatically added as members of the existing organization. <br />
-
-Information about Support entitlements, tickets, and contacts is automatically copied over to your new Platform organization. <br />
+Information about Support entitlements, tickets, and contacts is automatically made available on the Platform organization. <br /><br />
 As an account administrator, finish setting up your Percona Platform organization by making sure all your organization members register for a Percona Account and log in to the Portal. <br />
-This ensures that your new Platform organization mirrors the hierarchy of your organization on Customer Portal. 
 
-##Check organization details
+## Check organization details
 
 After creating or joining an organization, you can check its details at any time:
 
@@ -28,9 +27,9 @@ After creating or joining an organization, you can check its details at any time
 
 
 
-##Roles and permissions
+## Roles and permissions
 When you create an organization, you are automatically assigned the role of **Admin** for that organization.
-You can add people to your organization as **Admins** or **Technical users**.  <br />
+You can add people to your organization as **Admins** or **Technical users**.  <br /><br />
 Here are the different permissions available for these roles:<br />
 
 | Permission      | Admin user |  Technical user
@@ -43,7 +42,7 @@ Here are the different permissions available for these roles:<br />
 |Connect PMM server| <input type="checkbox" disabled checked />| <input type="checkbox" disabled checked />|
 |Raise Support tickets| <input type="checkbox" disabled checked />  |<input type="checkbox" disabled checked />  |
 
-##Add organization members
+## Add organization members
 
 Administrators can add any number of Technical users to the organization and even add other Admins if necessary. <br /><br />
 To add a user to your organization:
@@ -55,8 +54,8 @@ To add a user to your organization:
 5. Click **Save** to send the invitation to join your organization. 
 
 
-##Edit roles
-Currently, organization users cannot change their own role. However, Administrators can change the user role for all the other members in their organization. <br />
+## Edit roles
+Currently, organization users cannot change their own role. However, Administrators can change the user role for all the other members in their organization. <br /><br />
 To do so:
 
 1. Go to **Getting Started > View Organization**. 
