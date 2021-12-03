@@ -89,6 +89,11 @@ extra:
 
 
 nav:
-  - index.md
+  - Welcome to the Platform documentation:
+    - index.md
   - Logging in:
     - percona-account-help.md
+  - Working with organziations:
+    - create-manage-organizations.md
+ -  Connect a PPM instance:
+    - connect-pmm.md
