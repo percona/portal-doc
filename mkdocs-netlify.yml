@@ -93,7 +93,7 @@ nav:
     - index.md
   - Logging in:
     - percona-account-help.md
-  - Create and manage organizatios:
+  - Create and manage organizations:
     - create-manage-organizations.md
   - Connect PPM server:
     - connect-pmm.md
