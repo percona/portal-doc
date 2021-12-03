@@ -91,7 +91,7 @@ extra:
 nav:
   - Welcome:
     - index.md
-  - Logging in:
+  - Registration and log in:
     - percona-account-help.md
   - Create and manage organizations:
     - create-manage-organizations.md
