@@ -1,5 +1,5 @@
 Percona Monitoring and Management (PMM) is a best-of-breed open source database monitoring solution for MySQL, MongoDB, PostgreSQL, and MariaDB databases. <br/> <br/>
-Connect your PMM server to Percona Platform to add additional functionality for improving the performance of your databases, including more advisors and more security checks.
+By connecting your PMM servers to Percona Platform you leverage Platform services that boost the monitoring capabilities of your PMM installations.
 
 ## Pre-requisites
 To ensure that Percona Platform can establish a communication with the PMM instance: 
@@ -30,4 +30,3 @@ Once you've successfully connected your PMM instance to Percona Platform, use yo
 
 2.  On the PMM login screen, click the **Sign in with Percona Account**. <br/>
  If you have an active Percona Account session on the same browser, PMM will log you in automatically. Otherwise, enter your Percona Account credentials to start a new session.
-

@@ -95,5 +95,5 @@ nav:
     - percona-account-help.md
   - Create and manage organizations:
     - create-manage-organizations.md
-  - Connect your PPM server:
+  - Connect your PMM server:
     - connect-pmm.md
