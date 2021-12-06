@@ -4,7 +4,7 @@ Connect your PMM server to Percona Platform to add additional functionality for 
 ## Pre-requisites
 To ensure that Percona Platform can establish a communication with the PMM instance: 
 
-###Set the public address of your PMM server 
+### Set the public address of your PMM server 
 
 1. Log into PMM and go to **PMM > Advanced Settings**.
 2. Enter your address/hostname or click **Get from browser** to enable your browser to automatically detect and populate this field.
@@ -13,10 +13,10 @@ To ensure that Percona Platform can establish a communication with the PMM insta
 ### Check that you are a member of an existing organization
 1. Log in to [Percona Platform](https://portal.percona.com) using your Percona Account.
 2. On the **Getting Started page**, check that the **Create organization** step shows an option to view your organization. <br/> 
-If you see an option to create a new organization instead, your Percona Account is not linked to any organization yet. If this is the case, contact your account administrator or create a new organization for your Percona Account.
+If you see an option to create a new organization instead, your Percona Account is not linked to any organization yet. If this is the case, contact your account administrator, or create a new organization for your Percona Account.
 
 
-## Connect PMM
+## Connect PMM to Percona Platform
 To connect your PMM instance to Percona Platform:
 
 1. Log in to PMM and go to **PMM > Settings > Percona Platform** tab.
