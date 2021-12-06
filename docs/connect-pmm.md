@@ -1,5 +1,5 @@
-Percona Monitoring and Management (PMM) is a best-of-breed open source database monitoring solution for MySQL, MongoDB, PostgreSQL, and MariaDB databases.
-Connect your PMM server to Percona Platform to add additional functionality for improving the performance of your databases, inlcuding more advisors and more security checks.
+Percona Monitoring and Management (PMM) is a best-of-breed open source database monitoring solution for MySQL, MongoDB, PostgreSQL, and MariaDB databases. <br/>
+Connect your PMM server to Percona Platform to add additional functionality for improving the performance of your databases, including more advisors and more security checks.
 
 ## Pre-requisites
 To ensure that Percona Platform can establish a communication with the PMM instance: 
@@ -12,8 +12,7 @@ To ensure that Percona Platform can establish a communication with the PMM insta
 
 #### Check that you are a member of an existing organization
 1. Log in to [Percona Platform](https://portal.percona.com) using your Percona Account.
-2. On the **Getting Started page**, check that the **Create organization** step shows an option to view your organization. If you see an option to create a new organizatiopn instead, your Percona Account is not linked to any organization yet. In this is the case, contact your account administrator or create a new organization for your P
-ercona Account.
+2. On the **Getting Started page**, check that the **Create organization** step shows an option to view your organization. If you see an option to create a new organization instead, your Percona Account is not linked to any organization yet. If this is the case, contact your account administrator or create a new organization for your Percona Account.
 
 
 ## Connect PMM
@@ -24,7 +23,7 @@ To connect your PMM instance to Percona Platform:
 2. Fill in the **Connect PMM to Percona Portal** form with the name of your PMM instance and the credentials of your Percona Account, then click **Connect**.
 
 ## Sign into PMM with your Percona Account
-Once you've sucessfully connected your PMM instance to Percona Platform, use your Percona Account to sign in to PMM:
+Once you've successfully connected your PMM instance to Percona Platform, use your Percona Account to sign in to PMM:
 
 1. Log out of your existing PMM session.
 
