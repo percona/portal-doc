@@ -6,15 +6,15 @@ To create an organization:
 
 1. Log in to [Percona Platform](https://portal.percona.com) using your Percona Account.
 2. On the **Getting Started** page, click **Add Organization**. <br />
-Existing Percona Support customers and Percona Accounts that are already associated with an organization will see an option to view their existing organization instead. 
+Existing Percona customers and Percona Accounts that are already associated with an organization will see an option to view their existing organization instead. 
 3. Enter a relevant name for your new organization, then click **Save**. <br />
 This creates the new organization and displays its general details like name and creation date.
 
 
 ##Existing organizations for Percona customers
-If you are an existing Percona Support customer, you do not need to create or join organizations manually. Percona Platform can automatically recreate existing Percona Customer organizations based on the details available on Percona Customer accounts.<br /><br />
+If you are an existing Percona customer, you do not need to create or join organizations manually. Percona Platform can do that for you automatically.<br /><br />
 Your Customer Portal organization is automatically linked to Percona Platform the first time that the account administrator logs into Percona Platform. Other organization members subsequently logging in to the Platform will be automatically added as members of the existing organization. <br /><br />
-Information about Support entitlements, tickets, and contacts is automatically made available on the Platform organization. <br />
+Information about Support entitlements, tickets, and contacts is automatically made available on the Platform organization. <br /> <br />
 As an account administrator, finish setting up your Percona Platform organization by making sure all your organization members register for a Percona Account and log in to the Portal. <br />
 
 ## Check organization details
