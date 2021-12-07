@@ -1,5 +1,6 @@
-Percona Monitoring and Management (PMM) is a best-of-breed open source database monitoring solution for MySQL, MongoDB, PostgreSQL, and MariaDB databases. <br/> <br/>
-By connecting your PMM servers to Percona Platform you leverage Platform services that boost the monitoring capabilities of your PMM installations.
+Percona Monitoring and Management (PMM) is a best-of-breed open source database monitoring solution for MySQL, MongoDB, PostgreSQL, and MariaDB databases.
+
+Connect your PMM servers to Percona Platform to leverage Platform services that boost the monitoring capabilities of your PMM installations.
 
 ## Pre-requisites
 To ensure that Percona Platform can establish a communication with the PMM instance: 

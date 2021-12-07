@@ -1,5 +1,6 @@
 # Create and manage organizations
-Create an organization to collaborate with members of your team and share access to the software and services available for your Percona Platform account. <br /><br />
+Create an organization to collaborate with members of your team and share access to the software and services available for your Percona Platform account. 
+
 Organizations are linked to Percona Accounts. Each Percona Account gives access to only one organization. This means that you cannot be member of multiple organizations or create more than one organization for a Percona Account. 
 
 To create an organization: 
