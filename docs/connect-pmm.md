@@ -3,7 +3,7 @@ Percona Monitoring and Management (PMM) is a best-of-breed open source database 
 Connect your PMM servers to Percona Platform to leverage Platform services that boost the monitoring capabilities of your PMM installations.
 
 ## Pre-requisites
-To ensure that Percona Platform can establish a communication with the PMM instance: 
+To ensure that Percona Platform can establish a connection with the PMM instance: 
 
 ### Set the public address of your PMM server 
 
@@ -33,5 +33,5 @@ Once you've successfully connected your PMM instance to Percona Platform, use yo
 
 1. Log out of your existing PMM session.
 
-2.  On the PMM login screen, click the **Sign in with Percona Account**. <br/>
+2. On the PMM login screen, click the **Sign in with Percona Account**. <br/>
  If you have an active Percona Account session on the same browser, PMM will log you in automatically. Otherwise, enter your Percona Account credentials to start a new session.

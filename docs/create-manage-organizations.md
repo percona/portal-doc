@@ -1,5 +1,5 @@
 # Create and manage organizations
-Create an organization to collaborate with members of your team and share access to the software and services available for your Percona Platform account. 
+Create an organization to collaborate with members of your team and share access to the software and services that Percona Platform provides. 
 
 Organizations are linked to Percona Accounts. Each Percona Account gives access to only one organization. This means that you cannot be member of multiple organizations or create more than one organization for a Percona Account. 
 
@@ -63,3 +63,16 @@ To do so:
 3. In the **Actions** column, click on the **Edit** icon next to the user whose role you want to change.
 This displays the **Edit Member** form.
 4. In the **Role** field, select the new role that you want to assign to the user and click **Save**.
+
+## Delete users
+As an Administrator, you can remove any  member from your organization apart from yourself.
+
+After deleting users, you may want to also remove these users from your Customer Portal organization.
+
+To delete a user from your Percona Platform organization:
+
+1. Go to **Getting Started > View Organization**. 
+2. Open the **Members** tab.
+3. In the **Actions** column, click on the **Delete** icon next to the user you want to remove from the organization.
+4. Confirm that you want to remove the user and click **Delete**.
+
