@@ -6,7 +6,9 @@ Connect your PMM servers to Percona Platform to leverage Platform services that 
 To ensure that Percona Platform can establish a connection with the PMM instance:
 
 ### Install PMM 2.25.0 or later
- Before connecting your PMM server to Percona Platform, make sure that you are using PMM version 2.25 or newer. Otherwise, upgrade your PMM installation before continuing.
+ Before connecting your PMM server to Percona Platform, make sure that you are using PMM version 2.25 or newer. Otherwise, upgrade your PMM installation beforehand.
+ 
+ For more information, see [Install and set up PMM](https://www.percona.com/doc/percona-monitoring-and-management/2.x/setting-up/index.html)
 
 ### Set the public address of your PMM server 
 
