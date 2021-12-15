@@ -91,7 +91,7 @@ extra:
 nav:
   - Welcome:
     - index.md
-  - What's new?:
+  - What's new:
     - whats-new.md
   - Registration and log in:
     - percona-account-help.md
