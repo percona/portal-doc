@@ -2,8 +2,6 @@ The Percona Platform brings together distributions of MySQL, PostgreSQL and Mong
 
 Percona Platform also includes Percona Monitoring and Management (PMM) for database management, monitoring, and automated insights, making it easier to manage database deployments.
  
-This documentation portal contains information on using Percona Platform to help you run your database environment at peak performance. If you need more help, contact us at <portal-help@percona.com>.
-
 ## Start here
 
 Here's how to set up Percona Platform:
@@ -17,4 +15,6 @@ Here's how to set up Percona Platform:
     Connect your PMM server to Percona Platform to access your PMM monitoring tools and data from here and make Percona Platform your one command center for all the Percona software and services available for your account.
 
 3. [Create an organization](create-manage-organizations.md) to start collaborating with members of your team and share access to your Percona software and services.
+
+This documentation portal contains information on using Percona Platform to help you run your database environment at peak performance. If you need more help, contact us at <portal-help@percona.com>.
 
