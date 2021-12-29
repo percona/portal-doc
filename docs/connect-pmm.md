@@ -42,5 +42,3 @@ Once you've connected your PMM instance to Percona Platform, you can use your Pe
 
 2. On the PMM Log in screen, click the **Sign in with Percona Account**. <br/>
  If you have an active Percona Account session on the same browser, PMM will log you in automatically. Otherwise, enter your Percona Account credentials to start a new session.
-
- 
