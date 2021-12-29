@@ -1,13 +1,17 @@
 ## Enhancements
 
-- **Check the list of PMM instances connected to an organization**.
+**Check the list of PMM instances connected to an organization**
+
 If your organization is linked to at least one PMM server, you can now click **View Instances** on the **Dashboard** tab to go to the **PMM page**.    
 
     Here you can find all the servers currently connected to the organization, check the server details and access the server URLs. 
 
-- **At-a-glance overview of Percona entitlements**. If you are a member of a customer organization, you can now check the entitlements for your account on the **Dashboard** tab.
+**At-a-glance overview of Percona entitlements**
 
-- **Improved user experience around viewing organization entitlements**. 
+If you are a member of a customer organization, you can now check the entitlements for your account on the **Dashboard** tab.
+
+**Improved user experience around viewing organization entitlements**
+
 You can now see your customer entitlements in a bigger modal window with a scroll bar for long lists of entitlements.
 
     In addition, this now also displays your entitlement's Expiry Date.
