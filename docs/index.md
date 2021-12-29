@@ -1,11 +1,12 @@
+!!! alert alert-info ""
+    **Disclaimer**: Percona Platform is a Preview release and several functionalities are still under development or subject to change. As such, we recommend that early adopters use the current release for testing purposes only.
+    
+
 The Percona Platform brings together distributions of MySQL, PostgreSQL and MongoDB including a range of open-source tools for data backup, availability and management.
 
 Percona Platform also includes Percona Monitoring and Management (PMM) for database management, monitoring, and automated insights, making it easier to manage database deployments.
 
-!!! alert alert-info ""
-    Disclaimer: Percona Platform is a Preview release and several functionalities are still under development or subject to change. As such, we recommend that early adopters use the current release for testing purposes only.
 
- 
 ## Start here
 
 Here's how to set up Percona Platform:
