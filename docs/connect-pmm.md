@@ -6,7 +6,7 @@ Connect your PMM servers to Percona Platform to leverage Platform services that 
 To ensure that Percona Platform can establish a connection with the PMM instance:
 
 ### Install PMM 2.25.0 or later
- Before connecting your PMM server to Percona Platform, make sure that you are using PMM version 2.25 or newer. Otherwise, upgrade your PMM installation beforehand.
+ Before connecting your PMM server to Percona Platform, make sure you are using PMM version 2.25 or newer. Otherwise, upgrade your PMM installation beforehand.
  
  For more information, see [Install and set up PMM](https://www.percona.com/doc/percona-monitoring-and-management/2.x/setting-up/index.html).
 
@@ -19,7 +19,7 @@ To ensure that Percona Platform can establish a connection with the PMM instance
 ### Check that you are a member of an existing organization
 1. Log in to [Percona Platform](https://portal.percona.com) using your Percona Account.
 2. On the **Getting Started page**, check that the **Create organization** step shows an option to view your organization. <br/> 
-If you see an option to create a new organization instead, your Percona Account is not linked to any organization yet. If this is the case, contact your account administrator, or create a new organization for your Percona Account.
+If you see an option to create a new organization instead, your Percona Account is not linked to any organization yet. In this case, contact your account administrator, or create a new organization for your Percona Account.
 
 
 ## Connect PMM to Percona Platform
@@ -31,12 +31,16 @@ To connect your PMM instance to Percona Platform:
 
     ![Connect PMM to Percona Portal](_images/pmm-connect-to-platform.png)
 
-3. Click **Connect**.
+3. Click **Connect**. 
+
+To confirm that you have successfully connected the server and check the list of all servers currently connected to an organization, go to [Percona Platform](https://portal.percona.com) > **Dashboard** tab and click **View Instances** next to the **Connect your PMM** step. 
 
 ## Sign into PMM with your Percona Account
-Once you've successfully connected your PMM instance to Percona Platform, use your Percona Account to sign in to PMM:
+Once you've connected your PMM instance to Percona Platform, you can use your Percona Account to sign in to PMM:
 
 1. Log out of your existing PMM session.
 
-2. On the PMM login screen, click the **Sign in with Percona Account**. <br/>
+2. On the PMM Log in screen, click the **Sign in with Percona Account**. <br/>
  If you have an active Percona Account session on the same browser, PMM will log you in automatically. Otherwise, enter your Percona Account credentials to start a new session.
+
+ 
