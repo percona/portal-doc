@@ -42,3 +42,10 @@ Once you've connected your PMM instance to Percona Platform, you can use your Pe
 
 2. On the PMM Log in screen, click the **Sign in with Percona Account**. <br/>
  If you have an active Percona Account session on the same browser, PMM will log you in automatically. Otherwise, enter your Percona Account credentials to start a new session.
+
+ ## Disconnect a PMM instance
+ Disconnect a PMM instance when you want to unlink it from your organization or stop monitoring it on Percona Platform. 
+
+To disconnect a PMM server, go to PMM > <i class="uil uil-cog"></i> **Configuration > Settings > Percona Platform** and click **Disconnect**. 
+
+To confirm that the server disconnected successfully, go to Percona Platform > **Dashboard** tab > **View instances**. This displays the **PMM instances** page where you can check the list of servers currently connected to your Platform organization.
