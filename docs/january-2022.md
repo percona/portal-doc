@@ -1,5 +1,8 @@
 ## Enhancements
 
+### New PMM checks for MySQL, MongoDB and PostgreSQL available via Percona Platform
+Check the list of new checks and their availability to **registered** and **anonymous** PMM instances in the [Security checks for PMM](checks.md) topic. 
+
 ### Open Support tickets straight from Percona Platform
 If you are a Percona customer, you can now use the new **Open new ticket** option on the **Dashboard** page to reach Customer Support easier. 
 
@@ -9,6 +12,3 @@ If you have an active [Customer Portal](https://percona.service-now.com/) sessio
 The **Delete Organization Member** dialog box now also shows the email of the user you are removing from your organization. 
 
 This helps administrators ensure that they don't accidentally remove wrong users from their organization.
-
-### New PMM checks for MySQL, MongoDB and PostgreSQL available via Percona Platform
-Check the list of new checks and their availability to **registered** and **anonymous** PMM instances in the [Security checks for PMM](checks.md) topic. 
