@@ -15,13 +15,13 @@ The checks can be executed manually or automatically. By default, PMM runs autom
 
 You can configure this interval in **PMM > Advanced Settings > Execution intervals**. Here you can label each check individually as **Standard**, **Rare** or **Frequent** and also specify the time interval for each category.
 
-The results are sent to PMM Server where you can check if any checks have failed on the **Home Dashboard > Failed security checks** panel. The summary count of failed checks classified as <b style="color:#e02f44;">Critical</b>, <b style="color:#e36526;">Major</b> and <b style="color:#5794f2;">Trivial</b>.
+The results are sent to PMM Server where you can check if any checks have failed on the **Home Dashboard > Failed security checks** panel. The summary count of failed checks classified as <b style="color:#e02f44;">Critical</b>, <b style="color:#e36526;">Major</b> and <b style="color:#5794f2;">Trivial</b>:
 
 ![!Failed security checks panel](../_images/Failed_Security_Checks.jpg)
 
 Check results data always remains on the PMM Server and are not related to anonymous data sent for Telemetry purposes.
 
-For information on configuring PMM Security Threat Tool, see the [Percona Monitoring and Management documentation](https://www.percona.com/doc/percona-monitoring-and-management/2.x/using/security-threat-tool.html)
+For information on configuring PMM Security Threat Tool, see the [Percona Monitoring and Management documentation](https://www.percona.com/doc/percona-monitoring-and-management/2.x/using/security-threat-tool.html).
 
 ### List of checks 
 
