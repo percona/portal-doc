@@ -15,7 +15,7 @@ As soon as you connect your PMM instance to Percona Platform, you get additional
 
 The checks can be executed manually or automatically. By default, PMM runs automatic checks every 24 hours. 
 
-You can configure this interval in **PMM > Advanced Settings> Execution intervals**. Here you can label each check individually as **Standard**, **Rare** or **Frequent** and also specify the time interval for each category.
+You can configure this interval in **PMM > Advanced Settings > Execution intervals**. Here you can label each check individually as **Standard**, **Rare** or **Frequent** and also specify the time interval for each category.
 
 The results are sent to PMM Server where you can check if any checks have failed on the **Home Dashboard > Failed security checks** panel. The summary count of failed checks classified as <b style="color:#e02f44;">Critical</b>, <b style="color:#e36526;">Major</b> and <b style="color:#5794f2;">Trivial</b>.
 
@@ -33,7 +33,7 @@ Percona Platform hosts all the security checks available for MySQL, MongoDB and 
 | :----------| :----------- |:----------- |
 |MySQL Binary Logs, Local Infile and SQL Mode checks|anonymous, registered | Warns about non-optimal settings for Binary Log, Local Infile and SQL mode.|
 |PostgreSQL **max_connections** is too high| anonymous, registered    |  Notifies if the **max_connections** setting is set above 300. PostgreSQL doesn't handle well large number of connections, even if these connections are idle. Recommended value is below 300. |
-|Mongo DB profiling level|anonymous, registered |Warns when the MongoDB profile level is set to collect  data for all operations. Collecting information about commands running in MongoDB instances helps identify slow queries or performance tuning. However, the profile has a negative performance impact on overall database performance and on disk usage. 
+|Mongo DB profiling level|anonymous, registered |Warns when the MongoDB profile level is set to collect data for all operations. Collecting information about commands running in MongoDB instances helps identify slow queries or performance tuning. However, the profile has a negative performance impact on overall database performance and on disk usage. 
 |Configuration change requires restart/reload|   anonymous, registered   | Warns when a configuration was changed and requires a server restart/reload. |
 |PostgreSQL cache hit ratio| anonymous, registered   |   Checks database hit ratio and complains when this is too low.|
 |PostgreSQL Archiver is failing| anonymous, registered| Verifies if the archiver has failed. |

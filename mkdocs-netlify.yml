@@ -99,3 +99,5 @@ nav:
     - create-manage-organizations.md
   - Connect your PMM server:
     - connect-pmm.md
+  - Security checks for PMM:
+    - checks.md
