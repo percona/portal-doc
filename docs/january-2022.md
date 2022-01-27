@@ -1,7 +1,7 @@
 ## Enhancements
 
-### New PMM checks for MySQL, MongoDB and PostgreSQL available via Percona Platform
-Check the list of new checks and their availability to **registered** and **anonymous** PMM instances in the [Security checks for PMM](checks.md) topic. 
+### New PMM security checks available via Percona Platform
+Percona Platform now hosts a variety of new checks for MySQL, MongoDB and PostgreSQL databases connected to PMM. See the list of new checks and their availability to **registered** and **anonymous** PMM instances in the [Security checks for PMM](checks.md) topic. 
 
 ### Open Support tickets straight from Percona Platform
 If you are a Percona customer, you can now use the new **Open new ticket** option on the **Dashboard** page to reach Customer Support easier. 
