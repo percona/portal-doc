@@ -9,3 +9,6 @@ If you have an active [Customer Portal](https://percona.service-now.com/) sessio
 The **Delete Organization Member** dialog box now also shows the email of the user you are removing from your organization. 
 
 This helps administrators ensure that they don't accidentally remove wrong users from their organization.
+
+### New PMM checks for MySQL, MongoDB and PostgreSQL available via Percona Platform
+Check the list of new checks and their availability to **registered** and **anonymous** PMM instances in the [Security checks for PMM](checks.md) topic. 
