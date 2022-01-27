@@ -1,5 +1,3 @@
-## PMM Security Checks¶
-
 Percona Monitoring and Management (PMM) features a Security Threat tool that runs regular checks against the databases connected to PMM. The checks identify and alert you of potential security threats, performance degradation, data loss and data corruption. 
 
 All checks are hosted on Percona Platform. PMM Server automatically downloads them from here when the Security Threat Tool is enabled in PMM under **Configuration > Settings > Advanced Settings**. 
