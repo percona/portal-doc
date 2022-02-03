@@ -6,9 +6,9 @@ site_author: Percona LLC
 copyright: Percona LLC, &#169; 2021
 
 site_url: 'https://www.percona.com/doc/percona-platform/'
-repo_name: /percona/percona-platform
-repo_url: https://github.com/catalinaadam/percona-platform
-edit_uri: edit/master/docs/
+repo_name: /percona-platform/portal-doc
+repo_url: https://github.com/percona-platform/portal-doc
+edit_uri: edit/main/docs/
 
 use_directory_urls: false
 
