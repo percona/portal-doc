@@ -8,7 +8,7 @@ With a Percona Account, you can sign in to any Percona service using the same em
 
 
 ## Sign up for a Percona Account
-1. Go to the [Percona Account Sign Up](https://id.percona.com/signin/register/) page.
+1. Go to the [Percona Account Sign Up](https://id.percona.com/signin/register) page.
 2. Enter your work or professional email address and specify a valid password.
 3. Enter your first and last name, then click **Register** once you’ve accepted the Terms of Service and Privacy Policy. 
 4. Check your email for a verification message and follow the instructions to activate your account. 
