@@ -100,3 +100,8 @@ nav:
   # - Reference:
   #   - copyright.md
   #   - trademark-policy.md
+
+  extra:
+  analytics:
+    provider: google
+    property: UA-343802-3
