@@ -102,6 +102,6 @@ nav:
   #   - trademark-policy.md
 
   extra:
-  analytics:
-    provider: google
-    property: G-XXXXXXXXXX
+    analytics:
+      provider: google
+      property: UA-343802-3
