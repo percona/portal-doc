@@ -21,7 +21,6 @@ To ensure that Percona Platform can establish a connection with the PMM instance
 2. On the **Getting Started page**, check that the **Create organization** step shows an option to view your organization. <br/> 
 If you see an option to create a new organization instead, your Percona Account is not linked to any organization yet. In this case, contact your account administrator, or create a new organization for your Percona Account.
 
-
 ## Connect PMM to Percona Platform
 To connect your PMM instance to Percona Platform:
 
