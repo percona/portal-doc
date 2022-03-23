@@ -1,13 +1,12 @@
 
 ## Enhancements
 
-### Invite users without a Percona account to join your organization
-As a member of an organization, you can invite other users to join your team even if their email address is not linked to a Percona account yet. 
+### Invite users without a Percona Account to join your organization
+As a member of an organization, you can invite other users to join your team even if their email address is not linked to a Percona Account yet. 
 
-Previously, only users with a Percona account could join Platform Portal organizations. 
-The new users receive an email notifying them of the invite, and another one to activate their Percona account. 
+Previously, only users with a Percona Account could join Platform Portal organizations. 
 
-As soon as their accounts are active, the new members can log in to Percona Platform and check the details of the organization.
+New users receive the invitation via an email notification. Once they accept the invitation by signing up on Percona Platform, they are automatically added to your organization.
 
 ### PMM Server addresses validated before connecting to Percona Platform  
 
