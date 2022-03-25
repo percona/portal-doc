@@ -4,7 +4,7 @@ mkdocs-versioning==0.4.0
 mkdocs-macros-plugin
 mkdocs-exclude
 markdown-include
-mkdocs-material==8.2.6
+mkdocs-material==8.2.5
 mkdocs-with-pdf>=0.8.0
 plantuml-markdown
 mkdocs-git-revision-date-plugin
