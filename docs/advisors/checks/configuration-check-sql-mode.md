@@ -1,4 +1,4 @@
-# MySQL enforced data integrity checking is disabled
+# MySQL SQL mode not fitting best practice
 
 ## Description
 In order for the server to check data integrity, the sql_mode should have TRADITIONAL, STRICT_ALL_TABLES and STRICT_TRANS_TABLES set in sql_mode. 
