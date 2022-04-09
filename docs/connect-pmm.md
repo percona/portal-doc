@@ -21,19 +21,28 @@ To ensure that Percona Platform can establish a connection with the PMM instance
 2. On the **Getting Started page**, check that the **Create organization** step shows an option to view your organization. <br/> 
 If you see an option to create a new organization instead, your Percona Account is not linked to any organization yet. In this case, contact your account administrator, or create a new organization for your Percona Account.
 
-
 ## Connect PMM to Percona Platform
 To connect your PMM instance to Percona Platform:
 
-1. Log in to PMM and go to **PMM > Settings > Percona Platform** tab.
+1. Log in to PMM and go to **PMM > Settings > Percona Platform** tab to fill in the *Connect PMM to Percona Portal* form.
+   
+![Connect PMM to Percona Portal](_images/pmm-connect-to-platform.png)
 
-2. Fill in the **Connect PMM to Percona Portal** form with the name of your PMM instance and the credentials of your Percona Account:
+2. The **PMM server ID** field is automatically populated with the ID identified for your PMM instance. Enter the name of your PMM instance and click **Get token** to go to Percona Platform Portal and generate your access token.
+3. Log into Percona Platform using your Percona Account (if you don't have an active current session).
+4. On the Profile Settings page, copy the code from the **Percona Platform Access Token** field.
+4. Back into PMM, paste the Access Token into the **Percona Platform Access Token** field and click  *Connect*.
 
-    ![Connect PMM to Percona Portal](_images/pmm-connect-to-platform.png)
-
-3. Click **Connect**. 
 
 To confirm that you have successfully connected the server and check the list of all servers currently connected to an organization, go to [Percona Platform](https://portal.percona.com) > **Dashboard** tab and click **View Instances** next to the **Connect your PMM** step. 
+
+### Disconnect a PMM instance
+ Disconnect a PMM instance when you want to unlink it from your Percona Platform organization or stop monitoring it there. 
+
+To disconnect a PMM server, go to > <i class="uil uil-cog"></i> **Configuration > Settings > Percona Platform** and click **Disconnect**. 
+
+To confirm that the server disconnected successfully, go to Percona Platform >  **Dashboard** tab > **View instances**. This displays the **PMM instances** page where you can check the list of servers currently connected to your Platform organization. 
+
 
 ## Sign into PMM with your Percona Account
 Once you've connected your PMM instance to Percona Platform, you can use your Percona Account to sign in to PMM:

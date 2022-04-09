@@ -1,12 +1,14 @@
-Percona Monitoring and Management (PMM) features a Security Threat tool that runs regular checks against the databases connected to PMM. The checks identify and alert you of potential security threats, performance degradation, data loss and data corruption. 
+Percona Monitoring and Management (PMM) includes a set of Advisors that run checks against the databases connected to PMM. The checks identify and alert you of potential security threats, performance degradation, data loss,  data corruption, non-compliance issues, etc. 
 
 All checks are hosted on Percona Platform. PMM Server automatically downloads them from here when the Security Threat Tool is enabled in PMM under **Configuration > Settings > Advanced Settings**. 
 
-### Anonymous and registered checks
-By default, PMM has access to a set of anonymous checks, which can be
-downloaded even if PMM is not connected to Percona Platform. 
+### Advisor check tiers and entitlements
+Depending on the entitlements available for your Percona Account, the set of advisor checks that PMM can download from Percona Platform differ in terms of complexity and functionality. 
 
-As soon as you connect your PMM instance to Percona Platform, you get additional access to registered checks, which offer more advanced database health information.
+If your PMM instance is not connected to Percona Platform, PMM can only download the basic set of Anonymous advisor checks. 
+As soon as you connect your PMM instance to Percona Platform, has access to additional cheks, available only for Registered PMM instances. 
+
+If you are a Percona customer with a Percona Customer Portal account, you also get access to Paid checks, which offer more advanced database health information.
 ​
 ### Checks results
 
@@ -14,9 +16,9 @@ The checks can be executed manually or automatically. By default, PMM runs autom
 
 You can configure this interval in **PMM > Advanced Settings > Execution intervals**. Here you can label each check individually as **Standard**, **Rare** or **Frequent** and also specify the time interval for each category.
 
-The results are sent to PMM Server where you can review any failed checks on the **Home Dashboard > Failed security checks** panel. The summary count of failed checks is classified as <b style="color:#e02f44;">Critical</b>, <b style="color:#e36526;">Major</b> and <b style="color:#5794f2;">Trivial</b>:
+The results are sent to PMM Server where you can review any failed checks on the **Home Dashboard > Failed Advisor Checks** panel. The summary count of failed checks is classified as <b style="color:#e02f44;">Critical</b>, <b style="color:#e36526;">Major</b> and <b style="color:#5794f2;">Trivial</b>:
 
-![!Failed security checks panel](_images/Failed_Security_Checks.jpg)
+![!Failed Advisor Checks panel](_images/PMM_Home_Dashboard_Panels_Failed_Advisors.jpg)
 
 Check results data always remains on the PMM Server and are not related to anonymous data sent for Telemetry purposes.
 
@@ -24,7 +26,7 @@ For information on configuring PMM Security Threat Tool, see the [Percona Monito
 
 ### List of checks 
 
-Percona Platform hosts all the security checks available for MySQL, MongoDB and PostgreSQL databases connected to PMM. Check the full list of checks and their availability to **anonymous** and **registered** PMM instances in the table below: 
+Percona Platform hosts all the security checks available for MySQL, MongoDB and PostgreSQL databases connected to PMM. Check the full list of checks and their availability to **anonymous**, **registered** and **paid** PMM instances in the table below: 
 
 |Check      | Type |  Description
 | :----------| :----------- |:----------- |
