@@ -14,14 +14,16 @@ The links to managing existing organizations and any connected PMM instances are
 In addition, the **Get Started** tab has been merged into the **Dasboard** tab, which now hosts all the tools for creating your organization and start connecting PMM instances to it. 
 You'll also find here all information related to your account, and links to contact Percona for support, consulting or managed services. 
 
-There' s also a new link to the Percona Platform online Help in the **Resources** menu.  
+You may also want to know that the **Resources** menu now also includes a link to the onlie Help.
 
 
 ## Enhanced integration with PMM
-With this update we are improving PMM connections to Perfona Platform with increased security and synchronized customer account information across PMM and Percona Platform.  
+With this update we are improving PMM connections to Perfona Platform with:
+-  support for federated security to increase security 
+- synchronized customer account information across PMM and Percona Platform
 
 ### Support for federated identity
-Percona Platform now includes support for federated identity, which enables authentication via custom identity providers. 
+Percona Platform now includes support for federated identity to enable authentication via custom identity providers. 
 
 With the 2.27 release, PMM is leveraging this enhancement by requiring access-token authorization when connecting PMM instances to Percona Platform. 
 
@@ -34,4 +36,4 @@ After connecting PMM to Percona Platform as a Percona customer, PMM now reveals 
  
 Percona Platform populates these tabs with  information related to their Percona Platform  entitlements and Customer Support cases.
 
-For more information, see [Integrate PMM with Percona Platform]() in the PMM online Help.
+For more information, see [Integrate PMM with Percona Platform](https://www.percona.com/doc/percona-monitoring-and-management/2.x/how-to/integrate-platform.html) in the PMM online Help.
