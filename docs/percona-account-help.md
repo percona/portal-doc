@@ -1,12 +1,23 @@
-# Percona Account Help
+# Registration and Log in
+You can log into Percona Platform either with a Percona Account or via an external identity provider.
+
+## Log in with a Percona account
 A Percona Account is your all-access pass to various Percona services, including Percona Platform, Percona Customer Portal and Community Forum.
 
 With a Percona Account, you can sign in to any Percona service using the same email address and password. This means that you don’t need to manage separate login accounts for each service:
 
 ![infographic](_images/infographic.jpg)
 
+
+## Social log in via Google or GitHub
+As an alternative to connecting with a Percona Account username and password, you can now also sign in and register with your Google or GitHub account. 
+For GitHub, make sure that your email address is set to public so that Percona Platform can use it during authentication.
+
+## Log in via custom identity provider
+To configure and enable custom identity provider for your account, contact [Percona Support](https://www.percona.com/about-percona/contact).
+
 ## Sign up for a Percona Account
-1. Go to the [Percona Account Sign Up](https://id.percona.com/signin/register) page.
+1. Go to the [Percona Log in page](hhttps://portal.percona.com/) page.
 2. Enter your work or professional email address and specify a valid password.
 3. Enter your first and last name, then click **Create** once you’ve accepted the Terms of Service and Privacy Policy. 
 4. Check your email for a verification message and follow the instructions to activate your account. 
