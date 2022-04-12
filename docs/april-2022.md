@@ -1,4 +1,4 @@
-This update adds key enhancements to Percona Platform's integration with PMM, improves the authentication flow, and brings important design and UX refinements.
+This update improves the authentication flow, adds key enhancements to Percona Platform's integration with PMM and brings important design and UX refinements.
 
 ## Revamped Registration and Log in screen
 
