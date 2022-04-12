@@ -7,7 +7,7 @@ We've leveraged the old minimal design to create a sleek and modern look, that i
 
 In addition, we've simplified the Login and Registration form, to make it easier for you to connect to your account.
 
-![oldSignInpage](_images/old-login.png) > [![newSignInpage](_images/new_login.png)
+![oldSignInpage](_images/old-login.png)   >   ![newSignInpage](_images/new_login.png)
 
 
 ## Enhanced User Experience to boost your productivity
