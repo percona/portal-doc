@@ -1,4 +1,4 @@
-This update improves the authentication flow, adds key enhancements to Percona Platform's integration with PMM, and brings important design and UX refinements.
+This update adds key enhancements to Percona Platform's integration with PMM, improves the authentication flow, and brings important design and UX refinements.
 
 ## Revamped Registration and Log in screen
 
@@ -6,10 +6,12 @@ The first thing you'll notice with this update is the new look-and-feel of the l
 We've leveraged the old minimal design to create a sleek and modern look, that is more aligned with the Percona branding we love. 
 
 In addition, we've simplified the Log in and Registration form, to make it easier for you to connect to your account.
+
+![oldSignInpage](_images/old-login.jpg)
+
+> 
 ![newSignInpage](_images/new_login.png)
 
-> > 
-![newSignInpage](_images/old-login.jpg)
 
 ## Enhanced User Experience to boost your productivity
 We’ve also tweaked the structure of the main menu to improve the navigation when moving from one flow to another. 
