@@ -94,7 +94,7 @@ nav:
   - What's new:
     - whats-new.md
   - Registration and log in:
-    - percona-account-help.md
+    - registration-login.md
   - Create and manage organizations:
     - create-manage-organizations.md
   - Connect your PMM server:

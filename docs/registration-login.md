@@ -1,27 +1,22 @@
 # Registration and Log in
-You can log into Percona Platform either with a Percona Account or via an external identity provider.
+To connect to Percona Platform, go to [portal.percona.com](https://portal.percona.com/login) and sign in or register for a new Percona account. 
 
-## Log in with a Percona account
-A Percona Account is your all-access pass to various Percona services, including Percona Platform, Percona Customer Portal and Community Forum.
+As an alternative to connecting with a Percona Account username and password, you can also sign in with your Google or GitHub account. 
 
-With a Percona Account, you can sign in to any Percona service using the same email address and password. This means that you don’t need to manage separate login accounts for each service:
+If you are connecting via GitHub, make sure that you  set your email address as **public** in your GitHub account. If your email address is private instead, Percona Platform cannot access it to authenticate you.
 
-![infographic](_images/infographic.jpg)
+### Log in via custom identity providers
+Percona Platform can also use your organization credentials to log you in. To enable custom identity provider for your account, contact [Percona Support](https://www.percona.com/about-percona/contact).
 
 
-## Social log in via Google or GitHub
-As an alternative to connecting with a Percona Account username and password, you can now also sign in and register with your Google or GitHub account. 
-For GitHub, make sure that your email address is set to public so that Percona Platform can use it during authentication.
+## Create and manage your Percona Account
+### Sign up for a Percona Account
+If you don't have a Percona Account yet, you can create one straight from the **Sign in** form:
 
-## Log in via custom identity provider
-To configure and enable custom identity provider for your account, contact [Percona Support](https://www.percona.com/about-percona/contact).
-
-## Sign up for a Percona Account
-1. Go to the [Percona Log in page](hhttps://portal.percona.com/) page.
-2. Enter your work or professional email address and specify a valid password.
-3. Enter your first and last name, then click **Create** once you’ve accepted the Terms of Service and Privacy Policy. 
+1. Go to the [Percona Platform Log in page](https://portal.percona.com/).
+2. Scroll down to the **Don't have an account? Create one** link at the bottom of the form.
+3. Fill in the fields on the **Crate New Account** form, and click  **Create** once you’ve accepted the Terms of Service and Privacy Policy. 
 4. Check your email for a verification message and follow the instructions to activate your account. 
- 
 ## Manage your Percona Account 
 Because your Percona Account is used across all your Percona services, it’s important to keep your account safe and your information up-to-date. 
 
@@ -30,7 +25,7 @@ To manage your account:
 1. Sign in to your Percona Account and click your user icon on the right hand-side of the screen.
 2. Choose **Profile > Edit Profile**. This displays the **Account** page where you can update your account information and set up two-factor authentication (2FA). 
 
-### Set up two-factor authentication###
+### Set up two-factor authentication
 Two-factor authentication significantly increases the security of your Percona Account. 
 
 After enabling 2FA, signing into your account will require both your password and access to a trusted device via one or more of the following authenticators:

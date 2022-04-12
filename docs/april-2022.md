@@ -1,5 +1,6 @@
 ## General Availability 
 We're excited to announce that Percona Platform is generally available and ready to use in production!
+
 This update adds key enhancements to Percona Platform’s integration with PMM, improves the authentication flow, and brings important design and UX refinements.
 
 ## Revamped Registration and Log in screen
