@@ -7,18 +7,7 @@ We've leveraged the old minimal design to create a sleek and modern look, that i
 
 In addition, we've simplified the Login and Registration form, to make it easier for you to connect to your account.
 
-![oldSignInpage](_images/old-login.png)   >   ![newSignInpage](_images/new_login.png)
-
-
-## Enhanced User Experience to boost your productivity
-We’ve also tweaked the structure of the main menu to improve the navigation when moving from one flow to another. 
-
-The links to managing existing organizations and connected PMM instances are no longer hidden inside the **Get Started** tab. Instead, they are exposed as dedicated tabs on the main menu: **Organization Management** and **Connect PMM**. 
-
-In addition, the **Get Started** tab has been merged into the **Dasboard** tab, which now hosts all the tools for creating your organization and connecting PMM instances to it. 
-You'll also find here information related to your account, as well as links to contact Percona for support, consulting, or managed services. 
-
-You may also want to know that the **Resources** menu now also includes a link to the online Help.
+![newSignInpage](_images/new_login.png)
 
 ## Federated authentication via social and custom identity providers
 Percona Platform now supports authentication via external identity providers for a seamless, more fluid authentication flow.
@@ -49,3 +38,13 @@ After connecting PMM to Percona Platform as a Percona customer, PMM now reveals 
 Percona Platform populates these tabs with information related to their Percona Platform entitlements and Customer Support cases.
 
 For more information, see [Integrate PMM with Percona Platform](https://www.percona.com/doc/percona-monitoring-and-management/2.x/how-to/integrate-platform.html) in the PMM online Help.
+
+## Enhanced User Experience to boost your productivity
+We’ve also tweaked the structure of the main menu to improve the navigation when moving from one flow to another. 
+
+The links to managing existing organizations and connected PMM instances are no longer hidden inside the **Get Started** tab. Instead, they are exposed as dedicated tabs on the main menu: **Organization Management** and **Connect PMM**. 
+
+In addition, the **Get Started** tab has been merged into the **Dasboard** tab, which now hosts all the tools for creating your organization and connecting PMM instances to it. 
+You'll also find here information related to your account, as well as links to contact Percona for support, consulting, or managed services. 
+
+You may also want to know that the **Resources** menu now also includes a link to the online Help.
