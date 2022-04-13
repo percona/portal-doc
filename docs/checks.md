@@ -35,8 +35,6 @@ Percona Platform hosts all the security checks available for MySQL, MongoDB and 
 |MySQL Check      | Type |  Description
 | :----------| :----------- |:----------- |
 |MySQL Binary Logs, Local Infile and SQL Mode checks|Registered | Warns about non-optimal settings for Binary Log, Local Infile and SQL mode.|
-|MySQL Binary Logs, Local Infile and SQL Mode checks|anonymous, registered | Warns about non-optimal settings for Binary Log, Local Infile and SQL mode.|
-|MySQL user check| anonymous|Runs a high-level check on user setup. |
 |MySQL user check| registered |Runs a detailed check on user setup. |
 |MySQL version | Anonymous  |Warns if MySQL, Percona Server for MySQL, or MariaDB version is not the latest one. |
 |Check if binaries are 32-bit| Anonymous  |Notifies if **version_compatible_machine** equals i686.|
