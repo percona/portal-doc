@@ -30,8 +30,7 @@ For information on configuring PMM Security Threat Tool, see the [Percona Monito
 
 Percona Platform hosts all the security checks available for MySQL, MongoDB and PostgreSQL databases connected to PMM. Check the full list of checks and their availability to **anonymous**, **registered** and **paid** PMM instances in the table below: 
 
-??? note alert alert-info "MySQL Checks
- (click to show/hide)"
+### MySQL Advisor Checks
 
 |MySQL Check      | Type |  Description
 | :----------| :----------- |:----------- |
@@ -49,12 +48,7 @@ Percona Platform hosts all the security checks available for MySQL, MongoDB and 
 |Sql processing not multi threaded| Registered| Warns if replica SQL processing is not multi-threaded|
 
 
-
-
-
-
-??? note alert alert-info "MongoDB Checks
- (click to show/hide)"
+## MongoDB Advisor Checks
 
  |MongoDB Checks      | Type |  Description
 | :----------| :----------- |:----------- |
@@ -71,10 +65,7 @@ Percona Platform hosts all the security checks available for MySQL, MongoDB and 
 |Check the Replica Set Topology| Registered| Warns if the Replica Set cluster has less than 3 members.|
 |Check Active and Available connections ratio| Registered| Warns if the ratio of Active vs Available connections is higher than 75%. |
 
-
-
-??? note alert alert-info "PostgreSQL Checks
- (click to show/hide)"
+#### PostgreSQL Checks
  
 |PostgreSQL Check      | Type |  Description
 | :----------| :----------- |:----------- |
@@ -89,13 +80,3 @@ Percona Platform hosts all the security checks available for MySQL, MongoDB and 
 |PostgreSQL version | Anonymous  |Warns if the PostgreSQL minor or major versions are not the latest, and shows an error if the major version is 9.4 or older.  |
 |PostgreSQL stale replication slot| anonymous, registered  |Warns for stale replication slots since these can lead to WAL file accumulation and DB server outage.|
 |Configuration change requires restart/reload|   anonymous, registered   | Warns when a configuration was changed and requires a server restart/reload. |
-
-
-
-
-
-
-
-
-
-
