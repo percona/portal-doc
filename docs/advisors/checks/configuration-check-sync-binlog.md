@@ -14,8 +14,8 @@ and [Percona blog posts on the topic](https://www.percona.com/blog/2018/05/04/ho
 ## Resolution
 Disable localhost bypass:
 1. Edit mongod.conf and set the following parameter:
-        *setParameter:
-           enableLocalhostAuthBypass: false*
-
+```setParameter:
+           enableLocalhostAuthBypass: false
+```
 
 2. Perform a rolling restart of your mongod nodes to apply the changes.
