@@ -4,7 +4,7 @@ Percona Monitoring and Management (PMM) includes a set of Advisors that run chec
 
 All checks are hosted on Percona Platform. PMM Server automatically downloads them from here when the **Advisors** and **Telemetry** options are enabled in PMM under **Configuration > Settings > Advanced Settings**. By default the **Advisors** options is disabled.
 
-### Advisor check tiers and entitlements
+## Advisor check tiers and entitlements
 Depending on the entitlements available for your Percona Account, the set of advisor checks that PMM can download from Percona Platform differ in terms of complexity and functionality. 
 
 If your PMM instance is not connected to Percona Platform, PMM can only download the basic set of Anonymous advisor checks. 
@@ -12,7 +12,7 @@ As soon as you connect your PMM instance to Percona Platform, has access to addi
 
 If you are a Percona customer with a Percona Customer Portal account, you also get access to Paid checks, which offer more advanced database health information.
 ​
-### Checks results
+## Checks results
 
 The checks can be executed manually or automatically. By default, PMM runs automatic checks every 24 hours. 
 
@@ -26,11 +26,11 @@ Check results data always remains on the PMM Server and are not related to anony
 
 For information on configuring PMM Security Threat Tool, see the [Percona Monitoring and Management documentation](https://www.percona.com/doc/percona-monitoring-and-management/2.x/using/security-threat-tool.html).
 
-### List of checks 
+## List of checks 
 
 Percona Platform hosts all the security checks available for MySQL, MongoDB and PostgreSQL databases connected to PMM. Check the full list of checks and their availability to **anonymous**, **registered** and **paid** PMM instances in the table below: 
 
-#### MySQL Advisor Checks
+### MySQL Advisor Checks
 
 |MySQL Check      | Type |  Description
 | :----------| :----------- |:----------- |
@@ -48,7 +48,7 @@ Percona Platform hosts all the security checks available for MySQL, MongoDB and 
 |Sql processing not multi threaded| Registered| Warns if replica SQL processing is not multi-threaded|
 
 
-#### MongoDB Advisor Checks
+### MongoDB Advisor Checks
 
  |MongoDB Checks      | Type |  Description
 | :----------| :----------- |:----------- |
@@ -65,7 +65,7 @@ Percona Platform hosts all the security checks available for MySQL, MongoDB and 
 |Check the Replica Set Topology| Registered| Warns if the Replica Set cluster has less than 3 members.|
 |Check Active and Available connections ratio| Registered| Warns if the ratio of Active vs Available connections is higher than 75%. |
 
-#### PostgreSQL Checks
+### PostgreSQL Checks
  
 |PostgreSQL Check      | Type |  Description
 | :----------| :----------- |:----------- |
