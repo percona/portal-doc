@@ -22,7 +22,11 @@ To ensure that Percona Platform can establish a connection with the PMM instance
 If you see an option to create a new organization instead, your Percona Account is not linked to any organization yet. In this case, contact your account administrator, or create a new organization for your Percona Account.
 
 ## Connect PMM to Percona Platform
-To connect your PMM instance to Percona Platform:
+To connect your PMM server to Percona Platform, generate a personal access token from Platform and paste it into PMM. 
+#### Token validity
+For security reasons, access tokens expire after 30 minutes. Make sure to paste the code before that, or generate a new one if it expires.
+
+To connect your PMM server to Percona Platform:
 
 1. Log in to PMM and go to **PMM > Settings > Percona Platform** tab to fill in the *Connect PMM to Percona Portal* form.
    
