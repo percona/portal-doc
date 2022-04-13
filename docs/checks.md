@@ -30,7 +30,7 @@ For information on configuring PMM Security Threat Tool, see the [Percona Monito
 
 Percona Platform hosts all the security checks available for MySQL, MongoDB and PostgreSQL databases connected to PMM. Check the full list of checks and their availability to **anonymous**, **registered** and **paid** PMM instances in the table below: 
 
-### MySQL Advisor Checks
+#### MySQL Advisor Checks
 
 |MySQL Check      | Type |  Description
 | :----------| :----------- |:----------- |
@@ -48,7 +48,7 @@ Percona Platform hosts all the security checks available for MySQL, MongoDB and 
 |Sql processing not multi threaded| Registered| Warns if replica SQL processing is not multi-threaded|
 
 
-## MongoDB Advisor Checks
+#### MongoDB Advisor Checks
 
  |MongoDB Checks      | Type |  Description
 | :----------| :----------- |:----------- |
