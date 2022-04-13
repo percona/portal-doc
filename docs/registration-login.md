@@ -3,11 +3,10 @@ To connect to Percona Platform, go to [portal.percona.com](https://portal.percon
 
 As an alternative to connecting with a Percona Account username and password, you can also sign in with your Google or GitHub account. 
 
-If you are connecting via GitHub, make sure that you  set your email address as **public** in your GitHub account. If your email address is private instead, Percona Platform cannot access it to authenticate you.
+If you are connecting via GitHub, make sure that you set your email address as **public** in your GitHub account. If your email address is private instead, Percona Platform cannot access it to authenticate you.
 
 ### Log in via custom identity providers
 Percona Platform can also use your organization credentials to log you in. To enable custom identity provider for your account, contact [Percona Support](https://www.percona.com/about-percona/contact).
-
 
 ## Create and manage your Percona Account
 ### Sign up for a Percona Account

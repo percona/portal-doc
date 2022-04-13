@@ -7,7 +7,7 @@ Percona Platform also includes Percona Monitoring and Management (PMM) for datab
 
 Here's how to set up Percona Platform:
 
-1. [Create a Percona Account](percona-account-help.md).
+1. [Create a Percona Account](registration-login.md).
 
 2. [Connect your Percona Monitoring and Management (PMM) server](connect-pmm.md). 
 
