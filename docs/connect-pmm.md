@@ -23,6 +23,7 @@ If you see an option to create a new organization instead, your Percona Account 
 
 ## Connect PMM to Percona Platform
 To connect your PMM server to Percona Platform, generate a personal access token from Platform and paste it into PMM:
+
 1. Log in to PMM and go to **PMM > Settings > Percona Platform** tab to fill in the *Connect PMM to Percona Portal* form.
    
 ![Connect PMM to Percona Portal](_images/pmm-connect-to-platform.png)
