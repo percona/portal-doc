@@ -23,6 +23,7 @@ If you see an option to create a new organization instead, your Percona Account 
 
 ## Connect PMM to Percona Platform
 To connect your PMM server to Percona Platform, generate a personal access token from Platform and paste it into PMM. 
+
 #### Token validity
 For security reasons, access tokens expire after 30 minutes. Make sure to paste the code before that, or generate a new one if it expires.
 
@@ -46,7 +47,6 @@ To confirm that you have successfully connected the server and check the list of
 To disconnect a PMM server, go to > <i class="uil uil-cog"></i> **Configuration > Settings > Percona Platform** and click **Disconnect**. 
 
 To confirm that the server disconnected successfully, go to Percona Platform >  **Dashboard** tab > **View instances**. This displays the **PMM instances** page where you can check the list of servers currently connected to your Platform organization. 
-
 
 ## Sign into PMM with your Percona Account
 Once you've connected your PMM instance to Percona Platform, you can use your Percona Account to sign in to PMM:

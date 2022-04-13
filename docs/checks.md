@@ -42,9 +42,9 @@ Percona Platform hosts all the security checks available for MySQL, MongoDB and 
 |MySQL version | Anonymous  |Warns if MySQL, Percona Server for MySQL, or MariaDB version is not the latest one. |
 |Check if binaries are 32-bit| Anonymous  |Notifies if **version_compatible_machine** equals i686.|
 |InnoDB flush method and file format check| anonymous, registered  |Checks the following settings: **innodb_file_format**, **innodb_file_format_max**, **innodb_flush_method** and **innodb_data_file_path**.  |
-|Replica without replication slave account| Registered  |This advisor checks if a user with 
+|Replica without replication slave account| Registered  |Checks if a user with 
 |Validate Password Policy| Registered | Warns if Policy-Based Password validation does not perform dictionary checks|
-|Local option of load data enabled|Registered | Policy-Based Password Validation Does Not Perform Dictionary Checks|
+|Local option of load data enabled|Registered | Warns if the local infile global variable is disabled.|
 |Not_verifying_checksums| Registered | Policy-Based Password Validation Does Not Perform Dictionary Checks| 
 |Sql processing not multi threaded| Registered| Warns if replica SQL processing is not multi-threaded|
 

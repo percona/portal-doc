@@ -65,6 +65,12 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.highlight:
         linenums: false
+        
+markdown_extensions:
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
   
 
 plugins:
