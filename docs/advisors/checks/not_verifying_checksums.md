@@ -13,4 +13,4 @@ Enabling **source_verify_checksum** causes the source to verify events read from
 `select @@version version, if(@@binlog_checksum='CRC32', @@source_verify_checksum,0) found;`
 
 ## Resolution
-Activate checksum modifying the value of  **source_verify_checksum = 1**;
+Activate checksum by modifying the value of  **source_verify_checksum = 1**.

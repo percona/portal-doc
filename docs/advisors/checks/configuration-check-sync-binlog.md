@@ -12,10 +12,5 @@ and [Percona blog posts on the topic](https://www.percona.com/blog/2018/05/04/ho
 `SELECT @@global.sync_binlog;`
 
 ## Resolution
-Disable localhost bypass:
-1. Edit mongod.conf and set the following parameter:
-```setParameter:
-           enableLocalhostAuthBypass: false
-```
+Consider setting the **sync_binlog** variable to **1** with **SET GLOBAL sync_binlog=1**.
 
-2. Perform a rolling restart of your mongod nodes to apply the changes.
