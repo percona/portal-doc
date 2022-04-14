@@ -31,7 +31,7 @@ Percona Platform hosts all Advisor checks available for MySQL, MongoDB and Postg
 
 |Database | Check  Name    | Description |  Anonymous Checks | Registered  Checks   | Paid Checks    | 
 | :----------| :----------- |:----------- |:----------- | :----------- | :----------- |
-|MongoDB|**MongoDB Active vs Available Connections**|Check the ratio between Active and Available connections| <input type="checkbox" disabled  />  |<input type="checkbox" checked /> | <input type="checkbox" checked />|
+|MongoDB|**MongoDB Active vs Available Connections**|Checks the ratio between Active and Available connections.| <input type="checkbox" disabled  />  |<input type="checkbox" checked /> | <input type="checkbox" checked />|
 ||**MongoDB Authentication**|Warns if MongoDB authentication is disabled.| <input type="checkbox" disabled  />  |<input type="checkbox" checked /> | <input type="checkbox" checked />|
 ||**MongoDB Security AuthMech**|Warns if MongoDB is not using the default SHA-256 hashing as SCRAM authentication method.| <input type="checkbox" disabled  />  |<input type="checkbox" disabled  /> | <input type="checkbox" checked />|
 ||**MonogDB IP bindings**|Warns if MongoDB network binding is not set as recommended.| <input type="checkbox" checked  />  |<input type="checkbox" checked /> | <input type="checkbox" disabled  />|
