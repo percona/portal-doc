@@ -56,3 +56,7 @@ Percona Platform hosts all Advisor checks available for MySQL, MongoDB and Postg
 ||[Server enforced data integrity checking not strict]| Checks if sql_mode is not enforcing strict mode.| <input type="checkbox" disabled  />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
 ||[Sql processing not multi threaded]|Checks if replica SQL processing  is not multi-threaded | <input type="checkbox" disabled checked />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
 ||[Innodb flush method may not be optimal]| Checks if innodb_flush_method is O_DIRECT.| <input type="checkbox" disabled />  |<input type="checkbox" disabled  /> | <input type="checkbox" disabled checked />|
+||[Innodb file format]| Checks if innodb_file_format is Barracuda.| <input type="checkbox" disabled />  |<input type="checkbox" disabled  /> | <input type="checkbox" disabled checked />|
+||[Innodb data file path]|Checks if there is any size limitation for tablespaces.| <input type="checkbox" disabled />  |<input type="checkbox" disabled  /> | <input type="checkbox" disabled checked />|
+||[Replica without replication slave account]| Checks if a user with the Replication grants exists.| <input type="checkbox" disabled />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
+
