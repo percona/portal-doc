@@ -1,4 +1,4 @@
-# Users without replication grants
+# Replica without replication slave account
 
 ## Description
 If the master ever fails, you may want to use one of the slaves as the new master. An account with the REPLICATION SLAVE privilege must exist for a server to act as a replication master (so a slave can connect to it).
