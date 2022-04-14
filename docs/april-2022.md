@@ -70,4 +70,4 @@ The links to managing existing organizations and connected PMM instances are no 
 In addition, the **Get Started** tab has been merged into the **Dashboard** tab, which now hosts all the tools for creating your organization and connecting PMM instances to it. 
 You'll also find here information related to your account, as well as links to contact Percona for support, consulting, or managed services. 
 
-You may also want to know that the **Resources** menu now also includes a link to this online Help.
+The **Resources** menu now also includes a link to this online Help, so that you can reach this space any time from within Platform Portal.
