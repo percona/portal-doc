@@ -24,7 +24,7 @@ To ensure that Percona Platform can establish a connection with the PMM instance
 1. Log in to [Percona Platform](https://portal.percona.com). 
    
   !!! hint alert alert-success "Tip"
-    If you are connecting via GitHub, make sure that you set your email address as **public** in your GitHub account. If your email address is private instead, Percona Platform cannot access it to authenticate you.
+    If you are connecting via GitHub, make sure that you set your email address as **public** in your GitHub account. Otherwise, Percona Platform cannot access it to authenticate you.
     
 2. On the **Getting Started page**, check that the **Create organization** step shows an option to view your organization. <br/> 
     
