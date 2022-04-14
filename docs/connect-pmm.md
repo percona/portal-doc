@@ -8,7 +8,7 @@ To ensure that Percona Platform can establish a connection with the PMM instance
 ### Install PMM 2.27.0 or later
  Before connecting your PMM server to Percona Platform, make sure you are using PMM version 2.27 or newer. Otherwise, upgrade your PMM installation beforehand. 
  
- Upgrading is required because PMM 2.25 and 2.26 used username/password authentication for connecting to Percona Platform. Starting with PMM 2.27, this was replaced with access token authentication to support federated identity and increase security. 
+ Upgrading is required because PMM 2.25 and 2.26 use username/password authentication for connecting to Percona Platform. Starting with PMM 2.27, this was replaced with access token authentication to support federated identity and increase security. 
  
  This change did not affect existing connections to PMM Platform, which were not automatically terminated. 
 
