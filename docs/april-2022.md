@@ -5,7 +5,7 @@ This update adds key enhancements to Percona Platform’s integration with PMM, 
 
 ## Revamped Registration and Log in screen
 The first thing you'll notice with this update is the new look-and-feel of the landing page. 
-We've leveraged the old minimal design to create a sleek and modern look, that is more aligned with the Percona branding we love. 
+We overhauled the old minimal design to create a sleek and modern look, that is more aligned with the Percona branding we love. 
 
 In addition, we've simplified the Login and Registration form, to make it easier for you to connect to your account.
 
