@@ -44,7 +44,7 @@ Percona Platform populates these tabs with information related to their Percona 
 For more information, see [Integrate PMM with Percona Platform](https://www.percona.com/doc/percona-monitoring-and-management/2.x/how-to/integrate-platform.html) in the PMM online Help.
 
 ### New Paid tier and special PMM Advisor checks for customers
-When you connect your PMM to Pecona Platform with an account linked to Percona Customer Portal, you now also have access to Paid Advisor checks in addition to Registered checks. 
+When you connect your PMM to Pecona Platform with an account linked to Percona Customer Portal, you will get access to Paid Advisor checks in addition to Registered checks. 
 Paid Advisor checks offer more advanced information about the health of your databases.
 
 Here are the new list of checks introduced with this update:
