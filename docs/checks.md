@@ -44,19 +44,18 @@ Percona Platform hosts all Advisor checks available for MySQL, MongoDB and Postg
 ||**MongoDB Replica Set Topology**	|Warns if the Replica Set cluster has less than three members.| <input type="checkbox" disabled   />  |<input type="checkbox" checked /> | <input type="checkbox" checked />|
 ||**MongoDB Version**	|Warns if MongoDB or Percona Server for MongoDB version is not the latest one.| <input type="checkbox" checked  />  |<input type="checkbox" checked /> | <input type="checkbox" checked />|
 ||**MongoDB write Tickets**	|Warns if MongoDB network is using more than 128 write tickets.| <input type="checkbox" disabled   />  |<input type="checkbox" disabled  /> | <input type="checkbox" checked />|
-|| **MongoDB down**| |<input type="checkbox" checked   />  |<input type="checkbox"  checked  /> | <input type="checkbox" checked />
 |MySQL|  **Check if binaries are 32-bits**	|Notifies if version_compatible_machine equals i686.| <input type="checkbox" disabled   />  |<input type="checkbox" checked  /> | <input type="checkbox" checked />|
 ||**MySQL Automatic User Expired Password**	|Notifies if version_compatible_machine equals i686.| <input type="checkbox" disabled   />  |<input type="checkbox" checked  /> | <input type="checkbox" checked />|
 ||**MySQL InnoDB flush method and File Format check**|Checks the following settings: **innodb_file_format**, **innodb_file_format_max**, **innodb_flush_method** and **innodb_data_file_path**.| <input type="checkbox" disabled   />  |<input type="checkbox" checked  /> | <input type="checkbox" checked />|
 || **MySQL Checks based on values of MySQL configuration variables**	|| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled /> | <input type="checkbox" checked />|
 ||**MySQL Binary Logs checks, Local infile and SQL Mode checks**	|Warns about non-optimal settings for Binary Log, Local Infile and SQL mode.| <input type="checkbox" disabled   />  |<input type="checkbox"  checked/> | <input type="checkbox" checked />|
 || **MySQL Configuration check**	|| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled /> | <input type="checkbox" checked />|
-|| **MySQL Users With Granted Public Networks Access**	|| <input type="checkbox" disabled   />  |<input type="checkbox"  checked/> | <input type="checkbox" checked />|
+|| **MySQL Users With Granted Public Networks Access**	|Notifies about MySQL accounts allowed to be connected from public networks.| <input type="checkbox" disabled   />  |<input type="checkbox"  checked/> | <input type="checkbox" checked />|
 || **MySQL User check**	|Runs a check on user setup| <input type="checkbox" disabled   />  |<input type="checkbox"  checked/> | <input type="checkbox" checked />|
 || **MySQL User check**|Runs a high-level check on user setup| <input type="checkbox" disabled   />  |<input type="checkbox"  checked/> | <input type="checkbox" checked />|
 || **MySQL Advanced User check**	|Runs a detailed check on user setup| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled /> | <input type="checkbox" checked />|
 || **MySQL Security check** |Runs a detailed check on user setup| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled /> | <input type="checkbox" checked />|
-||**MySQL Test Database**|| <input type="checkbox" disabled   />  |<input type="checkbox"  checked /> | <input type="checkbox" checked />|
+||**MySQL Test Database**|This check returns a notice if there is database with name ‘test’ or ‘test_%’.| <input type="checkbox" disabled   />  |<input type="checkbox"  checked /> | <input type="checkbox" checked />|
 || **MySQL Version**|Warns if MySQL, Percona Server for MySQL, or MariaDB version is not the latest one.| <input type="checkbox" checked  />  |<input type="checkbox"  checked /> | <input type="checkbox" checked />|
 |PostgreSQL| **Archiver is failing**| Verifies if the archiver has failed.|<input type="checkbox" disabled   />  |<input type="checkbox"  disabled  /> | <input type="checkbox" checked />|
 || **PostgreSQL Cache hit ratio**| Checks database hit ratio and complains when this is too low.|<input type="checkbox" disabled   />  |<input type="checkbox"  disabled  /> | <input type="checkbox" checked />|
