@@ -33,15 +33,15 @@ To ensure that Percona Platform can establish a connection with the PMM instance
 ## Connect PMM to Percona Platform
 To connect your PMM server to Percona Platform, generate a personal access token from Platform and paste it into PMM:
 
-1. Log in to PMM and go to **PMM > Settings > Percona Platform** tab to fill in the *Connect PMM to Percona Portal* form.
+1. Log in to PMM and go to **PMM > Settings > Percona Platform** tab to fill in the **Connect PMM to Percona Platform** form.
    
-![Connect PMM to Percona Portal](_images/pmm-connect-to-platform.png)
+![Connect PMM to Percona Platform](_images/pmm-connect-to-platform.png)
 
 2. The **PMM server ID** field is automatically populated with the ID identified for your PMM instance. Enter the name of your PMM instance and click **Get token** to go to Percona Platform Portal and generate your access token.
 3. Log into Percona Platform using your Percona Account (if you don't have an active current session).
 4. On the Profile Settings page, copy the code from the **Percona Platform Access Token** field.
 For security reasons, the access token expires after 30 minutes. Make sure to paste the code in PMM before that, or generate a new token if it expires.
-4. Back into PMM, paste the Access Token into the **Percona Platform Access Token** field and click  *Connect*.
+4. Back into PMM, paste the Access Token into the **Percona Platform Access Token** field and click **Connect**.
 
 To confirm that you have successfully connected the server and check the list of all servers currently connected to an organization, go to [Percona Platform](https://portal.percona.com) > **Dashboard** tab and click **View Instances** next to the **Connect your PMM** step. 
 

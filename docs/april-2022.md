@@ -28,7 +28,7 @@ This update also enhances PMM connections to Percona Platform with:
 ### PMM instances now connected via access token
 To accommodate federated authentication, Percona Platform now requires PMM instances to connect via access-token authorization. 
 
-As a result, PMM 2.27 updated the **Connect PMM to Percona Portal** workflow to replace username and password authentication with access-token authorization. 
+As a result, PMM 2.27 updated the **Connect PMM to Percona Platform** workflow to replace username and password authentication with access-token authorization. 
 
 PMM instances that are already connected to Percona Platform will not be affected by this update. However, we recommend that you disconnect all existing PMM instances and reconnect them using the new access-token authorization.
 
