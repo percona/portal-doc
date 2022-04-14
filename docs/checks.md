@@ -30,84 +30,45 @@ For information on configuring PMM Advisors, see the [Percona Monitoring and Man
 
 Percona Platform hosts all Advisor checks available for MySQL, MongoDB and PostgreSQL databases connected to PMM. Check the full list of checks and their availability to **anonymous**, **registered** and **paid** PMM instances in the table below: 
 
-|Database |MySQL Check      | Description |  Anonymous (PMM not connected to Percona Platform) | Registered (Connected PMM instances)| Paid (PMM instances connected with a Customer account)| 
+|Database |MySQL Check      | Description |  Anonymous Checks (PMM not connected to Percona Platform) | Registered  Checks    (Connected PMM instances)| Paid Checks     (PMM instances connected with a Customer account)| 
 | :----------| :----------- |:----------- |:----------- | :----------- | :----------- |
-|MongoDB|MongoDB Active vs Available Connections|Check the ratio between Active and Available connections| <input type="checkbox" disabled  />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
-||MongoDB Authentication|Warns if MongoDB authentication is disabled.| <input type="checkbox" disabled  checked/>  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
-||MongoDB Security AuthMech|Warns if MongoDB is not using the default SHA-256 hashing as SCRAM authentication method.| <input type="checkbox" disabled  />  |<input type="checkbox" disabled  /> | <input type="checkbox" disabled checked />|
-||MonogDB IP bindings|Warns if MongoDB network binding is not set as recommended.| <input type="checkbox" disabled checked  />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled  />|
-||MongoDB CVE Version|Shows an error if MongoDB or Percona Server for MongoDB version is not the latest one with CVE fixes.| <input type="checkbox" disabled checked  />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled  />|
-||MongoDB Journal Check|Warns if journal is disabled.| <input type="checkbox" disabled   />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled  />|
-||MongoDB localhost authentication bypass is enabled| Warns if MongoDB localhost bypass is enabled.| <input type="checkbox" disabled checked  />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled  checked/>|
-||MongoDB Non-Default Log Level|Warns if MongoDB is not using the default log level.| <input type="checkbox" disabled   />  |<input type="checkbox" disabled  /> | <input type="checkbox" disabled checked />|
-||MongoDB Profiling Level|Warns when the MongoDB profile level is set to collect data for all operations.| <input type="checkbox" disabled   />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
-||MongoDB Read Tickets|Warns if MongoDB is using more than 128 read tickets.| <input type="checkbox" disabled   />  |<input type="checkbox" disabled  /> | <input type="checkbox" disabled checked />|
-||MongoDB Replica Set Topology	|Warns if the Replica Set cluster has less than three members.| <input type="checkbox" disabled   />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
-||MongoDB Version	|Warns if MongoDB or Percona Server for MongoDB version is not the latest one.| <input type="checkbox" disabled checked  />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
-||MongoDB write Tickets	|Warns if MongoDB network is using more than 128 write tickets.| <input type="checkbox" disabled   />  |<input type="checkbox" disabled  /> | <input type="checkbox" disabled checked />|
-|MySQL|Check if binaries are 32-bits	|Notifies if version_compatible_machine equals i686.| <input type="checkbox" disabled   />  |<input type="checkbox" checked  /> | <input type="checkbox" disabled checked />|
-||Automatic User Expired Password	|Notifies if version_compatible_machine equals i686.| <input type="checkbox" disabled   />  |<input type="checkbox" checked  /> | <input type="checkbox" disabled checked />|
-||InnoDB flush method and File Format check	|Checks the following settings: **innodb_file_format**, **innodb_file_format_max**, **innodb_flush_method** and **innodb_data_file_path**.| <input type="checkbox" disabled   />  |<input type="checkbox" checked  /> | <input type="checkbox" disabled checked />|
-||Checks based on values of MySQL configuration variables	|| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled /> | <input type="checkbox" disabled checked />|
-||Binary Logs checks, Local infile and SQL Mode checks	|Warns about non-optimal settings for Binary Log, Local Infile and SQL mode.| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled checked/> | <input type="checkbox" disabled checked />|
-|| Configuration check	|| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled /> | <input type="checkbox" disabled checked />|
-|| Users With Granted Public Networks Access	|| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled checked/> | <input type="checkbox" disabled checked />|
-|| User check	|Runs a check on user setup| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled checked/> | <input type="checkbox" disabled checked />|
-|| User check	|Runs a high-level check on user setup| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled checked/> | <input type="checkbox" disabled checked />|
-|| Advanced User check	|Runs a detailed check on user setup| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled /> | <input type="checkbox" disabled checked />|
-|| Security check	|Runs a detailed check on user setup| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled /> | <input type="checkbox" disabled checked />|
-||Test Database|| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled checked /> | <input type="checkbox" disabled checked />|
-||MySQL Version|Warns if MySQL, Percona Server for MySQL, or MariaDB version is not the latest one.| <input type="checkbox" disabled checked  />  |<input type="checkbox"  disabled checked /> | <input type="checkbox" disabled checked />|
-|PostgreSQL| Archiver is failing| Verifies if the archiver has failed.|<input type="checkbox" disabled   />  |<input type="checkbox"  disabled  /> | <input type="checkbox" disabled checked />|
-|| Cache hit ratio| Checks database hit ratio and complains when this is too low.|<input type="checkbox" disabled   />  |<input type="checkbox"  disabled  /> | <input type="checkbox" disabled checked />|
-|| Cache hit ratio| Checks database hit ratio and complains when this is too low.|<input type="checkbox" disabled   />  |<input type="checkbox"  disabled  /> | <input type="checkbox" disabled checked />|
-|| Cache hit ratio| Checks database hit ratio and complains when this is too low.|<input type="checkbox" disabled   />  |<input type="checkbox"  disabled  /> | <input type="checkbox" disabled checked />|
-|| Cache hit ratio| Checks database hit ratio and complains when this is too low.|<input type="checkbox" disabled   />  |<input type="checkbox"  disabled  /> | <input type="checkbox" disabled checked />|
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-|Database |MySQL Check      | Description |  Anonymous (PMM not connected to Percona Platform) | Registered (Connected PMM instances)| Paid (PMM instances connected with a Customer account)| 
-| :----------| :----------- |:----------- |:----------- | :----------- | :----------- |
-|MySQL|[Check if binaries are 32-bit](https://docs.percona.com/percona-platform/advisors/checks/platform-mysql-binaries-32-bit.html?h=mys#mysql-binaries-are-32-bits)| Alert if binaries are compiled in 32 bits. | <input type="checkbox" disabled checked />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
-||[Users without passwords](https://docs.percona.com/percona-platform/advisors/checks/security-user-without-password.html?h=users#there-are-users-without-passwords)|Identify users that have as authentication_string an empty string char ‘’  | <input type="checkbox" disabled /> |<input type="checkbox" disabled /> | <input type="checkbox" disabled checked />|
-||[Anonymous users](https://docs.percona.com/percona-platform/advisors/checks/security-anonymous-user.html?h=anony#anonymous-users)| Identify any anonymous user. | <input type="checkbox" disabled />  |<input type="checkbox" disabled /> | <input type="checkbox" disabled checked />|
-||[User with open to the word scope](https://docs.percona.com/percona-platform/advisors/checks/security-user-with-open-to-the-word-scope.html?h=ope#user-with-open-to-the-word-scope)| Identify users that have as host a wild char ‘%’ |  <input type="checkbox" disabled />    | <input type="checkbox" disabled />   | <input type="checkbox" disabled checked />|
-||[Non-root accounts with SUPER privileges](https://docs.percona.com/percona-platform/advisors/checks/security-anonymous-user.html?h=anony#anonymous-users)| Identify non root users that have SUPER privileges | <input type="checkbox" disabled />     |<input type="checkbox" disabled />    | <input type="checkbox" disabled checked />|
-||[User not using SSL protocol to connect](https://docs.percona.com/percona-platform/advisors/checks/security-user-not-using-ssl-protocol.html?h=ssl#user-not-using-ssl-protocol-to-connect)| Identify users that are connecting using insecure protocol  |<input type="checkbox" disabled />|<input type="checkbox" disabled /> | <input type="checkbox" disabled checked />|
-||[Root account can log in remotely](https://docs.percona.com/percona-platform/advisors/checks/root-account-can-login-remotely.html?h=root#root-account-can-log-in-remotely)| Identifies root account with privileges to connect from a remote platform. | <input type="checkbox" disabled />  |<input type="checkbox" disabled /> | <input type="checkbox" disabled checked />|
-||[Binary logs not synced at each write]| Identifies if sync_binlog is not set to 1. | <input type="checkbox" disabled />  |<input type="checkbox" disabled />| <input type="checkbox" disabled checked />|
-||[Redo log (binary log) not enabled](https://docs.percona.com/percona-platform/advisors/checks/configuration-check-log-bin.html?h=redo#mysql-redo-log-binary-log-not-enabled)| Warns if binary logging is not enabled. | <input type="checkbox" disabled />  |<input type="checkbox" disabled />| <input type="checkbox" disabled checked />|
-||[General log is active](https://docs.percona.com/percona-platform/advisors/checks/configuration-check-general-log.html?h=gene#mysql-general-log-is-active)| Warns if the general log is  enabled.  | <input type="checkbox" disabled />  |<input type="checkbox" disabled />| <input type="checkbox" disabled checked />|
-||[Temporary tables dimension is capped by max_heap_table_size](https://docs.percona.com/percona-platform/advisors/checks/configuration-check-tmp-table-size-limit.html?h=tempo#mysql-temporary-tables-dimension-is-capped-by-max_heap_table_size)|Alert if the max_heap_table_size and the tmp_table_size are set to different values. | <input type="checkbox" disabled />  |<input type="checkbox" disabled />| <input type="checkbox" disabled checked />|
-||[Server enforced data integrity checking is disabled ](https://docs.percona.com/percona-platform/advisors/checks/configuration-check-sql-mode.html?h=traditio)| Make sure sql_node contains TRADITIONAL, STRICT_ALL_TABLES, STRICT_TRANS_TABLES | <input type="checkbox" disabled checked />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
-||[Replica node is not configured as READ-ONLY](https://docs.percona.com/percona-platform/advisors/checks/configuration-check-replica-not-read-only.html?h=performance_schema.replication)|  checks if replication is configured and the read_only flag is set to 0.  | <input type="checkbox" disabled />  |<input type="checkbox" disabled />| <input type="checkbox" disabled checked />|
-||[Replica not verifying checksums]| Warns if slave_sql_verify checksum is not set to 1.  | <input type="checkbox" disabled />  |<input type="checkbox" disabled />| <input type="checkbox" disabled checked />||
- ||[Relay log on the replica node, not automatically purged](https://docs.percona.com/percona-platform/advisors/checks/configuration-check-relay-log-purge.html?h=purged)| Warns if the relay_log_purge variable is not set to 1. |<input type="checkbox" disabled />  |<input type="checkbox" disabled />| <input type="checkbox" disabled checked />|
-||[Binary log checksums disabled]|Checks if checksumming is enabled for binary logs| <input type="checkbox" disabled />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
-||[Binary Log Row-based images excessive]|This advisor checks if ROW images stored on binlogs are optimized to save disk space or not | <input type="checkbox" disabled />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
-||[Binary logs automatically removed too quickly]|Checks if binary logs rotation period is too short |   <input type="checkbox" disabled />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />||
-||[Local option of load data enabled]|  Verifies if the local infile global variable is disabled. | <input type="checkbox" disabled />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />||
-||[Master not verifying checksums]| Checksum in the binary log should be enabled as a safety measure. | <input type="checkbox" disabled />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
-||[Server enforced data integrity checking not strict]| Checks if sql_mode is not enforcing strict mode.| <input type="checkbox" disabled  />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
-||[Sql processing not multi threaded]|Checks if replica SQL processing  is not multi-threaded | <input type="checkbox" disabled checked />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
-||[Innodb flush method may not be optimal]| Checks if innodb_flush_method is O_DIRECT.| <input type="checkbox" disabled />  |<input type="checkbox" disabled  /> | <input type="checkbox" disabled checked />|
-||[Innodb file format]| Checks if innodb_file_format is Barracuda.| <input type="checkbox" disabled />  |<input type="checkbox" disabled  /> | <input type="checkbox" disabled checked />|
-||[Innodb data file path]|Checks if there is any size limitation for tablespaces.| <input type="checkbox" disabled />  |<input type="checkbox" disabled  /> | <input type="checkbox" disabled checked />|
-||[Replica without replication slave account]| Checks if a user with the Replication grants exists.| <input type="checkbox" disabled />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
-
+|MongoDB|MongoDB Active vs Available Connections|Check the ratio between Active and Available connections| <input type="checkbox" disabled  />  |<input type="checkbox" checked /> | <input type="checkbox" checked />|
+||MongoDB Authentication|Warns if MongoDB authentication is disabled.| <input type="checkbox" disabled  checked/>  |<input type="checkbox" checked /> | <input type="checkbox" checked />|
+||MongoDB Security AuthMech|Warns if MongoDB is not using the default SHA-256 hashing as SCRAM authentication method.| <input type="checkbox" disabled  />  |<input type="checkbox" disabled  /> | <input type="checkbox" checked />|
+||MonogDB IP bindings|Warns if MongoDB network binding is not set as recommended.| <input type="checkbox" checked  />  |<input type="checkbox" checked /> | <input type="checkbox" disabled  />|
+||MongoDB CVE Version|Shows an error if MongoDB or Percona Server for MongoDB version is not the latest one with CVE fixes.| <input type="checkbox" checked  />  |<input type="checkbox" checked /> | <input type="checkbox" disabled  />|
+||MongoDB Journal Check|Warns if journal is disabled.| <input type="checkbox" disabled   />  |<input type="checkbox" checked /> | <input type="checkbox" disabled  />|
+||MongoDB localhost authentication bypass is enabled| Warns if MongoDB localhost bypass is enabled.| <input type="checkbox" checked  />  |<input type="checkbox" checked /> | <input type="checkbox" disabled  checked/>|
+||MongoDB Non-Default Log Level|Warns if MongoDB is not using the default log level.| <input type="checkbox" disabled   />  |<input type="checkbox" disabled  /> | <input type="checkbox" checked />|
+||MongoDB Profiling Level|Warns when the MongoDB profile level is set to collect data for all operations.| <input type="checkbox" disabled   />  |<input type="checkbox" checked /> | <input type="checkbox" checked />|
+||MongoDB Read Tickets|Warns if MongoDB is using more than 128 read tickets.| <input type="checkbox" disabled   />  |<input type="checkbox" disabled  /> | <input type="checkbox" checked />|
+||MongoDB Replica Set Topology	|Warns if the Replica Set cluster has less than three members.| <input type="checkbox" disabled   />  |<input type="checkbox" checked /> | <input type="checkbox" checked />|
+||MongoDB Version	|Warns if MongoDB or Percona Server for MongoDB version is not the latest one.| <input type="checkbox" checked  />  |<input type="checkbox" checked /> | <input type="checkbox" checked />|
+||MongoDB write Tickets	|Warns if MongoDB network is using more than 128 write tickets.| <input type="checkbox" disabled   />  |<input type="checkbox" disabled  /> | <input type="checkbox" checked />|
+|MySQL|Check if binaries are 32-bits	|Notifies if version_compatible_machine equals i686.| <input type="checkbox" disabled   />  |<input type="checkbox" checked  /> | <input type="checkbox" checked />|
+||Automatic User Expired Password	|Notifies if version_compatible_machine equals i686.| <input type="checkbox" disabled   />  |<input type="checkbox" checked  /> | <input type="checkbox" checked />|
+||InnoDB flush method and File Format check	|Checks the following settings: **innodb_file_format**, **innodb_file_format_max**, **innodb_flush_method** and **innodb_data_file_path**.| <input type="checkbox" disabled   />  |<input type="checkbox" checked  /> | <input type="checkbox" checked />|
+||Checks based on values of MySQL configuration variables	|| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled /> | <input type="checkbox" checked />|
+||Binary Logs checks, Local infile and SQL Mode checks	|Warns about non-optimal settings for Binary Log, Local Infile and SQL mode.| <input type="checkbox" disabled   />  |<input type="checkbox"  checked/> | <input type="checkbox" checked />|
+|| Configuration check	|| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled /> | <input type="checkbox" checked />|
+|| Users With Granted Public Networks Access	|| <input type="checkbox" disabled   />  |<input type="checkbox"  checked/> | <input type="checkbox" checked />|
+|| User check	|Runs a check on user setup| <input type="checkbox" disabled   />  |<input type="checkbox"  checked/> | <input type="checkbox" checked />|
+|| User check	|Runs a high-level check on user setup| <input type="checkbox" disabled   />  |<input type="checkbox"  checked/> | <input type="checkbox" checked />|
+|| Advanced User check	|Runs a detailed check on user setup| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled /> | <input type="checkbox" checked />|
+|| Security check	|Runs a detailed check on user setup| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled /> | <input type="checkbox" checked />|
+||Test Database|| <input type="checkbox" disabled   />  |<input type="checkbox"  checked /> | <input type="checkbox" checked />|
+||MySQL Version|Warns if MySQL, Percona Server for MySQL, or MariaDB version is not the latest one.| <input type="checkbox" checked  />  |<input type="checkbox"  checked /> | <input type="checkbox" checked />|
+|PostgreSQL| Archiver is failing| Verifies if the archiver has failed.|<input type="checkbox" disabled   />  |<input type="checkbox"  disabled  /> | <input type="checkbox" checked />|
+|| Cache hit ratio| Checks database hit ratio and complains when this is too low.|<input type="checkbox" disabled   />  |<input type="checkbox"  disabled  /> | <input type="checkbox" checked />|
+|| Cache hit ratio| Checks database hit ratio and complains when this is too low.|<input type="checkbox" disabled   />  |<input type="checkbox"  disabled  /> | <input type="checkbox" checked />|
+|| Cache hit ratio| Checks database hit ratio and complains when this is too low.|<input type="checkbox" disabled   />  |<input type="checkbox"  disabled  /> | <input type="checkbox" checked />|
+|| Configuration change requires restart/reload.| Warns when a configuration was changed and requires a server restart/reload|<input type="checkbox" disabled   />  |<input type="checkbox"  checked  /> | <input type="checkbox" checked />|
+|| PostgreSQL fsync is disabled| Shows an error if the fsync configuration is disabled, as this can result in unrecoverable data corruption.|<input type="checkbox" checked   />  |<input type="checkbox"  checked  /> | <input type="checkbox" checked />|
+|| PostgreSQL Autovacuum Logging Is Disabled| Shows an error if the fsync configuration is disabled, as this can result in unrecoverable data corruption.|<input type="checkbox" disabled   />  |<input type="checkbox"  disabled  /> | <input type="checkbox" checked />|
+|| Autovacuum Logging Is Disabled|Notifies if the log_autovacuum_min_duration configuration option is set to -1 (disabled ).|<input type="checkbox" disabled   />  |<input type="checkbox"  disabled  /> | <input type="checkbox" checked />|
+|| Checkpoints Logging Is Disabled|Notifies if the **log_checkpoints **configuration option is not enabled.|<input type="checkbox" disabled   />  |<input type="checkbox"  checked  /> | <input type="checkbox" checked />|
+|| Max_connections is too high.|Notifies if the max_connections setting is set above 300.|<input type="checkbox" checked   />  |<input type="checkbox"  checked  /> | <input type="checkbox" checked />|
+|| Stale Replication Slot|Notifies if the max_connections setting is set above 300.|<input type="checkbox" disabled   />  |<input type="checkbox"  disabled  /> | <input type="checkbox" checked />|
+|| Super Role	|Notifies if there are users with superuser privileges.|<input type="checkbox" checked   />  |<input type="checkbox"  checked  /> | <input type="checkbox" checked />|
+|| Version Check| Warns if the PostgreSQL minor or major versions are not the latest, and shows an error if the major version is 9.4 or older.|<input type="checkbox" checked   />  |<input type="checkbox"  checked  /> | <input type="checkbox" checked />|
+|| MongoDB down| |<input type="checkbox" checked   />  |<input type="checkbox"  checked  /> | <input type="checkbox" checked />|
