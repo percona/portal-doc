@@ -24,11 +24,11 @@ The results are sent to PMM Server where you can review any failed checks on the
 
 Check results data always remains on the PMM Server and are not related to anonymous data sent for Telemetry purposes.
 
-For information on configuring PMM Security Threat Tool, see the [Percona Monitoring and Management documentation](https://www.percona.com/doc/percona-monitoring-and-management/2.x/using/security-threat-tool.html).
+For information on configuring PMM Advisors, see the [Percona Monitoring and Management documentation](https://www.percona.com/doc/percona-monitoring-and-management/2.x/how-to/advisors.html).
 
 ## List of checks 
 
-Percona Platform hosts all the security checks available for MySQL, MongoDB and PostgreSQL databases connected to PMM. Check the full list of checks and their availability to **anonymous**, **registered** and **paid** PMM instances in the table below: 
+Percona Platform hosts all Advisor checks available for MySQL, MongoDB and PostgreSQL databases connected to PMM. Check the full list of checks and their availability to **anonymous**, **registered** and **paid** PMM instances in the table below: 
 
 ### MySQL Advisor Checks
 
@@ -66,14 +66,14 @@ Percona Platform hosts all the security checks available for MySQL, MongoDB and 
 |MongoDB version | Anonymous |Warns if MongoDB or Percona Server for MongoDB version is not the latest one. |
 |MongoDB security AuthMech check| anonymous, registered  |Warns if MongoDB is not using the default SHA-256 hashing as SCRAM authentication method.
 |MongoDB journal| anonymous, registered  |Warns if journal is disabled.|  
-|Check the Replica Set Topology| Registered| Warns if the Replica Set cluster has less than 3 members.|
+|Check the Replica Set Topology| Registered| Warns if the Replica Set cluster has less than three members.|
 |Check Active and Available connections ratio| Registered| Warns if the ratio of Active vs Available connections is higher than 75%. |
 
 ### PostgreSQL Checks
  
 |PostgreSQL Check      | Type |  Description
 | :----------| :----------- |:----------- |
-|PostgreSQL **max_connections** is too high| Anonymous    |  Notifies if the **max_connections** setting is set above 300. PostgreSQL doesn't handle well large number of connections, even if these connections are idle. Recommended value is below 300. |
+|PostgreSQL **max_connections** is too high| Anonymous    |  Notifies if the **max_connections** setting is set above 300. PostgreSQL doesn't handle well large number of connections, even if these connections are idle. The recommended value is below 300. |
 |PostgreSQL cache hit ratio| anonymous, registered   |   Checks database hit ratio and complains when this is too low.|
 |PostgreSQL Archiver is failing| anonymous, registered| Verifies if the archiver has failed. |
 |MongoDB CVE version | Anonymous  |Shows an error if MongoDB or Percona Server for MongoDB version is not the latest one with CVE fixes. |

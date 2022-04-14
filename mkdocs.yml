@@ -1,6 +1,6 @@
 # MkDocs configuration for Percona website builds
 
-site_name: Percona Platform Portal
+site_name: Percona Platform
 site_description: Documentation
 site_author: Percona LLC
 copyright: Percona LLC, &#169; 2021
