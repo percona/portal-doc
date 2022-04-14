@@ -23,6 +23,7 @@ This update also enhances PMM connections to Percona Platform with:
 
 - token-based connections to increase security and support federated authentication  
 - synchronized customer account information across PMM and Percona Platform
+- new Advisor checks for Registered and Paid Tier
 
 ### PMM instances now connected via access token
 To accommodate federated authentication, Percona Platform now requires PMM instances to connect via access-token authorization. 
@@ -42,6 +43,25 @@ Percona Platform populates these tabs with information related to their Percona 
 
 For more information, see [Integrate PMM with Percona Platform](https://www.percona.com/doc/percona-monitoring-and-management/2.x/how-to/integrate-platform.html) in the PMM online Help.
 
+### New Paid tier and special PMM Advisor checks for customers
+When you connect your PMM to Pecona Platform with an account linked to Percona Customer Portal, you now also have access to Paid Advisor checks in addition to Registered checks. 
+Paid Advisor checks offer more advanced information about the health of your databases.
+
+Here are the new list of checks introduced with this update:
+
+**New MySQL Advisor Checks**
+
+- Validate Password Policy
+- Local Option of Load Data Enabled
+- Not Verifying Checksum
+- SQL Processing Not Multi-Threaded
+  
+**New MongoDB Advisor Checks**
+
+- Check the Replica Set Topology
+- Check Active/Available Connection Ratio
+
+See the full list of database checks in the [Advisor checks for PMM](checks.md) topic. 
 ## Enhanced User Experience to boost your productivity
 We’ve also tweaked the structure of the main menu to improve the navigation when moving from one flow to another. 
 
