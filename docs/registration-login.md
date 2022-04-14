@@ -35,8 +35,9 @@ After enabling 2FA, signing into your account will require both your password an
 
 To turn on or manage two-factor authentication:
 
-1. On your **Account** page, scroll down to the **Extra Verification** section. 
-2. Click **Set up** next to the security method you want to configure, and follow the on-screen instructions.
+1. Go to the **Profile Settings** page and click **Edit profile**.
+2. On your **Account** page, scroll down to the **Extra Verification** section. 
+3. Click **Set up** next to the security method you want to configure, and follow the on-screen instructions.
 
 To disable an authenticator app, simply click **Remove** next to its name in the **Extra Verification** section.
 

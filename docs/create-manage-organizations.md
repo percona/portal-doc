@@ -6,7 +6,7 @@ Organizations are linked to Percona Accounts. Each Percona Account gives access 
 To create an organization: 
 
 1. Log in to [Percona Platform](https://portal.percona.com) using your Percona Account.
-2. On the **Getting Started** page, click **Add Organization**. <br />
+2. Click the **Organization** tab on the main menu, then click **Add Organization**. <br />
 Existing Percona customers and Percona Accounts that are already associated with an organization will see an option to view their existing organization instead. 
 3. Enter a relevant name for your new organization, then click **Save**. <br />
 This creates the new organization and displays its general details like name and creation date.
@@ -21,12 +21,9 @@ As an account administrator, finish setting up your Percona Platform organizatio
 
 ## Check organization details
 
-After creating or joining an organization, you can check its details at any time:
+After creating or joining an organization, click the **Organization** tab on the left menu to open the **Manage organization** page.
 
-1. Go to **Getting Started** tab. Notice that the option to create the organization is now checked. 
-2. Click **View Organization** to manage your organization and check its details.
-
-
+Here you can manage your organization and check its details.
 
 ## Roles and permissions
 When you create an organization, you are automatically assigned the role of **Admin** for that organization.
@@ -49,7 +46,7 @@ Administrators can add any number of Technical users to the organization and eve
 To add a user to your organization:
 
 1. Log in to [Percona Platform](https://portal.percona.com).
-2. Click **View Organization** on the **Getting Started** page. 
+2. Click **Organization** tab on the left side menu. 
 3. On the **Members** tab, click the **Invite Member** button. 
 4. Enter your team member's corporate email address and select a role.
 5. Click **Save** to send the invitation to join your organization. 
@@ -59,7 +56,7 @@ To add a user to your organization:
 Currently, organization users cannot change their own role. However, Administrators can change the user role for all the other members in their organization. <br /><br />
 To do so:
 
-1. Go to **Getting Started > View Organization**. 
+1. Click the **Organization** tab on the left side menu. 
 2. Open the **Members** tab.
 3. In the **Actions** column, click on the **Edit** icon next to the user whose role you want to change.
 This displays the **Edit Member** form.
@@ -72,7 +69,7 @@ After deleting users, you may want to also remove these users from your Customer
 
 To delete a user from your Percona Platform organization:
 
-1. Go to **Getting Started > View Organization**. 
+1. Click the **Organization** tab on the left side menu. 
 2. Open the **Members** tab.
 3. In the **Actions** column, click on the **Delete** icon next to the user you want to remove from the organization.
 4. Confirm that you want to remove the user and click **Delete**.
