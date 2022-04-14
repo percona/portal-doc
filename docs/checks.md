@@ -30,6 +30,57 @@ For information on configuring PMM Advisors, see the [Percona Monitoring and Man
 
 Percona Platform hosts all Advisor checks available for MySQL, MongoDB and PostgreSQL databases connected to PMM. Check the full list of checks and their availability to **anonymous**, **registered** and **paid** PMM instances in the table below: 
 
+|Database |MySQL Check      | Description |  Anonymous (PMM not connected to Percona Platform) | Registered (Connected PMM instances)| Paid (PMM instances connected with a Customer account)| 
+| :----------| :----------- |:----------- |:----------- | :----------- | :----------- |
+|MongoDB|MongoDB Active vs Available Connections|Check the ratio between Active and Available connections| <input type="checkbox" disabled  />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
+||MongoDB Authentication|Warns if MongoDB authentication is disabled.| <input type="checkbox" disabled  checked/>  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
+||MongoDB Security AuthMech|Warns if MongoDB is not using the default SHA-256 hashing as SCRAM authentication method.| <input type="checkbox" disabled  />  |<input type="checkbox" disabled  /> | <input type="checkbox" disabled checked />|
+||MonogDB IP bindings|Warns if MongoDB network binding is not set as recommended.| <input type="checkbox" disabled checked  />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled  />|
+||MongoDB CVE Version|Shows an error if MongoDB or Percona Server for MongoDB version is not the latest one with CVE fixes.| <input type="checkbox" disabled checked  />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled  />|
+||MongoDB Journal Check|Warns if journal is disabled.| <input type="checkbox" disabled   />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled  />|
+||MongoDB localhost authentication bypass is enabled| Warns if MongoDB localhost bypass is enabled.| <input type="checkbox" disabled checked  />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled  checked/>|
+||MongoDB Non-Default Log Level|Warns if MongoDB is not using the default log level.| <input type="checkbox" disabled   />  |<input type="checkbox" disabled  /> | <input type="checkbox" disabled checked />|
+||MongoDB Profiling Level|Warns when the MongoDB profile level is set to collect data for all operations.| <input type="checkbox" disabled   />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
+||MongoDB Read Tickets|Warns if MongoDB is using more than 128 read tickets.| <input type="checkbox" disabled   />  |<input type="checkbox" disabled  /> | <input type="checkbox" disabled checked />|
+||MongoDB Replica Set Topology	|Warns if the Replica Set cluster has less than three members.| <input type="checkbox" disabled   />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
+||MongoDB Version	|Warns if MongoDB or Percona Server for MongoDB version is not the latest one.| <input type="checkbox" disabled checked  />  |<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
+||MongoDB write Tickets	|Warns if MongoDB network is using more than 128 write tickets.| <input type="checkbox" disabled   />  |<input type="checkbox" disabled  /> | <input type="checkbox" disabled checked />|
+|MySQL|Check if binaries are 32-bits	|Notifies if version_compatible_machine equals i686.| <input type="checkbox" disabled   />  |<input type="checkbox" checked  /> | <input type="checkbox" disabled checked />|
+||Automatic User Expired Password	|Notifies if version_compatible_machine equals i686.| <input type="checkbox" disabled   />  |<input type="checkbox" checked  /> | <input type="checkbox" disabled checked />|
+||InnoDB flush method and File Format check	|Checks the following settings: **innodb_file_format**, **innodb_file_format_max**, **innodb_flush_method** and **innodb_data_file_path**.| <input type="checkbox" disabled   />  |<input type="checkbox" checked  /> | <input type="checkbox" disabled checked />|
+||Checks based on values of MySQL configuration variables	|| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled /> | <input type="checkbox" disabled checked />|
+||Binary Logs checks, Local infile and SQL Mode checks	|Warns about non-optimal settings for Binary Log, Local Infile and SQL mode.| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled checked/> | <input type="checkbox" disabled checked />|
+|| Configuration check	|| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled /> | <input type="checkbox" disabled checked />|
+|| Users With Granted Public Networks Access	|| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled checked/> | <input type="checkbox" disabled checked />|
+|| User check	|Runs a check on user setup| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled checked/> | <input type="checkbox" disabled checked />|
+|| User check	|Runs a high-level check on user setup| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled checked/> | <input type="checkbox" disabled checked />|
+|| Advanced User check	|Runs a detailed check on user setup| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled /> | <input type="checkbox" disabled checked />|
+|| Security check	|Runs a detailed check on user setup| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled /> | <input type="checkbox" disabled checked />|
+||Test Database|| <input type="checkbox" disabled   />  |<input type="checkbox"  disabled checked /> | <input type="checkbox" disabled checked />|
+||MySQL Version|Warns if MySQL, Percona Server for MySQL, or MariaDB version is not the latest one.| <input type="checkbox" disabled checked  />  |<input type="checkbox"  disabled checked /> | <input type="checkbox" disabled checked />|
+|PostgreSQL| Archiver is failing| Verifies if the archiver has failed.|<input type="checkbox" disabled   />  |<input type="checkbox"  disabled  /> | <input type="checkbox" disabled checked />|
+|| Cache hit ratio| Checks database hit ratio and complains when this is too low.|<input type="checkbox" disabled   />  |<input type="checkbox"  disabled  /> | <input type="checkbox" disabled checked />|
+|| Cache hit ratio| Checks database hit ratio and complains when this is too low.|<input type="checkbox" disabled   />  |<input type="checkbox"  disabled  /> | <input type="checkbox" disabled checked />|
+|| Cache hit ratio| Checks database hit ratio and complains when this is too low.|<input type="checkbox" disabled   />  |<input type="checkbox"  disabled  /> | <input type="checkbox" disabled checked />|
+|| Cache hit ratio| Checks database hit ratio and complains when this is too low.|<input type="checkbox" disabled   />  |<input type="checkbox"  disabled  /> | <input type="checkbox" disabled checked />|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 |Database |MySQL Check      | Description |  Anonymous (PMM not connected to Percona Platform) | Registered (Connected PMM instances)| Paid (PMM instances connected with a Customer account)| 
 | :----------| :----------- |:----------- |:----------- | :----------- | :----------- |
