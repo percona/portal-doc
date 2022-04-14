@@ -29,7 +29,7 @@ For information on configuring PMM Advisors, see the [Percona Monitoring and Man
 ## List of checks 
 Percona Platform hosts all Advisor checks available for MySQL, MongoDB and PostgreSQL databases connected to PMM. Check the full list of checks and their availability to **anonymous**, **registered** and **paid** PMM instances in the table below: 
 
-|Database |MySQL Check      | Description |  Anonymous Checks (PMM not connected to Percona Platform) | Registered  Checks    (Connected PMM instances)| Paid Checks     (PMM instances connected with a Customer account)| 
+|Database |MySQL Check      | Description |  Anonymous Checks | Registered  Checks   | Paid Checks    | 
 | :----------| :----------- |:----------- |:----------- | :----------- | :----------- |
 |MongoDB|MongoDB Active vs Available Connections|Check the ratio between Active and Available connections| <input type="checkbox" disabled  />  |<input type="checkbox" checked /> | <input type="checkbox" checked />|
 ||MongoDB Authentication|Warns if MongoDB authentication is disabled.| <input type="checkbox" disabled  />  |<input type="checkbox" checked /> | <input type="checkbox" checked />|
