@@ -32,10 +32,16 @@ Percona Platform hosts all the security checks available for MySQL, MongoDB and 
 
 ### MySQL Advisor Checks
 
-|MySQL Check      | Type |  Description
+|MySQL Check      | Description |  Anonymous | Registered | Paid| 
 | :----------| :----------- |:----------- |
-|MySQL Binary Logs, Local Infile and SQL Mode checks|Registered | Warns about non-optimal settings for Binary Log, Local Infile and SQL mode.|
-|MySQL user check| registered |Runs a detailed check on user setup. |
+|MySQL Binary Logs, Local Infile and SQL Mode checks| | Warns about non-optimal settings for Binary Log, Local Infile and SQL mode.| | | |
+
+
+
+
+
+
+|MySQL user check| Registered |Runs a detailed check on user setup. |
 |MySQL version | Anonymous  |Warns if MySQL, Percona Server for MySQL, or MariaDB version is not the latest one. |
 |Check if binaries are 32-bit| Anonymous  |Notifies if **version_compatible_machine** equals i686.|
 |InnoDB flush method and file format check| anonymous, registered  |Checks the following settings: **innodb_file_format**, **innodb_file_format_max**, **innodb_flush_method** and **innodb_data_file_path**.  |
@@ -78,3 +84,11 @@ Percona Platform hosts all the security checks available for MySQL, MongoDB and 
 |PostgreSQL version | Anonymous  |Warns if the PostgreSQL minor or major versions are not the latest, and shows an error if the major version is 9.4 or older.  |
 |PostgreSQL stale replication slot| anonymous, registered  |Warns for stale replication slots since these can lead to WAL file accumulation and DB server outage.|
 |Configuration change requires restart/reload|   anonymous, registered   | Warns when a configuration was changed and requires a server restart/reload. |
+
+
+
+
+|Database |MySQL Check      | Description |  Anonymous | Registered | Paid| 
+| :----------| :----------- |:----------- |:----------- | :----------- | :----------- |
+|MySQL|Check if binaries are 32-bit| Notifies if **version_compatible_machine** equals i686. | v  |v | v |
+
