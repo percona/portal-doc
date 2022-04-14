@@ -1,6 +1,6 @@
 # MkDocs configuration for Percona website builds
 
-site_name: Percona Platform Portal
+site_name: Percona Platform
 site_description: Documentation
 site_author: Percona LLC
 copyright: Percona LLC, &#169; 2021
@@ -65,6 +65,12 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.highlight:
         linenums: false
+        
+markdown_extensions:
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
   
 
 plugins:
