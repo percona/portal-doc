@@ -10,7 +10,7 @@ To ensure that Percona Platform can establish a connection with the PMM instance
  
  Upgrading is required because PMM 2.25 and 2.26 used username/password authentication for connecting to Percona Platform. Starting with PMM 2.27, this was replaced with access token authentication to support federated identity and increase security. 
  
- This change does not affect existing connections to PMM Platform, which will not be automatically terminated. However, we recommend that you disconnect all PMM instances connected via username/password and reconnect them using the new access-token authorization.
+ This change did not affect existing connections to PMM Platform, which were not automatically terminated. 
 
  For more information, see [Install and set up PMM](https://www.percona.com/doc/percona-monitoring-and-management/2.x/setting-up/index.html).
 
