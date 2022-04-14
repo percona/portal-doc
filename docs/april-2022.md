@@ -67,7 +67,7 @@ We’ve also tweaked the structure of the main menu to improve the navigation wh
 
 The links to managing existing organizations and connected PMM instances are no longer hidden inside the **Get Started** tab. Instead, they are exposed as dedicated tabs on the main menu: **Organization** and **PMM Instances**. 
 
-In addition, the **Get Started** tab has been merged into the **Dasboard** tab, which now hosts all the tools for creating your organization and connecting PMM instances to it. 
+In addition, the **Get Started** tab has been merged into the **Dashboard** tab, which now hosts all the tools for creating your organization and connecting PMM instances to it. 
 You'll also find here information related to your account, as well as links to contact Percona for support, consulting, or managed services. 
 
 You may also want to know that the **Resources** menu now also includes a link to this online Help.
