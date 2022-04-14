@@ -16,7 +16,7 @@ Percona Platform now supports authentication via external identity providers for
 
 As an alternative to connecting with a Percona Account username and password, you can now also sign in and register with a Google, GitHub, or any custom identity provider. For GitHub, make sure that your email address is set to public so that Percona Platform can use it during authentication.
 
-To configure and enable custom identity provider for your account, contact [Percona Support](https://www.percona.com/about-percona/contact).
+To configure and enable a custom identity provider for your account, contact [Percona Support](https://www.percona.com/about-percona/contact).
 
 ## Enhanced integration with Percona Monitoring and Management (PMM)
 This update also enhances PMM connections to Percona Platform with:
