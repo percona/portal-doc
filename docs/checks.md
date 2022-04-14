@@ -27,13 +27,12 @@ Check results data always remains on the PMM Server and are not related to anony
 For information on configuring PMM Advisors, see the [Percona Monitoring and Management documentation](https://www.percona.com/doc/percona-monitoring-and-management/2.x/how-to/advisors.html).
 
 ## List of checks 
-
 Percona Platform hosts all Advisor checks available for MySQL, MongoDB and PostgreSQL databases connected to PMM. Check the full list of checks and their availability to **anonymous**, **registered** and **paid** PMM instances in the table below: 
 
 |Database |MySQL Check      | Description |  Anonymous Checks (PMM not connected to Percona Platform) | Registered  Checks    (Connected PMM instances)| Paid Checks     (PMM instances connected with a Customer account)| 
 | :----------| :----------- |:----------- |:----------- | :----------- | :----------- |
 |MongoDB|MongoDB Active vs Available Connections|Check the ratio between Active and Available connections| <input type="checkbox" disabled  />  |<input type="checkbox" checked /> | <input type="checkbox" checked />|
-||MongoDB Authentication|Warns if MongoDB authentication is disabled.| <input type="checkbox" disabled  checked/>  |<input type="checkbox" checked /> | <input type="checkbox" checked />|
+||MongoDB Authentication|Warns if MongoDB authentication is disabled.| <input type="checkbox" disabled  />  |<input type="checkbox" checked /> | <input type="checkbox" checked />|
 ||MongoDB Security AuthMech|Warns if MongoDB is not using the default SHA-256 hashing as SCRAM authentication method.| <input type="checkbox" disabled  />  |<input type="checkbox" disabled  /> | <input type="checkbox" checked />|
 ||MonogDB IP bindings|Warns if MongoDB network binding is not set as recommended.| <input type="checkbox" checked  />  |<input type="checkbox" checked /> | <input type="checkbox" disabled  />|
 ||MongoDB CVE Version|Shows an error if MongoDB or Percona Server for MongoDB version is not the latest one with CVE fixes.| <input type="checkbox" checked  />  |<input type="checkbox" checked /> | <input type="checkbox" disabled  />|
@@ -71,4 +70,4 @@ Percona Platform hosts all Advisor checks available for MySQL, MongoDB and Postg
 || Stale Replication Slot|Notifies if the max_connections setting is set above 300.|<input type="checkbox" disabled   />  |<input type="checkbox"  disabled  /> | <input type="checkbox" checked />|
 || Super Role	|Notifies if there are users with superuser privileges.|<input type="checkbox" checked   />  |<input type="checkbox"  checked  /> | <input type="checkbox" checked />|
 || Version Check| Warns if the PostgreSQL minor or major versions are not the latest, and shows an error if the major version is 9.4 or older.|<input type="checkbox" checked   />  |<input type="checkbox"  checked  /> | <input type="checkbox" checked />|
-|| MongoDB down| |<input type="checkbox" checked   />  |<input type="checkbox"  checked  /> | <input type="checkbox" checked />|
+|| MongoDB down| |<input type="checkbox" checked   />  |<input type="checkbox"  checked  /> | <input type="checkbox" checked />| 
