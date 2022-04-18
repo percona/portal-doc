@@ -78,9 +78,9 @@ plugins:
       include_yaml:
 #          - 'variables.yml' # Use in markdown as '{{ VAR }}'
 
-extra:
-  version:
-    provider: mike
+# extra:
+#   version:
+#     provider: mike
 
 nav:
   - Welcome:
