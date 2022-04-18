@@ -33,7 +33,6 @@ theme:
         name: Switch to light mode
 
   # Theme features
-
   features:
     - search.highlight
     - navigation.top
