@@ -5,20 +5,19 @@ site_description: Documentation
 site_author: Percona LLC
 copyright: Percona LLC, &#169; 2021
 
-site_url: 'https://www.percona.com/doc/percona-platform/'
+site_url: "https://www.percona.com/doc/percona-platform/"
 repo_name: /percona-platform/portal-doc
 repo_url: https://github.com/percona-platform/portal-doc
 edit_uri: edit/main/docs/
 
 use_directory_urls: false
 
-#Theme for Netlify builds
+#Theme for the builds
 theme:
   name: material
   logo: _images/percona-logo.png
   favicon: _images/percona-favicon.ico
   palette:
-
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: percona-light
@@ -33,12 +32,11 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode
 
-# Theme features
+  # Theme features
 
   features:
     - search.highlight
     - navigation.top
-
 
 #Styling
 extra_css:
@@ -58,10 +56,10 @@ markdown_extensions:
       permalink: True
   - admonition
   - footnotes
-  - def_list   # https://michelf.ca/projects/php-markdown/extra/#def-list
+  - def_list # https://michelf.ca/projects/php-markdown/extra/#def-list
   - meta
   - smarty:
-        smart_angled_quotes: true
+      smart_angled_quotes: true
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.tabbed
@@ -69,35 +67,32 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
   - pymdownx.highlight:
-        linenums: false
-  
+      linenums: false
 
 plugins:
   - search
   - git-revision-date
-# - bootstrap-tables
+  # - bootstrap-tables
   - section-index # Adds links to nodes - comment out when creating PDF
-#  - htmlproofer # Uncomment to check links - but extends build time significantly
+  #  - htmlproofer # Uncomment to check links - but extends build time significantly
   - macros:
-        include_yaml:
+      include_yaml:
 #          - 'variables.yml' # Use in markdown as '{{ VAR }}'
-
 
 extra:
   version:
     provider: mike
 
-
 nav:
   - Welcome:
-    - index.md
+      - index.md
   - What's new:
-    - whats-new.md
+      - whats-new.md
   - Registration and log in:
-    - registration-login.md
+      - registration-login.md
   - Create and manage organizations:
-    - create-manage-organizations.md
+      - create-manage-organizations.md
   - Connect your PMM server:
-    - connect-pmm.md
+      - connect-pmm.md
   - Advisor checks for PMM:
-    - checks.md
+      - checks.md
