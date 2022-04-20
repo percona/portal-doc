@@ -10,7 +10,7 @@ repo_name: /percona-platform/portal-doc
 repo_url: https://github.com/percona-platform/portal-doc
 edit_uri: edit/main/docs/
 
-use_directory_urls: true
+use_directory_urls: false
 
 #Theme for the builds
 theme:
