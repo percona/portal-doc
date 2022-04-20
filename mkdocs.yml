@@ -1,11 +1,11 @@
 # MkDocs configuration for Percona Platform Doc website builds
 
 site_name: Percona Platform
-site_description: Documentation
+site_description: Percona Platform Documentation
 site_author: Percona LLC
 copyright: Percona LLC, &#169; 2021
 
-site_url: "https://www.percona.com/doc/percona-platform/"
+site_url: "https://docs.percona.com/"
 repo_name: /percona-platform/portal-doc
 repo_url: https://github.com/percona-platform/portal-doc
 edit_uri: edit/main/docs/
@@ -15,8 +15,9 @@ use_directory_urls: false
 #Theme for the builds
 theme:
   name: material
-  logo: _images/percona-logo.png
-  favicon: _images/percona-favicon.ico
+  custom_dir: "theme/"
+  logo: images/percona-logo.png
+  favicon: images/percona-favicon.ico
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
@@ -33,7 +34,6 @@ theme:
         name: Switch to light mode
 
   # Theme features
-
   features:
     - search.highlight
     - navigation.top
@@ -76,11 +76,10 @@ plugins:
   #  - htmlproofer # Uncomment to check links - but extends build time significantly
   - macros:
       include_yaml:
-#          - 'variables.yml' # Use in markdown as '{{ VAR }}'
+#        - 'variables.yml' # Use in markdown as '{{ VAR }}'
 
 # extra:
-#   version:
-#     provider: mike
+#   version: 1.0
 
 nav:
   - Welcome:
