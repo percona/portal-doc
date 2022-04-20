@@ -5,7 +5,7 @@ site_description: Percona Platform Documentation
 site_author: Percona LLC
 copyright: Percona LLC, &#169; 2021
 
-site_url: "https://docs.percona.com/"
+site_url: "https://docs.percona.com/percona-platform/"
 repo_name: /percona-platform/portal-doc
 repo_url: https://github.com/percona-platform/portal-doc
 edit_uri: edit/main/docs/
