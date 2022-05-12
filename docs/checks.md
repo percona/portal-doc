@@ -2,7 +2,7 @@ Percona Monitoring and Management (PMM) includes a set of Advisors that run chec
 
 ## Prerequisites for accessing Advisor checks
 
-All checks are hosted on Percona Platform. PMM Server automatically downloads them from here when the **Advisors** and **Telemetry** options are enabled in PMM under **Configuration > Settings > Advanced Settings**. By default the **Advisors** options is disabled.
+All checks are hosted on Percona Platform. PMM Server automatically downloads them from here when the **Advisors** and **Telemetry** options are enabled in PMM under **Configuration > Settings > Advanced Settings**. Both options are enabled by default.
 
 ## Advisor check tiers and entitlements
 
@@ -12,13 +12,16 @@ If your PMM instance is not connected to Percona Platform, PMM can only download
 As soon as you connect your PMM instance to Percona Platform, has access to additional checks, available only for Registered PMM instances.
 
 If you are a Percona customer with a Percona Customer Portal account, you also get access to Paid checks, which offer more advanced database health information.
-​
 
 ## Checks results
 
-The checks can be executed manually or automatically. By default, PMM runs automatic checks every 24 hours.
+The checks can be executed manually or automatically. Manual checks can be executed individually, or all together. 
 
-You can configure this interval in **PMM > Advanced Settings > Execution intervals**. Here you can label each check individually as **Standard**, **Rare** or **Frequent** and also specify the time interval for each category.
+Automatic checks run every 24 hours by default. You can configure this interval in **PMM > Advanced Settings > Execution intervals** by changing the label interval for each check, or by changing the default intervals to custom ones:
+
+-  **Standard**- 24 hours
+-  **Rare** - 78 hours
+-  **Frequent** - 4 hours
 
 The results are sent to PMM Server where you can review any failed checks on the **Home Dashboard > Failed Advisor Checks** panel. The summary count of failed checks is classified as <b style="color:#e02f44;">Critical</b>, <b style="color:#e36526;">Major</b> and <b style="color:#5794f2;">Trivial</b>:
 
