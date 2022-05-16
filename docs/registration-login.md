@@ -13,7 +13,7 @@ Percona Platform can also use your organization credentials to log you in. To en
 If you don't have a Percona Account yet, you can create one straight from the **Sign in** form:
 
 1. Go to the [Percona Platform Log in page](https://portal.percona.com/).
-2. Scroll down to the **Don't have an account? Create one** link at the bottom of the form. Alternatively, you can register with a social identity provider if you have a Google or GitHub account that is not yet associated with a Percona Platform accont. To do this, click **Sign in/Register with Google** or **Sign in/Register with GitHub**.
+2. Scroll down to the **Don't have an account? Create one** link at the bottom of the form. Alternatively, you can register with a social identity provider if you have a Google or GitHub account that is not yet associated with a Percona Platform accont. To do this, click **Continue with Google** or **Continue with GitHub**.
 3. Fill in the fields on the **Create New Account** form, and click  **Create** once you’ve accepted the Terms of Service and Privacy Policy. 
 4. Check your email for a verification message and follow the instructions to activate your account. 
 
