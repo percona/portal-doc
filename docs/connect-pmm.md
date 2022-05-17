@@ -59,7 +59,7 @@ To confirm that the server disconnected successfully, go to Percona Platform > *
 
 ### Remove entries from the list of connected PMM instances
 
-If you want to remove a PMM server from the list of connected PMM instances without disconnecting it from Percona Platform, go to go to [Percona Platform](https://portal.percona.com) ** > View Instances** and click the Remove icon ![Remove icon](images/remove-instance.png) next to the server you want to remove from the list.
+If you want to remove a PMM server from the list of connected PMM instances without disconnecting it from Percona Platform, go to [Percona Platform](https://portal.percona.com) ** > View Instances** and click the Remove icon ![Remove icon](images/remove-instance.png) next to the server you want to remove from the list.
 
 You may want remove servers from the list when you have lingering servers that Percona Platform can no longer reach because they lost internet connection. 
 
