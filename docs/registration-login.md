@@ -1,7 +1,7 @@
 # Registration and Log in
 To connect to Percona Platform, go to [portal.percona.com](https://portal.percona.com/login) and sign in or register for a new Percona account. 
 
-As an alternative to connecting with a Percona Account username and password, you can also sign in with your Google or GitHub account. 
+As an alternative to connecting with a Percona Account username and password, you can also sign in or register with your Google or GitHub account. 
 
 If you are connecting via GitHub, make sure that you set your email address as **public** in your GitHub account. If your email address is private instead, Percona Platform cannot access it to authenticate you.
 
@@ -13,9 +13,10 @@ Percona Platform can also use your organization credentials to log you in. To en
 If you don't have a Percona Account yet, you can create one straight from the **Sign in** form:
 
 1. Go to the [Percona Platform Log in page](https://portal.percona.com/).
-2. Scroll down to the **Don't have an account? Create one** link at the bottom of the form.
-3. Fill in the fields on the **Crate New Account** form, and click  **Create** once you’ve accepted the Terms of Service and Privacy Policy. 
+2. Scroll down to the **Don't have an account? Create one** link at the bottom of the form. Alternatively, you can register with a social identity provider if you have a Google or GitHub account that is not yet associated with a Percona Platform account. To do this, click **Sign in with Google** or **Sign in with GitHub**.
+3. Fill in the fields on the **Create New Account** form, and click  **Create** once you’ve accepted the Terms of Service and Privacy Policy. 
 4. Check your email for a verification message and follow the instructions to activate your account. 
+
 ## Manage your Percona Account 
 Because your Percona Account is used across all your Percona services, it’s important to keep your account safe and your information up-to-date. 
 
