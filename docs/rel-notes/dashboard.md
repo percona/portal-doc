@@ -2,7 +2,7 @@
 
 The Dashboard is where you first land when logging into your Percona Platform account, and provides you with a high-level overview of everything you need to know. Here you will find:
 
-- your list of entitlements and general information about your account
+- the list of entitlements associated to your organization and general information about your account
 - links to resources and contact points for accessing help
 
 If you are a Percona customer, you get further access to: 
