@@ -1,6 +1,6 @@
 # Working with the Dashboard
 
-The Dashboard is where you first land when logging into the your Percona Platform account, and provides you with a high-level overview of everything you need to know. Here you will find:
+The Dashboard is where you first land when logging into your Percona Platform account, and provides you with a high-level overview of everything you need to know. Here you will find:
 
 - your list of entitlements and general information about your account
 - links to resources and contact points for accessing help
