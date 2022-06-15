@@ -33,7 +33,27 @@ For information on configuring PMM Advisors, see the [Percona Monitoring and Man
 
 ## List of checks
 
-Percona Platform hosts all Advisor checks available for MySQL, MongoDB and PostgreSQL databases connected to PMM. Check the full list of checks and their availability to **anonymous**, **registered** and **paid** PMM instances in the table below:
+Percona Platform hosts all Advisor checks available for MySQL, MongoDB and PostgreSQL databases connected to PMM. Check the full list of checks and their availability to **anonymous**, **registered** and **paid** PMM instances in the tables below.
+
+
+### MySQL checks
+
+| Check Name | Description | Tier |
+| :--------- | :---------- | :--- |
+| **Check if Binaries are 32-bits** | Notifies if version_compatible_machine equals i686. | Anonymous, Registered, Paid |
+| **MySQL Automatic User Expired Password** | Notifies if version_compatible_machine equals i686. | Registered, Paid |
+| **MySQL InnoDB flush method and File Format check** | Checks the following settings: **innodb_file_format**, **innodb_file_format_max**, **innodb_flush_method** and **innodb_data_file_path** | Registered, Paid |
+| **MySQL Checks based on values of MySQL configuration variables** | Checks the following settings: **innodb_file_format**,**innodb_file_format_max**,**innodb_flush_method** and **innodb_data_file_path**. | Paid |
+| **MySQL Binary Logs checks, Local infile and SQL Mode checks** | Warns about non-optimal settings for Binary Log, Local Infile and SQL mode. | Registered, Paid |
+| **MySQL Configuration Check** | Warns if parameters not following Percona best practices, for infile, replication threads and replica checksum. | Paid |
+| **MySQL Users With Granted Public Networks Access** | Notifies about MySQL accounts allowed to be connected from public networks. | Registered, Paid |
+| **MySQL User Check** | Runs a high-level check on user setup | Registered, Paid |
+| **MySQL Advanced User Check** | Runs a detailed check on user setup | Paid |
+| **MySQL Security Check** | Runs a detailed check on user setup | Paid |
+| **MySQL Test Database** | This check returns a notice if there is database with name ‘test’ or ‘test\_%’. | Registered, Paid |
+| **MySQL Version** | Warns if MySQL, Percona Server for MySQL, or MariaDB version is not the latest one. | Anonymous, Registered, Paid |
+
+### MongoDB checks
 
 | Check Name | Description | Tier |
 | :--------- | :---------- | :--- |
@@ -50,18 +70,11 @@ Percona Platform hosts all Advisor checks available for MySQL, MongoDB and Postg
 | **MongoDB Replica Set Topology** | Warns if the Replica Set cluster has less than three members. | Registered, Paid |
 | **MongoDB Version** | Warns if MongoDB or Percona Server for MongoDB version is not the latest one. | Anonymous, Registered, Paid |
 | **MongoDB Write Tickets** | Warns if MongoDB network is using more than 128 write tickets. | Paid |
-| **Check if Binaries are 32-bits** | Notifies if version_compatible_machine equals i686. | Anonymous, Registered, Paid |
-| **MySQL Automatic User Expired Password** | Notifies if version_compatible_machine equals i686. | Registered, Paid |
-| **MySQL InnoDB flush method and File Format check** | Checks the following settings: **innodb_file_format**, **innodb_file_format_max**, **innodb_flush_method** and **innodb_data_file_path** | Registered, Paid |
-| **MySQL Checks based on values of MySQL configuration variables** | Checks the following settings: **innodb_file_format**,**innodb_file_format_max**,**innodb_flush_method** and **innodb_data_file_path**. | Paid |
-| **MySQL Binary Logs checks, Local infile and SQL Mode checks** | Warns about non-optimal settings for Binary Log, Local Infile and SQL mode. | Registered, Paid |
-| **MySQL Configuration Check** | Warns if parameters not following Percona best practices, for infile, replication threads and replica checksum. | Paid |
-| **MySQL Users With Granted Public Networks Access** | Notifies about MySQL accounts allowed to be connected from public networks. | Registered, Paid |
-| **MySQL User Check** | Runs a high-level check on user setup | Registered, Paid |
-| **MySQL Advanced User Check** | Runs a detailed check on user setup | Paid |
-| **MySQL Security Check** | Runs a detailed check on user setup | Paid |
-| **MySQL Test Database** | This check returns a notice if there is database with name ‘test’ or ‘test\_%’. | Registered, Paid |
-| **MySQL Version** | Warns if MySQL, Percona Server for MySQL, or MariaDB version is not the latest one. | Anonymous, Registered, Paid |
+
+### PostgreSQL checks
+
+| Check Name | Description | Tier |
+| :--------- | :---------- | :--- |
 | **PostgreSQL Archiver is Failing** | Verifies if the archiver has failed. | Paid |
 | **PostgreSQL Cache Hit Ratio** | Checks database hit ratio and complains when this is too low. | Paid |
 | **PostgreSQL Configuration Change Requires Restart/Reload** | Warns when a configuration was changed and requires a server restart/reload | Registered, Paid |
