@@ -42,15 +42,15 @@ Here are the different permissions available for these roles:<br />
 
 ## Add organization members
 
-Administrators can add any number of Technical users to the organization and even add other Admins if necessary. <br /><br />
-To add a user to your organization:
+Administrators can add any number of Technical users to the organization, and even add other Admins if necessary. <br /><br />
+To add users to your organization:
 
 1. Log in to [Percona Platform](https://portal.percona.com).
 2. Click **Organization** tab on the left side menu. 
 3. On the **Members** tab, click the **Invite Member** button. 
-4. Enter your team member's corporate email address and select a role.
-5. Click **Save** to send the invitation to join your organization. 
-
+4. Enter the email address of the user you want to invite, and select a role.
+5. Click **Add another user** if you want to invite more than one user. You can send up to ten invitations at a time. If you need to invite more users, send out the current invitations, then click **Invite Members** again. This reopens the invitation form where you can bulk-invite another ten users.
+6. Click **Invite** to send the invitations for joining your organization. 
 
 ## Edit roles
 Currently, organization users cannot change their own role. However, Administrators can change the user role for all the other members in their organization. <br /><br />
@@ -73,4 +73,3 @@ To delete a user from your Percona Platform organization:
 2. Open the **Members** tab.
 3. In the **Actions** column, click on the **Delete** icon next to the user you want to remove from the organization.
 4. Confirm that you want to remove the user and click **Delete**.
-
