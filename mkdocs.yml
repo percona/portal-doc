@@ -85,7 +85,7 @@ nav:
   - Welcome:
       - index.md
   - What's new:
-      - whats-new.md
+      - rel-notes/whats-new.md
   - Registration and log in:
       - registration-login.md
   - Create and manage organizations:
