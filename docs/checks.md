@@ -33,7 +33,7 @@ For information on configuring PMM Advisors, see the [Percona Monitoring and Man
 
 ## List of checks
 
-Percona Platform hosts all Advisor checks available for MySQL, MongoDB and PostgreSQL databases connected to PMM. Check the full list of checks and their availability to **anonymous**, **registered** and **paid** PMM instances in the tables below.
+Percona Platform hosts all Advisor checks for MySQL, MongoDB, and PostgreSQL databases connected to PMM. Check the complete list of checks and their availability for **anonymous**, **registered**, and **paid** PMM instances in the tables below.
 
 
 ### MySQL checks
