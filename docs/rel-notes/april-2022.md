@@ -11,7 +11,7 @@ We overhauled the old minimal design to create a sleek and modern look, that is 
 
 In addition, we've simplified the Login and Registration flow, to make it easier for you to connect to your account.
 
-![newSignInpage](images/new_login.png)
+![newSignInpage](../images/new_login.png)
 
 ## Federated authentication via social and custom identity providers
 
