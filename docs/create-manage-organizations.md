@@ -20,7 +20,6 @@ Your Customer Portal organization is automatically linked to Percona Platform th
 !!! hint alert alert-success "Tip"
     To make sure you are logging in to the organization corresponding to the one in Percona Customer Account, make sure to sign in to Percona Platform using the same email address used for your Percona Customer Account. 
 
-<br /><br />
 Information about Support entitlements, tickets, and contacts is automatically made available on the Platform organization. <br /> <br />
 As an account administrator, finish setting up your Percona Platform organization by making sure all your organization members register for a Percona Account and log in to the Portal. <br />
 
