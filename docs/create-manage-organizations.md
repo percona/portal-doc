@@ -15,7 +15,12 @@ This creates the new organization and displays its general details like name and
 ## Existing organizations for Percona customers
 
 If you are an existing Percona customer, you do not need to create or join organizations manually. Percona Platform can do that for you automatically.<br /><br />
-Your Customer Portal organization is automatically linked to Percona Platform the first time that the account administrator logs into Percona Platform. Other organization members subsequently logging in to the Platform will be automatically added as members of the existing organization. <br /><br />
+Your Customer Portal organization is automatically linked to Percona Platform the first time that the account administrator logs into Percona Platform. Other organization members subsequently logging in to Percona Platform will be automatically added as members of the existing organization. 
+
+!!! hint alert alert-success "Tip"
+    To make sure you are logging in to the organization corresponding to the one in Percona Customer Account, make sure to sign in to Percona Platform using the same email address used for your Percona Customer Account. 
+
+<br /><br />
 Information about Support entitlements, tickets, and contacts is automatically made available on the Platform organization. <br /> <br />
 As an account administrator, finish setting up your Percona Platform organization by making sure all your organization members register for a Percona Account and log in to the Portal. <br />
 
