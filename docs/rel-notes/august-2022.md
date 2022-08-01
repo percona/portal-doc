@@ -1,3 +1,3 @@
 ## On-Demand Kubernetes Clusters for deploying PMM
 Percona Platform now enables you to spin up a Kubernetes cluster, on demand. Use the **Launch a new cluster** option on the new **Free Kubernetes** tab to deploy a Kubernetes cluster with 3 nodes, 4 CPUs, 8 GB of RAM, and three-hours lifespan. These short-lived clusters are perfect for testing PMM with DBaaS and Percona Operators.
-For more information, see 
+For more information, see [Launch free Kubernetes clusters](create-free-k8.md)
