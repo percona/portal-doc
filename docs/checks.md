@@ -41,7 +41,7 @@ Percona Platform hosts all Advisor checks for MySQL, MongoDB, and PostgreSQL dat
 | Check Name | Description | Tier |
 | :--------- | :---------- | :--- |
 | **Check if Binaries are 32-bits** | Notifies if version_compatible_machine equals i686. | Anonymous, Registered, Paid |
-| **MySQL Automatic User Expired Password** | Notifies if version_compatible_machine equals i686. | Registered, Paid |
+| **MySQL Automatic User Expired Password** | Warns if MySQL automatic password expiry is not active. | Registered, Paid |
 | **MySQL InnoDB flush method and File Format check** | Checks the following settings: **innodb_file_format**, **innodb_file_format_max**, **innodb_flush_method** and **innodb_data_file_path** | Registered, Paid |
 | **MySQL Checks based on values of MySQL configuration variables** | Checks the following settings: **innodb_file_format**,**innodb_file_format_max**,**innodb_flush_method** and **innodb_data_file_path**. | Paid |
 | **MySQL Binary Logs checks, Local infile and SQL Mode checks** | Warns about non-optimal settings for Binary Log, Local Infile and SQL mode. | Registered, Paid |
