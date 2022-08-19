@@ -49,7 +49,7 @@ Percona Platform hosts all Advisor checks for MySQL, MongoDB, and PostgreSQL dat
 | **MySQL Users With Granted Public Networks Access** | Notifies about MySQL accounts allowed to be connected from public networks. | Registered, Paid |
 | **MySQL User Check** | Runs a high-level check on user setup | Registered, Paid |
 | **MySQL Advanced User Check** | Runs a detailed check on user setup | Paid |
-| **MySQL Security Check** | Runs a detailed check on user setup | Paid |
+| **MySQL Security Check** | Runs security checks on replica account and password policy. | Paid |
 | **MySQL Test Database** | This check returns a notice if there is database with name ‘test’ or ‘test\_%’. | Registered, Paid |
 | **MySQL Version** | Warns if MySQL, Percona Server for MySQL, or MariaDB version is not the latest one. | Anonymous, Registered, Paid |
 
