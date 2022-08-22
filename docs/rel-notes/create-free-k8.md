@@ -7,3 +7,5 @@ To launch a free cluster:
 2. Once the cluster is created, click **Show kubeconfig**.
 3. Click **Copy to clipboard** in the **Kubernetes Cluster Configuration**.
 4. Go to your PMM instance and [Add your new Kubernetes cluster](https://docs.percona.com/percona-monitoring-and-management/using/dbaas.html#kubernetes-clusters).
+
+For more information, see [Private DBaaS with Free Kubernetes Cluster](https://www.percona.com/blog/private-dbaas-with-free-kubernetes-cluster/)
