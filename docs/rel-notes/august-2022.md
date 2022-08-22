@@ -1,5 +1,7 @@
 ## On-Demand Kubernetes Clusters for deploying PMM
-Percona Platform now enables you to spin up a Kubernetes cluster, on demand. Use the **Launch a new cluster** option on the new **Free Kubernetes** tab to deploy a Kubernetes cluster with 3 nodes, 4 CPUs, 8 GB of RAM, and a three-hours lifespan. These short-lived clusters are perfect for testing PMM with DBaaS and Percona Operators.
+Percona Platform now enables you to spin up a Kubernetes cluster, on demand. Use the **Launch a new cluster** option on the new **Free Kubernetes** tab to deploy a Kubernetes cluster with 3 nodes, 4 CPUs, 8 GB of RAM, and a three-hours lifespan. 
+
+These short-lived clusters are perfect for testing PMM with DBaaS and Percona Operators.
 For more information, see [Launch free Kubernetes clusters](create-free-k8.md).
 
 ## Option to delete your organization 
@@ -7,6 +9,7 @@ Administrator users can now delete their own organizations. User members of the 
 
     !!! hint alert alert-success "Tip"
         Deleted organizations and their data cannot be restored, so be careful when performing this action.  
+        
 
 ## Enhanced tickets view and pagination
 We have made it easier to navigate long lists of tickets open for your organization. The **List of tickets open by Customer** section on the **Dashboard** page now includes pagination and the table is now sortable.

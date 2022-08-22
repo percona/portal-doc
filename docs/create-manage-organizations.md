@@ -82,7 +82,8 @@ To delete a user from your Percona Platform organization:
 ## Delete organizations
 
 As an Admin user, you can delete your organization and all its data. Organization users can still use their accounts to access Percona Platform and join or create other organizations. 
+
     !!! hint alert alert-success "Tip"
         Deleted organizations and their data cannot be restored, so be careful when performing this action.  
 
-        To delete an organization as an Admin, go to the **Organization** tab  **> Organization** and click the  ![Delete](images/trash.png) icon.
+To delete an organization as an Admin, go to the **Organization** tab **> Organization** and click the ![Delete](images/trash.png) icon.
