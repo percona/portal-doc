@@ -56,6 +56,8 @@ To add users to your organization:
 5. Click **Add another user** if you want to invite more than one user. You can send up to ten invitations at a time. If you need to invite more users, send out the current invitations, then click **Invite Members** again. This reopens the invitation form where you can bulk-invite another ten users.
 6. Click **Invite** to send the invitations for joining your organization. 
 
+Email invitations expire after seven days. To send a new invitation, click the Resend Email option next to any pending confirmations in the table. This will send a new activation link to the user's email address.
+
 ## Edit roles
 Currently, organization users cannot change their own role. However, Administrators can change the user role for all the other members in their organization. <br /><br />
 To do so:
@@ -86,4 +88,4 @@ As an Admin user, you can delete your organization and all its data. Organizatio
 !!! hint alert alert-success "Tip"
     Deleted organizations and their data cannot be restored, so be careful when performing this action.     
        
-To delete an organization as an Admin, go to the **Organization** tab **> Organization** and click the![Delete](images/trash.png) icon.
+To delete an organization as an Admin, go to the **Organization** tab **> Organization** and click the bin ![Delete](images/trash.png) icon.
