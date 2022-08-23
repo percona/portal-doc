@@ -94,3 +94,5 @@ nav:
       - connect-pmm.md
   - Advisor checks for PMM:
       - checks.md
+  - Launch free Kubernetes clusters:
+      - create-free-k8.md
