@@ -9,14 +9,14 @@ Administrator users can now delete their own organizations. User members of the 
         
 !!! hint alert alert-success "Tip"
     Deleted organizations and their data cannot be restored, so be careful when performing this action.     
-        
+
 ## Enhanced tickets view and pagination
 We have made it easier to navigate long lists of tickets open for your organization. The **List of tickets open by Customer** section on the **Dashboard** page now includes pagination and the table is now sortable.
 
 ## Optimized account activation
 Users invited to join an organization now receive all the relevant invite information in a single email. Previously, we would send an email for activating a Percona account and a separate one with information about the sender.
  
-## Resend confirmation link
+## Resend invitation links
 Invitation links to join an organization in Percona Platform expire after 7 days. Administrator users can now resend pending invitations to ensure that users who don't accept an invitation before the invitation link expires can still join the organization at a later time.
 
 ## Subscribe for updates straight from Percona Platform
