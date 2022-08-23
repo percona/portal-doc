@@ -17,7 +17,7 @@ The **List of tickets open by Customer** section on the **Dashboard** page now i
 ## Optimized account activation
 Users invited to join an organization now receive all the relevant invite information in a single email. Previously, we would send an email for activating a Percona account and a separate one with information about the sender.
  
-## Resend invitation emails
+## Followup on new user invitations
 Administrators can now resend invitations to join their organization. The new option is available under **Organization > Members** tab and is useful for resending  invitation that expired after seven days, or for reminding users about their pending invitation.  
 
 ## Subscribe for updates straight from Percona Platform
