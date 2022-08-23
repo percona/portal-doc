@@ -5,10 +5,10 @@ These short-lived clusters are perfect for testing PMM with DBaaS and Percona Op
 For more information, see [Launch free Kubernetes clusters](create-free-k8.md).
 
 ## Option to delete your organization 
-Administrator users can now delete their own organizations. User members of the organization can still use their Percona Accounts to log into Percona Platform and join or create other organizations.
-
-    !!! hint alert alert-success "Tip"
-        Deleted organizations and their data cannot be restored, so be careful when performing this action.  
+Administrator users can now delete their own organizations. User members of the organization can still use their Percona Accounts to log into Percona Platform and join or create other organizations. 
+        
+!!! hint alert alert-success "Tip"
+    Deleted organizations and their data cannot be restored, so be careful when performing this action.     
         
 ## Enhanced tickets view and pagination
 We have made it easier to navigate long lists of tickets open for your organization. The **List of tickets open by Customer** section on the **Dashboard** page now includes pagination and the table is now sortable.
