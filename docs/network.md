@@ -2,7 +2,7 @@
 
 Percona Platform communicates with PMM to provide the PMM instances connected to the organization with advanced advisor checks, alert rule templates, product updates and  automated insights.
 
-If you are running PMM in a locked-down corporate environment without direct access to the Internet, PMM will not be able to establish a connection to PMM to download any of these services.
+If you are running PMM in a locked-down corporate environment without direct access to the Internet, PMM will not be able to establish a connection to Percona Platform to download any of these services.
 
 In such scenarios, configure your network firewall, so that all ports and hosts listed below are enabled for bi-directional communication. User Datagram Protocol (UDP) is not needed.
 
