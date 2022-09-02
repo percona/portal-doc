@@ -12,7 +12,7 @@ Ports to expose:
 | PMM component  | IP Address      | TCP Port | Description
 |----------------|-----------------|----------|-----------------------------------------------------------------------------------------------------------------
 | RESERVED       | 3.135.83.118    | -        | Reserved for future needs.
-| PMM snapshots  | 18.219.251.83   | 443      |  Service for sharing snapshots of PMM dashboards with Percona Platform. (snapshots-g710.percona.com)
-| PMM snapshots  | 3.140.123.9     | 443      | Service for sharing snapshots of PMM dashboards with Percona Platform. (snapshots-g710.percona.com)
+| PMM snapshots  | 18.219.251.83   | 443      |  Service for sharing snapshots of PMM dashboards with Percona Support Engineers. (snapshots-g710.percona.com)
+| PMM snapshots  | 3.140.123.9     | 443      | Service for sharing snapshots of PMM dashboards with Percona Support Engineers. (snapshots-g710.percona.com)
 | Percona Portal | 3.22.94.230     | 443      |  Percona Platform services (check.percona.com, platform.percona.com, portal.percona.com)
 | Percona Portal | 3.140.105.0     | 443      |  Percona Platform services (check.percona.com, platform.percona.com, portal.percona.com)
