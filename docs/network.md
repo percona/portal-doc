@@ -6,7 +6,7 @@ If you are running PMM in a locked-down corporate environment without direct acc
 
 In such scenarios, configure your network firewall, so that all ports and hosts listed below are enabled for bi-directional communication. User Datagram Protocol (UDP) is not needed.
 
-IP Address to whitelist:
+Ports to expose:
 
 
 | PMM component  | IP Address      | TCP Port | Description
