@@ -96,3 +96,5 @@ nav:
       - checks.md
   - Launch free Kubernetes clusters:
       - create-free-k8.md
+  - Network configuration:
+      - network.md
