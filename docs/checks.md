@@ -41,15 +41,15 @@ Percona Platform hosts all Advisor checks for MySQL, MongoDB, and PostgreSQL dat
 | Check Name | Description | Tier |
 | :--------- | :---------- | :--- |
 | **Check if Binaries are 32-bits** | Notifies if version_compatible_machine equals i686. | Anonymous, Registered, Paid |
-| **MySQL Automatic User Expired Password** | Notifies if version_compatible_machine equals i686. | Registered, Paid |
+| **MySQL Automatic User Expired Password** | Warns if MySQL automatic password expiry is not active. | Registered, Paid |
 | **MySQL InnoDB flush method and File Format check** | Checks the following settings: **innodb_file_format**, **innodb_file_format_max**, **innodb_flush_method** and **innodb_data_file_path** | Registered, Paid |
-| **MySQL Checks based on values of MySQL configuration variables** | Checks the following settings: **innodb_file_format**,**innodb_file_format_max**,**innodb_flush_method** and **innodb_data_file_path**. | Paid |
+| **MySQL Checks based on values of MySQL configuration variables** | Checks the following settings: **sync_binlog**, **log_bin, general_log**, **tmp_table_size**, **sql_mode**, **read_only**, **slave_sql_verify_checksum**, **relay_log_purge**. | Paid |
 | **MySQL Binary Logs checks, Local infile and SQL Mode checks** | Warns about non-optimal settings for Binary Log, Local Infile and SQL mode. | Registered, Paid |
 | **MySQL Configuration Check** | Warns if parameters not following Percona best practices, for infile, replication threads and replica checksum. | Paid |
 | **MySQL Users With Granted Public Networks Access** | Notifies about MySQL accounts allowed to be connected from public networks. | Registered, Paid |
 | **MySQL User Check** | Runs a high-level check on user setup | Registered, Paid |
 | **MySQL Advanced User Check** | Runs a detailed check on user setup | Paid |
-| **MySQL Security Check** | Runs a detailed check on user setup | Paid |
+| **MySQL Security Check** | Runs advisor checks on replica account and password policy. | Paid |
 | **MySQL Test Database** | This check returns a notice if there is database with name ‘test’ or ‘test\_%’. | Registered, Paid |
 | **MySQL Version** | Warns if MySQL, Percona Server for MySQL, or MariaDB version is not the latest one. | Anonymous, Registered, Paid |
 
