@@ -79,7 +79,7 @@ Percona Platform hosts all Advisor checks for MySQL, MongoDB, and PostgreSQL dat
 | **PostgreSQL Cache Hit Ratio** | Checks database hit ratio and complains when this is too low. | Paid |
 | **PostgreSQL Configuration Change Requires Restart/Reload** | Warns when a configuration was changed and requires a server restart/reload | Registered, Paid |
 | **PostgreSQL fsync is Disabled** | Shows an error if the fsync configuration is disabled, as this can result in unrecoverable data corruption. | Anonymous, Registered, Paid |
-| **PostgreSQL Autovacuum Logging Is Disabled** | Shows an error if the fsync configuration is disabled, as this can result in unrecoverable data corruption. | Paid |
+| **PostgreSQL Autovacuum Logging Is Disabled** | This check returns a notice if the **log_autovacuum_min_duration** configuration option is set to -1 (disabled). | Paid |
 | **PostgreSQL Checkpoints Logging Is Disabled** | Notifies if the **log_checkpoints **configuration option is not enabled. | Paid |
 | **PostgreSQL Max_connections is too high** | Notifies if the max_connections setting is set above 300. | Anonymous, Registered, Paid |
 | **PostgreSQL Stale Replication Slot** | Warns for stale replication slots since these can lead to WAL file accumulation and DB server outage. | Paid |
