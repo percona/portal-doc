@@ -1,7 +1,7 @@
 # MySQL secure transport only
 
 ## Description
-Checks if secure transport is required. More information: https://dev.mysql.com/doc/mysql-security-excerpt/8.0/en/using-encrypted-connections.html
+Checks if secure transport is required. For more information, see [Configuring MySQL to Use Encrypted Connections](https://dev.mysql.com/doc/mysql-security-excerpt/8.0/en/using-encrypted-connections.html) in the MySQL documentation. 
 
 
 ## Rule
@@ -13,4 +13,4 @@ Checks if secure transport is required. More information: https://dev.mysql.com/
 ```
 
 ## Resolution
-Please consider enabling secure transport.
+Consider enabling secure transport.

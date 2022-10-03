@@ -1,9 +1,11 @@
 # Replication privileges
 
 ## Description
-Replicas connect to Source with a specific user. This user to efficiently and safely execute the replication require ONLY the REPLICATION SLAVE Grant. 
-At the same time a standard user, should not have REPLICATION SLAVE as grant and instead use the REPLICATION CLIENT grant to access replication iformation.
-The check identify and reports the list of users who have REPLICATION SLAVE as assigned grants in conjunction with other grants. 
+Replicas connect to the source using  a specific user. This user can efficiently and safely execute the replication, using ONLY the **REPLICATION SLAVE** grant. 
+
+At the same time a standard user, should not have **REPLICATION SLAVE** as grant, and instead use the **REPLICATION CLIENT** grant to access replication information.
+
+The check identifies and reports the list of users who have **REPLICATION SLAVE** as assigned grants in conjunction with other grants. 
 
 ## Rule
 ```
@@ -12,7 +14,7 @@ Select  user,host,IF(channel_name='','NA',channel_name) as channel from performa
 ```
 
 ## Resolution
-Revoke the REPLICATION SLAVE from standard user, or any additional grant from the replication user.
+Revoke the **REPLICATION SLAVE** from standard user, or any additional grant from the replication user.
 
 IE:
 ```

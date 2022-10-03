@@ -1,7 +1,7 @@
-# table(s) found without primary keys
+# Found tables without primary keys 
 
 ## Description
-Checks if there is any InnoDB table without a Primary Key. More information about InnoDB Primary Keys: https://www.percona.com/blog/2018/07/26/tuning-innodb-primary-keys/
+Checks if there are any InnoDB tables without a Primary Key. For more information about InnoDB Primary Keys, see the [Tuning InnoDB Primary Keys blogpost](https://www.percona.com/blog/2018/07/26/tuning-innodb-primary-keys). 
 
 ## Rule
 ```
@@ -23,4 +23,4 @@ tables.table_schema, tables.table_name, tables.table_rows
 ```
 
 ## Resolution
-Please consider adding a sequential Primary Key to your tables.
+Consider adding a sequential Primary Key to your tables.
