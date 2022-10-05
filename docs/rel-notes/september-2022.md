@@ -28,11 +28,11 @@ We have made some minor changes to key pages and workflows in Percona Portal:
 - Users invited to join an organization can now activate their new Percona Platform account via the new **Account Activation** page. 
 
     This page is adapted to the specific workflow of activating an account via an organization invite, instead of redirecting to the general **Create a new account** page.  
-   ![Activate Account](../images/activate.png)
+      ![Activate Account](../images/activate.png)
 
 - The **List of tickets opened** on the Dashboard page now includes default sorting by ticket number. 
    This ensures that you always see the most recent tickets first. 
-   ![Sort Tickets by Number](../images/sorting_number.png)
+     ![Sort Tickets by Number](../images/sorting_number.png)
 
 - Enhanced the **Delete organization** confirmation dialog box to highlight the consequences of this irreversible action better. 
     ![Delete confirmation](../images/delete_confirmation.png)
