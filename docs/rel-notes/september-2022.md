@@ -11,7 +11,7 @@ The latest PMM release introduces an improved Alerting system, powered by Grafan
 
 If you haven't upgraded to PMM 2.31 yet, you'll find an **Install** link on the **Dashboard** page, along with a list of alerting improvements available in this new PMM version. 
 
-![Banner](../images/banner.png)
+![Alerting Banner](../images/banner.png)
 
 ## List of required ports for locked-down environments
 
@@ -34,6 +34,6 @@ We have made some minor changes to key pages and workflows in Percona Portal:
   ![Sort Tickets by Number](../images/sorting_number.png)
 - Enhanced the **Delete organization** confirmation dialog box to highlight the consequences of this irreversible action better. 
 
-![Create Account Link](../images/delete_confirmation.png)
+  ![Delete confirmation](../images/delete_confirmation.png)
 
 
