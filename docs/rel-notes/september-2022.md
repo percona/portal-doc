@@ -33,7 +33,6 @@ We have made some minor changes to key pages and workflows in Percona Portal:
 
   ![Sort Tickets by Number](../images/sorting_number.png)
 - Enhanced the **Delete organization** confirmation dialog box to highlight the consequences of this irreversible action better. 
-
   ![Delete confirmation](../images/delete_confirmation.png)
 
 
