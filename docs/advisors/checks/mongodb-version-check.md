@@ -29,4 +29,4 @@ if is_percona:
 ## Resolution
 Upgrade to the latest patch release for major or minor stable versions as soon as possible.
 
-For example, if  you are currently running version major version 4.4.x, upgrade to v4.4.16
+For example, if  you are currently running version major version 4.4.x, upgrade to version 4.4.16.
