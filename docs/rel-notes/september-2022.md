@@ -32,6 +32,7 @@ We have made some minor changes to key pages and workflows in Percona Portal:
 
 - The **List of tickets opened** on the Dashboard page now includes default sorting by ticket number. 
    This ensures that you always see the most recent tickets first. 
+   
      ![Sort Tickets by Number](../images/sorting_number.png)
 
 - Enhanced the **Delete organization** confirmation dialog box to highlight the consequences of this irreversible action better. 
