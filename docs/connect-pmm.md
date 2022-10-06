@@ -65,9 +65,12 @@ You may want remove servers from the list when you have lingering servers that P
 
 ## Sign into PMM with your Percona Account
 
-Once you've connected your PMM instance to Percona Platform, you can use your Percona Account to sign in to PMM:
+Once you've connected your PMM instance to Percona Platform, you can use your Percona Account to sign in to PMM without a need to add every new user to PMM manually. 
 
 1. Log out of your existing PMM session.
 
 2. On the PMM Log in screen, click the **Sign in with Percona Account**. <br/>
    If you have an active Percona Account session on the same browser, PMM will log you in automatically. Otherwise, enter your Percona Account credentials to start a new session.
+![Screenshot 2022-10-06 at 12 47 18](https://user-images.githubusercontent.com/62939655/194285518-e199420c-8ba0-4461-a86d-1c4b69a936f6.png)
+
+All users in your organization on Portal can login to PMM with active Percona account. Once the user is logging in to PMM with Percona account, the new PMM user is automatically created and with a proper role. Organization administrators will be admin user in PMM, technical user accounts will be asigned Viewer role in PMM. 
