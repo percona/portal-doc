@@ -44,6 +44,7 @@ extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css
   - css/toctree.css
   - css/percona.css
+  - css/gifs.css
   - css/table-list.css
 
 extra_javascript:
