@@ -1,13 +1,11 @@
 # Check mongodb bind IP
 
 ## Description
-This advisor warns if the number of Task Executor connection pools (**taskExecutorPool** value set is higher than the number of available CPU cores of a server. 
+This advisor warns if MongoDB network binding is not set as recommended.
 
-This check returns a warning if MongoDB network binding setting is not recommended.
+This helps avoid possible security breach from listening to unidentified client IP addresses. 
 
-This is to avoid possible security breach from listening to unidentified client IP addresses. 
-
-Check docs for [more information](https://docs.mongodb.com/manual/reference/configuration-options/#mongodb-setting-net.bindIp)
+For more information, see the [MongoDB documentation](https://docs.mongodb.com/manual/reference/configuration-options/#mongodb-setting-net.bindIp).
 
 
 ## Rule
@@ -21,16 +19,16 @@ net = parsed.get("net", {})
             bindIP = bindIP or ("bindIpAll" in net)
 ```
 
-
 ## Resolution
-Please Perform the steps mentioned below to adjust network binding settings
+Follow the steps below to adjust network binding settings:
 
-1. Adjust IP addresses in net.bindIp or bindIpAll boolean flag
-Edit mongod.conf and set the below parameter.
+1. Adjust IP addresses in **net.bindIp** or **bindIpAll** boolean flag.
+2. Edit **mongod.conf** and set the parameter below:
+
 ```
 net:
   bindIp: <private IP or hostname of DB server>
   #bindIpAll: false //Any of these parameters might be enabled so adjust accordingly
 ```
-2. Perform a rolling restart of your mongod nodes to make the changes into effect
+3. Roll-restart your mongod nodes to apply the changes.
    

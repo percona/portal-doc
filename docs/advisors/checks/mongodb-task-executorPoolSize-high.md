@@ -3,7 +3,7 @@
 ## Description
 This advisor warns if the number of Task Executor connection pools (**taskExecutorPool** value set is higher than the number of available CPU cores of a server. 
 
-This check is relevant because the performance can drop if the number of task executor pools set is too high.
+This is relevant because the performance can drop if the number of task executor pools set is too high.
 
 The parameter also needs to be set in the configuration file, OR using **setParameter** for a runtime. 
 

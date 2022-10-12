@@ -1,2 +1,3 @@
 build
 site/
+docs/advisors/checks/mongodb-scram-sha-256.md

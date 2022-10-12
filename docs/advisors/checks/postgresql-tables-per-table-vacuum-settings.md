@@ -1,8 +1,7 @@
 # Check the tables that have “per table” vacuum settings
 
 ## Description
-This check returns the list of tables that specify table-level autovacuum parameters. Their associated table-level settings are also listed. 
-
+This advisor returns the list of tables that specify table-level autovacuum parameters. Their associated table-level settings are also listed. 
 
 Table-level settings override the global settings. This can lead to difficult troubleshooting, unexpected behaviors, and incidents. Therefore, it is very important to check if tables in the database have any specific, table-level settings. 
 

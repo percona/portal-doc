@@ -1,11 +1,11 @@
 # Check mongodb localhost bypass
 
 ## Description
-This check returns a warning if MongoDB enableLocalhostAuthBypass parameter is set to true.
+This advisor returns a warning if MongoDB **enableLocalhostAuthBypass** parameter is set to True.
 
-This represents a security vulnerability and should be disabled
+This represents a security vulnerability and should be disabled.
 
-Check docs for [more information](https://docs.mongodb.com/manual/reference/parameters/#mongodb-parameter-param.enableLocalhostAuthBypass)
+For more information, see the [MongoDB documentation](https://docs.mongodb.com/manual/reference/parameters/#mongodb-parameter-param.enableLocalhostAuthBypass).
 
 
 ## Rule
@@ -21,12 +21,11 @@ true
 
 
 ## Resolution
-Please Perform the steps mentioned below to disable localhost bypass:
+Follow the steps below to disable localhost bypass:
 1. Edit mongod.conf and set the below parameter.
 ```
 setParameter:
   enableLocalhostAuthBypass: false
 ```
-
-2. Perform a rolling restart of your mongod nodes to make the changes into effect
+2. Roll-restart your mongod nodes to apply the changes.
    

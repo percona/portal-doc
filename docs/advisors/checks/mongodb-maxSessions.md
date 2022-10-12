@@ -3,13 +3,13 @@
 
 ## Description 
 
-This check warms if the number of **maxSessions** value set exceeds the default value of **1000000** while starting the database. 
+This advisor warms if the number of **maxSessions** value set exceeds the default value of **1000000** while starting the database. 
 
 This is relevant because setting the number of sessions too high can negatively impact the performance.
 
 The parameter also needs to be set at the configuration file.
 
-To avoid performance issues, see [ The (In)famous MongoDB Message blogpost](https://www.percona.com/blog/2021/06/03/mongodb-message-cannot-add-session-into-the-cache-toomanylogicalsessions) to check & set the right value for your environment.
+To avoid performance issues, see [The (In)famous MongoDB Message blogpost](https://www.percona.com/blog/2021/06/03/mongodb-message-cannot-add-session-into-the-cache-toomanylogicalsessions) to check & set the right value for your environment.
 
 
 ## Rule
@@ -19,7 +19,6 @@ To avoid performance issues, see [ The (In)famous MongoDB Message blogpost](http
 db.adminCommand( { getCmdLineOpts: 1  } )
 ```
  
-
 ## Resolution
 Instead of increasing **maxSessions**, first reduce the setting of the **logicalSessionRefreshMillis** parameter from the default interval of 5 minutes to run every 2 minutes. 
 

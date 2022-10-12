@@ -1,7 +1,7 @@
 # Check the Replica Set Topology
 
 ## Description
-This check returns a warning if the Replica Set cluster has less than 3 members.
+This advisor returns a warning if the Replica Set cluster has less than 3 members.
 
 
 
