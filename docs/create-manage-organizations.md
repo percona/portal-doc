@@ -93,4 +93,15 @@ As an Admin user, you can delete your organization and all its data. Organizatio
 !!! hint alert alert-success "Tip"
     Deleted organizations and their data cannot be restored, so be careful when performing this action.     
        
-To delete an organization as an Admin, go to the **Organization** tab **> Organization** and click the bin ![Delete](images/trash.png) icon.
+To delete an organization as an Admin, go to the **Organization** tab **> Organization** and click the bin ![Delete](images/trash.png) icon: 
+
+
+<div class="screenshot">
+   <a href="images/animated.gif" title="" lg-event-uid="&amp;1">
+      <img alt="" src="images/still.png" data-src="images/still.png" class="screenshot__still lazyloaded">
+      <img alt="" src="images/animated.gif" class="screenshot__animated-gif">
+      <div class="screenshot__play">
+         <i class="fa fa-play"></i>
+      </div>
+   </a>
+</div>
