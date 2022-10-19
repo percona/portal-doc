@@ -97,9 +97,9 @@ To delete an organization as an Admin, go to the **Organization** tab **> Organi
 
 
 <div class="screenshot">
-   <a href="images/animated.gif" title="" lg-event-uid="&amp;1">
-      <img alt="" src="images/still.png" data-src="images/still.png" class="screenshot__still lazyloaded">
-      <img alt="" src="images/animated.gif" class="screenshot__animated-gif">
+   <a href="images/delete_org.gif" title="" lg-event-uid="&amp;1">
+      <img alt="" src="images/delete_org_cover.png" data-src="images/delete_org_cover.png class="screenshot__still lazyloaded">
+      <img alt="" src="images/delete_org.gif" class="screenshot__animated-gif">
       <div class="screenshot__play">
          <i class="fa fa-play"></i>
       </div>
