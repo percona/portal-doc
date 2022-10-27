@@ -95,7 +95,6 @@ As an Admin user, you can delete your organization and all its data. Organizatio
        
 To delete an organization as an Admin, go to the **Organization** tab **> Organization** and click the bin ![Delete](images/trash.png) icon: 
 
-
 <div class="screenshot">
    <a href="images/delete_org.gif" title="" lg-event-uid="&amp;1">
       <img alt="" src="images/delete_org_cover.png" data-src="images/delete_org_cover.png" class="screenshot__still lazyloaded">
