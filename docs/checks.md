@@ -33,7 +33,64 @@ For information on configuring PMM Advisors, see the [Percona Monitoring and Man
 
 ## List of checks
 
-Percona Platform hosts all Advisor checks for MySQL, MongoDB, and PostgreSQL databases connected to PMM. Check the complete list of checks and their availability for **anonymous**, **registered**, and **paid** PMM instances in the tables below.
+Percona Platform hosts all Advisor checks for MySQL, MongoDB, and PostgreSQL databases connected to PMM. Check the complete list of checks and their availability for **anonymous**, **registered**, and **paid** PMM instances in the tables below:
+
+
+### MySQL advisors
+<style>
+  table th:first-of-type {
+    width: 10%
+  }
+  table th:nth-of-type(2) {
+    width: 30%
+  }
+  table th:nth-of-type(3) {
+    width: 10%
+  }
+</style>
+| Name | Description | Fresh PMM | Connected PMM| Connected Percona customer|  
+|---|---|---|---|---|
+|**MySQL Version** | Warns if MySQL, Percona Server for MySQL, or MariaDB version is not the latest one.  | <input type="checkbox" checked="checked">|<input type="checkbox" checked="checked">| <input type="checkbox" checked="checked">|
+|**Check if Binaries are 32-bits** | Notifies if version_compatible_machine equals i686. | <input type="checkbox" checked="checked">|<input type="checkbox" checked="checked">| <input type="checkbox" checked="checked">|
+| **MySQL Automatic User Expired** | -- | <input type="checkbox" disabled="disabled"> |<input type="checkbox" checked="checked">|<input type="checkbox" checked="checked">|
+|**MySQL InnoDB flush method and File Format check**|Checks the following settings: <li> **innodb_file_format** </li> <li> **innodb_file_format_max** </li> <li>**innodb_flush_method** </li> <li>   **innodb_data_file_path** </li>| <input type="checkbox" disabled="disabled"> |<input type="checkbox" checked="checked">|<input type="checkbox" checked="checked">|
+|**MySQL Test Database**|This check returns a notice if there is database with name **‘test’** or **‘test_%’**.| <input type="checkbox" disabled="disabled"> |<input type="checkbox" checked="checked">| <input type="checkbox" checked="checked">|
+|**MySQL Binary Logs checks, Local**|Warns about non-optimal settings for Binary Log, Local Infile and SQL mode.| <input type="checkbox" disabled="disabled"> |<input type="checkbox" checked="checked">| <input type="checkbox" checked="checked">|
+|**MySQL Users With Granted Public Networks Access**|Notifies about MySQL accounts allowed to be connected from public networks.| <input type="checkbox" disabled="disabled"> |<input type="checkbox" checked="checked">| <input type="checkbox" checked="checked">|
+|**MySQL User Check**|Runs a high-level check on user setup.| <input type="checkbox" disabled="disabled"> |<input type="checkbox" checked="checked">| <input type="checkbox" checked="checked">|
+|**MySQL Advanced User Check**|Runs a detailed check on user setup.| <input type="checkbox" disabled="disabled"> |<input type="checkbox" disabled="disabled">| <input type="checkbox" checked="checked">|
+|**MySQL Security Check**|Runs a detailed check on user setup.| <input type="checkbox" disabled="disabled"> |<input type="checkbox" disabled="disabled">| <input type="checkbox" checked="checked">|
+|**MySQL Configuration Check**|Warns if parameters not following Percona best practices, for infile, replication threads and replica checksum.| <input type="checkbox" disabled="disabled"> |<input type="checkbox" disabled="disabled">| <input type="checkbox" checked="checked">|
+|**MySQL Checks based on values of MySQL configuration variable**|Checks the following settings: **<li>innodb_file_format**</li> <li>**innodb_file_format_max**<li> **innodb_flush_method** </li> <li>**innodb_data_file_path** </li>| <input type="checkbox" disabled="disabled"> |<input type="checkbox" disabled="disabled">| <input type="checkbox" checked="checked">|
+
+### MongoDB advisors
+<style>
+  table th:first-of-type {
+    width: 10%
+  }
+  table th:nth-of-type(2) {
+    width: 30%
+  }
+  table th:nth-of-type(3) {
+    width: 10%
+  }
+</style>
+| Name | Description | Fresh PMM | Connected PMM| Connected Percona customer|  
+|---|---|---|---|---|
+|**MongoDB Version** | Warns if MongoDB or Percona Server for MongoDB version is not the latest one.  | <input type="checkbox" checked="checked">|<input type="checkbox" checked="checked">| <input type="checkbox" checked="checked">|
+|**Check if Binaries are 32-bits** | Notifies if version_compatible_machine equals i686. | <input type="checkbox" checked="checked">|<input type="checkbox" checked="checked">| <input type="checkbox" checked="checked">|
+| **MySQL Automatic User Expired** | -- | <input type="checkbox" disabled="disabled"> |<input type="checkbox" checked="checked">|<input type="checkbox" checked="checked">|
+|**MySQL InnoDB flush method and File Format check**|Checks the following settings: <li> **innodb_file_format** </li> <li> **innodb_file_format_max** </li> <li>**innodb_flush_method** </li> <li>   **innodb_data_file_path** </li>| <input type="checkbox" disabled="disabled"> |<input type="checkbox" checked="checked">|<input type="checkbox" checked="checked">|
+|**MySQL Test Database**|This check returns a notice if there is database with name **‘test’** or **‘test_%’**.| <input type="checkbox" disabled="disabled"> |<input type="checkbox" checked="checked">| <input type="checkbox" checked="checked">|
+|**MySQL Binary Logs checks, Local**|Warns about non-optimal settings for Binary Log, Local Infile and SQL mode.| <input type="checkbox" disabled="disabled"> |<input type="checkbox" checked="checked">| <input type="checkbox" checked="checked">|
+|**MySQL Users With Granted Public Networks Access**|Notifies about MySQL accounts allowed to be connected from public networks.| <input type="checkbox" disabled="disabled"> |<input type="checkbox" checked="checked">| <input type="checkbox" checked="checked">|
+|**MySQL User Check**|Runs a high-level check on user setup.| <input type="checkbox" disabled="disabled"> |<input type="checkbox" checked="checked">| <input type="checkbox" checked="checked">|
+|**MySQL Advanced User Check**|Runs a detailed check on user setup.| <input type="checkbox" disabled="disabled"> |<input type="checkbox" disabled="disabled">| <input type="checkbox" checked="checked">|
+|**MySQL Security Check**|Runs a detailed check on user setup.| <input type="checkbox" disabled="disabled"> |<input type="checkbox" disabled="disabled">| <input type="checkbox" checked="checked">|
+|**MySQL Configuration Check**|Warns if parameters not following Percona best practices, for infile, replication threads and replica checksum.| <input type="checkbox" disabled="disabled"> |<input type="checkbox" disabled="disabled">| <input type="checkbox" checked="checked">|
+|**MySQL Checks based on values of MySQL configuration variable**|Checks the following settings: **<li>innodb_file_format**</li> <li>**innodb_file_format_max**<li> **innodb_flush_method** </li> <li>**innodb_data_file_path** </li>| <input type="checkbox" disabled="disabled"> |<input type="checkbox" disabled="disabled">| <input type="checkbox" checked="checked">|
+
+
 
 
 ### MySQL checks
