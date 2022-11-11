@@ -40,17 +40,27 @@ Percona Platform hosts all Advisor checks for MySQL, MongoDB, and PostgreSQL dat
 
 | Check Name | Description | Tier |
 | :--------- | :---------- | :--- |
-| **Check if Binaries are 32-bits** | Notifies if version_compatible_machine equals i686. | Anonymous, Registered, Paid |
-| **MySQL Automatic User Expired Password** | Warns if MySQL automatic password expiry is not active. | Registered, Paid |
-| **MySQL InnoDB flush method and File Format check** | Checks the following settings: **innodb_file_format**, **innodb_file_format_max**, **innodb_flush_method** and **innodb_data_file_path** | Registered, Paid |
-| **MySQL Checks based on values of MySQL configuration variables** | Checks the following settings: **sync_binlog**, **log_bin, general_log**, **tmp_table_size**, **sql_mode**, **read_only**, **slave_sql_verify_checksum**, **relay_log_purge**. | Paid |
+| **Check if Binaries are 32-bits** | Notifies if version_compatible_machine equals i686. | Registered, Paid |
+| **MySQL Automatic User Expired Password** | Warns if MySQL automatic password expiry is not active. | Paid |
+| **MySQL InnoDB flush method and File Format check** | Checks the following settings: **innodb_file_format**, **innodb_file_format_max**, **innodb_flush_method** and **innodb_data_file_path** | Paid |
+| **MySQL Checks based on values of MySQL configuration variables** | Checks the following settings: **sync_binlog**, **log_bin, general_log**, **tmp_table_size**, **sql_mode**, **read_only**. | Registered,Paid |
+| **MySQL Checks based on values of MySQL replication configuration variables** | Warns if replication is not configured correctly. | Registered,Paid |
 | **MySQL Binary Logs checks, Local infile and SQL Mode checks** | Warns about non-optimal settings for Binary Log, Local Infile and SQL mode. | Registered, Paid |
-| **MySQL Configuration Check** | Warns if parameters not following Percona best practices, for infile, replication threads and replica checksum. | Paid |
-| **MySQL Users With Granted Public Networks Access** | Notifies about MySQL accounts allowed to be connected from public networks. | Registered, Paid |
-| **MySQL User Check** | Runs a high-level check on user setup | Registered, Paid |
+| **MySQL Configuration Check** | Warns if parameters not following Percona best practices, for infile, replication threads and replica checksum. | Registered, Paid |
+| **MySQL InnoDB password lifetime** | Warns about password lifetime. | Registered, Paid |
+| **MySQL InnoDB Strict Mode** | Warns if InnoDB strict mode is disabled, which could compromise data integrity. | Paid |
+| **MySQL index sizes** | Warns if any have indexes larger than data.  This indicates sub-optimial schema and should be reviewed. | Paid |
+| **MySQL replication configuration check** |  Checks if a replica is safely logging replicated transactions.| Paid |
+| **MySQL Users With Granted Public Networks Access** | Notifies about MySQL accounts allowed to be connected from public networks. | Paid |
+| **MySQL Secure Transport** | Warns if MySQL server allows unencrypted remote connections. | Registered, Paid |
+| **MySQL User Check** | Runs a high-level check on user setup | Registered |
 | **MySQL Advanced User Check** | Runs a detailed check on user setup | Paid |
-| **MySQL Security Check** | Runs advisor checks on replica account and password policy. | Paid |
+| **MySQL Security Check for password policy** | Runs advisor checks on password policy. | Paid |
+| **MySQL Security Check for remplication** | Runs advisor checks on replica account. | Paid |
+| **MySQL Replication privileges** | Warns if replication privileges is mixed with more elevated privileges. | Paid |
+| **MySQL tables without Primary Key** | Warns if  tables added without primary keys. | Paid |
 | **MySQL Test Database** | This check returns a notice if there is database with name ‘test’ or ‘test\_%’. | Registered, Paid |
+| **MySQL Timezone** | Checks if time zone is correctly loaded. | Registered, Paid |
 | **MySQL Version** | Warns if MySQL, Percona Server for MySQL, or MariaDB version is not the latest one. | Anonymous, Registered, Paid |
 
 ### MongoDB checks
