@@ -58,18 +58,22 @@ Percona Platform hosts all Advisor checks for MySQL, MongoDB, and PostgreSQL dat
 | Check Name | Description | Tier |
 | :--------- | :---------- | :--- |
 | **MongoDB Active vs Available Connections** | Checks the ratio between Active and Available connections. | Registered, Paid |
-| **MongoDB Authentication** | Warns if MongoDB authentication is disabled. | Anonymous, Registered, Paid |
-| **MongoDB Security AuthMech** | Warns if MongoDB is not using the default SHA-256 hashing as SCRAM authentication method. | Paid |
-| **MonogDB IP Bindings** | Warns if MongoDB network binding is not set as recommended. | Anonymous, Registered, Paid |
+| **MongoDB Authentication** | Warns if MongoDB authentication is disabled. | Registered, Paid |
+| **MongoDB Security AuthMech** | Warns if MongoDB is not using the default SHA-256 hashing as SCRAM authentication method. | Registered, Paid |
+| **MonogDB IP Bindings** | Warns if MongoDB network binding is not set as recommended. | Paid |
+| **MonogDB CPU cores** | Warns if the number of CPU cores does not meet the minimum recommended requirements according to best practices | Registered, Paid |
 | **MongoDB CVE Version** | Shows an error if MongoDB or Percona Server for MongoDB version is not the latest one with CVE fixes. | Anonymous, Registered, Paid |
 | **MongoDB Journal Check** | Warns if journal is disabled. | Registered, Paid |
-| **MongoDB Localhost Authentication Bypass is Enabled** | Warns if MongoDB localhost bypass is enabled. | Anonymous, Registered, Paid |
-| **MongoDB Non-Default Log Level** | Warns if MongoDB is not using the default log level. | Paid |
-| **MongoDB Profiling Level** | Warns when the MongoDB profile level is set to collect data for all operations. | Registered, Paid |
-| **MongoDB Read Tickets** | Warns if MongoDB is using more than 128 read tickets. | Paid |
-| **MongoDB Replica Set Topology** | Warns if the Replica Set cluster has less than three members. | Registered, Paid |
+| **MongoDB Localhost Authentication Bypass is Enabled** | Warns if MongoDB localhost bypass is enabled. |  Paid |
+| **MongoDB Non-Default Log Level** | Warns if MongoDB is not using the default log level. | Registered, Paid |
+| **MongoDB maxSessions** | Warns if MongoDB is using more maxSessions value other than the default one | Registered, Paid |
+| **MongoDB Read Tickets** | Warns if MongoDB is using more than 128 read tickets. | Registered, Paid |
+| **MongoDB Replica Set Topology** | Warns if the Replica Set cluster has less than three members. | Paid |
+| **MongoDB TaskExecutorPoolSize High** | Warns if MongoDB TaskExecutorPoolSize count is higher than available CPU cores. | Registered, Paid |
 | **MongoDB Version** | Warns if MongoDB or Percona Server for MongoDB version is not the latest one. | Anonymous, Registered, Paid |
-| **MongoDB Write Tickets** | Warns if MongoDB network is using more than 128 write tickets. | Paid |
+| **MongoDB Write Tickets** | Warns if MongoDB network is using more than 128 write tickets. | Registered, Paid |
+| **MongoDB Configuration Write Tickets** | Warns if MongoDB is using more than 128 write tickets during runtime. | Registered, Paid |
+
 
 ### PostgreSQL checks
 
