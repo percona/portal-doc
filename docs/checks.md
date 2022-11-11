@@ -79,13 +79,17 @@ Percona Platform hosts all Advisor checks for MySQL, MongoDB, and PostgreSQL dat
 
 | Check Name | Description | Tier |
 | :--------- | :---------- | :--- |
-| **PostgreSQL Archiver is Failing** | Verifies if the archiver has failed. | Paid |
-| **PostgreSQL Cache Hit Ratio** | Checks database hit ratio and complains when this is too low. | Paid |
+| **PostgreSQL Archiver is Failing** | Verifies if the archiver has failed. | Registered, Paid |
+| **PostgreSQL Cache Hit Ratio** | Checks database hit ratio and complains when this is too low. | Registered, Paid |
 | **PostgreSQL Configuration Change Requires Restart/Reload** | Warns when a configuration was changed and requires a server restart/reload | Registered, Paid |
 | **PostgreSQL fsync is Disabled** | Shows an error if the fsync configuration is disabled, as this can result in unrecoverable data corruption. | Anonymous, Registered, Paid |
 | **PostgreSQL Autovacuum Logging Is Disabled** | This check returns a notice if the **log_autovacuum_min_duration** configuration option is set to -1 (disabled). | Paid |
-| **PostgreSQL Checkpoints Logging Is Disabled** | Notifies if the **log_checkpoints **configuration option is not enabled. | Paid |
-| **PostgreSQL Max_connections is too high** | Notifies if the max_connections setting is set above 300. | Anonymous, Registered, Paid |
+| **PostgreSQL Checkpoints Logging Is Disabled** | Notifies if the **log_checkpoints **configuration option is not enabled. | Registered, Paid |
+| **PostgreSQL Max_connections is too high** | Notifies if the max_connections setting is set above 300. | Paid |
 | **PostgreSQL Stale Replication Slot** | Warns for stale replication slots since these can lead to WAL file accumulation and DB server outage. | Paid |
-| **PostgreSQL Super Role** | Notifies if there are users with superuser privileges. | Anonymous, Registered, Paid |
+| **PostgreSQL Super Role** | Notifies if there are users with superuser privileges. |  Paid |
+| **PostgreSQL autovacuum settings** | Notifies if autovacuum paramters are specified along with autovacuum settings  |  Paid |
+| **PostgreSQL Table Bloat size** | Notifies if there is any table with a bloat larger than 1GB and this is at least the 20% of the table total size. |  Registered, Paid |
+| **PostgreSQL Table Bloat in percentage of the table size** | Notifies if there is any table with a bloat larger than 1GB and this is at least the 50% of the table total size. |  Registered, Paid |
+| **PostgreSQL Transaction ID Wraparound approaching** | Notifies if all the databases txid age and notifies if any is approaching to the wraparound limit. |  Registered, Paid |
 | **PostgreSQL Version Check** | Warns if the PostgreSQL minor or major versions are not the latest, and shows an error if the major version is 9.4 or older. | Anonymous, Registered, Paid |
