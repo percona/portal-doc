@@ -98,7 +98,7 @@ Percona Platform hosts all Advisor checks for MySQL, MongoDB, and PostgreSQL dat
 | **PostgreSQL Max_connections is too high** | Notifies if the max_connections setting is set above 300. | Paid |
 | **PostgreSQL Stale Replication Slot** | Warns for stale replication slots since these can lead to WAL file accumulation and DB server outage. | Paid |
 | **PostgreSQL Super Role** | Notifies if there are users with superuser privileges. |  Paid |
-| **PostgreSQL autovacuum settings** | Notifies if autovacuum paramters are specified along with autovacuum settings  |  Paid |
+| **PostgreSQL autovacuum settings** | Notifies if autovacuum parameters are specified along with autovacuum settings.  |  Paid |
 | **PostgreSQL Table Bloat size** | Notifies if there is any table with a bloat larger than 1GB and this is at least the 20% of the table total size. |  Registered, Paid |
 | **PostgreSQL Table Bloat in percentage of the table size** | Notifies if there is any table with a bloat larger than 1GB and this is at least the 50% of the table total size. |  Registered, Paid |
 | **PostgreSQL Transaction ID Wraparound approaching** | Notifies if all the databases txid age and notifies if any is approaching to the wraparound limit. |  Registered, Paid |
