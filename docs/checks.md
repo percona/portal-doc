@@ -59,7 +59,7 @@ Percona Platform hosts all Advisor checks for MySQL, MongoDB, and PostgreSQL dat
 | **MySQL Security Check for remplication** | Runs advisor checks on replica account. | Paid |
 | **MySQL Replication privileges** | Warns if replication privileges are mixed with more elevated privileges. | Paid |
 | **MySQL tables without Primary Key** | Warns if there are any tables without primary keys. | Paid |
-| **MySQL Test Database** | This check returns a notice if there is database with name ‘test’ or ‘test\_%’. | Registered, Paid |
+| **MySQL Test Database** | Notifies of any databases named **‘test’** or **‘test\_%’**. | Registered, Paid |
 | **MySQL Timezone** | Checks if time zone is correctly loaded. | Registered, Paid |
 | **MySQL Version** | Warns if MySQL, Percona Server for MySQL, or MariaDB version is not the latest one. | Anonymous, Registered, Paid |
 
