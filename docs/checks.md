@@ -100,6 +100,6 @@ Percona Platform hosts all Advisor checks for MySQL, MongoDB, and PostgreSQL dat
 | **PostgreSQL Super Role** | Notifies if there are users with superuser privileges. |  Paid |
 | **PostgreSQL autovacuum settings** | Notifies if autovacuum parameters are specified along with autovacuum settings.  |  Paid |
 | **PostgreSQL Table Bloat size** | Notifies if there is any table with a bloat larger than 1GB and this is at least the 20% of the table total size. |  Registered, Paid |
-| **PostgreSQL Table Bloat in percentage of the table size** | Notifies if there is any table with a bloat larger than 1GB and this is at least the 50% of the table total size. |  Registered, Paid |
+| **PostgreSQL Table Bloat in percentage of the table size** | Notifies if there are tables with bloat larger than 1GB, which is at least 50% of the total table size. |  Registered, Paid |
 | **PostgreSQL Transaction ID Wraparound approaching** | Notifies if all the databases txid age and notifies if any is approaching to the wraparound limit. |  Registered, Paid |
 | **PostgreSQL Version Check** | Warns if the PostgreSQL minor or major versions are not the latest, and shows an error if the major version is 9.4 or older. | Anonymous, Registered, Paid |
