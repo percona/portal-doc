@@ -47,7 +47,7 @@ Percona Platform hosts all Advisor checks for MySQL, MongoDB, and PostgreSQL dat
 | **MySQL Checks based on values of MySQL replication configuration variables** | Warns if replication is not configured correctly. | Registered,Paid |
 | **MySQL Binary Logs checks, Local infile and SQL Mode checks** | Warns about non-optimal settings for Binary Log, Local Infile and SQL mode. | Registered, Paid |
 | **MySQL Configuration Check** | Warns if parameters not following Percona best practices, for infile, replication threads and replica checksum. | Registered, Paid |
-| **MySQL InnoDB password lifetime** | Warns about password lifetime. | Registered, Paid |
+| **MySQL InnoDB password lifetime** | Warns if password expiration is not set and users' passwords have an infinite lifetime. | Registered, Paid |
 | **MySQL InnoDB Strict Mode** | Warns if InnoDB strict mode is disabled, which could compromise data integrity. | Paid |
 | **MySQL index sizes** | Warns if any have indexes larger than data.  This indicates sub-optimial schema and should be reviewed. | Paid |
 | **MySQL replication configuration check** |  Checks if a replica is safely logging replicated transactions.| Paid |
