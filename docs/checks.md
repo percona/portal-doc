@@ -71,7 +71,7 @@ Percona Platform hosts all Advisor checks for MySQL, MongoDB, and PostgreSQL dat
 | **MongoDB Authentication** | Warns if MongoDB authentication is disabled. | Registered, Paid |
 | **MongoDB Security AuthMech** | Warns if MongoDB is not using the default SHA-256 hashing as SCRAM authentication method. | Registered, Paid |
 | **MonogDB IP Bindings** | Warns if MongoDB network binding is not set as recommended. | Paid |
-| **MonogDB CPU cores** | Warns if the number of CPU cores does not meet the minimum recommended requirements according to best practices | Registered, Paid |
+| **MonogDB CPU cores** | Warns if the number of CPU cores does not meet the minimum recommended requirements according to best practices. | Registered, Paid |
 | **MongoDB CVE Version** | Shows an error if MongoDB or Percona Server for MongoDB version is not the latest one with CVE fixes. | Anonymous, Registered, Paid |
 | **MongoDB Journal Check** | Warns if journal is disabled. | Registered, Paid |
 | **MongoDB Localhost Authentication Bypass is Enabled** | Warns if MongoDB localhost bypass is enabled. |  Paid |
