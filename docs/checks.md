@@ -54,7 +54,7 @@ Percona Platform hosts all Advisor checks for MySQL, MongoDB, and PostgreSQL dat
 | **MySQL Users With Granted Public Networks Access** | Notifies about MySQL accounts allowed to be connected from public networks. | Paid |
 | **MySQL Secure Transport** | Warns if MySQL server allows unencrypted remote connections. | Registered, Paid |
 | **MySQL User Check** | Runs a high-level check on the user setup. | Registered |
-| **MySQL Advanced User Check** | Runs a detailed check on user setup | Paid |
+| **MySQL Advanced User Check** | Runs a detailed check on the user setup. | Paid |
 | **MySQL Security Check for password policy** | Runs advisor checks on password policy. | Paid |
 | **MySQL Security Check for remplication** | Runs advisor checks on replica account. | Paid |
 | **MySQL Replication privileges** | Warns if replication privileges are mixed with more elevated privileges. | Paid |
