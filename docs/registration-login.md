@@ -1,7 +1,7 @@
 # Registration and Log in
-To connect to Percona Platform, go to [portal.percona.com](https://portal.percona.com/login) and sign in or register for a new Percona account. 
+To connect to Percona Platform, go to [portal.percona.com](https://portal.percona.com/login) and sign in or register for a new Percona account.
 
-As an alternative to connecting with a Percona Account username and password, you can also sign in or register with your Google or GitHub account. 
+As an alternative to connecting with a Percona Account username and password, you can also sign in or register with your Google or GitHub account.
 
 If you are connecting via GitHub, make sure that you set your email address as **public** in your GitHub account. If your email address is private instead, Percona Platform cannot access it to authenticate you.
 
@@ -14,8 +14,13 @@ If you don't have a Percona Account yet, you can create one straight from the **
 
 1. Go to the [Percona Platform Log in page](https://portal.percona.com/).
 2. Scroll down to the **Don't have an account? Create one** link at the bottom of the form. Alternatively, you can register with a social identity provider if you have a Google or GitHub account that is not yet associated with a Percona Platform account. To do this, click **Continue with Google** or **Continue with GitHub**. In case your GitHub/Google account is already associated with a Percona Account, this option will sign you in directly.
-3. Fill in the fields on the **Create New Account** form, and click  **Create** once you’ve accepted the Terms of Service and Privacy Policy. 
-4. Check your email for a verification message and follow the instructions to activate your account. 
+3. Fill in the fields on the **Create New Account** form, and click  **Create** once you’ve accepted the Terms of Service and Privacy Policy.
+4. Check your email for a verification message and follow the instructions to activate your account.
+
+#### Sign up as an existing Percona customer
+If you are a member of a Percona Customer Portal organization linked to an active Percona Platform subscription, you will automatically receive an email invitation to create your Percona Account.
+
+Check your inbox for an email titled **Percona Account Activation** to confirm the registration and join your Percona Platform organization.
 
 ## Manage your Percona Account 
 Because your Percona Account is used across all your Percona services, it’s important to keep your account safe and your information up-to-date. 
