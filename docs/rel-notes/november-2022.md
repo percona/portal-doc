@@ -1,4 +1,4 @@
-# Simplified onboarding for Percona Customer Portal organization users
+## Simplified onboarding for Percona Customer Portal organizations
 
 If you are a member of a Percona Customer Portal organization linked to an active Percona Platform subscription, you will now automatically receive an email invitation to create your Percona Account.
 
