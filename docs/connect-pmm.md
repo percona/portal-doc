@@ -8,7 +8,7 @@ To ensure that Percona Platform can establish a connection with the PMM instance
 
 ### Install PMM 2.27.0 or later
 
-Before connecting your PMM server to Percona Platform, make sure you are using PMM version 2.27 or newer. Otherwise, upgrade your PMM installation beforehand.
+Before connecting your PMM server to Percona Platform, make sure you are using PMM version 2.27 or newer. Otherwise, upgrade your PMM installation beforehand. Please also make sure you are the administrator of the PMM to be able to perform connection.
 
 Upgrading is required because PMM 2.25 and 2.26 use username/password authentication for connecting to Percona Platform. Starting with PMM 2.27, this was replaced with access token authentication to support federated identity and increase security.
 
@@ -76,3 +76,9 @@ Once you've connected your PMM instance to Percona Platform, you can use your Pe
 ### Synchronized Platform and PMM roles
 All the users in your organization on Portal can log into PMM using their Percona accounts. The first time an organization member logs into PMM with their Percona account, they are automatically assigned a PMM user and a relevant user role. 
 Administrators of Portal organizations are also granted Admin role in PMM, while Technical users in Platform have **Viewer** role in PMM.
+! Please note
+The user role is assigned in PMM during first SSO login. Any later role changes on Portal will have no effect on already created PMM users.
+
+
+
+
