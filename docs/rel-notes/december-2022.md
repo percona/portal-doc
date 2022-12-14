@@ -11,6 +11,6 @@ This change gives us a much better foundation to continue building and growing t
 
 ![New-UI-changes](../images/new_MUI.png)
 
-## Improved handling of invalid account activation links 
+## Improved handling of invalid account activation links
 
 We're now showing a more meaningful message for attempts to activate a Percona Account from a link that contains an expired token.
