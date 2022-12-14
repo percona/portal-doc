@@ -4,7 +4,9 @@ Launch a free Kubernetes cluster with three worker nodes, 4 CPUs and 8 GB of RAM
 
 Free clusters expire in three hours. This makes them ideal for testing out PMM with DBaaS and Percona Operators in a native Kubernetes experience. 
 
-<img width="1440" alt="Screenshot 2022-09-14 at 09 31 02" src="https://user-images.githubusercontent.com/62939655/190077890-1d52f330-0a36-4577-b383-a677f56cc5e7.png">
+
+![Free Kubernetes page](../../portal-doc/docs/images/K8page.png)
+
 
 To launch a free cluster:
 

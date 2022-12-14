@@ -54,11 +54,11 @@ Administrators can add any number of Technical users to the organization, and ev
 To add users to your organization:
 
 1. Log in to [Percona Platform](https://portal.percona.com).
-2. Click **Organization** tab on the left side menu. 
-3. On the **Members** tab, click the **Invite Member** button. 
+2. Click **Organization** tab on the left side menu.
+3. On the **Members** tab, click the **Invite Member** button.
 4. Enter the email address of the user you want to invite, and select a role.
 5. Click **Add another user** if you want to invite more than one user. You can send up to ten invitations at a time. If you need to invite more users, send out the current invitations, then click **Invite Members** again. This reopens the invitation form where you can bulk-invite another ten users.
-6. Click **Invite** to send the invitations for joining your organization. 
+6. Click **Invite** to send the invitations for joining your organization.
 
 ## Following up on new user invitations
 mail invitations expire after seven days. To send a new invitation, click the Resend Email option next to any pending confirmations in the table. This will send a new activation link to the user's email address.

@@ -1,5 +1,6 @@
 Here are all the new features, enhancements and changes we've added to Percona Platform in:
 
+- [December 2022](december-2022.md)
 - [November 2022](november-2022.md)
 - [September 2022](september-2022.md)
 - [August 2022](august-2022.md)
