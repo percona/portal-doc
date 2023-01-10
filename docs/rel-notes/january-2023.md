@@ -8,6 +8,7 @@ This increases security and helps organizations safely adopt Percona Platform, w
 The new **Activity Log** option on the **Organization** tab helps Administrators gather data about important activity across their organization for compliance, auditing, and monitoring purposes.
 
 Currently, the following activity is being recorded:
+
 - changes to organization details
 - changes to organization members
 - connected/disconnected PMM instances
