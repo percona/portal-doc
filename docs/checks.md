@@ -15,7 +15,7 @@ If you are a Percona customer with a Percona Customer Portal account, you also g
 
 ## Checks results
 
-The checks can be executed manually or automatically. Manual checks can be executed individually, or all together. 
+The checks can be executed manually or automatically. Manual checks can be executed individually, or all together.
 
 Automatic checks run every 24 hours by default. You can configure this interval in **PMM > Advanced Settings > Execution intervals** by changing the label interval for each check, or by changing the default intervals to custom ones:
 
@@ -29,7 +29,7 @@ The results are sent to PMM Server where you can review any failed checks on the
 
 Check results data always remains on the PMM Server and are not related to anonymous data sent for Telemetry purposes.
 
-For information on configuring PMM Advisors, see the [Percona Monitoring and Management documentation](https://www.percona.com/doc/percona-monitoring-and-management/2.x/how-to/advisors.html).
+For information on configuring PMM Advisors, see the [Percona Monitoring and Management documentation](https://www.percona.com/doc/percona-monitoring-and-management/2.x/get-started/advisors.html).
 
 ## List of checks
 
