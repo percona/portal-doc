@@ -91,7 +91,7 @@ nav:
       - registration-login.md
   - Create and manage organizations:
       - create-manage-organizations.md
-  - Activity logging:
+  - Check activity logs:
       - activity-logging.md
   - Connect your PMM server:
       - connect-pmm.md
