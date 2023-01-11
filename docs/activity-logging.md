@@ -1,8 +1,8 @@
 # Check activity logs
-Activity logs provide a simple, powerful interface for collecting all traceable activities within an organization.
-This enables organization Administratirs to track changes made by users in the organization, over the past year.
 
-The logs show the following events, and who initiated them:
+Activity logging provides a simple, powerful interface for collecting all traceable activities within an organization.
+
+Organization Administrators can track changes made by users in the organization, over the past year to identify:
 
 - changes to organization details
 - changes to organization members
