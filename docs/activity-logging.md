@@ -1,4 +1,4 @@
-# Activity Logging
+# Check activity logs
 Activity logs provide a simple, powerful interface for collecting all traceable activities within an organization.
 This enables organization Administratirs to track changes made by users in the organization, over the past year.
 
