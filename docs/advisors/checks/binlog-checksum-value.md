@@ -13,3 +13,6 @@ For more information, see [binlog_checksum in the MySQL documentation](https://d
 ## Resolution
 Consider setting binlog_checksum=CRC32 to improve consistency and reliability.
 `SET GLOBAL binlog_checksum=CRC32;`
+
+
+Need help with this? [Ask a Percona Expert :fontawesome-solid-paper-plane:](#){ .md-button }
