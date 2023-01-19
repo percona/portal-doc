@@ -18,4 +18,4 @@ Consider increasing **binlog_expire_logs_seconds** to at least 604800 seconds (1
 
 #### Need help with this?
 
-[Ask a Percona Expert(https://www.percona.com/about-percona/contact) :fontawesome-solid-paper-plane:](#){ .md-button }()
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact){ .md-button }()
