@@ -14,3 +14,7 @@ A stale replication slot is a slot that satisfies the following criteria:
 Review the output of `SELECT * FROM pg_replication_slots` and identify the slots that are inactive and have an old `restart_lsn`. 
 
 Drop such slots as soon as possible. You can recreate the slot, but note that the receiving end might need to be resynchronized.
+
+#### Need help with this?
+
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact) { .md-button }

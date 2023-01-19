@@ -9,3 +9,7 @@ Having binlog_row_image set to FULL creates unnecessarily large binary logs on d
 
 ## Resolution
 Please consider setting binlog_row_image=MINIMAL to reduce the footprint of your binary logs on disk.
+
+#### Need help with this?
+
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact) { .md-button }

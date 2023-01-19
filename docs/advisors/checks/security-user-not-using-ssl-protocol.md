@@ -16,3 +16,6 @@ require_secure_transport=ON
 Or when creating the user:
 `CREATE USER 'jeffrey'@'localhost' REQUIRE SSL;`
  
+#### Need help with this?
+
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact) { .md-button }

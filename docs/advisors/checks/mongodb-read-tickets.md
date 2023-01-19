@@ -26,3 +26,7 @@ Edit mongod.conf and set the below parameter to default.
             wiredTigerConcurrentReadTransactions: 256
 ```
 If resetting the read ticket in your mongod config file, be aware that this will not take effect until the next restart.
+
+#### Need help with this?
+
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact) { .md-button }

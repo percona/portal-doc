@@ -11,3 +11,7 @@ However, we suggest using the new 64-bit version.
 
 ## Resolution
 Binaries should be reinstalled but using the 64-bits version of the version binaries used.
+
+#### Need help with this?
+
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact) { .md-button }

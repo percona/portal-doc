@@ -13,3 +13,7 @@ and [Percona blog posts on the topic](https://www.percona.com/blog/2018/05/04/ho
 
 ## Resolution
 Consider setting the **sync_binlog** variable to **1** with `SET GLOBAL sync_binlog=1`.
+
+#### Need help with this?
+
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact) { .md-button }

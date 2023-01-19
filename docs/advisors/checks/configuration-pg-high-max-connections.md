@@ -31,3 +31,7 @@ Review the number of connections that applications require at peak.
  If application-side pooling is used, allocate fewer connections per application. 
 
 If no pooling is available for the application side, a middleware pooler like PgBouncer should be considered.
+
+#### Need help with this?
+
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact) { .md-button }

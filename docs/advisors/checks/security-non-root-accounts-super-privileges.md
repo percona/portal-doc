@@ -23,3 +23,7 @@ The _Super_ privilege:
 ## Resolution
 Revoke Super grants from the users who are not supposed to be MySQL instance administrators. 
 Revoke super on *.* from user@'host';
+
+#### Need help with this?
+
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact) { .md-button }
