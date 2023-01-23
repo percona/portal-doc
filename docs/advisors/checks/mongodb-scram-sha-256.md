@@ -55,4 +55,4 @@ https://docs.mongodb.com/drivers/go/current/fundamentals/auth/
 
 #### Need help with this?
 
-[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact) { .md-button }
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact){ .md-button }

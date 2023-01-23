@@ -16,4 +16,4 @@ In most cases, we do not recommend having any maximum size limit on InnoDB Table
 
 #### Need help with this?
 
-[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact) { .md-button }
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact){ .md-button }

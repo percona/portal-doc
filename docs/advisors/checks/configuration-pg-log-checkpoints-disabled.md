@@ -16,4 +16,4 @@ Next checkpoint information will be present in the PostgreSQL logs.
 
 #### Need help with this?
 
-[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact) { .md-button }
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact){ .md-button }

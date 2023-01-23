@@ -16,4 +16,4 @@ Consider setting the **sync_binlog** variable to **1** with `SET GLOBAL sync_bin
 
 #### Need help with this?
 
-[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact) { .md-button }
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact){ .md-button }
