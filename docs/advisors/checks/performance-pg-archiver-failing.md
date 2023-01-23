@@ -31,3 +31,7 @@ This is enough for PostgreSQL to consider the WAL segment archived and remove/re
 While it might help with urgent needs, it is very dangerous: **be aware that doing this will break the continuity of the archive**.
 
 Basically the PITR is no longer an option unless the initial issue is solved and a new physical backup (filesystem snapshot, pg_basebackup) is taken.
+
+#### Need help with this?
+
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact?utm_source=pmm&utm_medium=banner&utm_campaign=advisors_readmore){ .md-button }

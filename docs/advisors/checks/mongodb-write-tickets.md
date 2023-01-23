@@ -25,3 +25,7 @@ Edit mongod.conf and set the below parameter to default:
          wiredTigerConcurrentWriteTransactions: 128
 ```
 If resetting the write ticket in your mongod config file, be aware that this will not take effect until the next restart.
+
+#### Need help with this?
+
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact?utm_source=pmm&utm_medium=banner&utm_campaign=advisors_readmore){ .md-button }

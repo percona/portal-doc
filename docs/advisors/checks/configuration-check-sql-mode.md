@@ -13,3 +13,6 @@ Make sure TRADITIONAL, STRICT_ALL_TABLES, and STRICT_TRANS_TABLES.
 ## Resolution
 Set sql_mode in a way that it contains TRADITIONAL, STRICT_ALL_TABLES and STRICT_TRANS_TABLES.
 
+#### Need help with this?
+
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact?utm_source=pmm&utm_medium=banner&utm_campaign=advisors_readmore){ .md-button }

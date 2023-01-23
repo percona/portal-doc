@@ -11,3 +11,6 @@ The host name part of an account name can take many forms, and wildcards are per
 ## Resolution
 Remove any user that does not have a name in the mysql.user table. Or change the host to something with a limited scope.
  
+#### Need help with this?
+
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact?utm_source=pmm&utm_medium=banner&utm_campaign=advisors_readmore){ .md-button }
