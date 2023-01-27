@@ -44,6 +44,7 @@ extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css
   - css/toctree.css
   - css/percona.css
+  - css/gifs.css
   - css/table-list.css
 
 extra_javascript:
@@ -67,6 +68,11 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.highlight:
       linenums: false
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
 
 plugins:
   - search
@@ -90,7 +96,13 @@ nav:
       - registration-login.md
   - Create and manage organizations:
       - create-manage-organizations.md
+  - Check activity logs:
+      - activity-logging.md
   - Connect your PMM server:
       - connect-pmm.md
   - Advisor checks for PMM:
       - checks.md
+  - Launch free Kubernetes clusters:
+      - create-free-k8.md
+  - Network configuration:
+      - network.md

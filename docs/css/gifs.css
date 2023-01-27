@@ -1,0 +1,48 @@
+img {
+  display: block;
+}
+
+.screenshot {
+  border: 1px solid #000;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 5px 30px rgb(0 0 0 / 10%);
+    margin-bottom: 1rem;
+    display: inline-block;
+    max-height: unset;
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.lazyloaded {
+      opacity: 1;
+    transition: opacity .25s;
+}
+
+.screenshot .screenshot__animated-gif {
+  display: none;
+}
+
+.screenshot:hover .screenshot__still {
+    display: none;
+}
+
+.screenshot:hover .screenshot__animated-gif {
+    display: block;
+}
+
+.screenshot:hover .screenshot__play {
+  display: none;
+}
+
+.screenshot__play .fa-play {
+  opacity: .35;
+  font-size: 1.5rem;
+  color: #fefefe;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

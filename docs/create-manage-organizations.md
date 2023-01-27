@@ -54,11 +54,14 @@ Administrators can add any number of Technical users to the organization, and ev
 To add users to your organization:
 
 1. Log in to [Percona Platform](https://portal.percona.com).
-2. Click **Organization** tab on the left side menu. 
-3. On the **Members** tab, click the **Invite Member** button. 
+2. Click **Organization** tab on the left side menu.
+3. On the **Members** tab, click the **Invite Member** button.
 4. Enter the email address of the user you want to invite, and select a role.
 5. Click **Add another user** if you want to invite more than one user. You can send up to ten invitations at a time. If you need to invite more users, send out the current invitations, then click **Invite Members** again. This reopens the invitation form where you can bulk-invite another ten users.
-6. Click **Invite** to send the invitations for joining your organization. 
+6. Click **Invite** to send the invitations for joining your organization.
+
+## Following up on new user invitations
+mail invitations expire after seven days. To send a new invitation, click the Resend Email option next to any pending confirmations in the table. This will send a new activation link to the user's email address.
 
 ## Edit roles
 Currently, organization users cannot change their own role. However, Administrators can change the user role for all the other members in their organization. <br /><br />
@@ -81,3 +84,24 @@ To delete a user from your Percona Platform organization:
 2. Open the **Members** tab.
 3. In the **Actions** column, click on the **Delete** icon next to the user you want to remove from the organization.
 4. Confirm that you want to remove the user and click **Delete**.
+
+
+## Delete organizations
+
+As an Admin user, you can delete your organization and all its data. Organization users can still use their accounts to access Percona Platform and join or create other organizations.
+
+!!! hint alert alert-success "Tip"
+    Deleted organizations and their data cannot be restored, so be careful when performing this action.
+
+To delete an organization as an Admin, go to the **Organization** tab **> Organization** and click on the bin icon:
+
+
+<div class="screenshot">
+   <a href="images/delete_org.gif" title="" lg-event-uid="&amp;1">
+      <img alt="" src="images/delete_org_cover.png" data-src="images/delete_org_cover.png" class="screenshot__still lazyloaded">
+      <img alt="" src="images/delete_org.gif" class="screenshot__animated-gif">
+      <div class="screenshot__play">
+         <i class="fa fa-play"></i>
+      </div>
+   </a>
+</div>
