@@ -1,7 +1,7 @@
 # MongoDB not using the default SHA-256 hashing function 
 
 ## Description
-This check warns if a modern authentication method is not used. 
+This advisor warns if a modern authentication method is not used. 
 The goal is to follow updated and optimal security processes. 
 
 For Production systems: ensure that auth and authentication methods are in place.

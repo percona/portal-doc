@@ -48,17 +48,17 @@ Percona Platform hosts all Advisor checks for MySQL, MongoDB, and PostgreSQL dat
 | **MySQL Binary Logs checks, Local infile and SQL Mode checks** | Warns about non-optimal settings for Binary Log, Local Infile and SQL mode. | Registered, Paid |
 | **MySQL Configuration Check** | Warns if parameters not following Percona best practices, for infile, replication threads and replica checksum. | Registered, Paid |
 | **MySQL InnoDB password lifetime** | Warns if password expiration is not set and users' passwords have an infinite lifetime. | Registered, Paid |
-| **MySQL InnoDB Strict Mode** | Warns if InnoDB strict mode is disabled, which could compromise data integrity. | Paid |
-| **MySQL index sizes** | Warns if any have indexes larger than data.  This indicates sub-optimial schema and should be reviewed. | Paid |
+| **MySQL InnoDB Strict Mode** | Warns if InnoDB strict mode is disabled, which could compromise data integrity. | Registered, Paid |
+| **MySQL index sizes** | Warns if any have indexes larger than data.  This indicates sub-optimial schema and should be reviewed. | Registered, Paid |
 | **MySQL replication configuration check** |  Checks if a replica is safely logging replicated transactions.| Paid |
-| **MySQL Users With Granted Public Networks Access** | Notifies about MySQL accounts allowed to be connected from public networks. | Paid |
+| **MySQL Users With Granted Public Networks Access** | Notifies about MySQL accounts allowed to be connected from public networks. | Registered, Paid |
 | **MySQL Secure Transport** | Warns if MySQL server allows unencrypted remote connections. | Registered, Paid |
 | **MySQL User Check** | Runs a high-level check on the user setup. | Registered |
-| **MySQL Advanced User Check** | Runs a detailed check on the user setup. | Paid |
-| **MySQL Security Check for password policy** | Runs advisor checks on password policy. | Paid |
-| **MySQL Security Check for remplication** | Runs advisor checks on replica account. | Paid |
-| **MySQL Replication privileges** | Warns if replication privileges are mixed with more elevated privileges. | Paid |
-| **MySQL tables without Primary Key** | Warns if there are any tables without primary keys. | Paid |
+| **MySQL Advanced User Check** | Runs a detailed check on the user setup. | Registered, Paid |
+| **MySQL Security Check for password policy** | Runs advisor checks on password policy. | Registered, Paid |
+| **MySQL Security Check for remplication** | Runs advisor checks on replica account. | Registered, Paid |
+| **MySQL Replication privileges** | Warns if replication privileges are mixed with more elevated privileges. | Registered, Paid |
+| **MySQL tables without Primary Key** | Warns if there are any tables without primary keys. | Registered, Paid |
 | **MySQL Test Database** | Notifies of any databases named **‘test’** or **‘test\_%’**. | Registered, Paid |
 | **MySQL Timezone** | Checks if time zone is correctly loaded. | Registered, Paid |
 | **MySQL Version** | Warns if MySQL, Percona Server for MySQL, or MariaDB version is not the latest one. | Anonymous, Registered, Paid |
