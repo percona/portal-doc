@@ -23,3 +23,7 @@ ALTER TABLE <tablename> SET (autovacuum_analyze_scale_factor = <val>, autovacuum
 Replace **tablename** with the actual table name, and **val** with the actual parameter value. 
 
 For the full list of table-level autovacuum parameters, see [Automatic Vacuuming](https://www.postgresql.org/docs/current/runtime-config-autovacuum.html) in the PostgreSQL documentation.
+
+## Need help with this?
+
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact?utm_source=pmm&utm_medium=banner&utm_campaign=advisors_readmore){ .md-button }

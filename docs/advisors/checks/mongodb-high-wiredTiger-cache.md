@@ -23,4 +23,8 @@ mongodb_ss_wt_cache_maximum_bytes_configured{service_name="{{.ServiceName}}"}
 
 ## Resolution
 - Let mongod use default cache size of 50% of (RAM - 1 GB), OR 
-- Make sure that **storage.wiredTiger.engineConfig.cacheSizeGB** in configuration file doesn’t exceed 50% of the server memory.
+- Make sure that **storage.wiredTiger.engineConfig.**cacheSizeGB** in the configuration file doesn’t exceed 50% of the server memory.
+
+## Need help with this?
+
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact?utm_source=pmm&utm_medium=banner&utm_campaign=advisors_readmore){ .md-button }

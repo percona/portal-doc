@@ -18,9 +18,8 @@ Therefore, although best practice recommends using FULL, in some cases (like the
 `SELECT IF(@@global.binlog_row_image='MINIMAL', 1, 0);`
 
 ## Resolution
-Consider setting **binlog_row_image=FULL** to improve chance of data recovery.
+Consider setting **binlog_row_image=FULL** to increase the chances of successful data recovery.
 
+## Need help with this?
 
-#### Need help with this?
-
-[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact?utm_source=pmm&utm_medium=banner&utm_campaign=advisors_readmore){ .md-button 
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact?utm_source=pmm&utm_medium=banner&utm_campaign=advisors_readmore){ .md-button }
