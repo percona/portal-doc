@@ -113,3 +113,7 @@ Remember that using **pg_repack** requires the table to have a PK, or at least a
 
 Also, suppose the table is the source of a logical replication (publication). 
 In that case, it is recommended to stop the replication during the repack and resume it once the operation is finished to avoid unexpected effects. 
+
+## Need help with this?
+
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact?utm_source=pmm&utm_medium=banner&utm_campaign=advisors_readmore){ .md-button }

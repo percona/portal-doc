@@ -16,6 +16,6 @@ The current node has a READ-ONLY value of 0, as such the node is at high risk.
 Set the value of READ-ONLY to 1, to prevent writes on this node.
 `SET GLOBAL READ-ONLY=1;`
 
-#### Need help with this?
+## Need help with this?
 
 [Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact?utm_source=pmm&utm_medium=banner&utm_campaign=advisors_readmore){ .md-button }

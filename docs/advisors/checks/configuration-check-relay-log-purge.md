@@ -16,8 +16,8 @@ Disabling purging of relay logs when enabling the **--relay-log-recovery** optio
 
 
 ## Resolution
-Set **relay_log_purge** to 1. 
+Set **relay_log_purge** to 1.
 
-#### Need help with this?
+## Need help with this?
 
 [Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact?utm_source=pmm&utm_medium=banner&utm_campaign=advisors_readmore){ .md-button }

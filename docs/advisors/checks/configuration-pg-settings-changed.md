@@ -13,6 +13,6 @@ SELECT name, setting, short_desc, reset_val FROM pg_settings WHERE pending_resta
 
 Restart the PostgreSQL server to apply the new value.
 
-#### Need help with this?
+## Need help with this?
 
 [Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact?utm_source=pmm&utm_medium=banner&utm_campaign=advisors_readmore){ .md-button }

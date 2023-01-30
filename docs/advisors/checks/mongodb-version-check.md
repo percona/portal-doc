@@ -30,3 +30,7 @@ if is_percona:
 Upgrade to the latest patch release for major or minor stable versions as soon as possible.
 
 For example, if  you are currently running version major version 4.4.x, upgrade to version 4.4.16.
+
+## Need help with this?
+
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact?utm_source=pmm&utm_medium=banner&utm_campaign=advisors_readmore){ .md-button }

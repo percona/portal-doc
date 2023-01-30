@@ -11,6 +11,6 @@ and to eventually create another user with the specific DBA privileges, that wil
 Remove any root user that is not having ‘127.0.0.1’ or ‘localhost’ as host definition. Create a DBA user with the 
 required privileges and specific for the schema that the DBA needs to handle.  
 
-#### Need help with this?
+## Need help with this?
 
 [Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact?utm_source=pmm&utm_medium=banner&utm_campaign=advisors_readmore){ .md-button }

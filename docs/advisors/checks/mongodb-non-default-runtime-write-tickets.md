@@ -23,8 +23,11 @@ db.adminCommand( { setParameter: 1, "wiredTigerConcurrentWriteTransactions": "12
 Follow the steps below to adjust the verbosity of your logs. This can also be done online: 
 ```mongo> db.adminCommand( { setParameter: 1, "wiredTigerConcurrentWriteTransactions": "128"  } )```
 
-
 Set to default: Edit **mongod.conf** and set the parameter below:
 ``` setParameter:     wiredTigerConcurrentWriteTransactions: 128``` 
 
 If you are resetting the write ticket in your mongod config file, the change will not take effect until the next restart.
+
+## Need help with this?
+
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact?utm_source=pmm&utm_medium=banner&utm_campaign=advisors_readmore){ .md-button }

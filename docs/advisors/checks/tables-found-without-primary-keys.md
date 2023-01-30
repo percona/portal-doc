@@ -24,3 +24,7 @@ tables.table_schema, tables.table_name, tables.table_rows
 
 ## Resolution
 Consider adding a sequential Primary Key to your tables.
+
+## Need help with this?
+
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact?utm_source=pmm&utm_medium=banner&utm_campaign=advisors_readmore){ .md-button }

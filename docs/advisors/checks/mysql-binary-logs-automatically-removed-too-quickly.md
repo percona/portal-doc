@@ -17,3 +17,6 @@ OR binlog_expire_logs_seconds = 0 and expire_logs_days > 1
 ## Resolution
 Consider increasing binlog retention period by increasing **binlog_expire_logs_seconds/expire_logs_days**.
 
+## Need help with this?
+
+[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact?utm_source=pmm&utm_medium=banner&utm_campaign=advisors_readmore){ .md-button }
