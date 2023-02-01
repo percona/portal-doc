@@ -27,11 +27,12 @@ Because your Percona Account is used across all your Percona services, it’s im
 
 To manage your account:
 
-1. Sign in to your Percona Account and click your user icon on the right hand-side of the screen.
-2. Choose **Profile > Edit Profile**. This displays the **Account** page where you can update your account information and set up two-factor authentication (2FA). 
+1. Sign in to your Percona Account and click your user icon on the right-hand-side of the screen.
+2. In the **My Profile** section, click **Edit profile**.
+This displays the **Account** page where you can update your account information and set up two-factor authentication (2FA). 
 
 ### Set up two-factor authentication
-Two-factor authentication significantly increases the security of your Percona Account. 
+Two-factor authentication significantly increases the security of your Percona Account.
 
 After enabling 2FA, signing into your account will require both your password and access to a trusted device via one or more of the following authenticators:
 
@@ -41,9 +42,10 @@ After enabling 2FA, signing into your account will require both your password an
 
 To turn on or manage two-factor authentication:
 
-1. Go to the **Profile Settings** page and click **Edit profile**.
-2. On your **Account** page, scroll down to the **Extra Verification** section. 
-3. Click **Set up** next to the security method you want to configure, and follow the on-screen instructions.
+1. Click on your user icon on the right-hand side of the screen, then click **Profile**.
+2. In the **My Profile** section, click **Edit profile**.
+3. On your **Account** page, scroll down to the **Extra Verification** section. 
+4. Click **Set up** next to the security method you want to configure, and follow the on-screen instructions.
 
 To disable an authenticator app, simply click **Remove** next to its name in the **Extra Verification** section.
 
@@ -59,7 +61,9 @@ To change your current password for your Percona Account:
 
 To update your account information, click **Edit** in the **Personal Information** section. Here you can change your display name, add a secondary email address or your phone number. 
 
-If you need to change the display language for your account, click **Edit** in the **Display Language** section. Note that email notifications are currently always delivered in English. 
+If you need to change the display language for your account, click **Edit** in the **Display Language** section. 
+
+Note that email notifications are currently always delivered in English. 
 
 ## Report security issues
 Percona welcomes responsible disclosure and inquiries about the security of Percona products and services. For more information, send us an email at <security@percona.com> or visit [our security page](https://www.percona.com/security).
