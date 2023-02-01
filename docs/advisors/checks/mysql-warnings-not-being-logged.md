@@ -15,6 +15,7 @@ Check if log_warnings < 2:
 ## Resolution
 Please consider setting log_error_verbosity to a value of 2 or larger (log_warnings >= 2 for MariaDB) to avoid ignoring warnings from being printed on the error.log
 
-## Need help with this?
+## Need more support from Percona?
+Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
 
-[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact?utm_source=pmm&utm_medium=banner&utm_campaign=advisors_readmore){ .md-button }
+[Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }

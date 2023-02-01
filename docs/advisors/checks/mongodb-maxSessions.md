@@ -30,6 +30,7 @@ Make sure to remove the idle sessions from cache to make room for the new ones a
 
 To avoid performance issues, see [The (In)famous MongoDB Message blogpost](https://www.percona.com/blog/2021/06/03/mongodb-message-cannot-add-session-into-the-cache-toomanylogicalsessions) to check and set the right value for your environment.  This can be adjusted for your mongod and your mongos nodes.
 
-## Need help with this?
+## Need more support from Percona?
+Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
 
-[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact?utm_source=pmm&utm_medium=banner&utm_campaign=advisors_readmore){ .md-button }
+[Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }

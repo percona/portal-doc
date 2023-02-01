@@ -32,6 +32,7 @@ net:
 ```
 3. Roll-restart your mongod nodes to apply the changes.
    
-## Need help with this?
+## Need more support from Percona?
+Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
 
-[Ask a Percona Expert :fontawesome-solid-paper-plane:](https://www.percona.com/about-percona/contact?utm_source=pmm&utm_medium=banner&utm_campaign=advisors_readmore){ .md-button }
+[Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }
