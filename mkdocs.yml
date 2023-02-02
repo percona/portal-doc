@@ -15,9 +15,12 @@ use_directory_urls: false
 #Theme for the builds
 theme:
   name: material
-  custom_dir: "theme/"
+  custom_dir: overrides
   logo: images/percona-logo.png
   favicon: images/percona-favicon.ico
+  font: 
+    text: Chivo, Colfax, Franziska
+    code: Roboto Mono 
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
@@ -37,6 +40,11 @@ theme:
   features:
     - search.highlight
     - navigation.top
+    - content.tabs.link
+    - content.code.copy 
+    - navigation.tracking 
+    - content.action.edit
+    - content.action.view 
 
 #Styling
 extra_css:
@@ -68,18 +76,24 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.highlight:
       linenums: false
-  - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+    lightgallery: {}
+    pymdownx.inlinehilite: {}
+    pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+    - attr_list
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
 
 
 plugins:
   - search
   - git-revision-date
-  # - bootstrap-tables
-  - section-index # Adds links to nodes - comment out when creating PDF
-  #  - htmlproofer # Uncomment to check links - but extends build time significantly
+  - search
+  section-index: {}
+  search: 
+    separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - macros:
       include_yaml:
 #        - 'variables.yml' # Use in markdown as '{{ VAR }}'
