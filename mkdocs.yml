@@ -59,39 +59,36 @@ extra_javascript:
   # - js/version-select.js
 
 markdown_extensions:
-  - attr_list
-  - toc:
-      permalink: True
-  - admonition
-  - footnotes
-  - def_list # https://michelf.ca/projects/php-markdown/extra/#def-list
-  - meta
-  - smarty:
+  attr_list: {}
+  toc:
+    permalink: True
+  admonition: {}
+  footnotes: {}
+  def_list: {} # https://michelf.ca/projects/php-markdown/extra/#def-list
+  meta: {}
+  smarty:
       smart_angled_quotes: true
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.tabbed
-  - pymdownx.tilde
-  - pymdownx.superfences
-  - pymdownx.details
-  - pymdownx.highlight:
+  pymdownx.mark: {}
+  pymdownx.smartsymbols: {}
+  pymdownx.tabbed: {}
+  pymdownx.tilde: {}
+  pymdownx.superfences: {}
+  pymdownx.details: {}
+  pymdownx.highlight:
       linenums: false
-    lightgallery: {}
-    pymdownx.inlinehilite: {}
-    pymdownx.emoji:
-        emoji_index: !!python/name:materialx.emoji.twemoji
-        emoji_generator: !!python/name:materialx.emoji.to_svg
+  pymdownx.inlinehilite: {}
+  pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 plugins:
-  - search
-  - git-revision-date
-  - search
   section-index: {}
   search: 
     separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - macros:
+  git-revision-date: {}
+  macros:
       include_yaml:
-#        - 'variables.yml' # Use in markdown as '{{ VAR }}'
+#         - 'variables.yml' # Use in markdown as '{{ VAR }}'
 
 # extra:
 #   version: 1.0
