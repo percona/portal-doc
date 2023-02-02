@@ -12,11 +12,16 @@ This information enables organization administrators to better analyze the activ
 
 To check out the changes, go to **Organization > Activity Log**, and review your recent organization activity. 
 
+![Activity Logging](../images/activity_loggingfeb.png)
+
+
 ## UX improvements to the User Profile page
 
 We’ve improved the design of the User profile page and moved things around to make essential actions easier to find and understand. 
 
 To see how we did, click on your user icon on the right-hand side of the screen, then click **Profile**.
+
+![User Profile page](../images/user_profile_page.png)
 
 ## Bug fixes
 
