@@ -39,6 +39,7 @@ theme:
   # Theme features
   features:
     - search.highlight
+    - search.share
     - navigation.top
     - content.tabs.link
     - content.code.copy 
