@@ -15,7 +15,7 @@ use_directory_urls: false
 #Theme for the builds
 theme:
   name: material
-  custom_dir: overrides
+  custom_dir: resources/overrides
   logo: images/percona-logo.svg
   favicon: images/percona-favicon.ico
   font: 
