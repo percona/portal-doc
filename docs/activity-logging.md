@@ -16,4 +16,4 @@ To check the activity logs for your organization:
 3. From the drop-down menu, select the time period for which you want to check the activity logs.
 4. Click on the column headers in the table to filter logs based on the selected criteria.
 
-![Activity Logging](images/activity_logging.png)
+![Activity Logging](images/activity_loggingfeb.png)
