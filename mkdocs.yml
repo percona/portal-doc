@@ -89,8 +89,11 @@ plugins:
   git-revision-date: {}
   macros:
       include_yaml:
+    
 #         - 'variables.yml' # Use in markdown as '{{ VAR }}'
+  mkdocs-video: {}
 
+  
 # extra:
 #   version: 1.0
 #Google Analytics configuration

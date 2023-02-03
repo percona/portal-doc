@@ -12,3 +12,4 @@ mkdocs-bootstrap-tables-plugin
 mkdocs-section-index
 mkdocs-htmlproofer-plugin
 mike
+mkdocs-video
