@@ -16,5 +16,5 @@ Currently, the following activity is being recorded:
 
 Activity log events are available for the last year. Future updates will enable you to check older logs and expose additional data.
 
-![Activity Logging](../images/activity_logging.png)
+![Activity Logging](../images/activity_logging_jan.png)
 
