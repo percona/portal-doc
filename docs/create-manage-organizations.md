@@ -40,7 +40,8 @@ Here are the different permissions available for these roles:<br />
 
 | Permission      | Admin user |  Technical user
 | :----------| :----------- |:----------- |
-|View users and organization|<input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked />|
+|View users and organization|:white_check_mark: - emoji checkbox example
+| <input type="checkbox" disabled checked />|
 |Manage users and organization       | <input type="checkbox" disabled checked />    |  <input type="checkbox" disabled />|
 |Invite members|<input type="checkbox" disabled checked /> | <input type="checkbox" disabled />|
 |Change other user's role |    <input type="checkbox" disabled checked />     |   <input type="checkbox" disabled /> |
