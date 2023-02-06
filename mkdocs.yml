@@ -15,9 +15,12 @@ use_directory_urls: false
 #Theme for the builds
 theme:
   name: material
-  custom_dir: "theme/"
-  logo: images/percona-logo.png
+  custom_dir: resources/overrides
+  logo: images/percona-logo.svg
   favicon: images/percona-favicon.ico
+  font: 
+    text: Poppins
+    code: Roboto Mono 
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
@@ -36,7 +39,13 @@ theme:
   # Theme features
   features:
     - search.highlight
+    - search.share
     - navigation.top
+    - content.tabs.link
+    - content.code.copy 
+    - navigation.tracking 
+    - content.action.edit
+    - content.action.view 
 
 #Styling
 extra_css:
@@ -51,38 +60,36 @@ extra_javascript:
   # - js/version-select.js
 
 markdown_extensions:
-  - attr_list
-  - toc:
-      permalink: True
-  - admonition
-  - footnotes
-  - def_list # https://michelf.ca/projects/php-markdown/extra/#def-list
-  - meta
-  - smarty:
+  attr_list: {}
+  toc:
+    permalink: True
+  admonition: {}
+  footnotes: {}
+  def_list: {} # https://michelf.ca/projects/php-markdown/extra/#def-list
+  meta: {}
+  smarty:
       smart_angled_quotes: true
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.tabbed
-  - pymdownx.tilde
-  - pymdownx.superfences
-  - pymdownx.details
-  - pymdownx.highlight:
+  pymdownx.mark: {}
+  pymdownx.smartsymbols: {}
+  pymdownx.tabbed: {}
+  pymdownx.tilde: {}
+  pymdownx.superfences: {}
+  pymdownx.details: {}
+  pymdownx.highlight:
       linenums: false
-  - attr_list
-  - pymdownx.emoji:
+  pymdownx.inlinehilite: {}
+  pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
-
 plugins:
-  - search
-  - git-revision-date
-  # - bootstrap-tables
-  - section-index # Adds links to nodes - comment out when creating PDF
-  #  - htmlproofer # Uncomment to check links - but extends build time significantly
-  - macros:
+  section-index: {}
+  search: 
+    separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  git-revision-date: {}
+  macros:
       include_yaml:
-#        - 'variables.yml' # Use in markdown as '{{ VAR }}'
+#         - 'variables.yml' # Use in markdown as '{{ VAR }}'
 
 # extra:
 #   version: 1.0
@@ -91,7 +98,15 @@ extra:
   analytics:
     provider: google
     property: UA-343802-23
-
+  homepage:
+    https://docs.percona.com
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
 nav:
   - Welcome:
       - index.md
