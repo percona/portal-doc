@@ -1,6 +1,6 @@
 ## Revamped landing page
 
-Following the recent release of the new [Percona website](https://www.percona.com), we're really excited to roll out our new [Percona Platform landing page](https://portal.percona.com).
+We're really excited to roll out our new [Percona Platform landing page](https://portal.percona.com), following the recent release of the new [Percona website](https://www.percona.com).
 
 We wanted something that aligned with the new Percona branding but took this opportunity to improve the whole user experience on the page. 
 
