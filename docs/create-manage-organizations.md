@@ -40,7 +40,7 @@ Here are the different permissions available for these roles:<br />
 
 | Permission      | Admin user |  Technical user
 | :----------| :----------- |:----------- |
-|View users and organization|:white_check_mark:| :white_check_mark: |
+|View users and organization|:white_check_mark:|:white_check_mark:|
 |Manage users and organization       | :white_check_mark:     |  <input type="checkbox" disabled />|
 |Invite members|:white_check_mark:  | <input type="checkbox" disabled />|
 |Change other user's role |    :white_check_mark:      |   <input type="checkbox" disabled /> |
