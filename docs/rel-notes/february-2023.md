@@ -1,3 +1,13 @@
+## Revamped landing page
+
+Following the recent release of the new [Percona website](https://www.percona.com), we're really excited to roll out our new [Percona Platform landing page](https://portal.percona.com).
+
+We wanted something that aligned with the new Percona branding but took this opportunity to improve the whole user experience on the page. 
+
+So say Hi to the new Percona Platform design, we hope you love it as much as we do! 
+
+![User Profile page](../images/new_landing_page.png)
+
 ## Authentication monitoring for organizations
 
 The Activity Logging feature introduced in the previous update has been enhanced to include information about user authentication flows.
