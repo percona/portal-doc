@@ -27,7 +27,7 @@ Because your Percona Account is used across all your Percona services, it’s im
 
 To manage your account:
 
-1. Sign in to your Percona Account and click your user icon on the right-hand-side of the screen.
+1. Sign in to your Percona Account and click your user icon on the right-hand side of the screen.
 2. In the **My Profile** section, click **Edit profile**.
 This displays the **Account** page where you can update your account information and set up two-factor authentication (2FA). 
 
