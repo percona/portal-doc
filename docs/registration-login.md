@@ -27,8 +27,8 @@ Because your Percona Account is used across all your Percona services, it’s im
 
 To manage your account:
 
-1. Sign in to your Percona Account and click your user icon on the right-hand-side of the screen.
-2. Choose **Profile > Edit Profile**.
+1. Sign in to your Percona Account and click your user icon on the right-hand side of the screen.
+2. In the **My Profile** section, click **Edit profile**.
 This displays the **Account** page where you can update your account information and set up two-factor authentication (2FA). 
 
 ### Set up two-factor authentication
@@ -42,7 +42,7 @@ After enabling 2FA, signing into your account will require both your password an
 
 To turn on or manage two-factor authentication:
 
-1. Go to the **Profile Settings** page and click **Edit profile**.
+1. Click on your user icon on the right-hand side of the screen, then click **Profile**.
 2. In the **My Profile** section, click **Edit profile**.
 3. On your **Account** page, scroll down to the **Extra Verification** section. 
 4. Click **Set up** next to the security method you want to configure, and follow the on-screen instructions.
