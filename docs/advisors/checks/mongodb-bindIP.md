@@ -25,5 +25,10 @@ Adjust network binding settings:
   bindIp: <private IP or hostname of DB server>
   #bindIpAll: false //Any of these parameters might be enabled so adjust accordingly
   ```
-3. Perform a rolling restart of your mongod nodes to apply the changes.
+3. Roll-restart your mongod nodes to apply the changes.
+
+## Need more support from Percona?
+Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
+
+[Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }
    
