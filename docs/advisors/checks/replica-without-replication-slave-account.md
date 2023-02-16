@@ -10,3 +10,8 @@ Therefore, it is a good idea to create this account on your slaves to prepare it
 
 ## Resolution
 Create a replication user like CREATE USER 'replication'@'192.168.0.%' IDENTIFIED BY 'password'; and grant ‘REPLICATION SLAVE’ to it. 
+
+## Need more support from Percona?
+Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
+
+[Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }
