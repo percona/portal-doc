@@ -24,6 +24,10 @@ With one parallel worker, the **replica_preserve_commit_order** or **slave_prese
 ## Rule
 `select IF(@@slave_parallel_workers < 2,1,0) found`
 
-
 ## Resolution
 Adopt a more appropriate value like replica_parallel_workers=4 (default from MySQL 8.0.26) and execute: STOP REPLICA; START REPLICA.
+
+## Need more support from Percona?
+Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
+
+[Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }
