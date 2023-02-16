@@ -12,5 +12,11 @@ and [Percona blog posts on the topic](https://www.percona.com/blog/2018/05/04/ho
 `SELECT @@global.sync_binlog;`
 
 ## Resolution
+
 Consider setting the **sync_binlog** variable to **1** with **SET GLOBAL sync_binlog=1**.
+
+## Need more support from Percona?
+Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
+
+[Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }
 

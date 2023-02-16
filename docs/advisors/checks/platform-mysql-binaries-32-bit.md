@@ -1,8 +1,8 @@
-# MySQL binaries are 32-bits
+# MySQL binaries are 32-bit
 
 ## Description
-Older version MySQL server (plus some custom compilations) might be compiled for 32 bits.
-However, we suggest using the new 64-bit version. 
+Older versions of MySQL server (plus some custom compilations) might be compiled for 32-bit platforms.
+However, we suggest using the new 64-bit version.
 
 
 ## Rule
@@ -10,4 +10,9 @@ However, we suggest using the new 64-bit version.
 
 
 ## Resolution
-Binaries should be reinstalled but using the 64-bits version of the version binaries used.
+Binaries should be reinstalled but using the 64-bit version of the version binaries used.
+
+## Need more support from Percona?
+Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
+
+[Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }

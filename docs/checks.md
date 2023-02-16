@@ -1,57 +1,105 @@
-Percona Monitoring and Management (PMM) features a Security Threat tool that runs regular checks against the databases connected to PMM. The checks identify and alert you of potential security threats, performance degradation, data loss and data corruption. 
+Percona Monitoring and Management (PMM) includes a set of Advisors that run checks against the databases connected to PMM. The checks identify and alert you of potential security threats, performance degradation, data loss, data corruption, non-compliance issues, etc.
 
-All checks are hosted on Percona Platform. PMM Server automatically downloads them from here when the Security Threat Tool is enabled in PMM under **Configuration > Settings > Advanced Settings**. 
+## Prerequisites for accessing Advisor checks
 
-### Anonymous and registered checks
-By default, PMM has access to a set of anonymous checks, which can be
-downloaded even if PMM is not connected to Percona Platform. 
+All checks are hosted on Percona Platform. PMM Server automatically downloads them from here when the **Advisors** and **Telemetry** options are enabled in PMM under **Configuration > Settings > Advanced Settings**. Both options are enabled by default.
 
-As soon as you connect your PMM instance to Percona Platform, you get additional access to registered checks, which offer more advanced database health information.
-​
-### Checks results
+## Advisor check tiers and entitlements
 
-The checks can be executed manually or automatically. By default, PMM runs automatic checks every 24 hours. 
+Depending on the entitlements available for your Percona Account, the set of advisor checks that PMM can download from Percona Platform differ in terms of complexity and functionality.
 
-You can configure this interval in **PMM > Advanced Settings > Execution intervals**. Here you can label each check individually as **Standard**, **Rare** or **Frequent** and also specify the time interval for each category.
+If your PMM instance is not connected to Percona Platform, PMM can only download the basic set of Anonymous advisor checks.
+As soon as you connect your PMM instance to Percona Platform, PMM has access to additional checks, available only for Registered PMM instances.
 
-The results are sent to PMM Server where you can review any failed checks on the **Home Dashboard > Failed security checks** panel. The summary count of failed checks is classified as <b style="color:#e02f44;">Critical</b>, <b style="color:#e36526;">Major</b> and <b style="color:#5794f2;">Trivial</b>:
+If you are a Percona customer with a Percona Customer Portal account, you also get access to Paid checks, which offer more advanced database health information.
 
-![!Failed security checks panel](_images/Failed_Security_Checks.jpg)
+## Checks results
+
+The checks can be executed manually or automatically. Manual checks can be executed individually, or all together.
+
+Automatic checks run every 24 hours by default. You can configure this interval in **PMM > Advanced Settings > Execution intervals** by changing the label interval for each check, or by changing the default intervals to custom ones:
+
+-  **Standard**- 24 hours
+-  **Rare** - 78 hours
+-  **Frequent** - 4 hours
+
+The results are sent to PMM Server where you can review any failed checks on the **Home Dashboard > Failed Advisor Checks** panel. The summary count of failed checks is classified as <b style="color:#e02f44;">Critical</b>, <b style="color:#e36526;">Major</b> and <b style="color:#5794f2;">Trivial</b>:
+
+![!Failed Advisor Checks panel](images/PMM_Home_Dashboard_Panels_Failed_Advisors.jpg)
 
 Check results data always remains on the PMM Server and are not related to anonymous data sent for Telemetry purposes.
 
-For information on configuring PMM Security Threat Tool, see the [Percona Monitoring and Management documentation](https://www.percona.com/doc/percona-monitoring-and-management/2.x/using/security-threat-tool.html).
+For information on configuring PMM Advisors, see the [Percona Monitoring and Management documentation](https://www.percona.com/doc/percona-monitoring-and-management/2.x/get-started/advisors.html).
 
-### List of checks 
+## List of checks
 
-Percona Platform hosts all the security checks available for MySQL, MongoDB and PostgreSQL databases connected to PMM. Check the full list of checks and their availability to **anonymous** and **registered** PMM instances in the table below: 
+Percona Platform hosts all Advisor checks for MySQL, MongoDB, and PostgreSQL databases connected to PMM. Check the complete list of checks and their availability for **anonymous**, **registered**, and **paid** PMM instances in the tables below.
 
-|Check      | Type |  Description
-| :----------| :----------- |:----------- |
-|MySQL Binary Logs, Local Infile and SQL Mode checks|anonymous, registered | Warns about non-optimal settings for Binary Log, Local Infile and SQL mode.|
-|PostgreSQL **max_connections** is too high| anonymous, registered    |  Notifies if the **max_connections** setting is set above 300. PostgreSQL doesn't handle well large number of connections, even if these connections are idle. Recommended value is below 300. |
-|Mongo DB profiling level|anonymous, registered |Warns when the MongoDB profile level is set to collect data for all operations. Collecting information about commands running in MongoDB instances helps identify slow queries or performance tuning. However, the profile has a negative performance impact on overall database performance and on disk usage. 
-|Configuration change requires restart/reload|   anonymous, registered   | Warns when a configuration was changed and requires a server restart/reload. |
-|PostgreSQL cache hit ratio| anonymous, registered   |   Checks database hit ratio and complains when this is too low.|
-|PostgreSQL Archiver is failing| anonymous, registered| Verifies if the archiver has failed. |
-|MongoDB CVE version | anonymous, registered  |Shows an error if MongoDB or Percona Server for MongoDB version is not the latest one with CVE fixes. |
-|MySQL user check| anonymous|Runs a high-level check on user setup. |
-|MySQL user check| registered |Runs a detailed check on user setup. |
-|PostgreSQL checkpoints logging is disabled |anonymous, registered  |Notifies if the **log_checkpoints** configuration option is not enabled. We recommend enabling this option to get verbose logging of the checkpoint process. This provides useful information that can be used to identify and troubleshoot sub-optimal PostgreSQL database performance.|
-|PostgreSQL Autovacuum logging is disabled | anonymous, registered | Notifies if the **log_autovacuum_min_duration** configuration option is set to **-1 (disabled** ). We recommend logging autovaccum run activity, since this can provide useful information with almost no drawbacks.|
-|PostgreSQL super role |anonymous, registered  |Notifies if there are users with superuser privileges.|
-|MongoDB localhost authentication bypass is enabled | anonymous, registered  |Warns if MongoDB localhost bypass is enabled. |
-|MongoDB read tickets | anonymous, registered  |Warns if MongoDB is using more than 128 read tickets. |
-|MySQL version | anonymous, registered  |Warns if MySQL, Percona Server for MySQL, or MariaDB version is not the latest one. |
-|PostgreSQL Fsync is disabled| anonymous, registered |Shows an error if the **fsync** configuration is disabled, as this can result in unrecoverable data corruption. |
-|PostgreSQL version | anonymous, registered  |Warns if the PostgreSQL minor or major versions are not the latest, and shows an error if the major version is 9.4 or older.  |
-|MongoDB IP bindings| anonymous, registered  |Warns if MongoDB network binding is not set as recommended.|
-|MongoDB write tickets | anonymous, registered  |Warns if MongoDB network is using more than 128 write tickets. 
-|MongoDB authentication | anonymous, registered |Warns if MongoDB authentication is disabled. |
-|MongoDB non-default Log level | anonymous, registered  |Warns if MongoDB is not using the default log level. |
-|MongoDB version | anonymous, registered  |Warns if MongoDB or Percona Server for MongoDB version is not the latest one. |
-|Check if binaries are 32-bit| anonymous, registered  |Notifies if **version_compatible_machine** equals i686.|
-|InnoDB flush method and file format check| anonymous, registered  |Checks the following settings: **innodb_file_format**, **innodb_file_format_max**, **innodb_flush_method** and **innodb_data_file_path**.  |
-|PostgreSQL stale replication slot| anonymous, registered  |Warns for stale replication slots since these can lead to WAL file accumulation and DB server outage.|
-|MongoDB security AuthMech check| anonymous, registered  |Warns if MongoDB is not using the default SHA-256 hashing as SCRAM authentication method.
-|MongoDB journal| anonymous, registered  |Warns if journal is disabled.|  
+
+### MySQL checks
+
+| Check Name | Description | Tier |
+| :--------- | :---------- | :--- |
+| **Check if Binaries are 32-bits** | Notifies if version_compatible_machine equals i686. | Registered, Paid |
+| **MySQL Automatic User Expired Password** | Warns if MySQL automatic password expiry is not active. | Paid |
+| **MySQL InnoDB flush method and File Format check** | Checks the following settings: **innodb_file_format**, **innodb_file_format_max**, **innodb_flush_method** and **innodb_data_file_path**. | Paid |
+| **MySQL Checks based on values of MySQL configuration variables** | Checks the following settings: **sync_binlog**, **log_bin, general_log**, **tmp_table_size**, **sql_mode**, **read_only**. | Registered,Paid |
+| **MySQL Checks based on values of MySQL replication configuration variables** | Warns if replication is not configured correctly. | Registered,Paid |
+| **MySQL Binary Logs checks, Local infile and SQL Mode checks** | Warns about non-optimal settings for Binary Log, Local Infile and SQL mode. | Registered, Paid |
+| **MySQL Configuration Check** | Warns if parameters not following Percona best practices, for infile, replication threads and replica checksum. | Registered, Paid |
+| **MySQL InnoDB password lifetime** | Warns if password expiration is not set and users' passwords have an infinite lifetime. | Registered, Paid |
+| **MySQL InnoDB Strict Mode** | Warns if InnoDB strict mode is disabled, which could compromise data integrity. | Registered, Paid |
+| **MySQL index sizes** | Warns if any have indexes larger than data.  This indicates sub-optimial schema and should be reviewed. | Registered, Paid |
+| **MySQL replication configuration check** |  Checks if a replica is safely logging replicated transactions.| Paid |
+| **MySQL Users With Granted Public Networks Access** | Notifies about MySQL accounts allowed to be connected from public networks. | Registered, Paid |
+| **MySQL Secure Transport** | Warns if MySQL server allows unencrypted remote connections. | Registered, Paid |
+| **MySQL User Check** | Runs a high-level check on the user setup. | Registered |
+| **MySQL Advanced User Check** | Runs a detailed check on the user setup. | Registered, Paid |
+| **MySQL Security Check for password policy** | Runs advisor checks on password policy. | Registered, Paid |
+| **MySQL Security Check for remplication** | Runs advisor checks on replica account. | Registered, Paid |
+| **MySQL Replication privileges** | Warns if replication privileges are mixed with more elevated privileges. | Registered, Paid |
+| **MySQL tables without Primary Key** | Warns if there are any tables without primary keys. | Registered, Paid |
+| **MySQL Test Database** | Notifies of any databases named **‘test’** or **‘test\_%’**. | Registered, Paid |
+| **MySQL Timezone** | Checks if time zone is correctly loaded. | Registered, Paid |
+| **MySQL Version** | Warns if MySQL, Percona Server for MySQL, or MariaDB version is not the latest one. | Anonymous, Registered, Paid |
+
+### MongoDB checks
+
+| Check Name | Description | Tier |
+| :--------- | :---------- | :--- |
+| **MongoDB Active vs Available Connections** | Checks the ratio between Active and Available connections. | Registered, Paid |
+| **MongoDB Authentication** | Warns if MongoDB authentication is disabled. | Registered, Paid |
+| **MongoDB Security AuthMech** | Warns if MongoDB is not using the default SHA-256 hashing as SCRAM authentication method. | Registered, Paid |
+| **MonogDB IP Bindings** | Warns if MongoDB network binding is not set as recommended. | Paid |
+| **MonogDB CPU cores** | Warns if the number of CPU cores does not meet the minimum recommended requirements according to best practices. | Registered, Paid |
+| **MongoDB CVE Version** | Shows an error if MongoDB or Percona Server for MongoDB version is not the latest one with CVE fixes. | Anonymous, Registered, Paid |
+| **MongoDB Journal Check** | Warns if journal is disabled. | Registered, Paid |
+| **MongoDB Localhost Authentication Bypass is Enabled** | Warns if MongoDB localhost bypass is enabled. |  Paid |
+| **MongoDB Non-Default Log Level** | Warns if MongoDB is not using the default log level. | Registered, Paid |
+| **MongoDB maxSessions** | Warns if MongoDB is using more maxSessions value other than the default one | Registered, Paid |
+| **MongoDB Read Tickets** | Warns if MongoDB is using more than 128 read tickets. | Registered, Paid |
+| **MongoDB Replica Set Topology** | Warns if the Replica Set cluster has less than three members. | Paid |
+| **MongoDB TaskExecutorPoolSize High** | Warns if MongoDB TaskExecutorPoolSize count is higher than available CPU cores. | Registered, Paid |
+| **MongoDB Version** | Warns if MongoDB or Percona Server for MongoDB version is not the latest one. | Anonymous, Registered, Paid |
+| **MongoDB Write Tickets** | Warns if MongoDB network is using more than 128 write tickets. | Registered, Paid |
+| **MongoDB Configuration Write Tickets** | Warns if MongoDB is using more than 128 write tickets during runtime. | Registered, Paid |
+
+
+### PostgreSQL checks
+
+| Check Name | Description | Tier |
+| :--------- | :---------- | :--- |
+| **PostgreSQL Archiver is Failing** | Verifies if the archiver has failed. | Registered, Paid |
+| **PostgreSQL Cache Hit Ratio** | Checks database hit ratio and complains when this is too low. | Registered, Paid |
+| **PostgreSQL Configuration Change Requires Restart/Reload** | Warns when a configuration was changed and requires a server restart/reload. | Registered, Paid |
+| **PostgreSQL fsync is Disabled** | Shows an error if the fsync configuration is disabled, as this can result in unrecoverable data corruption. | Anonymous, Registered, Paid |
+| **PostgreSQL Autovacuum Logging Is Disabled** | This check returns a notice if the **log_autovacuum_min_duration** configuration option is set to -1 (disabled). | Paid |
+| **PostgreSQL Checkpoints Logging Is Disabled** | Notifies if the **log_checkpoints **configuration option is not enabled. | Registered, Paid |
+| **PostgreSQL Max_connections is too high** | Notifies if the max_connections setting is set above 300. | Paid |
+| **PostgreSQL Stale Replication Slot** | Warns for stale replication slots since these can lead to WAL file accumulation and DB server outage. | Paid |
+| **PostgreSQL Super Role** | Notifies if there are users with superuser privileges. |  Paid |
+| **PostgreSQL autovacuum settings** | Notifies if autovacuum parameters are specified along with autovacuum settings.  |  Paid |
+| **PostgreSQL Table Bloat size** | Notifies if there is any table with a bloat larger than 1GB and this is at least the 20% of the table total size. |  Registered, Paid |
+| **PostgreSQL Table Bloat in percentage of the table size** | Notifies if there are tables with bloat larger than 1GB, which is at least 50% of the total table size. |  Registered, Paid |
+| **PostgreSQL Transaction ID Wraparound approaching** | Checks the TXID age for all databases, and notifies if any is approaching to the wraparound limit. |  Registered, Paid |
+| **PostgreSQL Version Check** | Warns if the PostgreSQL minor or major versions are not the latest, and shows an error if the major version is 9.4 or older. | Anonymous, Registered, Paid |

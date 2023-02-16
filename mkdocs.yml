@@ -1,25 +1,27 @@
-# MkDocs configuration for Percona website builds
+# MkDocs configuration for Percona Platform Doc website builds
 
-site_name: Percona Platform Portal
-site_description: Documentation
+site_name: Percona Platform
+site_description: Percona Platform Documentation
 site_author: Percona LLC
 copyright: Percona LLC, &#169; 2021
 
-site_url: 'https://www.percona.com/doc/percona-platform/'
+site_url: "https://docs.percona.com/percona-platform/"
 repo_name: /percona-platform/portal-doc
 repo_url: https://github.com/percona-platform/portal-doc
 edit_uri: edit/main/docs/
 
 use_directory_urls: false
 
-#Theme
+#Theme for the builds
 theme:
   name: material
-  custom_dir: _resource/theme
-  logo: _images/percona-logo.png
-  favicon: _images/percona-favicon.ico
+  custom_dir: resources/overrides
+  logo: images/percona-logo.svg
+  favicon: images/percona-favicon.ico
+  font: 
+    text: Poppins
+    code: Roboto Mono 
   palette:
-
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: percona-light
@@ -34,69 +36,93 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode
 
+  # Theme features
+  features:
+    - search.highlight
+    - search.share
+    - navigation.top
+    - content.tabs.link
+    - content.code.copy 
+    - navigation.tracking 
+    - content.action.edit
+    - content.action.view 
+
 #Styling
 extra_css:
   - https://unicons.iconscout.com/release/v3.0.3/css/line.css
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css
-#  - css/version-select.css
   - css/toctree.css
   - css/percona.css
-  - css/details.css
+  - css/gifs.css
   - css/table-list.css
 
 extra_javascript:
-  - js/version-select.js
+  # - js/version-select.js
 
 markdown_extensions:
-  - attr_list
-  - toc:
-      permalink: True
-  - admonition
-  - footnotes
-  - def_list   # https://michelf.ca/projects/php-markdown/extra/#def-list
-  - meta
-  - smarty:
-        smart_angled_quotes: true
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.tabbed
-  - pymdownx.tilde
-  - pymdownx.superfences
-  - pymdownx.details
-  - pymdownx.highlight:
-        linenums: false
-  
+  attr_list: {}
+  toc:
+    permalink: True
+  admonition: {}
+  footnotes: {}
+  def_list: {} # https://michelf.ca/projects/php-markdown/extra/#def-list
+  meta: {}
+  smarty:
+      smart_angled_quotes: true
+  pymdownx.mark: {}
+  pymdownx.smartsymbols: {}
+  pymdownx.tabbed: {}
+  pymdownx.tilde: {}
+  pymdownx.superfences: {}
+  pymdownx.details: {}
+  pymdownx.highlight:
+      linenums: false
+  pymdownx.inlinehilite: {}
+  pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 plugins:
-  - search
-  - git-revision-date
-  - bootstrap-tables
-  - section-index # Adds links to nodes - comment out when creating PDF
-#  - htmlproofer # Uncomment to check links - but extends build time significantly
-  - macros:
-        include_yaml:
-#          - 'variables.yml' # Use in markdown as '{{ VAR }}'
+  section-index: {}
+  search: 
+    separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  git-revision-date: {}
+  macros:
+      include_yaml:
+#         - 'variables.yml' # Use in markdown as '{{ VAR }}'
 
-
-extra: # Used in main.html template and can't be externalised
-#    open_issue_text: '<i class="uil uil-exclamation-triangle"></i> Report a problem
-#        with this page'
-#    open_issue_subject: 'PMM2: doc issue on page '
-#    open_issue_body: 'Please describe the issue here'
-#    open_issue_tooltip: 'Report an issue with this page on GitHub'
-    edit_page_text: '<i class="uil uil-pen"></i> <b>Edit this page</b>'
-    updated_text: '<i class="uil uil-refresh"></i> Page updated'
-
+# extra:
+#   version: 1.0
+#Google Analytics configuration
+extra:
+  analytics:
+    provider: google
+    property: UA-343802-23
+  homepage:
+    https://docs.percona.com
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
 nav:
-  - index.md
-  # - Installation and update:
-  #   - installation-and-update.md
-  #   - installing.md
-  #   - updating.md
-  # - Usage:
-  #   - usage.md
-  #   - percona-release.md
-  #   - repository-location.md
-  # - Reference:
-  #   - copyright.md
-  #   - trademark-policy.md
+  - Welcome:
+      - index.md
+  - What's new:
+      - rel-notes/whats-new.md
+  - Registration and log in:
+      - registration-login.md
+  - Create and manage organizations:
+      - create-manage-organizations.md
+  - Check activity logs:
+      - activity-logging.md
+  - Connect your PMM server:
+      - connect-pmm.md
+  - Advisor checks for PMM:
+      - checks.md
+  - Launch free Kubernetes clusters:
+      - create-free-k8.md
+  - Network configuration:
+      - network.md

@@ -1,7 +1,7 @@
 # MongoDB not using the default SHA-256 hashing function 
 
 ## Description
-This check warns if a modern authentication method is not used. 
+This advisor warns if a modern authentication method is not used. 
 The goal is to follow updated and optimal security processes. 
 
 For Production systems: ensure that auth and authentication methods are in place.
@@ -52,3 +52,8 @@ __Always  *Check Latest Driver specific commands and syntax* This is a Java Driv
 
 https://docs.mongodb.com/drivers/go/current/fundamentals/auth/
 
+
+## Need more support from Percona?
+Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
+
+[Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }

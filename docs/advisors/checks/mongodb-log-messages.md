@@ -26,4 +26,9 @@ Edit mongod.conf and set the following parameter to default:
       setParameter:
        logLevel: 0
 ```    
-If you are resettting the log level in your mongod config file, be aware that this will not take effect until the next restart.
+If you are resetting the log level in your mongod config file, be aware that this will not take effect until the next restart.
+
+## Need more support from Percona?
+Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
+
+[Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }

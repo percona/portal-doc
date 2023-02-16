@@ -13,3 +13,8 @@ In addition, it gives insight into the IO performance. It is a cheap way of augm
 Set **log_checkpoints** server configuration option to **ON**. You can do this online, and the change will reflect immediately. 
 
 Next checkpoint information will be present in the PostgreSQL logs.
+
+## Need more support from Percona?
+Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
+
+[Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }

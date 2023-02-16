@@ -16,3 +16,8 @@ For more informatiom, see the [MySQL documentation](https://dev.mysql.com/doc/re
 
 ## Resolution
 Turn on binary logging by having the **log_bin option** on the configuration file, and restart the MySQL instance. 
+
+## Need more support from Percona?
+Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
+
+[Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }

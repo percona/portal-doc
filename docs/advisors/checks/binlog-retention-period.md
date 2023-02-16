@@ -14,3 +14,8 @@ For more information, see [**binlog_expire_logs_seconds** in the MySQL documenta
 
 ## Resolution
 Consider increasing **binlog_expire_logs_seconds** to at least 604800 seconds (1 week).
+
+## Need more support from Percona?
+Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
+
+[Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }

@@ -12,3 +12,7 @@ MySQL can create temporary tables as part of normal query execution or with the 
 Set the **tmp_table_size** to a value that is equal to or less than the **max_heap_table_size value**.
 Or increase the value of the **max_heap_table_size** value to match **tmp_table_size value**. 
 
+## Need more support from Percona?
+Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
+
+[Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }
