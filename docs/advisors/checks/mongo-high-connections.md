@@ -5,7 +5,8 @@ This check returns warnings if there is an increase in the number of connections
 
 
 ## Resolution
-High connection count in MongoDB can be caused by various factors, including application design, resource utilization, and server configuration. Here are some common reasons and potential solutions for high connection counts in MongoDB:
+High connection count in MongoDB can be caused by various factors, including application design, resource utilization, and server configuration. 
+Here are some common reasons and potential solutions for high connection counts in MongoDB:
 
 -  **Connection pooling issues**
 
