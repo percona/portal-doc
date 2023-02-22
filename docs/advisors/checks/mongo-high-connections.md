@@ -15,7 +15,7 @@ You can check the maximum size of the connection pool and adjust it as needed. A
    
 -  **Connection leaks**
 
-  Connection leaks occur when a connection is not closed properly, leading to the creation of additional connections over time. To prevent connection leaks, you can ensure that your application closes connections after they are no longer needed.
+  Connection leaks occur when a connection is not closed correctly. Over time, this can lead to additional connections being created.  To prevent connection leaks, make sure that your application closes connections after they are no longer needed.
 
 -  **Batch Jobs**
 
