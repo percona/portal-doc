@@ -19,7 +19,7 @@ You can check the maximum size of the connection pool and adjust it as needed. A
 
 -  **Batch jobs**
 
-   There might be regular batch jobs running which increase the number of connections and also the resource utilization. Additionally, you can verify the kind of operations used by running the mongostats command.
+   Regular batch jobs increase the number of connections and impact resource utilization. Additionally, you can verify the kind of operations used by running the **mongostats** command.
 
 -  **Poorly optimized queries**
 
