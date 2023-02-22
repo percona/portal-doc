@@ -28,7 +28,7 @@ To reduce connection counts caused by queries, it's essential to optimize your q
 
 -  **Application design issues**
 
-  If the application has been designed to create too many connections, it can lead to high connection counts in MongoDB. You can consider implementing connection sharing, where connections are reused across application instances, to minimize connection overhead.
+If the application has been designed to create too many connections, it can lead to high connection counts in MongoDB. To minimize connection overhead, consider implementing connection sharing, where connections are reused across application instances.
 
 
 -  **Server resource constraints**
