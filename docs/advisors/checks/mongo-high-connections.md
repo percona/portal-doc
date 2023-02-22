@@ -33,7 +33,7 @@ If the application has been designed to create too many connections, it can lead
 
 -  **Server resource constraints**
 
-   Insufficient server resources such as CPU, memory, or disk I/O can lead to high connection counts in MongoDB. You can check the system resource utilization and increase resources as needed. You may also want to consider adding more servers to the replica set to distribute the load.
+Insufficient server resources such as CPU, memory, or disk I/O can lead to high connection counts in MongoDB. Check the system resource utilization and increase resources as needed. You may also want to consider adding more servers to the replica set to distribute the load.
 
 
 In summary, to reduce high connection counts in MongoDB, it's essential to configure connection pooling correctly, optimize queries, adjust the application design, allocate sufficient server resources and prevent connection leaks.
