@@ -23,7 +23,8 @@ You can check the maximum size of the connection pool and adjust it as needed. A
 
 -  **Poorly optimized queries**
 
-   Queries that perform full table scans or involve a large number of documents can consume a significant amount of resources, resulting in high connection counts since the queues will be increased. To reduce connection counts caused by queries, it's essential to optimize your queries. You can use the MongoDB Explain() method to understand query performance and identify potential areas for optimization.
+   Queries that perform full table scans or involve a large number of documents can consume a significant amount of resources. Since the queues will be increased, this can result in high connection counts. 
+To reduce connection counts caused by queries, it's essential to optimize your queries. You can use the **MongoDB Explain()** method to understand query performance and identify potential areas for optimization.
 
 -  **Application design issues**
 
