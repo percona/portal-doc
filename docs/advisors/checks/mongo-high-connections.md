@@ -17,7 +17,7 @@ You can check the maximum size of the connection pool and adjust it as needed. A
 
   Connection leaks occur when a connection is not closed correctly. Over time, this can lead to additional connections being created.  To prevent connection leaks, make sure that your application closes connections after they are no longer needed.
 
--  **Batch Jobs**
+-  **Batch jobs**
 
    There might be regular batch jobs running which increase the number of connections and also the resource utilization. Additionally, you can verify the kind of operations used by running the mongostats command.
 
