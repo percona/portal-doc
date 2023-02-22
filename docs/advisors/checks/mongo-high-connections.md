@@ -10,7 +10,8 @@ Here are some common reasons and potential solutions for high connection counts 
 
 -  **Connection pooling issues**
 
-   Connection pooling is a technique used to manage database connections efficiently. If the connection pool is not configured correctly, it can lead to high connection counts in MongoDB. You can check the maximum size of the connection pool and adjust it as needed. Additionally, you should check the connection timeout values to ensure that connections are being reused effectively.
+   Connection pooling is a technique used to manage database connections efficiently. Not configuring the connection pool correctly can lead to high connection counts in MongoDB. 
+You can check the maximum size of the connection pool and adjust it as needed. Additionally, you should check the connection timeout values to ensure that connections are being reused effectively.
    
 -  **Connection leaks**
 
