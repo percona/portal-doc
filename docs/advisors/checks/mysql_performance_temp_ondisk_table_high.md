@@ -1,0 +1,14 @@
+# mysql_performance_temp_ondisk_table_high
+## Description
+Temporary tables on disk are slower than in-memory tables since disk I/O operations are inherently slower than memory operations. This can be especially noticeable if the temporary table is being used heavily, as the frequent reads and writes to the disk can cause performance issues. 
+This can often be attributed to an unoptimized query or the absence of an index, among other factors and a query review or configuration change can help.
+
+
+## Resolution
+Perform a query review to analyze what queries are causing the temporary tables. Query review will help identify poorly written queries, table design issues or missing indexes and help optimize the queries causing temp disk tables.
+Review tmp_table_size and max_heap_table_size only when the query review isn’t yielding results and it is absolutely necessary to raise in memory temporary table types.
+
+## Need more support from Percona?
+Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
+
+[Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }
