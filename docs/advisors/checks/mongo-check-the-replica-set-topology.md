@@ -1,7 +1,7 @@
-# Check the Replica Set Topology
+# Check the replica set topology
 
 ## Description
-This advisor returns a warning if the Replica Set cluster has less than 3 members.
+This advisor returns a warning if the replica set has less than 3 members.
 
 
 
@@ -12,9 +12,9 @@ This advisor returns a warning if the Replica Set cluster has less than 3 member
 
 
 ## Resolution
-It is recommended a Replica Set cluster has at least 3 data bearing members. 
+The recommended configuration for a replica set is minimum 3 data bearing members. 
 
-This kind topology assures High Availability and resilience in the case of the network partitioning (“split brain” condition).
+This kind of topology ensures high availability and resilience in the case of  network partitioning (the “split brain” condition).
 
 ## Need more support from Percona?
 Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.

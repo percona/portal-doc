@@ -1,17 +1,16 @@
-# Write Tickets during runtime is > 128
+# Write tickets during runtime are > 128
 
 ## Description
-This advisor check warns if the number of write tickets during runtime is more than 128. 
+This advisor warns if the number of write transactions (tickets) into the WiredTiger storage during runtime is more than 128. 
 
-This is relevant because the performance can drop if the number of tickets is too high.
-The parameter also needs to be set at the configuration file.
+This is relevant because the performance can drop if the number of write tickets is too high.
 
 Ideally, the number of tickets should be based on the number of CPU available. 
-The default write ticket is 128. This can be adjusted for your mongod and your mongos nodes. 
+The default number of write tickets is 128. You can adjust it for both your `mongod` and `mongos` nodes. 
 
-See [wiredTigerConcurrentWriteTransactions]
-(https://docs.mongodb.com/manual/reference/parameters/#mongodb-parameter-param.wiredTigerConcurrentWriteTransactions) in the MongoDB documentation.
+See [wiredTigerConcurrentWriteTransactions](https://docs.mongodb.com/manual/reference/parameters/#mongodb-parameter-param.wiredTigerConcurrentWriteTransactions) in the MongoDB documentation.
 
+This parameter also needs to be set at the configuration file.
 
 
 ## Rule 
@@ -20,13 +19,22 @@ db.adminCommand( { setParameter: 1, "wiredTigerConcurrentWriteTransactions": "12
 ```
  
 ## Resolution
-Follow the steps below to adjust the verbosity of your logs. This can also be done online: 
-```mongo> db.adminCommand( { setParameter: 1, "wiredTigerConcurrentWriteTransactions": "128"  } )```
+Adjust the number of write tickets allowed into the WiredTiger storage engine. 
 
-Set to default: Edit **mongod.conf** and set the parameter below:
-``` setParameter:     wiredTigerConcurrentWriteTransactions: 128``` 
+* Using the `setParameter` shell helper:
 
-If you are resetting the write ticket in your mongod config file, the change will not take effect until the next restart.
+   ```
+   mongo> db.adminCommand( { setParameter: 1, "wiredTigerConcurrentWriteTransactions": "128"  } )
+   ```
+
+* Editing the configuration file 
+
+   ``` yaml
+   setParameter:     
+      wiredTigerConcurrentWriteTransactions: 128
+   ``` 
+
+   Note that the changes in the configuration file will take effect only after the server restart.
 
 ## Need more support from Percona?
 Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.

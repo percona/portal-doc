@@ -1,17 +1,15 @@
-# MongoDB Profiling level set to high 
+# MongoDB profiling level is too high 
 
 ## Description
-This advisor warns if the global profiling level is set too high - anything other than 0.
+This advisor warns if the global profiling level is too high - it is set to anything other than 0.
 
-Having the profiler set to gather information at all times is not recommended. 
+Setting the profiler to gather information at all times is not recommended because profiling has an effect on the performance and disk use. 
 
-This is dangerous in busy and high traffic workloads where the database has to collect data for all the operations. This can add overhead that results in performance degradation - especially in very active environments.
+using profiling in peak periods with high traffic workloads where the database has to collect data for all the operations is dangerous. This can add overhead that results in performance degradation - especially in very active environments.
 
-It is always recommended to only enable profiling (Level 1) for short periods of time in order to perform any needed query analysis or troubleshooting. 
+When necessary, use the profiler in off-peak periods with less workload. It is always recommended to only enable profiling (Level 1) for short periods of time in order to perform any needed query analysis or troubleshooting. 
 
-When necessary, the profiler should be used during less busy windows and then turned off. 
-
-To avoid performance degradation, avoid stting and using the profiler for long periods of time in production environments.
+To avoid performance degradation, avoid setting and using the profiler for long periods of time in production environments.
 
 For more information, see [db.setProfilingLevel in the MongoDB documentation](https://docs.mongodb.com/manual/reference/method/db.setProfilingLevel/).
 

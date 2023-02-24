@@ -1,12 +1,10 @@
 # MongoDB write ticket is more than 128
 
 ## Description
-This check warns if the write ticket is more than 128 as this can cause performance issues.
+This advisor warns if the number of write transactions (tickets) into the WiredTiger storage during runtime is more than 128. Too high number of write tickets can cause performance issues.
 
-Ideally, the number of tickets should be based on the number of CPU available.
-The default write ticket is 128.
-
-It can be adjusted for your mongod and your mongos nodes.
+Ideally, the number of tickets should be based on the number of CPU available. 
+The default number of write tickets is 128. You can adjust it for both your `mongod` and `mongos` nodes. 
 
 For more information, see [wiredTigerConcurrentWriteTransactions in the MongoDB documentation](https://docs.mongodb.com/manual/reference/parameters/#mongodb-parameter-param.wiredTigerConcurrentWriteTransactions).
 
@@ -17,14 +15,22 @@ MONGODB_GETPARAMETER
 `db.adminCommand( { setParameter: 1, "wiredTigerConcurrentWriteTransactions": "128"  } )`
 
 ## Resolution
-Adjust the verbosity of your logs online: `mongo> db.adminCommand( { setParameter: 1, "wiredTigerConcurrentWriteTransactions": "128"  } )`
+Adjust the number of write tickets allowed into the WiredTiger storage engine. 
 
-Edit mongod.conf and set the below parameter to default:
-```
-       setParameter:
-         wiredTigerConcurrentWriteTransactions: 128
-```
-If resetting the write ticket in your mongod config file, be aware that this will not take effect until the next restart.
+* Using the `setParameter` shell helper:
+
+   ```
+   mongo> db.adminCommand( { setParameter: 1, "wiredTigerConcurrentWriteTransactions": "128"  } )
+   ```
+
+* Editing the configuration file 
+
+   ``` yaml
+   setParameter:     
+      wiredTigerConcurrentWriteTransactions: 128
+   ``` 
+
+   Note that the changes in the configuration file will take effect only after the server restart.
 
 ## Need more support from Percona?
 Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.

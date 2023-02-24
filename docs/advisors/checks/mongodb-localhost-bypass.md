@@ -1,7 +1,7 @@
 # Check mongodb localhost bypass
 
 ## Description
-This advisor returns a warning if MongoDB **enableLocalhostAuthBypass** parameter is set to True.
+This advisor returns a warning if the [localhost exception](https://www.mongodb.com/docs/v6.0/core/localhost-exception/) is enabled in MongoDB ( the **enableLocalhostAuthBypass** parameter is set to True).
 
 This represents a security vulnerability and should be disabled.
 
@@ -20,13 +20,16 @@ true
 
 
 ## Resolution
-Follow the steps below to disable localhost bypass:
-1. Edit mongod.conf and set the below parameter.
-```
-setParameter:
-  enableLocalhostAuthBypass: false
-```
-2. Roll-restart your mongod nodes to apply the changes.
+Follow the steps below to disable localhost exception:
+
+1. Edit the `mongod.conf` and set the below parameter.
+    
+    ```yaml
+    setParameter:
+      enableLocalhostAuthBypass: false
+    ```
+
+2. Roll-restart your `mongod` nodes to apply the changes.
    
 ## Need more support from Percona?
 Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
