@@ -1,4 +1,4 @@
-# mysql_configuration_innodb_file_per_table_not_enabled
+# MySQL innodb_file_per_table configuration is enabled check
 ## Description
 When innodb_file_per_table=ON is set, InnoDB uses one tablespace file per InnoDB table. This is the default since MySQL 5.6.7. Though after changing the variable ON, we will have to ensure that the tables are rebuilt using a dummy alter to pull them out from the system tablespace to its dedicated tablespace.
 
