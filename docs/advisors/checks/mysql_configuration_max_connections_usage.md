@@ -1,4 +1,4 @@
-# mysql_configuration_max_connections_usage
+# MySQL max connection usage check
 ## Description
 The status variable "max_used_connections" indicates the highest number of connections utilized since the previous system restart. If this value approaches the predetermined "max_connections" limit, it warrants attention.
 
