@@ -1,7 +1,8 @@
 # MySQL InnoDB password lifetime
 
 ## Description
-When the default password expiry time is set to zero, then passwords will never expire, making them more vulnerable to brute force attacks, and increasing the likelihood of the password being leaked somewhere else and being used to attack the database.
+Passwords are set to never expire if the default password expiry time is set to **0**.
+This makes passwords more vulnerable to force attacks, and increases the likelihood of the password being leaked somewhere else and being used to attack the database.
 
 
 
