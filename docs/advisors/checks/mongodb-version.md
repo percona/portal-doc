@@ -13,7 +13,7 @@ We recommend following an upgrade path similar to the one below:
 - Current minor version: 4.2.23
 - Desired version: 5.0.14
 - Recommended Upgrade Path: 4.2.23 => 4.4.18 => 5.0.14.
-- Do NOT skip over the major version 4.4.x on the way to major version 5.0.x
+- Do NOT skip major version 4.4.x on the way to major version 5.0.x
 
 
 > **Important**
