@@ -5,7 +5,7 @@ The option **secure_file_priv** defaults to NULL, which essentially allows users
 
 ## Resolution
 To provide a more secure installation, the scope of FILE privilege should be restricted using a secure default value for **--secure-file-priv**. 
-Edit my.cnf to provide secure-file-priv configuration and provide a specific location for users with FILE privileges to create files. This is not a dynamic variable and will need an instance reboot.
+Edit **my.cnf** to provide secure-file-priv configuration and provide a specific location for users with FILE privileges to create files. This is not a dynamic variable and will need an instance reboot.
 
 ## Need more support from Percona?
 Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
