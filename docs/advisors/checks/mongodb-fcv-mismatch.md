@@ -8,7 +8,8 @@ This check warns if there is a mismatch between the MongoDB version and the inte
 **FeatureCompatibilityVersion (FCV)** enables or disables the features that persist data incompatible with earlier versions of MongoDB.
 
 
-If there is a mismatch between the MongoDB version and FCV parameter, then you must set the FCV according to the MongoDB version. Below are the values associated with FCV  -
+If there is a mismatch between the MongoDB version and the FCV parameter, make sure to set the FCV according to the MongoDB version. 
+See below the values associated with FCV.
 
 |Deployments | FCV |
 |--------------------------------------|---|
