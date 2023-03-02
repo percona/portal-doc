@@ -4,7 +4,7 @@
 When InnoDB strict mode is disabled, it's possible to have incompatible settings for 
 KEY_BLOCK_SIZE, ROW_FORMAT, DATA DIRECTORY, TEMPORARY, and TABLESPACE table options.  Enabling it will force InnoDB to make sure these create options are compatible with each other and other settings.
 
-Also, when enabled, a row size check is done when creating or altering a table, to prevent INSERT or UPDATE from failing due to the record being too large for the selected page size.
+In addition, enabling Strict mode checks row size when creating or altering a table. This prevents INSERT or UPDATE from failing due to the record being too large for the selected page size.
 
 
 
