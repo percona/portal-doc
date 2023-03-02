@@ -1,6 +1,6 @@
 # MySQL secure_file_priv configuration option empty check
 ## Description
-The option secure_file_priv defaults to NULL, which essentially allows users with FILE privilege to create files at any location where MySQL server has write permission. This is considered less secure and against Percona Best Practices.
+The option **secure_file_priv** defaults to NULL, which essentially allows users with FILE privilege to create files at any location where MySQL server has Write permission. This is considered less secure and goes against Percona's Best Practices.
 
 
 ## Resolution
