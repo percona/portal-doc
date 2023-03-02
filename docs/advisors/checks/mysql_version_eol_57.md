@@ -5,7 +5,7 @@ After that date the software will be out of support and users that will still be
 get any further update or bug fix.
 
 ## Resolution
-Contact Percona to get help to plan the software migration from version 5.7 to 8.0, or to discover Percona extended support for version 5.7.
+[Contact Percona](https://www.percona.com/about/contact) to get extended support for version 5.7, or help you plan the migration to version 8.0 (latest).  
 
 https://www.percona.com/about/contact
 
