@@ -1,7 +1,7 @@
 # Performance check for On-Disk Temporary MySQL tables
 ## Description
 Temporary tables on disk are slower than in-memory tables since disk I/O operations are inherently slower than memory operations. This can be especially noticeable if the temporary table is being used heavily, as the frequent reads and writes to the disk can cause performance issues. 
-This can often be attributed to an unoptimized query or the absence of an index, among other factors and a query review or configuration change can help.
+This can often be attributed to an unoptimized query or the absence of an index, among other factors. In such situations a query review or configuration change can be useful.
 
 
 ## Resolution
