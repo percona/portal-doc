@@ -35,7 +35,7 @@ For eg.: Set FCV on MongoDB 6.0 version, run the following command -
 db.adminCommand( { setFeatureCompatibilityVersion: "6.0" } )
 ```
 
-For more information on FCV, please refer to [MongoDB Documentation](https://www.mongodb.com/docs/manual/reference/command/setFeatureCompatibilityVersion/).
+For more information on FCV, see the [MongoDB Documentation](https://www.mongodb.com/docs/manual/reference/command/setFeatureCompatibilityVersion/).
 
 
 
