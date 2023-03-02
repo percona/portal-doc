@@ -9,7 +9,7 @@ Contact Percona to get help to plan the software migration from version 5.7 to 8
 
 https://www.percona.com/about/contact
 
-https://www.percona.com/services/policies/percona-software-support-lifecycle
+For more information, check out the [Percona software support lifecycle information](https://www.percona.com/services/policies/percona-software-support-lifecycle)
 
 ## Need more support from Percona?
 Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
