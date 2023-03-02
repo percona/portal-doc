@@ -19,7 +19,7 @@ See below the values associated with FCV.
 |For 4.2 deployments upgraded from 4.0 | "4.0" until you setFeatureCompatibilityVersion to "4.2". |
 
 
-To view the featureCompatibilityVersion for a mongod instance, run the getParameter command on a mongod instance:
+To view the **featureCompatibilityVersion** for a mongod instance, run the **getParameter** command on a mongod instance:
 
 ```
 db.adminCommand( {
