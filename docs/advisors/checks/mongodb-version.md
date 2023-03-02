@@ -22,12 +22,9 @@ We recommend following an upgrade path similar to the one below:
 >- Test the newer version in the lower environment (dev, staging), and verify the compatibility of that version with your application.
 >- Make sure the drivers are compatible with the newer version.
 
+If you are running **Percona Server for MongoDB (PSMDB)**, see the [Upgrade Procedure for PSMDB](https://www.percona.com/blog/upgrade-process-of-percona-server-for-mongodb-replica-set-and-shard-cluster/) for minor/major upgrades of a ReplicaSet or Sharded cluster.
 
-If you are running **Percona Server for MongoDB (PSMDB)**, then follow the below link for minor/major upgrades of a 
-ReplicaSet or Sharded cluster - [Upgrade Procedure for PSMDB](https://www.percona.com/blog/upgrade-process-of-percona-server-for-mongodb-replica-set-and-shard-cluster/)
-
-If you are running **MongoDB**, then follow the below link for minor/major upgrades of a 
-ReplicaSet or Sharded cluster - [Upgrade Procedure for MongoDB](https://www.mongodb.com/docs/manual/tutorial/upgrade-revision/)
+If you are running **MongoDB**, see the [Upgrade Procedure for MongoDB](https://www.mongodb.com/docs/manual/tutorial/upgrade-revision/) for minor/major upgrades of a ReplicaSet or Sharded cluster.
 
 ## Need more support from Percona?
 Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
