@@ -1,17 +1,24 @@
 # Replica without replication slave account
 
 ## Description
-If the master ever fails, you may want to use one of the slaves as the new master. An account with the REPLICATION SLAVE privilege must exist for a server to act as a replication master (so a slave can connect to it).
 
-Therefore, it is a good idea to create this account on your slaves to prepare it to take over for a master if needed.
+If the source fails, you may want to use a replica as the new source. An account with the REPLICATION SLAVE privilege must exist for a server to act as a replication source and let a replica can connect to it.
+
+Therefore, it is a good idea to create this account on your replicas to prepare them to take over for a source, if needed.
 
 ## Rule
+
 `select IF(count(User)> 0,1,0) from mysql.user where Repl_slave_priv='Y';`
 
 ## Resolution
-Create a replication user like CREATE USER 'replication'@'192.168.0.%' IDENTIFIED BY 'password'; and grant ‘REPLICATION SLAVE’ to it. 
+
+```sql
+CREATE USER 'replication'@'192.168.0.%' IDENTIFIED BY 'password';
+GRANT REPLICATION SLAVE ON *.* to `replication'@'192.168.0.%';
+```
 
 ## Need more support from Percona?
+
 Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
 
 [Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }

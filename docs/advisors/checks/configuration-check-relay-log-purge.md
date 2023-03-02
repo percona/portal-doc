@@ -1,24 +1,26 @@
-# MySQL relay log on the replica node, not automatically purged
+# MySQL relay log on the replica node is not automatically purged
 
 ## Description
-Automatic relay log purging is off, relay logs can take up an unnecessary disk space. 
 
+Disabling the automatic purging of relay logs can have the following results:
 
-Disable or enable automatic purging of relay logs as soon as they are no longer needed. 
+* Relay logs can take up an unnecessary disk space
 
-The default value is **1** (enabled). This is a global variable that can be changed dynamically with **SET GLOBAL relay_log_purge = N**. 
+* Also enabling the `--relay-log-recovery` option risks data consistency and is therefore not crash-safe
 
-Disabling purging of relay logs when enabling the **--relay-log-recovery** option risks data consistency and is therefore not crash-safe.
-
+Change this global variable dynamically with `SET GLOBAL relay_log_purge = N`.
 
 ## Rule
+
 `SELECT @@global.relay_log_purge;`
 
 
 ## Resolution
-Set **relay_log_purge** to 1.
+
+Set `relay_log_purge` to 1 to enable automatic purging.
 
 ## Need more support from Percona?
+
 Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
 
 [Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }
