@@ -5,7 +5,8 @@ This can often be attributed to an unoptimized query or the absence of an index,
 
 
 ## Resolution
-Perform a query review to analyze what queries are causing the temporary tables. Query review will help identify poorly written queries, table design issues or missing indexes and help optimize the queries causing temp disk tables.
+Perform a query review to identify which queries are causing the temporary tables.
+Query review will help identify poorly written queries, table design issues or missing indexes, and will help optimize any queries that cause temporary disk tables.
 Review tmp_table_size and max_heap_table_size only when the query review isn’t yielding results and it is absolutely necessary to raise in memory temporary table types.
 
 ## Need more support from Percona?
