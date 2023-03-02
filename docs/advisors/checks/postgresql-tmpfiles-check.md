@@ -1,6 +1,6 @@
 # PostgreSQL temporary files written to disk check
 ## Description
-Details about the temporary files and total space used are reported. This information can be utilized to fine tune the work_mem parameter.
+This check reports details about the temporary files and total space used. You can use this information for fine-tuning the **work_mem** parameter.
 
 
 ## Resolution
