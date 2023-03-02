@@ -20,7 +20,7 @@ Recommendation is to follow an upgrade path similar to this:
 > 
 >Before performing any major upgrades on the production environment: 
 >- Test the newer version in the lower environment (dev, staging), and verify the compatibility of that version with your application.
->- Make sure the Drivers are compatible with the newer version.
+>- Make sure the drivers are compatible with the newer version.
 
 
 If you are running **Percona Server for MongoDB (PSMDB)**, then follow the below link for minor/major upgrades of a 
