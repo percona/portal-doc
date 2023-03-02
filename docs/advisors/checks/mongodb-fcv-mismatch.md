@@ -5,7 +5,7 @@ This check warns if there is a mismatch between the MongoDB version and the inte
 
 ## Resolution
 
-**FeatureCompatibilityVersion (FCV)**
+**FeatureCompatibilityVersion (FCV)** enables or disables the features that persist data incompatible with earlier versions of MongoDB.
 
 It enables or disables the features that persist data incompatible with earlier versions of MongoDB.
 
