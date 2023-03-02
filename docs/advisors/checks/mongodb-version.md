@@ -3,7 +3,7 @@
 This check returns the MongoDB or Percona Server for MongoDB versions currently used in your environment. It also provides information on other available minor or major versions to consider for upgrades.
 
 ## Resolution
-If you are running PSMDB/MongoDB version lower than the latest minor/major patch, then we recommend upgrading to the latest version in a stepped manner. Do not skip a major version release. 
+If you are running PSMDB/MongoDB version lower than the latest minor/major patch, then we recommend upgrading to the latest version gradually. Make sure not to skip a major version release when upgrading. 
 
 1. Upgrade to the latest minor patch of the current version. - This will fix all the bugs/changes in that specific version.
 2. Then you can plan Major version upgrades in a stepped manner. It is recommended to upgrade to the latest major patch once it has become stable.
