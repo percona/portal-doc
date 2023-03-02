@@ -4,7 +4,7 @@ When **innodb_file_per_table=ON** is set, InnoDB uses one tablespace file per In
 
 ## Resolution
 Set **innodb_file_per_table=ON** in configuration and reboot the instance.
-Run dummy alters (ALTER TABLE table_name ENGINE=InnoDB) for every InnoDB table.
+Run dummy alters (**ALTER TABLE table_name ENGINE=InnoDB**) for every InnoDB table.
 
 ## Need more support from Percona?
 Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
