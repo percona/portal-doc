@@ -8,7 +8,7 @@ If you are running PSMDB/MongoDB version lower than the latest minor/major patch
 1. Upgrade to the latest minor patch of the current version. This will fix all the bugs/changes in that specific version.
 2. Plan the gradual upgrade to the major version. We recommend upgrading to the latest major patch once it becomes stable.
 
-## Recommended Upgrade Process:
+## Recommended upgrade process
 Recommendation is to follow an upgrade path similar to this: 
 - Current minor version: 4.2.23
 - Desired version: 5.0.14
