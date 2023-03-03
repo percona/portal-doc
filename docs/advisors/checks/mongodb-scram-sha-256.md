@@ -1,14 +1,16 @@
-# MongoDB not using the default SHA-256 hashing function 
+# MongoDB not using the default SCRAM-SHA-256 authentication 
 
 ## Description
-This advisor warns if a modern authentication method is not used. 
-The goal is to follow updated and optimal security processes. 
+This advisor warns if the default `SCRAM-SHA-256` authentication method is not used in MongoDB. `SCRAM-SHA-256` is a salted challenge-response authentication mechanism (SCRAM) that uses your username and password, encrypted with the SHA-256 algorithm, to authenticate your user.
 
-For Production systems: ensure that auth and authentication methods are in place.
+The goal of this check is to ensure security by confirming the identity of the user before connecting. 
 
-MongoDB enables journaling by default and  "authenticationMechanisms" are set to use "SCRAM-SHA-256" by default in  MongoDB  versions (4.0 +).
-MongoDB v3.0changed the default auth mechanism from MONGODB-CR to SCRAM-SHA-1.
-[Authentication Mechanisms in the MongoDB documentation](https://docs.mongodb.com/drivers/go/current/fundamentals/auth/).
+For production systems, enable the authentication and specify the authentication method.
+
+In MongoDB versions (4.0 +), journaling is enabled by default and the "authenticationMechanisms" parameter is set to use "SCRAM-SHA-256" by default.
+MongoDB v3.0 changed the default authentication mechanism from `MONGODB-CR` to `SCRAM-SHA-1`.
+
+To learn more, see [Authentication Mechanisms](https://docs.mongodb.com/drivers/go/current/fundamentals/auth/) in the MongoDB documentation.
 
 
 
@@ -31,11 +33,10 @@ db.adminCommand( { getParameter : 1,  "authenticationMechanisms" : 1 } )
 
 
 ## Resolution
-Specify the SCRAM-SHA-256 algorithm:
+`SCRAM-SHA-256` authentication algorithm is the default one in MongoDB v4.0 and above. If it has not been otherwise designated then no change is required. 
+Otherwise, set the default authentication method to `SCRAM-SHA-256`.
 
-1. This is the default in MogoDB v4.0 and above. If it has not been otherwise designated then no change is required. \
-SCRAM-SHA-256 is a salted challenge-response authentication mechanism (SCRAM) that uses your username and password, encrypted with the SHA-256 algorithm, to authenticate your user. 
-2. To explicitly create a “SCRAM-SHA-256“ credential, use the SCRAM-SHA-256 createScramSha256Credential method: 
+1. To explicitly create “SCRAM-SHA-256“ credentials, use the SCRAM-SHA-256 `createScramSha256Credential` method: 
 ```
        String user;     // the user name 
        String source;   // the source where the user is defined 
@@ -43,15 +44,17 @@ SCRAM-SHA-256 is a salted challenge-response authentication mechanism (SCRAM) th
        // …
        MongoCredential credential = MongoCredential.createScramSha256Credential(user, source, password);
 ```
-3. Use a connection string that explicitly specifies the authMechanism=SCRAM-SHA-256. 
+2. Use a connection string that explicitly specifies the authMechanism=SCRAM-SHA-256. 
 
-__Using the new MongoClient API:__ \ 
-`MongoClient mongoClient = MongoClients.create("mongodb://user1:pwd1@host1/?authSource=db1&authMechanism=SCRAM-SHA-256");`
+The following example is for a [Java MongoDB driver](https://www.mongodb.com/docs/drivers/java/sync/current/fundamentals/auth/)
 
-__Always  *Check Latest Driver specific commands and syntax* This is a Java Driver example__
+__Using the new MongoClient API:__ 
 
-https://docs.mongodb.com/drivers/go/current/fundamentals/auth/
+```
+MongoClient mongoClient = MongoClients.create("mongodb://user1:pwd1@host1/?authSource=db1&authMechanism=SCRAM-SHA-256");
+```
 
+__Always  *Check Latest Driver specific commands and syntax*__
 
 ## Need more support from Percona?
 Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.

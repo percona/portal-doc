@@ -3,9 +3,8 @@
 ## Description
 This advisor warns if the number of CPU cores does not meet the minimum requirements according to best practices.
 
-To avoid performance issues, see the following documentation to determine the number of CPU cores required for your environment. 
+To avoid performance issues, see the following documentation to determine the number of CPU cores required for your environment: 
 
-Check docs for more information:
 -  [MongoDB 4.0 Production notes](https://www.mongodb.com/docs/v4.0/administration/production-notes/#std-label-prod-notes-ram)
 - [MongoDB 4.2 Production notes](https://www.mongodb.com/docs/v4.2/administration/production-notes/#std-label-prod-notes-ram)
 - [MongoDB 4.4 Production notes](https://www.mongodb.com/docs/v4.4/administration/production-notes/#std-label-prod-notes-ram)
@@ -27,7 +26,7 @@ data = docs[0]["data"]
 ``` 
 
 ## Resolution
-Increase the CPU cores so that it does not impact the performance.
+Increase the number of CPU cores so that it does not impact the performance.
 
 ## Need more support from Percona?
 Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
