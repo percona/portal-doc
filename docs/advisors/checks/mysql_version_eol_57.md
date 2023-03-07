@@ -1,6 +1,8 @@
-# Percona Server and MySQL 5.7 End Of Life
+# Percona Server for MySQL 5.7 End Of Life
 ## Description
-Percona Server and MySQL server 5.7 are declared End Of Life versions. The deadline is on  Oct 21, 2023. 
+Percona Server for MySQL Server version 5.7 will reach End-of-life on October 21st, 2023.
+Percona does not provide support or issue hotfixes for end-of-lifed releases.
+
 After that date the software will be out of support and users that will still be running that version will not
 get any further update or bug fix.
 
