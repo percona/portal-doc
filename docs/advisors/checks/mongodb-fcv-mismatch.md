@@ -1,7 +1,7 @@
 # MongoDB FeatureCompatibilityVersion
 
 ## Description
-This check warns if there is a mismatch between the MongoDB version and the internal FCV parameter setting.
+This check warns if there is a mismatch between the MongoDB version and the value of the internal FCV (Feature Compatibility Version) parameter.
 
 ## Resolution
 
