@@ -5,7 +5,7 @@ This check warns if DBPATH is not using the XFS filesystem type.
 
 ## Resolution
 
-As per [MongoDB Documentation](https://www.mongodb.com/docs/v6.0/administration/production-notes/#std-label-prod-notes-linux-file-system), when using a WiredTiger storage engine, use of the XFS file system type is strongly recommended for data bearing nodes to avoid performance issues that may occur when using EXT4 with the WiredTiger engine.
+To avoid performance issues when using EXT4 with WiredTiger, [MongoDB Documentation](https://www.mongodb.com/docs/v6.0/administration/production-notes/#std-label-prod-notes-linux-file-system) strongly recommends using the XFS file system type with WiredTiger storage engine for data bearing nodes. 
 
 - In general, if you use the XFS file system, use at least version 2.6.25 of the Linux Kernel.
 - If you use the EXT4 file system, use at least version 2.6.28 of the Linux Kernel.
