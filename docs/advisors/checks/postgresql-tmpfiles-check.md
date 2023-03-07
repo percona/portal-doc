@@ -9,7 +9,7 @@ There are numerous tunable parameters that can affect the number of temporary fi
 For complex queries, several Sort or Hash operations could run in parallel. 
 Before starting to write data into temporary files, each operation will generally be allowed to use as much memory as this value specifies. 
 
-In addition, several running sessions could be doing such operations concurrently. Therefore, the total memory used could be many times the value of **work_mem**.  Make sure to consider this when choosing the value. 
+In addition, several running sessions could be doing such operations concurrently. Therefore, the total memory used could be many times the value of **work_mem**. Make sure to consider this when choosing the value. 
 
 Sort operations are used for ORDER BY, DISTINCT, and merge joins. Hash tables are used in hash joins, hash-based aggregation, and hash-based processing of IN subqueries.
 
