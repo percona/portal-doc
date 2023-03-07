@@ -11,7 +11,7 @@ This check does the following:
 
 ## Resolution
 
-Upon Warning, review the innodb_log_file_size and reason that caused the spike. 
+Upon Warning, review the `innodb_log_file_size` and reason that caused the spike. 
 Upon Error, revise the innodb_log_file_size.
 
 
