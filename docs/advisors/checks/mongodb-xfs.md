@@ -1,7 +1,7 @@
 # MongoDB XFS Filesystem type
 
 ## Description
-This check returns a warning if DBPATH is not using the XFS filesystem type.
+This check warns if DBPATH is not using the XFS filesystem type.
 
 ## Resolution
 
