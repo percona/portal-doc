@@ -1,6 +1,6 @@
 # Percona Distribution for PostgreSQL End Of Life
 ## Description
-Percona Distribution for PostgreSQL, you are using reached End-of-life.
+Your version of Percona Distribution for PostgreSQ reached End-of-life.
 Percona does not provide support or issue hotfixes for end-of-life releases.
 
 After that date, the software will be out of support, and users that will still be running that version will not
