@@ -30,7 +30,7 @@ db.adminCommand( {
                
 ```
 To set the Feature Compatibility Version, run the command against the admin database. 
-For eg.: Set FCV on MongoDB 6.0 version, run the following command -
+For example, to set the FCV on MongoDB version 6.0, run the following command -
 ```
 db.adminCommand( { setFeatureCompatibilityVersion: "6.0" } )
 ```
