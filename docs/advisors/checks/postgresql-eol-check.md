@@ -1,6 +1,6 @@
 # Percona Distribution for PostgreSQL End Of Life
 ## Description
-Your version of Percona Distribution for PostgreSQ reached End-of-life.
+This check notifies that your version of Percona Distribution for PostgreSQ has reached End-of-life.
 Percona does not provide support or issue hotfixes for end-of-life releases.
 
 
