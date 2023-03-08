@@ -2,9 +2,17 @@
 
 ## Description
 
+<!---
+Some guidance about this section? 
+-->
+
 [Description]
 
 ## Resolution
+
+<!---
+Some guidance about this section? 
+-->
 
 [Resolution]
 
