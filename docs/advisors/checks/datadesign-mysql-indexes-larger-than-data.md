@@ -8,25 +8,11 @@ This action can make the overall index size, when it contains a large primary ke
 
 Generally, when an index data is larger than actual data, review tables since this may be caused by one of the following:
 
-* poor indexing
+* Poor indexing
 
-* redundant indexes
+* Redundant indexes
 
-* large (or composite) PK
-
-
-## Rule
-
-`SELECT concat(table_name, '.', table_schema) as tbl_name,
-          concat(round(table_rows/1000000,2),'M') num_rows,
-          concat(round(data_length/(1024*1024*1024),2),'G') data_size,
-          concat(round(index_length/(1024*1024*1024),2),'G') idx_size,
-          concat(round((data_length+index_length)/(1024*1024*1024),2),'G') total_size,
-          round(index_length/data_length,2) idxfrac
-          FROM information_schema.TABLES
-          WHERE table_schema not in ('information_schema', 'mysql', 'performance_schema', 'sys')
-          ORDER BY data_length+index_length DESC
-          LIMIT 10`
+* Large (or composite) PK
 
 ## Resolution
 

@@ -1,6 +1,7 @@
 # Too many accounts with SUPER privileges
 
 ## Description
+
 The SUPER privilege grants administrator privileges to a user and should be granted only to users who are supposed to act at MySQL instance level. 
 
 The SUPER privilege:
@@ -26,10 +27,15 @@ The SUPER privilege:
 Best Practices recommend assigning direct SUPER privileges to a single user, then use _Roles_ to manage any other account who may need to have this high level of privilege.
 
 ## Resolution
-Revoke Super grants from the users who are not supposed to be MySQL instance administrators. 
+
+Revoke Super grants from the users who are not supposed to be MySQL instance administrators.
+
+```sql
 Revoke super on *.* from user@'host';
+```
 
 ## Need more support from Percona?
+
 Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
 
 [Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }

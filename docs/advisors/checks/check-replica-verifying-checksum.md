@@ -2,17 +2,11 @@
 
 ## Description
 
-Enable the `slave_sql_verify_checksum` causes the replication SQL (applier) thread to verify data using the checksums read from the relay log.
+Enable the **slave_sql_verify_checksum** causes the replication SQL (applier) thread to verify data using the checksums read from the relay log.
 
 If there's mismatch, the replica stops with an error. 
 
 Setting this variable takes effect for all replication channels immediately, including running channels.
-
-
-## Rule
-
-`SELECT @@global.slave_sql_verify_checksum;`
-
 
 ## Resolution
 

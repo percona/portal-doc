@@ -2,22 +2,13 @@
 
 ## Description
 
-The `log_error_verbosity` setting determines if the error log contains ERROR, WARNING, and INFORMATION messages. If WARNING messages are not printed to the error log important information may be ignored.
+The **log_error_verbosity** setting determines if the error log contains ERROR, WARNING, and INFORMATION messages. If WARNING messages are not printed to the error log important information may be ignored.
 
 See [log_error_verbosity](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_log_error_verbosity) for more information
 
-## Rule
-
-```
-For MySQL/PS
-Check  if `log_error_verbosity` < 2
-For MariaDB
-Check if `log_warnings` < 2:
-```
-
 ## Resolution
 
-Please consider setting `log_error_verbosity` to a value of 2 or larger (log_warnings >= 2 for MariaDB) to avoid ignoring WARNING messages.
+Please consider setting **log_error_verbosity** to a value of 2 or larger (log_warnings >= 2 for MariaDB) to avoid ignoring WARNING messages.
 
 ## Need more support from Percona?
 

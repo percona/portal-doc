@@ -7,13 +7,9 @@ If the binary log synchronization to disk is disabled, the operating system flus
 For more information, see the [MySQL documentation](https://dev.mysql.com/doc/refman/8.0/en/replication-options-binary-log.html#sysvar_sync_binlog)
 and [Percona blog posts on the topic](https://www.percona.com/blog/2018/05/04/how-binary-logs-and-filesystems-affect-mysql-performance/).
 
-## Rule
-
-`SELECT @@global.sync_binlog;`
-
 ## Resolution
 
-Consider changing `SET GLOBAL sync_binlog=1`.
+Consider changing **SET GLOBAL sync_binlog=1**.
 
 ## Need more support from Percona?
 

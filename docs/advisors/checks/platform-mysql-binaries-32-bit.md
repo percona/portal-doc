@@ -5,12 +5,6 @@
 Older versions of MySQL server (plus some custom compilations) might be compiled for 32-bit platforms.
 However, we suggest using the new 64-bit version.
 
-
-## Rule
-
-`Select @@global.version_compile_machine as version_compile_machine == ‘i686’`
-
-
 ## Resolution
 
 Back up your data and then update with the 64-bit version.

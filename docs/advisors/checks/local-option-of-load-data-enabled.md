@@ -1,6 +1,7 @@
 # Verify if local infile global variable is disabled
 
 ## Description
+
 The **LOAD DATA** statement loads a data file into a table. The statement can load a file located on the server host, or, if the LOCAL keyword is specified, on the client host.
 
 The LOCAL version of **LOAD DATA** has two potential security issues:
@@ -15,14 +16,12 @@ The LOCAL version of **LOAD DATA** has two potential security issues:
   
   In this environment, the client with respect to the MySQL server actually is the Web server, not a remote program being run by users who connect to the Web server.
 
-To avoid connecting to untrusted servers, clients can establish a secure connection and verify the server identity by connecting using the **--ssl-mode=VERIFY_IDENTITY **option and the appropriate CA certificate.
+To avoid connecting to untrusted servers, clients can establish a secure connection and verify the server identity by connecting using the **--ssl-mode=VERIFY_IDENTITY** option and the appropriate CA certificate.
 
 To avoid LOAD DATA issues, clients should avoid using LOCAL unless proper client-side precautions have been taken.
 
-## Rule 
-`select @@local_infile;`
-
 ## Resolution
+
 Administrators and applications can configure whether to permit local data loading as follows:
 
 On the server side:
@@ -31,6 +30,7 @@ On the server side:
 - By default, local_infile is disabled. (This is a change from previous versions of MySQL.) To cause the server to refuse or permit LOAD DATA LOCAL statements explicitly (regardless of how client programs and libraries are configured at build time or runtime), start mysqld with local_infile disabled or enabled. local_infile can also be set at runtime.
 
 ## Need more support from Percona?
+
 Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
 
 [Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }

@@ -8,11 +8,6 @@ Data file formats may not be compatible with earlier versions of InnoDB since th
 
 * Barracuda supports all InnoDB row formats. This format is the newest one.
 
-## Rule
-
-`SELECT * from performance_schema.global_variables where VARIABLE_NAME in ('innodb_file_format','innodb_file_format_max','innodb_data_file_path');`
-
-
 ## Resolution
 
 Barracuda is the recommended file format.

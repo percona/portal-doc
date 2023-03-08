@@ -10,15 +10,9 @@ This database instance cannot be a replication source, nor could it provide the 
 
 For more information, see the [MySQL documentation](https://dev.mysql.com/doc/refman/8.0/en/binary-log.html).
 
-
-## Rule
-
-`SELECT @@global.log_bin;`
-
-
 ## Resolution
 
-Turn on binary logging by having the `log_bin` option on the configuration file, and restart the MySQL instance.
+Turn on binary logging by having the **log_bin** option on the configuration file, and restart the MySQL instance.
 
 ## Need more support from Percona?
 

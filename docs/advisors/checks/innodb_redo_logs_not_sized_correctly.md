@@ -1,6 +1,8 @@
 # InnoDB redo log size advisor
+
 ## Description
-The configuration variable `innodb_log_file_size` is one of the most important settings with respect to innodb configuration.
+
+The configuration variable **innodb_log_file_size** is one of the most important settings with respect to innodb configuration.
 The rule of the thumb is to keep at least one hour of traffic in those logs and let the checkpointing perform its work as smoothly as possible. If you don't do this, InnoDB will do synchronous flushing at the worst possible time.
 
 This check does the following:
@@ -11,8 +13,8 @@ This check does the following:
 
 ## Resolution
 
-Upon Warning, review the `innodb_log_file_size` and reason that caused the spike. 
-Upon Error, revise the `innodb_log_file_size`.
+Upon Warning, review the **innodb_log_file_size** and reason that caused the spike. 
+Upon Error, revise the **innodb_log_file_size**.
 
 
 ## Need more support from Percona?
