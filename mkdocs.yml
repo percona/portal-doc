@@ -95,7 +95,7 @@ plugins:
     cover_title: 'Percona Platform documentation'
     cover_subtitle: latest update
     author: "Percona Technical Documentation Team"
-    cover_logo: docs/_images/Percona_Logo_Color.png
+    cover_logo: docs/images/percona-logo.png
     custom_template_path: _resources/templates
     enabled_if_env: ENABLE_PDF_EXPORT
 
