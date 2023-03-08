@@ -18,9 +18,9 @@ theme:
   custom_dir: resources/overrides
   logo: images/percona-logo.svg
   favicon: images/percona-favicon.ico
-  font: 
+  font:
     text: Poppins
-    code: Roboto Mono 
+    code: Roboto Mono
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
@@ -42,10 +42,10 @@ theme:
     - search.share
     - navigation.top
     - content.tabs.link
-    - content.code.copy 
-    - navigation.tracking 
+    - content.code.copy
+    - navigation.tracking
     - content.action.edit
-    - content.action.view 
+    - content.action.view
 
 #Styling
 extra_css:
@@ -68,7 +68,7 @@ markdown_extensions:
   def_list: {} # https://michelf.ca/projects/php-markdown/extra/#def-list
   meta: {}
   smarty:
-      smart_angled_quotes: true
+    smart_angled_quotes: true
   pymdownx.mark: {}
   pymdownx.smartsymbols: {}
   pymdownx.tabbed: {}
@@ -76,21 +76,19 @@ markdown_extensions:
   pymdownx.superfences: {}
   pymdownx.details: {}
   pymdownx.highlight:
-      linenums: false
+    linenums: false
   pymdownx.inlinehilite: {}
   pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-  pymdownx.tabbed:
-      alternate_style: true 
+    emoji_index: !!python/name:materialx.emoji.twemoji
+    emoji_generator: !!python/name:materialx.emoji.to_svg
 
 plugins:
   section-index: {}
-  search: 
+  search:
     separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   git-revision-date: {}
   macros:
-      include_yaml:
+    include_yaml:
 #         - 'variables.yml' # Use in markdown as '{{ VAR }}'
 
 # extra:
@@ -100,11 +98,10 @@ extra:
   analytics:
     provider: google
     property: UA-343802-23
-  homepage:
-    https://docs.percona.com
+  homepage: https://docs.percona.com
   consent:
     title: Cookie consent
-    description: >- 
+    description: >-
       We use cookies to recognize your repeated visits and preferences, as well
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
