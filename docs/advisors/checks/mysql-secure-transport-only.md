@@ -2,19 +2,9 @@
 
 ## Description
 
-Checks if connections from a client are required to use secure transport. Enabling `require_secure_transport` allows only TCP/IP connections that are encrypted by TLS/SSL, or a socket in Liunx. Non-secure connections are rejected.
+Checks if connections from a client are required to use secure transport. Enabling **require_secure_transport** allows only TCP/IP connections that are encrypted by TLS/SSL, or a socket in Linux. Non-secure connections are rejected.
 
 For more information: [Using encrypted connections](https://dev.mysql.com/doc/mysql-security-excerpt/8.0/en/using-encrypted-connections.html)
-
-
-## Rule
-
-```
-           for row in docs[0]:
-               name, value = row["Variable_name"], row["Value"]
-               if name == "require_secure_transport":
-                if value == "OFF":
-```
 
 ## Resolution
 

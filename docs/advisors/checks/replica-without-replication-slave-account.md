@@ -2,13 +2,9 @@
 
 ## Description
 
-If the source fails, you may want to use a replica as the new source. An account with the REPLICATION SLAVE privilege must exist for a server to act as a replication source and let a replica can connect to it.
+If the source fails, you may want to use a replica as the new source. An account with the **REPLICATION SLAVE** privilege must exist for a server to act as a replication source and let a replica can connect to it.
 
 Therefore, it is a good idea to create this account on your replicas to prepare them to take over for a source, if needed.
-
-## Rule
-
-`select IF(count(User)> 0,1,0) from mysql.user where Repl_slave_priv='Y';`
 
 ## Resolution
 

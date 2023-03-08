@@ -8,10 +8,6 @@ Reaching this limit could cause production problems.
 
 For more information, see [The System Tablespace in the MySQL documentation](https://dev.mysql.com/doc/refman/8.0/en/innodb-system-tablespace.html).
 
-## Rule
-
-`SELECT * from performance_schema.global_variables where VARIABLE_NAME in ('innodb_data_file_path');`
-
 
 ## Resolution
 

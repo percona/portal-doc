@@ -1,6 +1,7 @@
 # Replica SQL processing not multi-threaded
 
 ## Description
+
 From MySQL 8.0.26, use **replica_parallel_workers** in place of **slave_parallel_workers**, which is deprecated from that release. 
 In releases before MySQL 8.0.26, use **slave_parallel_workers**.
 
@@ -21,13 +22,12 @@ From MySQL 8.0.27, if parallel execution is disabled when the **CHANGE REPLICATI
 
 With one parallel worker, the **replica_preserve_commit_order** or **slave_preserve_commit_order **system variable also has no effect.
 
-## Rule
-`select IF(@@slave_parallel_workers < 2,1,0) found`
-
 ## Resolution
+
 Adopt a more appropriate value like replica_parallel_workers=4 (default from MySQL 8.0.26) and execute: STOP REPLICA; START REPLICA.
 
 ## Need more support from Percona?
+
 Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
 
 [Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }

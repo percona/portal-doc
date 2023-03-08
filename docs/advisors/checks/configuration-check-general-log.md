@@ -10,11 +10,6 @@ The general query log contains the following information:
 
 Enabling the general log can seriously impact disk space and overall performance. By default, the general query log is disabled.
 
-## Rule
-
-`SELECT @@global.general_log;`
-
-
 ## Resolution
 
 Disable the general query log in the configuration file, and restart the instance for the change to take effect.

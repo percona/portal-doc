@@ -1,6 +1,7 @@
 # User with open to the word scope
 
 ## Description
+
 For more information, see [Specifying Account Names](https://dev.mysql.com/doc/refman/8.0/en/account-names.html ).
 
 The host name part of an account name can take many forms, and wildcards are permitted:
@@ -9,9 +10,11 @@ The host name part of an account name can take many forms, and wildcards are per
 
 
 ## Resolution
+
 Remove any user that does not have a name in the mysql.user table. Or change the host to something with a limited scope.
  
 ## Need more support from Percona?
+
 Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
 
 [Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }
