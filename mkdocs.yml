@@ -12,6 +12,7 @@ edit_uri: edit/main/docs/
 
 use_directory_urls: false
 
+# Theme configuration
 theme:
   name: material
   custom_dir: resources/overrides
@@ -46,7 +47,7 @@ theme:
     - content.action.edit
     - content.action.view
 
-#Styling
+# Styling
 extra_css:
   - https://unicons.iconscout.com/release/v3.0.3/css/line.css
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css
@@ -97,7 +98,6 @@ plugins:
     custom_template_path: resources/templates
     enabled_if_env: ENABLE_PDF_EXPORT  
 
-
 extra:
   analytics:
     provider: google
@@ -110,6 +110,8 @@ extra:
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
+
+# Left-side navigation menu
 nav:
   - Welcome:
       - index.md
