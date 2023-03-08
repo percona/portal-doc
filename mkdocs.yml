@@ -92,6 +92,14 @@ plugins:
   macros:
       include_yaml:
 #         - 'variables.yml' # Use in markdown as '{{ VAR }}'
+  with-pdf:
+    output_path: '_pdf/Percona Platform.pdf'
+    cover_title: 'Percona Platform documentation'
+    cover_subtitle: latest update
+    author: "Percona Technical Documentation Team"
+    cover_logo: docs/images/percona-logo.png
+    custom_template_path: resources/templates
+    enabled_if_env: ENABLE_PDF_EXPORT
 
 # extra:
 #   version: 1.0
