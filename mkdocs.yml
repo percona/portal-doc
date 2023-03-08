@@ -12,7 +12,6 @@ edit_uri: edit/main/docs/
 
 use_directory_urls: false
 
-#Theme for the builds
 theme:
   name: material
   custom_dir: resources/overrides
@@ -56,7 +55,7 @@ extra_css:
   - css/gifs.css
   - css/table-list.css
 
-extra_javascript:
+# extra_javascript:
   # - js/version-select.js
 
 markdown_extensions:
@@ -82,7 +81,7 @@ markdown_extensions:
     emoji_index: !!python/name:materialx.emoji.twemoji
     emoji_generator: !!python/name:materialx.emoji.to_svg
   pymdownx.tabbed:
-      alternate_style: true    
+    alternate_style: true    
 
 plugins:
   section-index: {}
@@ -93,9 +92,6 @@ plugins:
     include_yaml:
 #         - 'variables.yml' # Use in markdown as '{{ VAR }}'
 
-# extra:
-#   version: 1.0
-#Google Analytics configuration
 extra:
   analytics:
     provider: google
