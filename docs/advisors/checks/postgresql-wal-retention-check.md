@@ -6,7 +6,7 @@ This check is to advise on the number of WAL files being retained in the pg_xlog
 
 ## Resolution
 
-There are various reasons WAL files can accumulate in the WAL directory and it is up to the administrator to decide if the reported number of WAL files are a concern. 
+There are various reasons WAL files can accumulate in the WAL directory and it is up to the administrator to decide if the reported number of WAL files is a concern. 
 
 Typically, WAL file accumulation occur when the following situations arise.
 - A replica using replication slots is off line and the replication slot has not been removed.
