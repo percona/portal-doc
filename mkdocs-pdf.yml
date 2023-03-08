@@ -1,35 +1,12 @@
-# MkDocs configuration for PDF output
+# Extended MkDocs configuration
 # Usage: ENABLE_PDF_EXPORT=1 mkdocs build -f mkdocs-pdf.yml
-INHERIT: mkdocs.yml
 
-markdown_extensions:
-  attr_list: {}
-  toc:
-    permalink: True
-  admonition: {}
-  footnotes: {}
-  def_list: {} # https://michelf.ca/projects/php-markdown/extra/#def-list
-  meta: {}
-  smarty:
-    smart_angled_quotes: true
-  pymdownx.mark: {}
-  pymdownx.smartsymbols: {}
-  pymdownx.tabbed: {}
-  pymdownx.tilde: {}
-  pymdownx.superfences: {}
-  pymdownx.details: {}
-  pymdownx.highlight:
-    linenums: false
-  pymdownx.inlinehilite: {}
-  pymdownx.emoji:
-    emoji_index: !!python/name:materialx.emoji.twemoji
-    emoji_generator: !!python/name:materialx.emoji.to_svg
-  pymdownx.tabbed: {}
+INHERIT: mkdocs.yml
 
 plugins:
   with-pdf:
-    output_path: 'PerconaPortal-2023-02-08.pdf'
-    cover_title: 'Percona Portal Documentation'
+    output_path: "PerconaPortal-2023-02-08.pdf"
+    cover_title: "Percona Portal Documentation"
     cover_subtitle: Mar 08, 2023
     author: "Percona Technical Documentation Team"
     cover_logo: docs/images/Percona_Logo_Color.png
