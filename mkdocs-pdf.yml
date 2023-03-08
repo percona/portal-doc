@@ -24,3 +24,14 @@ markdown_extensions:
   pymdownx.emoji:
     emoji_index: !!python/name:materialx.emoji.twemoji
     emoji_generator: !!python/name:materialx.emoji.to_svg
+  pymdownx.tabbed: {}
+
+plugins:
+  with-pdf:
+    output_path: 'PerconaPortal-2023-02-08.pdf'
+    cover_title: 'Percona Portal Documentation'
+    cover_subtitle: Mar 08, 2023
+    author: "Percona Technical Documentation Team"
+    cover_logo: docs/images/Percona_Logo_Color.png
+    custom_template_path: resources/templates
+    enabled_if_env: ENABLE_PDF_EXPORT

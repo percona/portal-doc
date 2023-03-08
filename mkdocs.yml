@@ -88,9 +88,7 @@ plugins:
   search:
     separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   git-revision-date: {}
-  macros:
-    include_yaml:
-#         - 'variables.yml' # Use in markdown as '{{ VAR }}'
+
 
 extra:
   analytics:
