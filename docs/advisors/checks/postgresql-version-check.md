@@ -1,4 +1,4 @@
-# Provide version information on currently installed version of Postgres
+# PostgreSQL version 
 
 ## Description
 
