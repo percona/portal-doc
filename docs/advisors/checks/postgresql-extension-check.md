@@ -3,9 +3,9 @@
 ## Description
 
 It is common for installed extensions to follow the upgrades of PostgreSQL. However, upgrading to a newer version of PostgresSQL does not automatically upgrade the installed extensions. 
-In some cases, this is overlooked and is acceptable. However, you could be missing improvements, features and compatibility that come with newer versions of PostgreSQL. 
+In some cases, this is overlooked and is acceptable. However, you could be missing out on improvements, features and compatibility that usually come with newer versions of PostgreSQL. 
 
-Therefore, it is advisable to always have the latest versions of extensions if they have been validated by your development team.
+Therefore, we recommend that you always install the latest versions of extensions, as long as these have been validated by your development team.
 
 ## Resolution
 
