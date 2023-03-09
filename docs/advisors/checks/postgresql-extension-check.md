@@ -9,7 +9,7 @@ Therefore, it is advisable to always have the latest versions of extensions if t
 
 ## Resolution
 
-Upgrading an extension is straightforward. A simple query is executed from within the database containing the extension.
+Upgrading extensions is straightforward. A simple query is executed from within the database containing the extension.
 
  ALTER EXTENSION extension_name UPDATE TO ‘version’;
 
