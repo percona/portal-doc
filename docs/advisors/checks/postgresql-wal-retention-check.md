@@ -13,7 +13,7 @@ There are various reasons WAL files can accumulate in the WAL directory and it i
 Typically, WAL file accumulation occurs when the following situations arise.
 - A replica using replication slots is offline and the replication slot has not been removed.
 - Archiving of WAL files is failing and the WAL files are being retained until resolved.
-- Wal_keep_segments or wal_keep_size has been configured to a value other than 0.
+- **Wal_keep_segments** or **wal_keep_size** has been configured to a value other than **0**.
 
 ## Need more support from Percona?
 
