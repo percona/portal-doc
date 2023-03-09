@@ -10,7 +10,7 @@ Additionally, the check provides information on the number of **wal_keep_segment
 
 There are various reasons WAL files can accumulate in the WAL directory and it is up to the administrator to decide if the reported number of WAL files is a concern. 
 
-Typically, WAL file accumulation occurs when the following situations arise.
+Typically, WAL file accumulation occurs when the following situations arise:
 - A replica using replication slots is offline and the replication slot has not been removed.
 - Archiving of WAL files is failing and the WAL files are being retained until resolved.
 - **Wal_keep_segments** or **wal_keep_size** has been configured to a value other than **0**.
