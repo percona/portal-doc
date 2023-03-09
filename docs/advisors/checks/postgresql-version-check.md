@@ -12,7 +12,7 @@ Follow the instructions below to upgrade PostreSQL:
 - [Upgrade only the minor version](https://docs.percona.com/postgresql/15/minor-upgrade.html).
 https://docs.percona.com/postgresql/15/minor-upgrade.html
 
-To upgrade major versions, follow the instructions available here:
+[Upgrade major versions](https://docs.percona.com/postgresql/15/major-upgrade.html)```
 https://docs.percona.com/postgresql/15/major-upgrade.html
 
 
