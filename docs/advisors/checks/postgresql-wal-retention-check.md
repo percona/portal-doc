@@ -1,7 +1,9 @@
 # Postgres WAL retention check
 ## Description
 
-This check is to advise on the number of WAL files being retained in the pg_xlog or pg_wal directory depending on the version of Postgres being checked. The check displays the number of WAL files and the disk space consumed by them. Additionally, the check provides information such as the number of wal_keep_segments or wal_keep_size configured depending on the version of Postgres. A calculation is performed against the parameters mentioned and the potential disk space used as a result of the parameter values and wal_segment_size for the running cluster.
+This check analyses the number of WAL files being retained in the **pg_xlog or pg_wal** directory depending on the version of Postgres being checked, and reports the number of WAL files and the disk space they consume. 
+
+Additionally, the check provides information on the number of **wal_keep_segments** or **wal_keep_size** configured depending on the version of Postgres. A calculation is performed against the parameters mentioned and the potential disk space used as a result of the parameter values and **wal_segment_size** for the running cluster.
 
 
 ## Resolution
