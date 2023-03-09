@@ -2,7 +2,7 @@
 
 ## Description
 
-This check provides information about the installed version of PostgresQL. If a new minor version for the installed version is available, the check will generate a message. Additionally, information about the latest version based on Major version is generated.
+This Advisor checks the version of PostgreSQL currently installed, and reports whether a new minor version is available. Information about the latest version based on Major version is also provided.
 
 
 ## Resolution
