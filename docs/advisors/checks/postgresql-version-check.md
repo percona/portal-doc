@@ -6,7 +6,8 @@ This Advisor checks the version of PostgreSQL currently installed, and reports w
 
 
 ## Resolution
-You can upgrade your postgres as detailed below.
+Follow the instructions below to upgrade PostreSQL:
+
 
 To upgrade just the minor version, follow the instructions available here:
 https://docs.percona.com/postgresql/15/minor-upgrade.html
