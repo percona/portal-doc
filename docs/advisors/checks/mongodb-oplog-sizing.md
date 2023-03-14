@@ -36,7 +36,6 @@ You can explicitly change the Oplog size by using either of the below 2 methods 
 1. Set the size in the mongodb configuration file -
 
 > replication:
->
 >    oplogSizeMB: <int>
 
 2. Set the size using mongo shell -
