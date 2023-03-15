@@ -13,7 +13,7 @@ MongoDB applies database operations on the primary and then records the operatio
 
 **Oplog window**
 
-Oplog entries are time-stamped. The oplog window refers to the amount of time that the oplog can store write operations before it reaches its maximum size and starts overwriting old entries. The length of the oplog window depends on the rate of write operations in the system and the size of the oplog.
+Oplog entries are time-stamped. The oplog window refers to the amount of time that the oplog can store Write operations before it reaches its maximum size and starts overwriting old entries. The length of the oplog window depends on the rate of Write operations in the system and the size of the oplog.
 
 **Calculate oplog size**
 
