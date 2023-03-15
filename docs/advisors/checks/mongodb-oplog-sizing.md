@@ -43,7 +43,7 @@ You can explicitly change the oplog size by using either of the following method
 > db.adminCommand({replSetResizeOplog: 1, size: 2048})
 
 
-For more information on Oplog, kindly refer to this [MongoDB Documentation](https://www.mongodb.com/docs/manual/core/replica-set-oplog/).
+For more information on oplog, refer to the [MongoDB documentation](https://www.mongodb.com/docs/manual/core/replica-set-oplog/).
 
 
 ## Need more support from Percona?
