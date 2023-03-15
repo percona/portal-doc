@@ -8,7 +8,7 @@ This check will scan all databases in the cluster and list relations with more t
 
 ## Resolution
 
-Connecting to a database and running the query:
+Connect to the database and run the query:
 
 ```
 SELECT current_database() AS datname, relname, count(*) AS idxcount FROM pg_stat_user_indexes GROUP BY 1,2 ORDER BY 3 DESC
