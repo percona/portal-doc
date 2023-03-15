@@ -20,7 +20,7 @@ We suggest evaluating this number and dropping indexes that are not used.
 
 **Important:** Keep in mind that the index stats will be updated ONLY on the server executing the query. If some queries are sent only to secondary (or primary), this usage will not be recorded on other replicaset members. So we need to analyze every member in a replica set before deciding to drop an index.
 
-For more information on unused indexes, kindly refer to this Percona [blog](https://www.percona.com/blog/identifying-unused-indexes-in-mongodb/).
+For more information on unused indexes, refer to the [Identifying Unused Indexes in MongoDB](https://www.percona.com/blog/identifying-unused-indexes-in-mongodb/) blog post.
 
 
 
