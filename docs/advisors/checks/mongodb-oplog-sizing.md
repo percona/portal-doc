@@ -5,7 +5,7 @@ This check warns if the oplog window is below a 24 hour period and offers a reco
 
 ## Resolution
 
-**Replica Set Oplog**
+**Replica set oplog**
 
 The oplog (operations log) is a special capped collection that keeps a rolling record of all operations that modify the data stored in your databases.
 
