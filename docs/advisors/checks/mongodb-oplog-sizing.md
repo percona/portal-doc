@@ -1,7 +1,7 @@
 # MongoDB Oplog Sizing
 
 ## Description
-This check warns if the oplog window is below a 24 hour period and offers a recommended oplog size based on your instance.
+This check warns if the oplog window is below 24 hours, and recommends an oplog size based on your instance.
 
 ## Resolution
 
