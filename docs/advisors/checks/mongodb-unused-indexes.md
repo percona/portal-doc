@@ -15,7 +15,7 @@ statistics by running the following script on a mongos/mongod nodes in a sharded
 > “var ldb=db.adminCommand( { listDatabases: 1 } ); for (i=0;i<ldb.databases.length;i++)  {  print('DATABASE ',ldb.databases[i].name);   if ( ldb.databases[i].name != 'admin' && ldb.databases[i].name != 'config' ) {  var db = db.getSiblingDB(ldb.databases[i].name);  var cpd = db.getCollectionNames();  for (j=0;j<cpd.length;j++) {  if ( cpd[j] !=  'system.profile' ) { print(cpd[j]);  var pui = db.runCommand({ aggregate : cpd[j] ,pipeline : [{$indexStats: {}}],cursor: { batchSize: 100 }  });  printjson(pui);  }  }  print('\n\n'); }  }”
 
 
-The **accesses.ops** field contains the number of times the index was used since server start.
+The **accesses.ops** field contains the number of times the index was used since the server start.
 We suggest evaluating this number and dropping indexes that are not used.
 
 **Important:** Keep in mind that the index stats will be updated ONLY on the server executing the query. If some queries are sent only to secondary (or primary), this usage will not be recorded on other replicaset members. So we need to analyze every member in a replica set before deciding to drop an index.
