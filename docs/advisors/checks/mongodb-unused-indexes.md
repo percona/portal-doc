@@ -5,7 +5,7 @@ This check warns if there are unused indexes on any database collection in your 
 
 ## Resolution
 
-Having too many indexes on a MongoDB collection not only affects overall write performance, but disk and memory resources as well. We should ideally have only the minimum indexes required.
+Too many indexes on a MongoDB collection affect not only overall write performance, but also disk and memory resources. We should ideally have only the minimum indexes required.
 
 Aside from knowing when to add an index to improve query performance, and how to modify indexes to satisfy changing query complexities, we also need to know how to identify unused indexes and cut their unnecessary overhead.
 
