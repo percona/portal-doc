@@ -21,7 +21,7 @@ It's important to ensure that the oplog size is large enough to accommodate the 
 
 Usually, we recommend keeping the oplog window of 24-48 hrs. If it goes below the recommended value and stays there for quite some time, then you might need to resize the oplog. 
 
-The default oplog size for the WiredTiger storage engine is 5% of physical memory in which the lower bound is 990 MB and the upper bound is 50 GB. To determine the oplog size, calculate it using the below method.
+The default oplog size for the WiredTiger storage engine is 5% of physical memory in which the lower bound is 990 MB and the upper bound is 50 GB. To determine the oplog size, calculate it using the below method below: 
 
 For 24 hour window -
 > oplog_size = Oplog rate (GB/Hr) * 24
