@@ -31,7 +31,7 @@ For 48 hour window -
 
 **Set the oplog size**
 
-You can explicitly change the Oplog size by using either of the below 2 methods  -
+You can explicitly change the oplog size by using either of the following methods:
 
 1. Set the size in the mongodb configuration file -
 
