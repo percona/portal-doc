@@ -3,7 +3,7 @@
 
 ## Description
 
-This check will scan all databases in the cluster and list relations with indexes that have not been used since the last statistics reset.
+This check scans all databases in the cluster and lists relations with indexes that have not been used since the last statistics reset.
 
 
 ## Resolution
