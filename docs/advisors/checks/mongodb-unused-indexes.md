@@ -1,7 +1,7 @@
 # MongoDB Unused Indexes
 
 ## Description
-This check returns a warning if there are unused indexes on any database collection in your instance (Need to enable "indexStats" metric collector).
+This check warns if there are unused indexes on any database collection in your instance (Need to enable "indexStats" metric collector).
 
 ## Resolution
 
