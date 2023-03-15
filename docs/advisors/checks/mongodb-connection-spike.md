@@ -5,7 +5,7 @@ This check returns a warning if there is an increase in the number of connection
 
 ## Resolution
 
-There could be several reasons for seeing a sudden spike in MongoDB connections, including:
+A sudden spike in MongoDB connections can be caused by multiple factors, including:
 
 1. **Increased User Traffic:** If there has been a sudden increase in the number of users accessing your MongoDB database, it could result in a spike in connections.
 
