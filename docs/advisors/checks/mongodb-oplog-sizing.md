@@ -11,7 +11,7 @@ The oplog (operations log) is a special capped collection that keeps a rolling r
 
 MongoDB applies database operations on the primary and then records the operations on the primary's oplog. The secondary members then copy and apply these operations in an asynchronous process. All replica set members contain a copy of the oplog, in the local.oplog.rs collection, which allows them to maintain the current state of the database.
 
-**Oplog Window**
+**Oplog window**
 
 Oplog entries are time-stamped. The oplog window refers to the amount of time that the oplog can store write operations before it reaches its maximum size and starts overwriting old entries. The length of the oplog window depends on the rate of write operations in the system and the size of the oplog.
 
