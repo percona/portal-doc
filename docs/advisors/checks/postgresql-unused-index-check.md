@@ -14,7 +14,7 @@ Connect to a database and run the query:
 SELECT * FROM pg_stat_user_indexes 
 ```
 
-Will list the indexes for the current database. The column idx_scan will indicate howmany times the index has been used.
+The output lists the indexes for the current database. The column idx_scan indicates how many times the index has been used.
 
 If you find indexes which have not been used, one should re-evaluate the need of the index and take appropriate action.  Keep in mind that some indexes may be needed to address foreign key performance. For example deleting or updating a key would force postgres to validate the constraint. Without an index, this could result in sequential scans. 
 
