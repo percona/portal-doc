@@ -29,7 +29,7 @@ For 24 hour window -
 For 48 hour window -
 > oplog_size = Oplog rate (GB/Hr) * 48
 
-**Set the Oplog size**
+**Set the oplog size**
 
 You can explicitly change the Oplog size by using either of the below 2 methods  -
 
