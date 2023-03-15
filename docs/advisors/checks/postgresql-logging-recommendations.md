@@ -14,7 +14,7 @@ Enables the logging collector which captures log messages sent to the stderr and
 
 **log_temp_files**
 
-Enables logging of temporary file creation and the queries generating them. This is useful when trying to size work_mem or other related parameters.  Extremely useful when parsing log files with a tool such as pg_badger.
+Enables logging of temporary file creation and the queries generating them. This is useful when trying to size work_mem or other related parameters.  It is extremely useful when parsing log files with a tool such as pg_badger.
 
 **Note: If your running cluster is generating large amounts of temporary files, this could consume disk space rapidly. Consider setting a value which will log temporary files of x size.**
 
