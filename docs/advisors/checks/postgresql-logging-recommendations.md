@@ -2,7 +2,7 @@
 
 
 ## Description
-This check provides feedback on enabled logging features. The checks are strictly recommended to help identify potential issues when reviewing the database cluster and log files. 
+This check provides feedback on enabled logging features and is strictly recommended to help identify potential issues when reviewing the database cluster and log files. 
 
 ## Resolution
 
