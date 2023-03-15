@@ -17,7 +17,7 @@ A sudden spike in MongoDB connections can be caused by multiple factors, includi
 
 5. **Long-running Queries:** Long-running queries can also result in a spike in connections as they tie up resources, preventing new connections from being established. This could cause connections to queue.
 
-6. **Poorly Configured Connection Limits:** If your MongoDB database is not configured with appropriate connection limits, it could result in a spike in the number of connections as new connections are created.
+6. **Poorly Configured Connection Limits:** MongoDB databases not configured with appropriate connection limits could cause connections to spike as new connections are created.
 
 7. **Security Attacks:** Malicious actors can sometimes launch attacks to create a sudden surge of connections in an attempt to overwhelm and disrupt the database. An example of this would be Denial of Service (DOS) attacks. 
 
