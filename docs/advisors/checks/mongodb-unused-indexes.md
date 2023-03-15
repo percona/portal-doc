@@ -18,7 +18,9 @@ statistics by running the following script on  mongos/mongod nodes in a sharded 
 The **accesses.ops** field contains the number of times the index was used since the server start.
 We suggest evaluating this number and dropping indexes that are not used.
 
-**Important:** Keep in mind that the index stats will be updated ONLY on the server executing the query. If some queries are sent only to secondary (or primary), this usage will not be recorded on other replica set members. So we need to analyze every member in a replica set before deciding to drop an index.
+**Important:** Keep in mind that the index stats will be updated ONLY on the server executing the query. If some queries are sent only to secondary (or primary), this usage will not be recorded on other replica set members. 
+
+Therfore, before deciding to drop an index, we need to analyze every member in a replica set.
 
 For more information on unused indexes, refer to the [Identifying Unused Indexes in MongoDB](https://www.percona.com/blog/identifying-unused-indexes-in-mongodb/) blog post.
 
