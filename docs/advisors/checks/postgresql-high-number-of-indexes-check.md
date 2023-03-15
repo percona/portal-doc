@@ -13,7 +13,7 @@ Connect to the database and run the query:
 ```
 SELECT current_database() AS datname, relname, count(*) AS idxcount FROM pg_stat_user_indexes GROUP BY 1,2 ORDER BY 3 DESC
 ```
-Relations with a high number of indexes may or not be needed. Therefore, it is advisable to check if the indexes are being used or not. Having unnecessary indexes can result in unwanted performance issues and overhead due to the maintenance of the index.  
+Relations with a high number of indexes may or not be needed. Therefore, it is advisable to check if the indexes are in use. Having unnecessary indexes can result in unwanted performance issues and overhead due to the index maintenance.  
 
 
 
