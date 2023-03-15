@@ -10,7 +10,7 @@ Too many indexes on a MongoDB collection affect not only overall write performan
 Aside from knowing when to add an index to improve query performance, and how to modify indexes to satisfy changing query complexities, we also need to know how to identify unused indexes and cut their unnecessary overhead.
 
 MongoDB maintains statistics about index usage on a per-server basis. You can review the index
-statistics by running the following script on a mongos/mongod nodes in a sharded cluster or a replica set respectively -
+statistics by running the following script on  mongos/mongod nodes in a sharded cluster or a replica set respectively:
 
 > “var ldb=db.adminCommand( { listDatabases: 1 } ); for (i=0;i<ldb.databases.length;i++)  {  print('DATABASE ',ldb.databases[i].name);   if ( ldb.databases[i].name != 'admin' && ldb.databases[i].name != 'config' ) {  var db = db.getSiblingDB(ldb.databases[i].name);  var cpd = db.getCollectionNames();  for (j=0;j<cpd.length;j++) {  if ( cpd[j] !=  'system.profile' ) { print(cpd[j]);  var pui = db.runCommand({ aggregate : cpd[j] ,pipeline : [{$indexStats: {}}],cursor: { batchSize: 100 }  });  printjson(pui);  }  }  print('\n\n'); }  }”
 
