@@ -6,7 +6,7 @@ This check provides feedback on enabled logging features and is strictly recomme
 
 ## Resolution
 
-Enabling the following logging parameters will help when troubleshooting database performance issues.
+Enabling of the following logging parameters helps when troubleshooting database performance issues.
 
 **Logging_collector**
 
