@@ -22,7 +22,7 @@ We suggest evaluating this number and dropping indexes that are not used.
 
 Therfore, before deciding to drop an index, we need to analyze every member in a replica set.
 
-For more information on unused indexes, refer to the [Identifying Unused Indexes in MongoDB](https://www.percona.com/blog/identifying-unused-indexes-in-mongodb/) blog post.
+For more information on unused indexes, see the [Identifying Unused Indexes in MongoDB](https://www.percona.com/blog/identifying-unused-indexes-in-mongodb/) blog post.
 
 
 
