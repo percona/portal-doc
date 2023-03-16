@@ -6,11 +6,11 @@ It is recommended to enable the logging of checkpoint information, as that provi
 
 Information about checkpoints in the logs is extremely useful and provides a detailed history of changes in write load on the PostgreSQL instance. 
 
-In addition, it gives insight into the IO performance. It is a cheap way of augmenting the regular monitoring based on views, and the only downside is that the volume of logs will be increased slightly.
+In addition, it gives insight into the IO performance. It is a cheap way of augmenting the regular monitoring based on views, and the only downside is that the volume of logs will slightly increase.
 
 ## Resolution
 
-Set **log_checkpoints** server configuration option to **ON**. You can do this online, and the change will reflect immediately. 
+Set the `log_checkpoints` server configuration option to **ON**. You can do this online, and the change will reflect immediately. 
 
 Next checkpoint information will be present in the PostgreSQL logs.
 

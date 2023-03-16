@@ -1,20 +1,16 @@
 # Check the tables that have “per table” vacuum settings
 
 ## Description
-This advisor returns the list of tables that specify table-level autovacuum parameters. Their associated table-level settings are also listed. 
+This advisor returns the list of tables that specify autovacuum parameters on a table level. Their associated table-level settings are also listed. 
 
 Table-level settings override the global settings. This can lead to difficult troubleshooting, unexpected behaviors, and incidents. Therefore, it is very important to check if tables in the database have any specific, table-level settings. 
 
 The table-level parameters can be adjusted according to the current autovacuum statistics.
 
-
-## Rule
-N/A (checks framework provides output for type POSTGRESQL_SHOW).
-
 ## Resolution
-The results of this advisor check can be correlated with other sets of checks or behaviours.
+The results of this advisor check can be correlated with other sets of checks or behaviors.
 
-In case some of the parameters values are off, they can be corrected using the following syntax:
+In case some of the parameters' values are off, they can be corrected using the following syntax:
 
 ``` yaml
 ALTER TABLE <tablename> SET (autovacuum_analyze_scale_factor = <val>, autovacuum_vacuum_scale_factor = <val>, autovacuum_vacuum_threshold = <val>, autovacuum_analyze_threshold = <val>); 

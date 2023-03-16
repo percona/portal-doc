@@ -1,32 +1,33 @@
- # Transaction ID wraparound is approaching
+# Transaction ID wraparound is approaching
  
 ## Description
 This advisor check verifies the age of the database's transaction IDs, and notifies if any is approaching the wraparound limit by 20% or more.
+
 To understand the PostgreSQL wraparound concept, here's an excerpt from Robert Bernier blog post:
 
 *PostgreSQL at any one time has a number of transactions that are tracked by a unique ID.* 
 
 *Every so often that number reaches the upper limit that can be registered, for example, 200 million transactions which is the default and is then renumbered.*
 
-*But if the number of unique transaction IDs goes to its maximum transactions limit, known as TXID Wraparound, Postgres will force a shutdown in order to protect the data.*
+*But if the number of unique transaction IDs goes to its maximum transactions limit, known as TXID Wraparound, PostgreSQL will force a shutdown in order to protect the data.*
 
 *Here’s how it works:*
 
-*- 4 billion transactions, 2^32, is the integer upper limit for the datatype used in Postgres.*
-*- 2 billion transactions, 2^31, is the upper limit that PostgreSQL permits before forcing a shutdown.*
-*- **10 million** transactions before the upper limit is reached, WARNING messages consisting of a countdown will be logged.*
-*- <b style="color:#e02f44;">1 million</b>  transactions before the upper limit is reached, PostgreSQL goes to READ-ONLY mode.*
+- *4 billion transactions, 2^32, is the integer upper limit for the datatype used in PostgreSQL*.
+- *2 billion transactions, 2^31, is the upper limit that PostgreSQL permits before forcing a shutdown*.
+- _**10 million** transactions before the upper limit is reached, WARNING messages consisting of a countdown will be logged._
+- *<b style="color:#e02f44;">1 million</b>  transactions before the upper limit is reached, PostgreSQL goes to READ-ONLY mode.*
 
 There are different causes for a database approaching the wraparound scenario:
 
 *Transaction ID Wraparound can be caused by a combination of one or more of the following circumstances:*
 
-*- Autovacuum is turned off*
-*-* Long-lived transactions*
-*- Database logical dumps (on a REPLICA using streaming replication)*
-*- Many session connections with locks extending across large swaths of the data cluster*
-*- Intense DML operations forcing the cancellation of autovacuum worker processes*
-*- A well-configured AUTOVACUUM process should perform the corresponding FREEZE operations over the tables so that the transactions ID can be reused and the wraparound stays far away. But as listed above, there are some situations where the AUTOVACUUM might not complete the operation successfully.*
+- *Autovacuum is turned off*
+- *Long-lived transactions*
+- *Database logical dumps (on a REPLICA using streaming replication)*
+- *Many session connections with locks extending across large swaths of the data cluster*
+- *Intense DML operations forcing the cancellation of autovacuum worker processes*
+- *A well-configured AUTOVACUUM process should perform the corresponding FREEZE operations over the tables so that the transactions ID can be reused and the wraparound stays far away. But as listed above, there are some situations where the AUTOVACUUM might not complete the operation successfully.*
 
 
 ## Resolution
@@ -42,13 +43,16 @@ As stated before, the AUTOVACUUM should be sufficient to keep the wraparound iss
 
 But if for some reason, the system cannot catch up with the workload, the recommendation is to schedule some manual VACUUM job:
 
-```vacuumdb -F -z -j 10 -v --host=<BD_HOST> --username=<DB_USER> --dbname=<DB_TO_VACUUM>```
+```
+vacuumdb -F -z -j 10 -v --host=<BD_HOST> --username=<DB_USER> --dbname=<DB_TO_VACUUM>
+```
 
 
 Here:
-**-F|--freeze** - flag to freeze row transaction information.
-**-z|--analyze** - flag to update optimizer statistics.
-**-j|--jobs=N** - flag to set a number of concurrent connections to vacuum. It can vary from a couple to a value equal to the number of CPUs on the host.
+
+- **-F|--freeze** - the flag to freeze row transaction information.
+- **-z|--analyze** - the flag to update optimizer statistics.
+- **-j|--jobs=N** - the flag to set a number of concurrent connections to vacuum. It can vary from a couple to a value equal to the number of CPUs on the host.
 
 
 ### Approaching wraparound (less than 10M transactions left) 
@@ -67,7 +71,8 @@ In his blogpost, Rober Bernier recommends using the following pair of scripts:
 Script one generates a list of tables in a selected database and calls script two, which executes the VACUUM on each of those tables individually.
 
 **SCRIPT ONE**  (go1_highspeed_vacuum.sh)
-```yaml #!/bin/bash
+```yaml 
+#!/bin/bash
 #
 # INVOCATION
 # EX: ./go1_highspeed_vacuum.sh

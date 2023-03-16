@@ -2,12 +2,13 @@
 
 ## Description
 
-One or more parameter setting requires a server restart/reload following a recent change.
+This check notifies when one or several parameter settings require a server restart/reload following a recent change.
 
 ## Resolution
 
 Use the query below to check the parameters:
-```
+
+```sql
 SELECT name, setting, short_desc, reset_val FROM pg_settings WHERE pending_restart IS true;
 ```
 
