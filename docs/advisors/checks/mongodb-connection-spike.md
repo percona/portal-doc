@@ -1,7 +1,7 @@
 # MongoDB Connections sudden spike
 
 ## Description
-This check returns a warning if there is an increase in the number of connections that is higher than 50% of the most recent or normal number of connections.
+This check warns if the number of connections increases by more than 50% compared to the most recent or normal number of connections.
 
 ## Resolution
 
