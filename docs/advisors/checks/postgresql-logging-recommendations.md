@@ -20,7 +20,7 @@ Enables logging of temporary file creation and the queries generating them. This
 
 **log_check_points**
 
-Logs statistics about checkpoints and when they occur. 
+Logs statistics about checkpoints and information about when they occur. 
 
 **log_min_duration_statement**
 
