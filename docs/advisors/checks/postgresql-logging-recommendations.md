@@ -1,4 +1,4 @@
-# Check for enabled minimal logging features of PostgreSQL
+# Minimim PostgreSQL logging features
 
 
 ## Description
