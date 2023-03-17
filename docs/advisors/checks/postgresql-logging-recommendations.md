@@ -10,7 +10,7 @@ Enabling the following logging parameters helps troubleshoot database performanc
 
 **Logging_collector**
 
-Enables the logging collector which captures log messages sent to the stderr and redirects them into log files.
+Enables the logging collector which captures log messages sent to the `stderr` and redirects them into log files.
 
 **log_temp_files**
 
