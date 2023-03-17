@@ -2,7 +2,9 @@
 
 ## Description
 
-For a robust and fault-tolerant database solution the implementation of point-in-time recovery (PTIR) is a cornerstone of design. In PostgreSQL, this is covered by the WAL archive process, which will capture the contents of each WAL segment file once it is filled, and save that data somewhere before the segment file is recycled for reuse. 
+For a robust and fault-tolerant database solution, the implementation of point-in-time recovery (PTIR) is a cornerstone of design. 
+
+In PostgreSQL, this is covered by the WAL archive process, which will capture the contents of each WAL segment file once it is filled, and save that data somewhere before the segment file is recycled for reuse. 
 
 From the official documentation:
 
@@ -15,7 +17,7 @@ archive_command = 'copy "%p" "C:\\server\\archivedir\\%f"'  # Windows
 
 which will copy archivable WAL segments to the directory `/mnt/server/archivedir` in the above example.
 
-The archive command should return a zero (0) code so PostgreSQL will assume the WAL was successfully archived and will remove it or recycle it. In this manner the WAL directory size will be consistent with no big differences. In the case the command returns a non zero code, PostgreSQL won’t remove nor recycle the WAL file and will retry the archive until it succeeds. In the meantime the number of WAL files in the WAL directory will increase and thus will the occupied space, with the risk of running out of space.
+The archive command should return a zero (0) code, so PostgreSQL will assume the WAL was successfully archived and will remove it or recycle it. In this manner, the WAL directory size will be consistent with no big differences. In the case the command returns a non-zero code, PostgreSQL won’t remove nor recycle the WAL file and will retry the archive until it succeeds. In the meantime, the number of WAL files in the WAL directory will increase and thus will the occupied space, with the risk of running out of space.
 
 
 ## Resolution
@@ -30,7 +32,7 @@ This is enough for PostgreSQL to consider the WAL segment archived and remove/re
 
 While it might help with urgent needs, it is very dangerous: **be aware that doing this will break the continuity of the archive**.
 
-Basically the PITR is no longer an option unless the initial issue is solved and a new physical backup (filesystem snapshot, pg_basebackup) is taken.
+Basically, the PITR is no longer an option unless the initial issue is solved and a new physical backup (filesystem snapshot, pg_basebackup) is taken.
 
 ## Need more support from Percona?
 Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
