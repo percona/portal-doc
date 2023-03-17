@@ -8,7 +8,7 @@ This check scans all databases in the cluster and lists relations with indexes t
 
 ## Resolution
 
-Connect to a database and run the query:
+Connect to a database and run the following query:
 
 ```
 SELECT * FROM pg_stat_user_indexes 
