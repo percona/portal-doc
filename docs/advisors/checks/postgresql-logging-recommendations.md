@@ -24,7 +24,7 @@ Logs statistics about checkpoints and information about when they occur. 
 
 **log_min_duration_statement**
 
-This is useful for determining slow running queries. Setting a value in milliseconds will log queries that take either the set value or longer time to complete.
+This is useful for determining slow-running queries. Set a value in milliseconds to log queries that take either the set value or a longer time to complete.
 
 
 
