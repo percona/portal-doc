@@ -19,14 +19,11 @@ In order to reclaim the disk space, there are 2 ways -
 Compact command rewrites and defragments all data and indexes in a collection. On WiredTiger databases, this command will release unneeded disk space to the operating system.
 
 Below is the syntax -
-> db.runCommand(
->    {
->      compact: <collection name>
->    }
-> )
+> db.runCommand({compact: <collection name>})
 
 **NOTE:**
-Starting in MongoDB 6.0.2 (and 5.0.12, and 4.4.17):
+
+  Starting in MongoDB 6.0.2 (and 5.0.12, and 4.4.17):
 - A secondary node can replicate while compact is running.
 - Reads are permitted.
 - All other operations are permitted, except the below ones -
@@ -38,10 +35,12 @@ Starting in MongoDB 6.0.2 (and 5.0.12, and 4.4.17):
   - collMod
 
 > **Important:**
-> Always have an up-to-date backup before performing server maintenance such as the compact operation.
+> 
+>  Always have an up-to-date backup before performing server maintenance such as the compact operation.
 > 
 > For more details on Compact command, kindly refer to [MongoDB Documentation](https://www.mongodb.com/docs/manual/reference/command/compact/).
 
+  
 **Resync the node:**
   
 Instead of running compact command on a collection, you can resync the node in a rolling fashion, so that there will be no downtime or impact on the application.
