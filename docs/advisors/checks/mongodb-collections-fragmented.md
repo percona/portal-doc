@@ -1,13 +1,13 @@
 # MongoDB Fragmented Collections
 
 ## Description
-This check returns a warning if the Storage size is greater than the Data size of a collection which indicates that the collection is fragmented and there is a need for Compact or Initial sync.
+This check returns a warning if the Storage size is greater than the Data size of a collection. That condition indicates that the collection is fragmented and needs a Compaction or Initial sync to reclaim disk space.
 
 ## Resolution
 
 When you are getting high disk usage and for a wiredTiger storage engine you observe that some of the collections have storage size greater than the data size, then it means that those collections are fragmented. 
 
-This can happen if you have deleted documents in your collection, WiredTiger storage engine maintains lists of empty records in data files as it deletes documents. This space can be reused by WiredTiger, but will not be returned to the operating system. 
+This often happens if your application deletes many documents in your collections. The WiredTiger storage engine maintains lists of empty records in data files as it deletes documents. This space can be reused by WiredTiger, but will not be returned to the operating system. 
 
 In order to reclaim the disk space, there are 2 ways -
 
@@ -16,7 +16,7 @@ In order to reclaim the disk space, there are 2 ways -
 
 **Run compact on the collections:**
 
-Compact command rewrites and defragments all data and indexes in a collection. On WiredTiger databases, this command will release unneeded disk space to the operating system.
+The Compact command rewrites and defragments all data and indexes in a collection. On WiredTiger databases, this command will release unneeded disk space to the operating system.
 
 Below is the syntax -
 > db.runCommand({compact: _collection name_})
@@ -43,7 +43,7 @@ Below is the syntax -
   
 **Resync the node:**
   
-Instead of running compact command on a collection, you can resync the node in a rolling fashion, so that there will be no downtime or impact on the application.
+Instead of running compact command on a collection, you can resync the node in a rolling fashion so that there will be no downtime or impact on the application.
 
 This approach is the safest way to reclaim the disk space but it can be time consuming if your Data size is huge.
 
