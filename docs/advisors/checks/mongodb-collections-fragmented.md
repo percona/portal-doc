@@ -19,7 +19,7 @@ In order to reclaim the disk space, there are 2 ways -
 Compact command rewrites and defragments all data and indexes in a collection. On WiredTiger databases, this command will release unneeded disk space to the operating system.
 
 Below is the syntax -
-> db.runCommand({compact: <collection name>})
+> db.runCommand({compact: _collection name_})
 
 **NOTE:**
 
