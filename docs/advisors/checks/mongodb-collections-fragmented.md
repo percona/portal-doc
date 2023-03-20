@@ -21,7 +21,7 @@ Compact command rewrites and defragments all data and indexes in a collection. O
 Below is the syntax -
 > db.runCommand({compact: _collection name_})
 
-**NOTE:**
+**##NOTE:##**
 
   Starting in MongoDB 6.0.2 (and 5.0.12, and 4.4.17):
 - A secondary node can replicate while compact is running.
