@@ -1,7 +1,7 @@
 # MongoDB Fragmented Collections
 
 ## Description
-This check returns a warning if the Storage size is greater than the Data size of a collection. That condition indicates that the collection is fragmented and needs a Compaction or Initial sync to reclaim disk space.
+This check warns if the storage size is greater than the data size of a collection. That condition indicates that the collection is fragmented and needs a compaction or initial sync to reclaim disk space.
 
 ## Resolution
 
