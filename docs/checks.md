@@ -7,7 +7,7 @@ All Advisors and their checks are hosted on Percona Platform. PMM Server automat
 ## Advisor check tiers and entitlements
 
 ### Built-in Advisors
-By default, PMM comes with the basic checks included in the Configuration and the Security Advisors: **Configuration Versions** and **Security CVE**.
+By default, PMM comes with the basic checks included in the Configuration and the Security Advisors: **Configuration Versions** and **CVE Security**.
 When your PMM instance is not connected to Percona Platform, PMM can only provide these built-in Anonymous Advisor checks.
 
 ### How to get more checks
@@ -15,77 +15,44 @@ As soon as you connect your PMM instance to Percona Platform, PMM has access to 
 
 If you are a Percona customer with a Percona Customer Portal account, you get additional access to Paid checks, which offer even more advanced database health information.
 
-Depending on the entitlements available for your Percona Account, the set of Advisor checks that PMM can download from Percona Platform differ in terms of complexity and functionality. For information about which Advisor checks are included in our subscriptions, check out the [Percona Platform Subscription plans](https://www.percona.com/software/percona-platform/subscription).
+Depending on the entitlements available for your Percona Account, the set of Advisor checks that PMM can download from Percona Platform differ in terms of complexity and functionality. For information about which Advisor checks are included in our subscriptions, see the [Percona Platform Subscription plans](https://www.percona.com/software/percona-platform/subscription).
 
 ## List of Advisor checks
-
-Check out the complete list of checks and their availability for **anonymous**, **registered**, and **paid** PMM instances in the tables below.
-
-
-### MySQL checks
-
-| Check Name | Description | Tier |
-| :--------- | :---------- | :--- |
-| **Check if Binaries are 32-bits** | Notifies if version_compatible_machine equals i686. | Registered, Paid |
-| **MySQL Automatic User Expired Password** | Warns if MySQL automatic password expiry is not active. | Paid |
-| **MySQL InnoDB flush method and File Format check** | Checks the following settings: **innodb_file_format**, **innodb_file_format_max**, **innodb_flush_method** and **innodb_data_file_path**. | Paid |
-| **MySQL Checks based on values of MySQL configuration variables** | Checks the following settings: **sync_binlog**, **log_bin, general_log**, **tmp_table_size**, **sql_mode**, **read_only**. | Registered,Paid |
-| **MySQL Checks based on values of MySQL replication configuration variables** | Warns if replication is not configured correctly. | Registered,Paid |
-| **MySQL Binary Logs checks, Local infile and SQL Mode checks** | Warns about non-optimal settings for Binary Log, Local Infile and SQL mode. | Registered, Paid |
-| **MySQL Configuration Check** | Warns if parameters not following Percona best practices, for infile, replication threads and replica checksum. | Registered, Paid |
-| **MySQL InnoDB password lifetime** | Warns if password expiration is not set and users' passwords have an infinite lifetime. | Registered, Paid |
-| **MySQL InnoDB Strict Mode** | Warns if InnoDB strict mode is disabled, which could compromise data integrity. | Registered, Paid |
-| **MySQL index sizes** | Warns if any have indexes larger than data.  This indicates sub-optimial schema and should be reviewed. | Registered, Paid |
-| **MySQL replication configuration check** |  Checks if a replica is safely logging replicated transactions.| Paid |
-| **MySQL Users With Granted Public Networks Access** | Notifies about MySQL accounts allowed to be connected from public networks. | Registered, Paid |
-| **MySQL Secure Transport** | Warns if MySQL server allows unencrypted remote connections. | Registered, Paid |
-| **MySQL User Check** | Runs a high-level check on the user setup. | Registered |
-| **MySQL Advanced User Check** | Runs a detailed check on the user setup. | Registered, Paid |
-| **MySQL Security Check for password policy** | Runs advisor checks on password policy. | Registered, Paid |
-| **MySQL Security Check for remplication** | Runs advisor checks on replica account. | Registered, Paid |
-| **MySQL Replication privileges** | Warns if replication privileges are mixed with more elevated privileges. | Registered, Paid |
-| **MySQL tables without Primary Key** | Warns if there are any tables without primary keys. | Registered, Paid |
-| **MySQL Test Database** | Notifies of any databases named **‘test’** or **‘test\_%’**. | Registered, Paid |
-| **MySQL Timezone** | Checks if time zone is correctly loaded. | Registered, Paid |
-| **MySQL Version** | Warns if MySQL, Percona Server for MySQL, or MariaDB version is not the latest one. | Anonymous, Registered, Paid |
-
-### MongoDB checks
-
-| Check Name | Description | Tier |
-| :--------- | :---------- | :--- |
-| **MongoDB Active vs Available Connections** | Checks the ratio between Active and Available connections. | Registered, Paid |
-| **MongoDB Authentication** | Warns if MongoDB authentication is disabled. | Registered, Paid |
-| **MongoDB Security AuthMech** | Warns if MongoDB is not using the default SHA-256 hashing as SCRAM authentication method. | Registered, Paid |
-| **MonogDB IP Bindings** | Warns if MongoDB network binding is not set as recommended. | Paid |
-| **MonogDB CPU cores** | Warns if the number of CPU cores does not meet the minimum recommended requirements according to best practices. | Registered, Paid |
-| **MongoDB CVE Version** | Shows an error if MongoDB or Percona Server for MongoDB version is not the latest one with CVE fixes. | Anonymous, Registered, Paid |
-| **MongoDB Journal Check** | Warns if journal is disabled. | Registered, Paid |
-| **MongoDB Localhost Authentication Bypass is Enabled** | Warns if MongoDB localhost bypass is enabled. |  Paid |
-| **MongoDB Non-Default Log Level** | Warns if MongoDB is not using the default log level. | Registered, Paid |
-| **MongoDB maxSessions** | Warns if MongoDB is using more maxSessions value other than the default one | Registered, Paid |
-| **MongoDB Read Tickets** | Warns if MongoDB is using more than 128 read tickets. | Registered, Paid |
-| **MongoDB Replica Set Topology** | Warns if the Replica Set cluster has less than three members. | Paid |
-| **MongoDB TaskExecutorPoolSize High** | Warns if MongoDB TaskExecutorPoolSize count is higher than available CPU cores. | Registered, Paid |
-| **MongoDB Version** | Warns if MongoDB or Percona Server for MongoDB version is not the latest one. | Anonymous, Registered, Paid |
-| **MongoDB Write Tickets** | Warns if MongoDB network is using more than 128 write tickets. | Registered, Paid |
-| **MongoDB Configuration Write Tickets** | Warns if MongoDB is using more than 128 write tickets during runtime. | Registered, Paid |
+Check out the complete list of checks and their availability for **Anonymous**, **Registered**, and **Paid** PMM instances in the tables below:
 
 
-### PostgreSQL checks
+### Configuration Advisors
 
-| Check Name | Description | Tier |
-| :--------- | :---------- | :--- |
-| **PostgreSQL Archiver is Failing** | Verifies if the archiver has failed. | Registered, Paid |
-| **PostgreSQL Cache Hit Ratio** | Checks database hit ratio and complains when this is too low. | Registered, Paid |
-| **PostgreSQL Configuration Change Requires Restart/Reload** | Warns when a configuration was changed and requires a server restart/reload. | Registered, Paid |
-| **PostgreSQL fsync is Disabled** | Shows an error if the fsync configuration is disabled, as this can result in unrecoverable data corruption. | Anonymous, Registered, Paid |
-| **PostgreSQL Autovacuum Logging Is Disabled** | This check returns a notice if the **log_autovacuum_min_duration** configuration option is set to -1 (disabled). | Paid |
-| **PostgreSQL Checkpoints Logging Is Disabled** | Notifies if the **log_checkpoints **configuration option is not enabled. | Registered, Paid |
-| **PostgreSQL Max_connections is too high** | Notifies if the max_connections setting is set above 300. | Paid |
-| **PostgreSQL Stale Replication Slot** | Warns for stale replication slots since these can lead to WAL file accumulation and DB server outage. | Paid |
-| **PostgreSQL Super Role** | Notifies if there are users with superuser privileges. |  Paid |
-| **PostgreSQL autovacuum settings** | Notifies if autovacuum parameters are specified along with autovacuum settings.  |  Paid |
-| **PostgreSQL Table Bloat size** | Notifies if there is any table with a bloat larger than 1GB and this is at least the 20% of the table total size. |  Registered, Paid |
-| **PostgreSQL Table Bloat in percentage of the table size** | Notifies if there are tables with bloat larger than 1GB, which is at least 50% of the total table size. |  Registered, Paid |
-| **PostgreSQL Transaction ID Wraparound approaching** | Checks the TXID age for all databases, and notifies if any is approaching to the wraparound limit. |  Registered, Paid |
-| **PostgreSQL Version Check** | Warns if the PostgreSQL minor or major versions are not the latest, and shows an error if the major version is 9.4 or older. | Anonymous, Registered, Paid |
+| Check Name | Description | Tier | Database Technology|
+| :--------- | :---------- | :--- |:--- |
+| **Version Configuration** | Notifies of newly released database versions to streamline database maintenance and ensure the most up-to-date performance. | Anonymous, Registered, Paid | MySQL, MongoDB, PostgreSQL|
+| **Generic Configuration** | Provides basic recommendations for improving your database configuration.   | Registered, Paid |MySQL, MongoDB, PostgreSQL| 
+| **Resources Configuration** | Watches your database and gives you recommendations for efficient management of resources like binaries architecture, CPU number versus DB Configuration, etc. | Registered, Paid | MongoDB, PostgreSQL|
+| **Connection Configuration** |Provides recommendations on configuring database connection parameters for improving database performance.  | Paid |PostgreSQL|
+| **Replication Configuration** | Provides recommendations for scalable replication in database clusters. | Paid | MySQL, MongoDB|
+| **InnoDB Configuration** | Advises on configuring InnoDB optimization for high performance. | Paid | MySQL, MongoDB, PostgreSQL|
+| **Vacuum Configuration** | Provides recommendations on optimizing Vacuum operations. | Paid | MySQL, MongoDB, PostgreSQL|
+
+### Performance Advisors
+
+| Check Name | Description | Tier | Database Technology|
+| :--------- | :---------- | :--- |:--- |
+| **Generic Performance** | Provides basic database configuration recommendations for high-performance query execution. | Registered, Paid | PostgreSQL|
+| **Vacuum Performance** | Helps improve the efficiency and execution speed of database Vacuum commands. |  Paid | MySQL, MongoDB, PostgreSQL|
+| **Replication Performance** |Checks efficient replication usage of your database. | Paid |PostgreSQL|
+
+
+### Security Advisors
+| Check Name | Description | Tier | Database Technology|
+| :--------- | :---------- | :--- |:--- |
+| **CVE Security** | Informs you of any database versions affected by CVE. | Anonymous, Registered, Paid | MongoDB |
+| **Configuration Security** | Checks your database configuration to ensure that security best practices are correctly implemented.  | Registered, Paid |MySQL, MongoDB|
+| **Authentication Security** | Ensures that all database authentication parameters are configured securely. | Paid |MySQL, MongoDB, PostgreSQL|
+| **Replication Security** | Helps safeguard data replication by assessing security risks and providing recommendations for improving protection. | Paid |MySQL|
+| **Connection Security** | Helps identify security issues on network connections and provides recommendations for enhancing security. | Paid |MySQL, MongoDB|
+
+### Query Advisors
+| Check Name | Description | Tier | Database Technology|
+| :--------- | :---------- | :--- |:--- |
+| **Index Query** | Provides query and index optimization strategies for peak database performance. | Paid | MySQL |
+| **Schema Design Query** | Helps create efficient database schemas by analyzing queries and offering suggestions for optimization. | Registered, Paid |MySQL|
