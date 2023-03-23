@@ -19,7 +19,7 @@ Using a separate mount point for the **dbPath** in MongoDB is recommended for th
 
 - **Security:** By separating the data files from the system files, you can improve the security of your database. For example, you can restrict access to the data files to only those users who need it, which can help prevent unauthorized access to your data. 
 
-For more information on tuning your database, kindly see the [Production Checklist](https://www.mongodb.com/docs/manual/administration/production-checklist-operations/).
+For more information on tuning your database, see the [MongoDB Production Checklist](https://www.mongodb.com/docs/manual/administration/production-checklist-operations/).
 
 
 ## Need more support from Percona?
