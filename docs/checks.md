@@ -17,7 +17,7 @@ If you are a Percona customer with a Percona Customer Portal account, you get ad
 
 Depending on the entitlements available for your Percona Account, the set of Advisor checks that PMM can download from Percona Platform differ in terms of complexity and functionality. For information about which Advisor checks are included in our subscriptions, see the [Percona Platform Subscription plans](https://www.percona.com/software/percona-platform/subscription).
 
-## List of Advisor checks
+## List of Advisos
 Check out the complete list of checks and their availability for **Anonymous**, **Registered**, and **Paid** PMM instances in the tables below:
 
 
