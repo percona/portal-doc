@@ -5,7 +5,9 @@ This check warns if **dbpath** does not have a dedicated mount point.
 
 ## Resolution
 
-For tuning flexibility, we recommended that MongoDB data sits on its own disk volume, preferably with its own dedicated disks/RAID array. While it may complicate backups, for the best performance you can also dedicate a separate volume for the MongoDB journal to separate its disk activity noise from the main data set. The journal does not yet have its own config/command-line setting, so you’ll need to mount a volume to the “journal” directory inside the dbPath. For example, “/var/lib/mongo/journal” would be the journal mount-path if the dbPath was set to “/var/lib/mongo”.
+For tuning flexibility, Percona recommends that MongoDB data sit on its own disk volume, preferably with its own dedicated disks/RAID array. Since this may complicate backups, for best performance you can also dedicate a separate volume for the MongoDB journal. This will separate its disk activity noise from the main data set. 
+
+The journal does not have its own config/command-line setting yet. Therefore, you’ll need to mount a volume to the “journal” directory inside the dbPath. For example, “_/var/lib/mongo/journal_” would be the journal mount-path if the dbPath was set to “_/var/lib/mongo_”.
 
 There are several reasons why it is recommended to use a separate mount point for the dbPath in MongoDB:
 
