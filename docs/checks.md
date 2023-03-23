@@ -1,39 +1,25 @@
-Percona Monitoring and Management (PMM) includes a set of Advisors that run checks against the databases connected to PMM. The checks identify and alert you of potential security threats, performance degradation, data loss, data corruption, non-compliance issues, etc.
+Percona Monitoring and Management (PMM) offers four database Advisors to help you improve database performance: Configuration Advisors, Performance Advisors, Query Advisors and Security Advisors. 
 
-## Prerequisites for accessing Advisor checks
+Each Advisor includes a set of automated checks, which investigate a specific range of possible issues and areas of improvement: security threats, non-compliance issues, performance degradation, query and index optimization strategies etc.
 
-All checks are hosted on Percona Platform. PMM Server automatically downloads them from here when the **Advisors** and **Telemetry** options are enabled in PMM under **Configuration > Settings > Advanced Settings**. Both options are enabled by default.
+All Advisors and their checks are hosted on Percona Platform. PMM Server automatically downloads them from here when the **Advisors** and **Telemetry** options are enabled in PMM under **Configuration > Settings > Advanced Settings**. Both options are enabled by default.
 
 ## Advisor check tiers and entitlements
 
-Depending on the entitlements available for your Percona Account, the set of advisor checks that PMM can download from Percona Platform differ in terms of complexity and functionality.
+### Built-in Advisors
+By default, PMM comes with the basic checks included in the Configuration and the Security Advisors: **Configuration Versions** and **Security CVE**.
+When your PMM instance is not connected to Percona Platform, PMM can only provide these built-in Anonymous Advisor checks.
 
-If your PMM instance is not connected to Percona Platform, PMM can only download the basic set of Anonymous advisor checks.
-As soon as you connect your PMM instance to Percona Platform, PMM has access to additional checks, available only for Registered PMM instances.
+### How to get more checks
+As soon as you connect your PMM instance to Percona Platform, PMM has access to extra checks, available for Registered PMM instances only.
 
-If you are a Percona customer with a Percona Customer Portal account, you also get access to Paid checks, which offer more advanced database health information.
+If you are a Percona customer with a Percona Customer Portal account, you get additional access to Paid checks, which offer even more advanced database health information.
 
-## Checks results
+Depending on the entitlements available for your Percona Account, the set of Advisor checks that PMM can download from Percona Platform differ in terms of complexity and functionality. For information about which Advisor checks are included in our subscriptions, check out the [Percona Platform Subscription plans](https://www.percona.com/software/percona-platform/subscription).
 
-The checks can be executed manually or automatically. Manual checks can be executed individually, or all together.
+## List of Advisor checks
 
-Automatic checks run every 24 hours by default. You can configure this interval in **PMM > Advanced Settings > Execution intervals** by changing the label interval for each check, or by changing the default intervals to custom ones:
-
--  **Standard**- 24 hours
--  **Rare** - 78 hours
--  **Frequent** - 4 hours
-
-The results are sent to PMM Server where you can review any failed checks on the **Home Dashboard > Failed Advisor Checks** panel. The summary count of failed checks is classified as <b style="color:#e02f44;">Critical</b>, <b style="color:#e36526;">Major</b> and <b style="color:#5794f2;">Trivial</b>:
-
-![!Failed Advisor Checks panel](images/PMM_Home_Dashboard_Panels_Failed_Advisors.jpg)
-
-Check results data always remains on the PMM Server and are not related to anonymous data sent for Telemetry purposes.
-
-For information on configuring PMM Advisors, see the [Percona Monitoring and Management documentation](https://www.percona.com/doc/percona-monitoring-and-management/2.x/get-started/advisors.html).
-
-## List of checks
-
-Percona Platform hosts all Advisor checks for MySQL, MongoDB, and PostgreSQL databases connected to PMM. Check the complete list of checks and their availability for **anonymous**, **registered**, and **paid** PMM instances in the tables below.
+Check out the complete list of checks and their availability for **anonymous**, **registered**, and **paid** PMM instances in the tables below.
 
 
 ### MySQL checks
