@@ -9,7 +9,7 @@ When you are getting high disk usage and for a wiredTiger storage engine you obs
 
 This often happens if your application deletes many documents in your collections. The WiredTiger storage engine maintains lists of empty records in data files as it deletes documents. This space can be reused by WiredTiger, but will not be returned to the operating system. 
 
-In order to reclaim the disk space, there are 2 ways -
+In order to reclaim the disk space, there are 2 ways:
 
 - Run compact on the collections
 - Resync the node
