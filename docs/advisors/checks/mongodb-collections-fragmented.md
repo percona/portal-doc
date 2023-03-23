@@ -44,7 +44,7 @@ Below is the syntax -
   
 **Resync the node:**
   
-Instead of running compact command on a collection, you can resync the node in a rolling fashion so that there will be no downtime or impact on the application.
+Instead of running the `compact` command on a collection, you can resync the node in a rolling fashion so that there will be no downtime nor impact on the application.
 
 This approach is the safest way to reclaim the disk space but it can be time consuming if your Data size is huge.
 
