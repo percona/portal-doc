@@ -9,7 +9,7 @@ For tuning flexibility, Percona recommends that MongoDB data sit on its own disk
 
 The journal does not have its own config/command-line setting yet. Therefore, you’ll need to mount a volume to the “journal” directory inside the dbPath. For example, “_/var/lib/mongo/journal_” would be the journal mount-path if the dbPath was set to “_/var/lib/mongo_”.
 
-There are several reasons why it is recommended to use a separate mount point for the dbPath in MongoDB:
+Using a separate mount point for the **dbPath** in MongoDB is recommended for the following reasons:
 
 - **Performance:** Separating the data files from the system files can help improve the performance of MongoDB. This is because the data files can be placed on a dedicated disk or disk partition, which can improve read and write performance.
 
