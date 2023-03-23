@@ -13,7 +13,7 @@ Using a separate mount point for the **dbPath** in MongoDB is recommended for th
 
 - **Performance:** Separating the data files from the system files can help improve the performance of MongoDB. This is because the data files can be placed on a dedicated disk or disk partition, which can improve read and write performance.
 
-- **Scalability:** By separating the data files from the system files, it becomes easier to scale the database. You can add more storage as needed without having to worry about running out of space on the system disk.
+- **Scalability:** By separating the data files from the system files, scaling the database becomes easier. You can add more storage as needed without having to worry about running out of space on the system disk.
 
 - **Maintenance:** Separating the data files from the system files makes it easier to perform maintenance tasks such as backups and restores. You can back up the data files separately from the system files, which can help reduce the time it takes to perform backups and restores.
 
