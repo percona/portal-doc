@@ -46,7 +46,7 @@ Below is the syntax -
   
 Instead of running the `compact` command on a collection, you can resync the node in a rolling fashion so that there will be no downtime nor impact on the application.
 
-This approach is the safest way to reclaim the disk space but it can be time consuming if your Data size is huge.
+This approach is the safest way to reclaim the disk space but it can be time consuming if your data size is huge.
 
 For more information on how to reclaim disk space, see the [Percona Blog](https://www.percona.com/blog/how-to-reclaim-disk-space-in-percona-server-for-mongodb/).
 
