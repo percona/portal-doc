@@ -24,6 +24,7 @@ Below is the syntax -
 **NOTE:**
 
   Starting in MongoDB 6.0.2 (and 5.0.12, and 4.4.17):
+  
 - A secondary node can replicate while compact is running.
 - Reads are permitted.
 - All other operations are permitted, except the below ones -
