@@ -1,4 +1,4 @@
-# MongoDB Fragmented Collections
+# MongoDB fragmented collections
 
 ## Description
 This check warns if the storage size is greater than the data size of a collection. That condition indicates that the collection is fragmented and needs a compaction or initial sync to reclaim disk space.
