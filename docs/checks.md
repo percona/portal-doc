@@ -4,7 +4,7 @@ Each Advisor includes a set of automated checks, which investigate a specific ra
 
 All Advisors and their checks are hosted on Percona Platform. PMM Server automatically downloads them from here when the **Advisors** and **Telemetry** options are enabled in PMM under **Configuration > Settings > Advanced Settings**. Both options are enabled by default.
 
-## Advisor check tiers and entitlements
+## Advisors plans 
 
 ### Built-in Advisors
 By default, PMM comes with the basic checks included in the Configuration and the Security Advisors: **Configuration Versions** and **CVE Security**.
