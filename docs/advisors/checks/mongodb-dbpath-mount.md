@@ -1,7 +1,7 @@
 # MongoDB DBPATH mount
 
 ## Description
-This check returns a warning if dbpath does not have a dedicated mount point.
+This check warns if **dbpath** does not have a dedicated mount point.
 
 ## Resolution
 
