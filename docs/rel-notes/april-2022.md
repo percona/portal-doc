@@ -68,7 +68,7 @@ Here are the new list of checks introduced with this update:
 - Check the Replica Set Topology
 - Check Active/Available Connection Ratio
 
-See the full list of database checks in the [Advisor checks for PMM](checks.md) topic.
+See the full list of database checks in the [Advisor checks for PMM](../advisors.md) topic.
 
 ## Enhanced User Experience to boost your productivity
 
