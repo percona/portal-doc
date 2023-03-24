@@ -48,7 +48,7 @@ To connect your PMM server to Percona Platform, generate a personal access token
    For security reasons, the access token expires after 30 minutes. Make sure to paste the code in PMM before that, or generate a new token if it expires.
 6. Back into PMM, paste the Access Token into the **Percona Platform Access Token** field, and click **Connect**.
 
-To confirm that you have successfully connected the server and check the list of all servers currently connected to an organization, go to [Percona Platform](https://portal.percona.com) **> PMM Instances**. 
+To confirm that you have successfully connected the server and check the list of all servers currently connected to an organization, go to [Percona Platform](https://portal.percona.com) **> PMM Instances**.
 
 ### Disconnect a PMM instance
 
@@ -62,7 +62,7 @@ To confirm that the server disconnected successfully, go to Percona Platform > *
 
 If you want to remove a PMM server from the list of connected PMM instances without disconnecting it from Percona Platform, go to [Percona Platform](https://portal.percona.com) **> PMM Instances** and click the Remove icon ![Remove icon](images/remove-instance.png) next to the server you want to remove from the list.
 
-You may want remove servers from the list when you have lingering servers that Percona Platform can no longer reach because they lost internet connection. 
+You may want to remove servers from the list when you have lingering servers that Percona Platform can no longer reach because they lost internet connection. 
 
 ## Sign into PMM with your Percona Account
 

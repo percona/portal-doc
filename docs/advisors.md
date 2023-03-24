@@ -11,7 +11,7 @@ By default, PMM comes with the basic checks included in the Configuration and th
 When your PMM instance is not connected to Percona Platform, PMM can only provide these built-in  Advisor checks.
 
 ### How to get more advisors
-As soon as you connect your PMM instance to Percona Platform, PMM has access to extra advisors, available for Basic PMM instances only.
+As soon as you [connect your PMM instance to Percona Platform](../docs/connect-pmm.md), PMM has access to extra advisors, available for Basic PMM instances only.
 
 If you are a Percona customer with a Percona Customer Portal account, you get additional access to Standard/Premium checks, which offer even more advanced database health information.
 
