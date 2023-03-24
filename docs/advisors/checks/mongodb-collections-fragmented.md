@@ -48,7 +48,7 @@ Instead of running the `compact` command on a collection, you can resync the nod
 
 This approach is the safest way to reclaim the disk space but it can be time consuming if your data size is huge.
 
-For more information on how to reclaim disk space, see the [Percona Blog](https://www.percona.com/blog/how-to-reclaim-disk-space-in-percona-server-for-mongodb/).
+For more information on reclaiming disk space, see the [Percona Blog](https://www.percona.com/blog/how-to-reclaim-disk-space-in-percona-server-for-mongodb/).
 
 
 ## Need more support from Percona?
