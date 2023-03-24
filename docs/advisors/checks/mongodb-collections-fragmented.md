@@ -5,7 +5,7 @@ This check warns if the storage size is greater than the data size of a collecti
 
 ## Resolution
 
-When you are getting high disk usage and for a wiredTiger storage engine you observe that some of the collections have storage size greater than the data size, then it means that those collections are fragmented. 
+High disk usage and wiredTiger storage engines with collections that have storage sizes greater than data size indicate that these collections are fragmented. 
 
 This often happens if your application deletes many documents in your collections. The WiredTiger storage engine maintains lists of empty records in data files as it deletes documents. This space can be reused by WiredTiger, but will not be returned to the operating system. 
 
