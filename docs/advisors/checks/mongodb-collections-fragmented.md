@@ -39,7 +39,7 @@ Below is the syntax -
 > 
 >  Always have an up-to-date backup before performing server maintenance such as the compact operation.
 > 
-> For more details on the `compact` command, refer to [MongoDB Documentation](https://www.mongodb.com/docs/manual/reference/command/compact/).
+> For more details on the `compact` command, see the [MongoDB Documentation](https://www.mongodb.com/docs/manual/reference/command/compact/).
 
   
 **Resync the node:**
