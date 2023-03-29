@@ -7,7 +7,7 @@ This check returns an error if the replica set is using a PSA (Primary Secondary
 
 A replica set can be configured with either a PSS (Primary-Secondary-Secondary) or a PSA (Primary-Secondary-Arbiter) architecture.
 
-In a three-member replica set with a primary-secondary-arbiter (PSA) architecture or a sharded cluster with three-member PSA shards, the arbiter does not hold a copy of the data. These deployments provide only one complete copy of the data. They are used primarily for situations where nodes are located in different Data Centers and you want to preserve quorum in cases where you want to avoid split brain caused by potential network issues.
+In a three-member replica set with a primary-secondary-arbiter (PSA) architecture or a sharded cluster with three-member PSA shards, the arbiter does not hold a copy of the data. These deployments provide only one complete copy of the data. They are used primarily for situations where nodes are located in different data centers and you want to preserve quorum in cases where you want to avoid split brain caused by potential network issues.
 
 Arbiters require fewer resources and can thus provide lower cost for the cluster. However, using a PSA architecture reduces the redundancy and fault tolerance that MongoDB has built-in natively. It is not recommended to use PSA (Primary-Secondary-Arbiter) architecture in Production environments due to below **serious concerns.**
 
