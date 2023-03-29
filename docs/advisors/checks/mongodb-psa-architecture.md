@@ -12,6 +12,7 @@ In a three-member replica set with a primary-secondary-arbiter (PSA) architectur
 Arbiters require fewer resources and can thus provide lower cost for the cluster. However, using a PSA architecture reduces the redundancy and fault tolerance that MongoDB has built-in natively. It is not recommended to use PSA (Primary-Secondary-Arbiter) architecture in Production environments due to below **serious concerns.**
 
 **Data Redundancy**
+
 **Fault Tolerance**
 
 If a Secondary node is down in a PSA architecture, the replica set is left  with only one Primary & one arbiter.  Since an Arbiter is not a full data-bearing node, this causes some serious operational consequences listed below:
