@@ -15,7 +15,7 @@ Arbiters require fewer resources and can thus provide lower cost for the cluster
 
 **Fault Tolerance**
 
-If a Secondary node is down in a PSA architecture, the replica set is left  with only one Primary & one arbiter.  Since an Arbiter is not a full data-bearing node, this causes some serious operational consequences listed below:
+If a secondary node is down in a PSA architecture, the replica set is left  with only one primary & one arbiter.  Since an arbiter is not a full data-bearing node, this causes some serious operational consequences listed below:
 
 - Until you have a second data-bearing member online, data redundancy is compromised and writes can only be acknowledged by the current primary.
 
