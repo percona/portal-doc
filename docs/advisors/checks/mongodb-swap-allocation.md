@@ -16,7 +16,7 @@ Generally, you should choose one of the following swap strategies:
 - Do not assign swap space on your system, and configure the kernel to disable swapping entirely.
 
 
-If your MongoDB instance is hosted on a system that also runs other software, you should choose the first swap strategy to prevent possible negative impacts to those applications. Do not disable swap in this case. It is highly recommended that you run MongoDB on its own dedicated system whenever possible.
+If your MongoDB instance is hosted on a system that runs other software, you should choose the first swap strategy to prevent possible negative impacts on those applications. Do not disable swap in this case. Percona highly recommends that you run MongoDB on its own dedicated system whenever possible.
 
 Once the swap space is allocated as per the recommendation, it can be configured by setting the **vm.swappiness** parameter.
 
