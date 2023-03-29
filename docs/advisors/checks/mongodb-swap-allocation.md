@@ -1,7 +1,7 @@
 # MongoDB Swap Allocation
 
 ## Description
-This check returns a warning if there is no swap memory allocated to your instance.
+This check warns if there is no swap memory allocated to your instance.
 
 ## Resolution
 
