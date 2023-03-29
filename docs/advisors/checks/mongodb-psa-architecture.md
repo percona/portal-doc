@@ -23,7 +23,7 @@ If a secondary node is down in a PSA architecture, the replica set is left  with
 
 - If you have lost your initial primary and have failed over to your secondary as the new primary, you will not have redundancy or fault tolerance again until the former primary has fully resynced. If anything happens to the new primary during that recovery time, you are left without a good node since the arbiters are non-data-bearing. This can result in data loss and application downtime.
 
-- Applications and internal processes can no longer use a majority write concern. If you haven't planned for this, writes requesting majority acknowledgement may block until a majority of data bearing members are available or a timeout is reached (if set for the write command). If your replica set is part of a sharded cluster, this can also prevent successful chunk migrations between shards.
+- Applications and internal processes can no longer use a majority write concern. If you haven't planned for this, writes requesting majority acknowledgment may block until most data-bearing members are available or a timeout is reached (if set for the write command). If your replica set is part of a sharded cluster, this can also prevent successful chunk migrations between shards.
 
 - Applications and internal processes will not see the newest data on the primary using a majority read concern. Some features (for example, change streams in MongoDB 3.6+) rely on reading majority committed data to avoid the chance that changes may be rolled back. If the majority commit point cannot be advanced, there will also be increased pressure on the WiredTiger cache.
 
