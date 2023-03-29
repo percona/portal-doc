@@ -24,7 +24,7 @@ Once the swap space is allocated as per the recommendation, it can be configured
 
 “Swappiness” is a Linux kernel setting that influences the behavior of the Virtual Memory manager. MongoDB performs best where swapping can be avoided or kept to a minimum. As such you should set vm.swappiness to 1, which permits the kernel to swap only to avoid out-of-memory problems.
 
-- Edit the /etc/sysctl.conf file and add the following line:
+- Edit the **/etc/sysctl.conf** file and add the following line:
 
 > vm.swappiness = 1
 
