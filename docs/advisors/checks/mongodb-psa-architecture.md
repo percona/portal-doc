@@ -27,7 +27,7 @@ If a secondary node is down in a PSA architecture, the replica set is left  with
 
 - Applications and internal processes will not see the newest data on the primary using a majority read concern. Some features (for example, change streams in MongoDB 3.6+) rely on reading the most committed data to avoid rolling back changes. If the majority commit point cannot be advanced, there will also be increased pressure on the WiredTiger cache.
 
-The above consequences can be avoided by having a Primary-Secondary-Secondary (PSS) configuration.  For Production systems it is highly recommended to use a PSS architecture.
+The above consequences can be avoided by having a PSS configuration.  For Production systems, Percona highly recommends using a PSS architecture.
 
 
 ## Need more support from Percona?
