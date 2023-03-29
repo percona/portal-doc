@@ -21,7 +21,7 @@ If a secondary node is down in a PSA architecture, the replica set is left  with
 
 - You no longer have active replication. If your secondary is offline for too long, it may fall off the oplog and need to be re-synced.
 
-- If you have lost your initial Primary and have failed over to your Secondary as the new Primary, you will not have Redundancy or Fault tolerance again until the former Primary has fully resynced. If anything happens to the new Primary during that recovery time, you are left without a good node since the arbiters are non-data-bearing. This can result in data loss and application downtime.
+- If you have lost your initial primary and have failed over to your secondary as the new primary, you will not have redundancy or fault tolerance again until the former primary has fully resynced. If anything happens to the new primary during that recovery time, you are left without a good node since the arbiters are non-data-bearing. This can result in data loss and application downtime.
 
 - Applications and internal processes can no longer use a majority write concern. If you haven't planned for this, writes requesting majority acknowledgement may block until a majority of data bearing members are available or a timeout is reached (if set for the write command). If your replica set is part of a sharded cluster, this can also prevent successful chunk migrations between shards.
 
