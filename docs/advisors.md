@@ -1,4 +1,4 @@
-Percona Monitoring and Management (PMM) offers four database Advisors to help you improve database performance: Configuration Advisors, Performance Advisors, Query Advisors and Security Advisors. 
+Percona Monitoring and Management (PMM) offers four categories of database Advisors to help you improve database performance: Configuration, Performance, Query and Security Advisors.
 
 Each Advisor includes a set of automated checks, which investigate a specific range of possible issues and areas of improvement: security threats, non-compliance issues, performance degradation, query and index optimization strategies etc.
 
@@ -6,9 +6,9 @@ All Advisors and their checks are hosted on Percona Platform. PMM Server automat
 
 ## Advisor plans
 
-### Built-in Advisors
-By default, PMM comes with the basic checks included in the Configuration and the Security Advisors: **Configuration Versions** and **CVE Security**.
-When your PMM instance is not connected to Percona Platform, PMM can only provide these built-in  Advisor checks.
+### Default Advisors
+PMM comes with the basic checks included in the Configuration and the Security Advisors: **Configuration Versions** and **CVE Security**.
+When your PMM instance is not connected to Percona Platform, PMM can only provide these default  Advisor checks.
 
 ### How to get more advisors
 As soon as you [connect your PMM instance to Percona Platform](../docs/connect-pmm.md), PMM has access to extra advisors, available for the Basic subscription plan.
@@ -56,3 +56,4 @@ Check out the complete list of checks and their availability for **Basic**, **St
 | :--------- | :---------- | :--- |:--- |
 | **Index Query** | Provides query and index optimization strategies for peak database performance. | Standard/Premium | MySQL |
 | **Schema Design Query** | Helps create efficient database schemas by analyzing queries and offering suggestions for optimization. | Basic, Standard/Premium |MySQL|
+
