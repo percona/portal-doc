@@ -10,10 +10,10 @@ Percona Platform communicates with PMM via secure channels, using the highest st
 ## Advisor plans
 
 ### Default Advisors
-PMM comes with the basic checks included in the Configuration and the Security Advisors: **Configuration Versions** and **CVE Security**.
-When your PMM instance is not connected to Percona Platform, PMM can only provide these default  Advisor checks.
+PMM instances can use the default Advisor checks, even without a Percona Account. 
+If your PMM instance has access to Internet, and you have enabled Telemetry and the Advisors option in the PMM Settings, your instance will have automatic access to the following checks included in the Configuration and the Security Advisors: **Configuration Versions** and **CVE Security**. 
 
-### How to get more advisors
+### How to get more Advisors
 As soon as you [connect your PMM instance to Percona Platform](../docs/connect-pmm.md), PMM has access to extra advisors, available for the Basic subscription plan.
 
 If you are a Percona customer with a Percona Customer Portal account, you get additional access to Standard/Premium checks, which offer even more advanced database health information.
