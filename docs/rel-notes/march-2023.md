@@ -1,5 +1,5 @@
 ## Better, smarter Advisors
-All through March, we published a series of new checks that increase the capabilities of our Advisors, and added more support to cover all supported technologies.
+All through March, we published a series of new checks that increase the capabilities of our Advisors and add more support to cover all supported technologies.
 
 The new Advisors show up in PMM on the **Advisors** page under a new structure that groups Advisors by categories. The new structure also clearly shows which Advisors are available for your current subscription.
 
@@ -62,7 +62,7 @@ Continuing our UX general overhauling initiative that started with the Migration
 We’ve optimized the Percona Platform landing page, to make sure it adapts the content to fit different screen sizes. So whenever you need to check on your organization on the go, just visit Percona Platform from your smartphone.
 
 ## Home page tuning
-To clean things up and add more white space, we’ve removed the Alerting banner and the Tickets overview widget from the Portal Home dashboard.
+To clean things up and add more white space, we’ve removed the Alerting banner afrom the Portal Home dashboard.
 
 ## Fixed issues
 
