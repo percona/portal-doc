@@ -7,7 +7,7 @@ While we are working on making the new structure visible on Percona Platform as 
 
 #### Changes to Advisors in the [Basic plan](https://www.percona.com/software/percona-platform/subscription)
 
-**Version Configuration Advisors**
+*Version Configuration Advisors*
 
 - All technologies are updated to notify about the latest minor and major database versions available.
 - Added a new MongoDB unsupported version check and End-of-Life (EOL) version.  
@@ -16,41 +16,41 @@ Upcoming EOL for MySQL version 5.7 and check for MySQL installations not up-to-d
 
 #### Changes to Advisors in the Basic plan only after [connecting PMM to the Percona Platform](https://docs.percona.com/percona-platform/connect-pmm.html)
 
-**Resources Configuration Advisor**
+*Resources Configuration Advisor*
 
 - Now contains MongoDB feature compatibility version check to control the availability of new features and ensure compatibility with existing applications.
 - Added one more MongoDB check for data directories and recommendations on using XFS filesystem for high scalability and performance.
 
-**Generic Configuration Advisor**
+*Generic Configuration Advisor*
 
 - Contains checks for PostgreSQL minimum logging features and checks for WAL files retained for recommendations on saving more disk space.
 - MongoDB Storage Cache recommends updating MongoDB configuration for WiredTiger to avoid memory issues.
-
-**Configuration Security Advisor**
+  
+*Configuration Security Advisor*
 
 - MySQL configuration check can now spot empty “secure_file_priv” parameter and provides recommendations on more secure database installations.
 
 #### Changes to Advisors available only in the Standard and Premium plan
 
-**Query Index Advisor**
+*Query Index Advisor*
 
 - Now analyzes PostgreSQL, MongoDB statistics on indexes, identifies unused or high indexes and provides best practises and recommendations.
 - The Performance check can now determine if on-disk temporary tables are causing any performance issues in your MySQL database and recommendations on optimizing performance.
 
-**Query schema Design Advisor**
+*Query schema Design Advisor*
 
 - Fixed advisor issue for PostgreSQL older than version 10.
 
-**Replication Performance**
+*Replication Performance*
 
 - Now checks for MongoDB oplog size, usage, and replication lag for each node in the replica set, and gives you specific recommendations for avoiding data loss or replication issues.
 
-**Connection Configuration**
+*Connection Configuration*
 
 - Now checks for MongoDB connection sudden spike, MySQL max connection usage, and overall Connection Count.
 - Recommends optimizing the application configuration to ensure that the database is performing efficiently and can handle the expected workload.
 
-**InnoDB Configuration**
+*InnoDB Configuration*
 
 - Now notifies when the redo log files are not sized correctly, either because they are too small or too large.
 - Includes MySQL **innodb_file_per_table** configuration check for improved space management or data isolation.
