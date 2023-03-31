@@ -4,6 +4,9 @@ Each Advisor includes a set of automated checks, which investigate a specific ra
 
 All Advisors and their checks are hosted on Percona Platform. PMM Server automatically downloads them from here when the **Advisors** and **Telemetry** options are enabled in PMM under **Configuration > Settings > Advanced Settings**. Both options are enabled by default.
 
+## Highest security for your databases
+Percona Platform communicates with PMM via secure channels, using the highest standards for privacy and security. Before downloading and running Advisor checks on your database, PMM verifies the content and integrity of all Advisor checks to confirm that every component originated from Percona Platform and that no one has altered them since the checks were digitally signed.
+
 ## Advisor plans
 
 ### Default Advisors
