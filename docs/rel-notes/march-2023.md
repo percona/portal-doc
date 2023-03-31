@@ -5,16 +5,19 @@ The new Advisors show up in PMM on the **Advisors** page under a new structure t
 
 While we are working on making the new structure visible on Percona Platform as well, are keen to get your feedback around these changes via the [Percona Platform Forum](https://forums.percona.com/c/percona-platform/73).
 
-### Changes to Advisors in the [Basic plan](https://www.percona.com/software/percona-platform/subscription)
+#### Changes to Advisors in the [Basic plan](https://www.percona.com/software/percona-platform/subscription)
+
 **Version Configuration Advisors**
+
 - All technologies are updated to notify about the latest minor and major database versions available.
 - Added a new MongoDB unsupported version check and End-of-Life (EOL) version.  
 Upcoming EOL for MySQL version 5.7 and check for MySQL installations not up-to-date with the latest officially supported version.
 - Added PostgreSQL upcoming EOL and unsupported PostgreSQL extension version check.
 
-### Changes to Advisors in the Basic plan only after [connecting PMM to the Percona Platform](https://docs.percona.com/percona-platform/connect-pmm.html)
+#### Changes to Advisors in the Basic plan only after [connecting PMM to the Percona Platform](https://docs.percona.com/percona-platform/connect-pmm.html)
 
 **Resources Configuration Advisor**
+
 - Now contains MongoDB feature compatibility version check to control the availability of new features and ensure compatibility with existing applications.
 - Added one more MongoDB check for data directories and recommendations on using XFS filesystem for high scalability and performance.
 
@@ -27,7 +30,7 @@ Upcoming EOL for MySQL version 5.7 and check for MySQL installations not up-to-d
 
 - MySQL configuration check can now spot empty “secure_file_priv” parameter and provides recommendations on more secure database installations.
 
-### Changes to Advisors available only in the Standard and Premium plan
+#### Changes to Advisors available only in the Standard and Premium plan
 
 **Query Index Advisor**
 
@@ -35,7 +38,8 @@ Upcoming EOL for MySQL version 5.7 and check for MySQL installations not up-to-d
 - The Performance check can now determine if on-disk temporary tables are causing any performance issues in your MySQL database and recommendations on optimizing performance.
 
 **Query schema Design Advisor**
-Fixed advisor issue for PostgreSQL older than version 10.
+
+- Fixed advisor issue for PostgreSQL older than version 10.
 
 **Replication Performance**
 
@@ -48,7 +52,7 @@ Fixed advisor issue for PostgreSQL older than version 10.
 
 **InnoDB Configuration**
 
-- Now notifies when the redo log files are not sized correctly, either because they are too small or too large
+- Now notifies when the redo log files are not sized correctly, either because they are too small or too large.
 - Includes MySQL **innodb_file_per_table** configuration check for improved space management or data isolation.
 
 ## Enhanced page headers
