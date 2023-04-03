@@ -1,16 +1,19 @@
-Percona Monitoring and Management (PMM) offers four database Advisors to help you improve database performance: Configuration Advisors, Performance Advisors, Query Advisors and Security Advisors. 
+Percona Monitoring and Management (PMM) offers four categories of database Advisors to help you improve database performance: Configuration, Performance, Query and Security Advisors.
 
 Each Advisor includes a set of automated checks, which investigate a specific range of possible issues and areas of improvement: security threats, non-compliance issues, performance degradation, query and index optimization strategies etc.
 
 All Advisors and their checks are hosted on Percona Platform. PMM Server automatically downloads them from here when the **Advisors** and **Telemetry** options are enabled in PMM under **Configuration > Settings > Advanced Settings**. Both options are enabled by default.
 
+## Highest security for your databases
+Percona Platform communicates with PMM via secure channels, using the highest standards for privacy and security. Before downloading and running Advisor checks on your database, PMM verifies the content and integrity of all Advisor checks to confirm that every component originated from Percona Platform and that no one has altered them since the checks were digitally signed.
+
 ## Advisor plans
 
-### Built-in Advisors
-By default, PMM comes with the basic checks included in the Configuration and the Security Advisors: **Configuration Versions** and **CVE Security**.
-When your PMM instance is not connected to Percona Platform, PMM can only provide these built-in  Advisor checks.
+### Default Advisors
+PMM instances can use the default Advisor checks, even without a Percona Account. 
+If your PMM instance has access to Internet, and you have enabled Telemetry and the Advisors option in the PMM Settings, your instance will have automatic access to the following checks included in the Configuration and the Security Advisors: **Configuration Versions** and **CVE Security**. 
 
-### How to get more advisors
+### How to get more Advisors
 As soon as you [connect your PMM instance to Percona Platform](../docs/connect-pmm.md), PMM has access to extra advisors, available for the Basic subscription plan.
 
 If you are a Percona customer with a Percona Customer Portal account, you get additional access to Standard/Premium checks, which offer even more advanced database health information.
@@ -56,3 +59,4 @@ Check out the complete list of checks and their availability for **Basic**, **St
 | :--------- | :---------- | :--- |:--- |
 | **Index Query** | Provides query and index optimization strategies for peak database performance. | Standard/Premium | MySQL |
 | **Schema Design Query** | Helps create efficient database schemas by analyzing queries and offering suggestions for optimization. | Basic, Standard/Premium |MySQL|
+
