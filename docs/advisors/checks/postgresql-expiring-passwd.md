@@ -9,7 +9,7 @@ If a password expires in 10 days or less,  an Error flag is raised. If the passw
 
 ## Resolution
 
-It is advisable to extend the password expiration for the role in question if policy allows for it.
+Consider extending the password expiration for the role in question if your policy allows for it.
 You can extend a password expiration with the following syntax:
 
 ```ALTER ROLE foo WITH VALID UNTIL '2023-12-25 00:00:00';```
