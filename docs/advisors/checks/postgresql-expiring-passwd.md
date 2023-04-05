@@ -2,7 +2,7 @@
 
 ## Description
 
-This will check roles that have expiration dates on passwords. This is helpful in preventing applications accounts from failing due to expired passwords thus preventing interruptions to services offered.
+This advisor checks roles that have expiration dates on passwords. This is helpful in preventing applications accounts from failing due to expired passwords thus preventing interruptions to services offered.
 
 If a password will expire in 10 days or less, an Error flag is raised. If the password will expire after 10 days, a Warning flag is raised. 
 
