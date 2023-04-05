@@ -2,11 +2,32 @@
 {% extends "base.html" %}
 
 {%- macro relbar2 () %}
+<div class="md-relbar2__inner md-grid">
+  <div class="md-content">
+    <article class="md-content__inner md-typeset" role="main">    
+      <h3>Contact us</h3>
+         <p>For free technical help, visit the Percona <a class="reference external" href="https://forums.percona.com/c/percona-platform/73" target="_blank">Community Forum</a>.<br>
+          <p>To report bugs or submit feature requests, contact us at <a class="reference external" href="portal-help@percona.com" target="_blank">portal-help@percona.com</a>.<br>
+           <p>For paid <a class="reference external" href="https://www.percona.com/services/support"> support </a> and <a class="reference external" href="https://www.percona.com/services/managed-services"> managed </a> or <a class="reference external" href="https://www.percona.com/services/consulting">consulting services </a>, contact <a class="reference external" href="https://www.percona.com/about-percona/contact" target="_blank">Percona Sales</a>.</p>
+   </article>
+  </div>
+  </div>
 
 {%- endmacro %}
               
               {% block extrahead %}
               {{ super() }}
+
+              <html data-lt-installed="true">
+                <head>
+                    <meta property="og:title" content="Percona Platform">
+                    <meta property="og:description" content="Documentation">
+                    <meta property="og:image" content="https://docs.percona.com/percona-platform/images/platform-logo.png"
+                    <meta property="og:url" content="https://docs.percona.com/percona-platform/">
+                </head>
+                <body>
+                </body>
+              </html>
 
               <script>
               (function (w, d, s, l, i) {

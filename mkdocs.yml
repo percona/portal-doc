@@ -3,7 +3,7 @@
 site_name: Percona Platform
 site_description: Percona Platform Documentation
 site_author: Percona LLC
-copyright: Percona LLC, &#169; 2021
+copyright: Percona LLC, &#169; 2023
 
 site_url: "https://docs.percona.com/percona-platform/"
 repo_name: portal-doc
@@ -15,12 +15,11 @@ use_directory_urls: false
 # Theme configuration
 theme:
   name: material
-  custom_dir: resources/overrides
   logo: images/percona-logo.svg
   favicon: images/percona-favicon.ico
+  custom_dir: resources/overrides/
   font:
     text: Poppins
-    code: Roboto Mono
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
@@ -63,29 +62,31 @@ markdown_extensions:
   attr_list: {}
   toc:
     permalink: True
+    title: On this page
+    toc_depth: 3
   admonition: {}
   footnotes: {}
   def_list: {} # https://michelf.ca/projects/php-markdown/extra/#def-list
   meta: {}
+  md_in_html: {}
   smarty:
-    smart_angled_quotes: true
+      {smart_angled_quotes: true}
+  pymdownx.details: {}
   pymdownx.mark: {}
   pymdownx.smartsymbols: {}
-  pymdownx.tabbed: {}
+  pymdownx.tabbed: 
+      {alternate_style: true}
   pymdownx.tilde: {}
   pymdownx.superfences: {}
-  pymdownx.details: {}
   pymdownx.highlight:
-    linenums: false
+      linenums: false
   pymdownx.inlinehilite: {}
+  pymdownx.snippets: {}
   pymdownx.emoji:
-    emoji_index: !!python/name:materialx.emoji.twemoji
-    emoji_generator: !!python/name:materialx.emoji.to_svg
-  pymdownx.tabbed:
-    alternate_style: true   
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 plugins:
-  section-index: {}
   search:
     separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   git-revision-date: {}
