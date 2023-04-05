@@ -9,7 +9,7 @@ Such scenarios impact the application users and this check helps prevent them.
 ## Resolution
 
 Change the user account password with [ALTER USER](https://dev.mysql.com/doc/refman/8.0/en/alter-user.html) or [SET PASSWORD](https://dev.mysql.com/doc/refman/8.0/en/set-password.html) command. 
-After that has been done, the server restores normal access for the session, as well as for subsequent connections that use the account. 
+This restores normal access for the session, as well as for subsequent connections that use the account. 
 
 ## Need more support from Percona?
 
