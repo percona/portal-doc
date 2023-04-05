@@ -2,7 +2,7 @@
 
 ## Description
 
-MySQL provides password-expiration capability, which enables database administrators to require that users reset their password.  Once the password is expired, the server either disconnects the client or restricts the client to “sandbox mode,” in which the server permits the client to perform only those operations necessary to reset the expired password.
+MySQL provides a password-expiration capability, which enables database administrators to require users to reset their passwords. Once the password is expired, the server either disconnects the client or restricts the client to “sandbox mode,”. In this mode, the server allows the client to perform only operations necessary for resetting the expired password.
 Such scenarios impact the application users and this check helps prevent them.
 
 
