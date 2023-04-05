@@ -7,7 +7,7 @@ This check returns warns if multiple mongod services are running on a single nod
 
 Running multiple mongod services on a single instance can be useful in certain scenarios, such as when you need to isolate different workloads or databases on the same hardware. However, it's important to consider potential downsides before deciding to run multiple mongod services on a single instance.
 
-Here are some of the potential downsides of running multiple mongod services on a single instance:
+Here are some of those potential downsides:
 
 - **Resource contention:** Running multiple mongod services on the same hardware can result in resource contention, such as CPU usage, memory usage, and disk I/O. This can impact the performance and stability of all mongod instances on the same instance.
   - One important point is to configure the wiredTiger Cache Size, since by default each mongod service takes ~50% of the RAM. If other applications and services running on the server might not have enough memory to perform.
