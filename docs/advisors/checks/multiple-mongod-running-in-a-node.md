@@ -5,7 +5,7 @@ This check returns warns if multiple mongod services are running on a single nod
 
 ## Resolution
 
-Running multiple mongod services on a single instance can be useful in certain scenarios, such as when you need to isolate different workloads or databases on the same hardware. However, it's important to consider the potential downsides before deciding to run multiple mongod services on a single instance.
+Running multiple mongod services on a single instance can be useful in certain scenarios, such as when you need to isolate different workloads or databases on the same hardware. However, it's important to consider potential downsides before deciding to run multiple mongod services on a single instance.
 
 Here are some of the potential downsides of running multiple mongod services on a single instance:
 
