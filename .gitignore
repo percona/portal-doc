@@ -1,3 +1,4 @@
 build
 site/
 docs/advisors/checks/mongodb-scram-sha-256.md
+**/.DS_Store

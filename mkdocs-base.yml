@@ -1,0 +1,133 @@
+# MkDocs configuration for Percona Platform Doc website builds
+
+site_name: Percona Platform
+site_description: Percona Platform Documentation
+site_author: Percona LLC
+copyright: Percona LLC, &#169; 2023
+
+repo_name: portal-doc
+repo_url: https://github.com/percona-platform/portal-doc
+edit_uri: edit/main/docs/
+
+use_directory_urls: false
+
+# Theme configuration
+theme:
+  name: material
+  logo: images/percona-logo.svg
+  favicon: images/percona-favicon.ico
+  custom_dir: _resources/overrides/
+  font:
+    text: Poppins
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: percona-light
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+  # Theme features
+  features:
+    - search.highlight
+    - search.share
+    - navigation.top
+    - content.tabs.link
+    - content.code.copy
+    - navigation.tracking
+    - content.action.edit
+    - content.action.view
+
+# Styling
+extra_css:
+  - https://unicons.iconscout.com/release/v3.0.3/css/line.css
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css
+  - css/toctree.css
+  - css/percona.css
+  - css/gifs.css
+  - css/table-list.css
+
+# extra_javascript:
+  # - js/version-select.js
+
+markdown_extensions:
+  attr_list: {}
+  toc:
+    permalink: True
+    title: On this page
+    toc_depth: 3
+  admonition: {}
+  footnotes: {}
+  def_list: {} # https://michelf.ca/projects/php-markdown/extra/#def-list
+  meta: {}
+  md_in_html: {}
+  smarty:
+      {smart_angled_quotes: true}
+  pymdownx.details: {}
+  pymdownx.mark: {}
+  pymdownx.smartsymbols: {}
+  pymdownx.tabbed: 
+      {alternate_style: true}
+  pymdownx.tilde: {}
+  pymdownx.superfences: {}
+  pymdownx.highlight:
+      linenums: false
+  pymdownx.inlinehilite: {}
+  pymdownx.snippets: {}
+  pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+  search:
+    separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  git-revision-date: {}
+  with-pdf:
+    output_path: "PerconaPortal-2023-02-08.pdf"
+    cover_title: "Percona Portal Documentation"
+    cover_subtitle: Mar 08, 2023
+    author: "Percona Technical Documentation Team"
+    cover_logo: docs/images/Percona_Logo_Color.png
+    custom_template_path: _resources/templates
+    enabled_if_env: ENABLE_PDF_EXPORT  
+
+extra:
+  analytics:
+    provider: google
+    property: UA-343802-23
+  homepage: https://docs.percona.com
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+# Left-side navigation menu
+nav:
+  - Welcome:
+      - index.md
+  - What's new:
+      - rel-notes/whats-new.md
+  - Registration and log in:
+      - registration-login.md
+  - Create and manage organizations:
+      - create-manage-organizations.md
+  - Check activity logs:
+      - activity-logging.md
+  - Connect your PMM server:
+      - connect-pmm.md
+  - Advisor checks for PMM:
+      - advisors.md
+  - Launch free Kubernetes clusters:
+      - create-free-k8.md
+  - Network configuration:
+      - network.md
