@@ -19,7 +19,7 @@ Here are some of those potential downsides:
 - **Increased complexity:** Running multiple mongod services on the same instance adds complexity to the deployment, as you need to manage multiple instances and their configuration files. This can make it more difficult to troubleshoot issues and perform maintenance tasks.
 
 **Recommendations:**
-Below are the recommendations for good stability and performance of a mongod instance -
+The following are the recommendations for good stability and performance of a mongod instance:
 1. Run a single mongod service per node.
 2. For some reason if you want to run multiple mongod instances, then it is better to use containers/virtual machines which isolate different workloads or databases on the same node.
 
