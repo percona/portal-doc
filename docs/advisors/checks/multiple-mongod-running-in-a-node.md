@@ -21,7 +21,7 @@ Here are some of those potential downsides:
 **Recommendations:**
 The following are the recommendations for good stability and performance of a mongod instance:
 1. Run a single mongod service per node.
-2. For some reason if you want to run multiple mongod instances, then it is better to use containers/virtual machines which isolate different workloads or databases on the same node.
+2. If you do want to run multiple mongod instances, use containers/virtual machines which isolate different workloads or databases on the same node.
 
 
 
