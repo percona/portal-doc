@@ -14,7 +14,7 @@ Here are some of those potential downsides:
   - It's important to leave enough memory for the operating system and other applications to ensure stable performance.
   - The WiredTiger cache size should not exceed the available memory on the server, as this can lead to excessive swapping and poor performance.
 
-- **Security risks:** Running multiple mongod services on the same instance can increase the security risks, as a compromise of one instance can potentially impact other instances on the same instance.
+- **Security risks:** Running multiple mongod services on the same instance can increase the security risks, as a compromise of one instance can potentially impact other instances.
 
 - **Increased complexity:** Running multiple mongod services on the same instance adds complexity to the deployment, as you need to manage multiple instances and their configuration files. This can make it more difficult to troubleshoot issues and perform maintenance tasks.
 
