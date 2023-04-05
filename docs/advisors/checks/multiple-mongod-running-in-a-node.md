@@ -10,7 +10,7 @@ Running multiple mongod services on a single instance can be useful in certain s
 Here are some of those potential downsides:
 
 - **Resource contention:** Running multiple mongod services on the same hardware can result in resource contention, such as CPU usage, memory usage, and disk I/O. This can impact the performance and stability of all mongod services on the same instance.
-  - One important point is to configure the wiredTiger Cache Size, since by default each mongod service takes ~50% of the RAM. If other applications and services running on the server might not have enough memory to perform.
+  - One important point is to configure the wiredTiger Cache Size, since by default each mongod service takes ~50% of the RAM. Thus, other applications and services running on the server might not have enough memory to perform.
   - It's important to leave enough memory for the operating system and other applications to ensure stable performance.
   - It's important to note that the WiredTiger cache size should not exceed the available memory on the server, as this can lead to excessive swapping and poor performance.
 
