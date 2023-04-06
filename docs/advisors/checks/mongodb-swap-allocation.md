@@ -7,7 +7,7 @@ This check warns if there is no swap memory allocated to your instance.
 
 MongoDB performs best if swapping can be avoided or kept to a minimum since retrieving data from swap on disk will always be slower than accessing data in RAM. However, if the system hosting MongoDB runs out of RAM, swapping can prevent the Linux OOM (Out of memory) Killer from terminating the mongod process.
 
-Generally, you should choose one of the following swap strategies:
+Choose one of the following swap strategies:
 
 
 - Assign swap space on your system, and configure the kernel to only permit swapping under high-memory load, or
