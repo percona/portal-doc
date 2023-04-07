@@ -1,7 +1,7 @@
 # MongoDB - Multiple mongod service running in a single node
 
 ## Description
-This check returns warns if multiple mongod services are running on a single node.
+This check warns if multiple mongod services are running on a single node.
 
 ## Resolution
 
