@@ -1,0 +1,20 @@
+# PostgreSQL excessive sequential scans 
+
+## Description
+This checks for relations with excessive sequential scan vs index scans. Although the query planner will occasionally choose sequential scans  when it is more efficient than using an index ( typically low count for tuples ), this check is based on at least 50,000 live tuples in the relation.
+
+
+## Resolution
+Some basic steps can be taken to help with this problem. 
+- First of all, make sure the relations are analyzed regularly.  
+- Check pg_stat_user_tables for statistics about vacuums and analyze. 
+- Identify the queries using the relations noted in the check and run explain on them.  This will help identify if a relation is missing an index. 
+- Rewrite a bad query to use indexed columns when possible.
+
+
+
+## Need more support from Percona?
+
+Subscribe to Percona Platform to get database support with guaranteed SLAs or proactive database management services from the Percona team.
+
+[Learn more :fontawesome-solid-paper-plane:](https://per.co.na/subscribe){ .md-button }
