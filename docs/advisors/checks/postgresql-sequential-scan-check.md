@@ -8,7 +8,7 @@ This checks for relations with excessive sequential scan vs. index scans. Althou
 To fix this issue, follow the steps below:
 - Make sure that the relations are analyzed regularly.  
 - Check **pg_stat_user_tables** for statistics about vacuums and analyze. 
-- Identify the queries using the relations noted in the check and run explain on them.  This will help identify if a relation is missing an index. 
+- Identify the queries using the relations noted in the check, and run EXPLAIN on them. This will help identify relations with missing indexes. 
 - Rewrite a bad query to use indexed columns when possible.
 
 
