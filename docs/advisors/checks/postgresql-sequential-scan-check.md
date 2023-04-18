@@ -6,7 +6,7 @@ This checks for relations with excessive sequential scan vs. index scans. Althou
 
 ## Resolution
 To fix this issue, follow the steps below:
-- First of all, make sure the relations are analyzed regularly.  
+- Make sure that the relations are analyzed regularly.  
 - Check pg_stat_user_tables for statistics about vacuums and analyze. 
 - Identify the queries using the relations noted in the check and run explain on them.  This will help identify if a relation is missing an index. 
 - Rewrite a bad query to use indexed columns when possible.
