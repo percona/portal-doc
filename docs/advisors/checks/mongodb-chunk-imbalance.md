@@ -16,7 +16,8 @@ There are a few possible reasons for chunk imbalance:
 To address chunk imbalance, you can:
 
 - **Select a good shard key:** 
-The choice of shard key affects the creation and distribution of chunks across the available shards. While selecting the shard key, consider below points -
+The choice of shard key affects the creation and distribution of chunks across the available shards. While selecting the shard key, consider below points:
+
 1. High Cardinality.
 2. Non-monotonic is nature.
 3. It should be used in most of your queries.
