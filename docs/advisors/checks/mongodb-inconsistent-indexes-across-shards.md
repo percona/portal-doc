@@ -5,7 +5,7 @@ This check warns if there are inconsistent indexes across shards for sharded col
 
 ## Resolution
 
-A sharded collection has an inconsistent index if the collection does not have the exact same indexes (including the index options) on each shard that contains chunks for the collection. Although inconsistent indexes should not occur during normal operations, inconsistent indexes can occur in some situations. Examples of those situations can include the following:
+A sharded collection has an inconsistent index if the collection does not have the exact same indexes (including the index options) on each shard that contains chunks for the collection. Although inconsistent indexes should not occur during normal operations, they can occur in some situations. Examples of those situations are the following:
 
 - When a user is creating an index with a unique key constraint and one shard contains a chunk with duplicate documents. In such cases, the create index operation may succeed on the shards without duplicates but fail on the shard with duplicates.
 
