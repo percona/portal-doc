@@ -1,4 +1,4 @@
-# MongoDB Sharding - Chunk Imbalance Across Shards
+# MongoDB sharding - chunk imbalance across shards
 
 ## Description
 This check warns if the chunks are imbalanced across shards.
