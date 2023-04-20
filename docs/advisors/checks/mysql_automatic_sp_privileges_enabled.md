@@ -3,7 +3,7 @@
 
 ## Description
 
-The automatic_sp_privileges when enabled, causes automatic grants or revokes of the EXECUTE and ALTER ROUTINE privileges to the creator of a stored routine upon creation or removal of the routine. This check verifies that the automatic_sp_privileges is ON and alerts otherwise.
+The [automatic_sp_privileges](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_automatic_sp_privileges) when enabled, causes automatic grants or revokes of the EXECUTE and ALTER ROUTINE privileges to the creator of a stored routine upon creation or removal of the routine. This check verifies that the automatic_sp_privileges is ON and alerts otherwise.
 
 ## Resolution
 
