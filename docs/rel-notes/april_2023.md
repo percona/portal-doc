@@ -1,9 +1,13 @@
-## Complete infrastructure for test-driving Percona DBaaS 
+## Test-drive PMM from within Percona Platform
 
-We’ve renamed and upgraded the previous **Free Kubernetes** feature to **Percona DBaaS**. This new option generates fully configured clusters, automatically provisioned with a PMM server, for which the DBaaS feature is already enabled.
+We’ve replaced the previous **Free Kubernetes** feature with an option to generate a full-fledged PMM environment.
 
-These read-to-go environments enable you to spend the three available test hours monitoring your DB cluster and evaluating all the benefits of PMM DBaaS. No Kubeconfig files to register, no PMM server to provision, no fuss, no mess.
+The new **Try Percona Monitoring and Management (PMM)** option in Percona Platform creates fully configured K8 clusters, automatically provisioned with a PMM server, for which the DBaaS feature is already enabled. 
 
-![newSignInpage](../images/DBaaS.png)
+This read-to-go environment enable you to spend the three available test hours monitoring your temporary DB cluster and evaluating all the benefits of Percona DBaaS. No kubeconfig files to register, no PMM server to provision, no fuss, no mess. 
 
-For more information, see [Launch Percona DBaaS](../launch_DBaaS.md).
+[SS here]
+
+![New PMM option](../images/DBaaS.png)
+
+For more information, see [Launch PMM environment](../launch_PMM.md).
