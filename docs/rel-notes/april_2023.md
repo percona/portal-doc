@@ -10,10 +10,12 @@ For more information, see [Launch PMM environment](../launch_PMM.md).
 
 ![New PMM option](../images/PMM_option.png)
 
-## New Advisors view 
+## Advisors view for your list of database checks 
 
+PMM instances connected to Percona Platform have access to different set of Advisors, based on the subscription linked to the active Percona Platform Account.
 
-Follow
+You can now consult your current list of Advisors and the database checks they contain on the new **Advisors** tab in Percona Platform. 
 
-We’ve improved the structure of the Advisors page to group Advisors by categories and clearly show the Advisors available for your current subscription.
-added an option to easily integrate with Percona Platform for extra Advisors for free
+Find out what database insights each check  provides, and upgrade to a paid plan if the checks you need are not available for your PMM instance yet.
+
+![New Advisors page](../images/advisors_tab.png)

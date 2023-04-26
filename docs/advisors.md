@@ -18,10 +18,15 @@ As soon as you [connect your PMM instance to Percona Platform](../docs/connect-p
 
 If you are a Percona customer with a Percona Customer Portal account, you get additional access to Standard/Premium checks, which offer even more advanced database health information.
 
-Depending on the entitlements available for your Percona Account, the set of Advisor checks that PMM can download from Percona Platform differ in terms of complexity and functionality. For information about which Advisor checks are included in our subscriptions, see the [Percona Platform Subscription plans](https://www.percona.com/software/percona-platform/subscription).
+Depending on the entitlements available for your Percona Account, the set of Advisor checks that PMM can download from Percona Platform differ in terms of complexity and functionality. 
 
 ## List of Advisors
-Check out the complete list of checks and their availability for **Basic**, **Standard**, and **Premium** plans in the tables below:
+
+Percona Platforms shows the Advisors available for your connected PMM instance on the **Advisors** tab. 
+
+Here you can read about the different database insights that each check  provides, and upgrade to a paid plan if the checks you need are not available for your PMM instance yet.
+
+You can also check out the complete list of checks and their availability for **Basic**, **Standard**, and **Premium** plans on the [Subscriptions page](https://www.percona.com/software/percona-platform/subscription) and in the tables below:
 
 
 ### Configuration Advisors
