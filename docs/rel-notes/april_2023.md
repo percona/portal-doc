@@ -8,7 +8,7 @@ These ready-to-go environment enable you to spend the three available test hours
 
 For more information, see [Launch PMM environment](../launch_PMM.md).
 
-![New PMM option](../images/PMM_option.png)
+![New PMM option](/docs/images/PMM_option.png)
 
 ## Advisors view for your list of database checks 
 
@@ -18,4 +18,6 @@ You can now consult your current list of Advisors and the database checks they c
 
 Find out what database insights each check  provides, and upgrade to a paid plan if the checks you need are not available for your PMM instance yet. 
 
-![New Advisors page](../images/advisors_tab.png)
+![New Advisors page](/docs/images/Advisors_tab.PNG)
+
+For more information about working with Advisors, check the [Advisor checks for PMM](advisors.md) topic.
