@@ -21,4 +21,4 @@ Find out what database insights each check  provides, and upgrade to a paid plan
 
 ![New Advisors page](../images/Advisors_tab.PNG)
 
-For more information about working with Advisors, check the [Advisor checks for PMM](advisors.md) topic.
+For more information about working with Advisors, check the [Advisor checks for PMM](../advisors.md) topic.
