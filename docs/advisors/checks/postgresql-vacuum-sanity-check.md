@@ -14,7 +14,7 @@ This check performs a quick gathering of some basic vacuum parameters and alerts
 
 The above will set the scale factor to 10% on the foobar table.  
 
-One could simply also set the autovacuum to take place when _**n**_ number of rows have been updated or deleted.
+Another option is to set the autovacuum to take place when _**n**_ number of rows have been updated or deleted.
 
 `ALTER TABLE foobar SET ( autovacuum\_vacuum\_scale\_factor = 0, autovacuum\_vacuum\_threshold = 100000 )`
 
