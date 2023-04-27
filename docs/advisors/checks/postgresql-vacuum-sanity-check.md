@@ -33,7 +33,7 @@ These costs are determined using the following logic and the default settings wh
 **How the costs are calculated.**
 
 *   **vacuum\_cost\_page\_hit** is the cost for vacuuming a buffer found in the shared buffer cache. It represents the cost to lock the buffer pool, look up the shared hash table and scan the content of the page. Unless changed, the default value of 1 gets added to the counter.
-*   **vacuum\_cost\_page\_miss** is the cost for vacuuming a buffer that has to be read from disk. This represents the effort to lock the buffer pool, lookup the shared hash table, read the desired block in from the disk and scan its content. Unless changed, the default value of 10 gets added to the counter.
+*   **vacuum\_cost\_page\_miss** is the cost for vacuuming a buffer that has to be read from disk. This represents the effort to lock the buffer pool, look up the shared hash table, read the desired block in from the disk and scan its content. Unless changed, the default value of 10 gets added to the counter.
 *   **vacuum\_cost\_page\_dirty** is the cost when vacuum modifies a block that was previously clean. It represents the extra I/O required to flush the dirty block out to disk again. Unless changed, the default value of 20 gets added to the counter.
 
 The intent of this feature is to allow administrators to reduce the I/O impact of these commands on concurrent database activity.
