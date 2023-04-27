@@ -8,7 +8,8 @@ These ready-to-go environment enable you to spend the three available test hours
 
 For more information, see [Launch PMM environment](../launch_PMM.md).
 
-![New PMM option](/docs/images/PMM_option.png)
+
+![New PMM option](../images/PMM_option.png)
 
 ## Advisors view for your list of database checks 
 
