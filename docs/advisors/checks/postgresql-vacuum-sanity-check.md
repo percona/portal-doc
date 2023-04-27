@@ -40,7 +40,7 @@ The intent of this feature is to allow administrators to reduce the I/O impact o
 
 There are many situations where it is not important that maintenance commands like VACUUM and ANALYZE finish quickly; however, it is usually very important that these commands do not significantly interfere with the ability of the system to perform other database operations. Cost-based vacuum delay provides a way for administrators to achieve this.
 
-This feature is disabled by default for manually issued VACUUM commands. To enable it, set the vacuum\_cost\_delay variable to a nonzero value.
+This feature is disabled by default for manually issued VACUUM commands. To enable it, set the vacuum\_cost\_delay variable to a non-zero value.
 
 
 ## Need more support from Percona?
