@@ -14,17 +14,15 @@ PMM instances can use the default Advisor checks, even without a Percona Account
 If your PMM instance has access to Internet, and you have enabled Telemetry and the Advisors option in the PMM Settings, your instance will have automatic access to the following checks included in the Configuration and the Security Advisors: **Configuration Versions** and **CVE Security**. 
 
 ### How to get more Advisors
-As soon as you [connect your PMM instance to Percona Platform](../docs/connect-pmm.md), PMM has access to extra advisors, available for the Basic subscription plan.
+As soon as you [connect your PMM instance to Percona Platform](../docs/connect-pmm.md), PMM has access to extra Advisors, available for the Basic subscription plan.
 
-If you are a Percona customer with a Percona Customer Portal account, you get additional access to Standard/Premium checks, which offer even more advanced database health information.
+If you are a Percona customer with a Percona Account, you get additional access to Standard/Premium checks, which offer even more advanced database health information.
 
 Depending on the entitlements available for your Percona Account, the set of Advisor checks that PMM can download from Percona Platform differ in terms of complexity and functionality. 
 
 ## List of Advisors
 
-The **Advisors** page in Percona Platform lists the database checks that you can run from PMM on your connected instance.  
-
-On this page you can read about the different database insights that each check provides, and upgrade to a paid plan if the checks you need are not available for your Percona Account yet.  
+The **Advisors** page in Percona Platform lists the database checks that you can run from PMM. On this page you can read about the different database insights that each check provides, and upgrade to a paid plan if the checks you need are not available for your Percona Account yet.  
 
 You can also check out the complete list of checks and their availability for **Basic**, **Standard**, and **Premium** plans on the [Subscriptions page](https://www.percona.com/software/percona-platform/subscription) and in the tables below:
 
