@@ -22,9 +22,9 @@ Depending on the entitlements available for your Percona Account, the set of Adv
 
 ## List of Advisors
 
-Percona Platforms shows the Advisors available for your connected PMM instance on the **Advisors** tab. 
+The **Advisors** page in Percona Platform lists the database checks that you can run from PMM on your connected instance.  
 
-Here you can read about the different database insights that each check  provides, and upgrade to a paid plan if the checks you need are not available for your PMM instance yet.
+On this page you can read about the different database insights that each check provides, and upgrade to a paid plan if the checks you need are not available for your Percona Account yet.  
 
 You can also check out the complete list of checks and their availability for **Basic**, **Standard**, and **Premium** plans on the [Subscriptions page](https://www.percona.com/software/percona-platform/subscription) and in the tables below:
 

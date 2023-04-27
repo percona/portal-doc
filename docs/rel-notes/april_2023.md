@@ -16,6 +16,6 @@ PMM instances connected to Percona Platform have access to different set of Advi
 
 You can now consult your current list of Advisors and the database checks they contain on the new **Advisors** tab in Percona Platform. 
 
-Find out what database insights each check  provides, and upgrade to a paid plan if the checks you need are not available for your PMM instance yet.
+Find out what database insights each check  provides, and upgrade to a paid plan if the checks you need are not available for your PMM instance yet. 
 
 ![New Advisors page](../images/advisors_tab.png)
