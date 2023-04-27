@@ -10,12 +10,12 @@ You can create one free Kubernetes environment per day. These ready-to-go enviro
 -  4 CPUs/8GB of RAM
 -  3 hours availability
 
-To launch a free PMM environment:
+### To launch a free PMM environment
 
 1. In the **PMM Demo** tab, select **Launch PMM environment**. With that, the cluster is provisioned. Within a few minutes, it’ll be ready to use.
 2. Once the cluster is created, click **Access PMM environment**.
 
-To test Percona DBaaS on your new cluster:
+### To test Percona DBaaS on your new cluster
 
 1. Go to your PMM instance and click <i class="uil uil-database"></i> **DBaaS** on the left menu.
 2. Open the **Kubernetes Cluster** tab. This shows your new Kubernetes cluster as **Active**.
