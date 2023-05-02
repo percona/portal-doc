@@ -2,26 +2,34 @@ Percona Monitoring and Management (PMM) offers four categories of database Advis
 
 Each Advisor includes a set of automated checks, which investigate a specific range of possible issues and areas of improvement: security threats, non-compliance issues, performance degradation, query and index optimization strategies etc.
 
-All Advisors and their checks are hosted on Percona Platform. PMM Server automatically downloads them from here when the **Advisors** and **Telemetry** options are enabled in PMM under **Configuration > Settings > Advanced Settings**. Both options are enabled by default.
+All Advisors and their checks are hosted on Percona Platform. 
+PMM Server automatically downloads them from here when the **Advisors** and **Telemetry** options are enabled in PMM under **Configuration > Settings > Advanced Settings**. Both options are enabled by default.
 
 ## Highest security for your databases
-Percona Platform communicates with PMM via secure channels, using the highest standards for privacy and security. Before downloading and running Advisor checks on your database, PMM verifies the content and integrity of all Advisor checks to confirm that every component originated from Percona Platform and that no one has altered them since the checks were digitally signed.
+Percona Platform communicates with PMM via secure channels, using the highest standards for privacy and security. 
+
+Before downloading and running Advisor checks on your database, PMM verifies the content and integrity of all Advisor checks to confirm that every component originated from Percona Platform and that no one has altered them since the checks were digitally signed.
 
 ## Advisor plans
 
 ### Default Advisors
 PMM instances can use the default Advisor checks, even without a Percona Account. 
-If your PMM instance has access to Internet, and you have enabled Telemetry and the Advisors option in the PMM Settings, your instance will have automatic access to the following checks included in the Configuration and the Security Advisors: **Configuration Versions** and **CVE Security**. 
+
+If your PMM instance has access to Internet, and you have enabled **Telemetry** and the **Advisors** option in the PMM Settings, your instance will have automatic access to the following checks included in the Configuration and the Security Advisors: **Configuration Versions** and **CVE Security**. 
 
 ### How to get more Advisors
-As soon as you [connect your PMM instance to Percona Platform](../docs/connect-pmm.md), PMM has access to extra advisors, available for the Basic subscription plan.
+As soon as you [connect your PMM instance to Percona Platform](../docs/connect-pmm.md), PMM has access to extra Advisors, available for the Basic subscription plan.
 
-If you are a Percona customer with a Percona Customer Portal account, you get additional access to Standard/Premium checks, which offer even more advanced database health information.
+If you are a Percona customer with a Percona Account, you get additional access to Standard/Premium checks, which offer even more advanced database health information.
 
-Depending on the entitlements available for your Percona Account, the set of Advisor checks that PMM can download from Percona Platform differ in terms of complexity and functionality. For information about which Advisor checks are included in our subscriptions, see the [Percona Platform Subscription plans](https://www.percona.com/software/percona-platform/subscription).
+Depending on the entitlements available for your Percona Account, the set of Advisor checks that PMM can download from Percona Platform differ in terms of complexity and functionality. 
 
 ## List of Advisors
-Check out the complete list of checks and their availability for **Basic**, **Standard**, and **Premium** plans in the tables below:
+
+The **Advisors** page in Percona Platform lists the database checks that you can run from PMM. 
+On this page you can read about the different database insights that each check provides, and upgrade to a paid plan if the checks you need are not available for your Percona Account yet.  
+
+You can also check out the complete list of checks and their availability for **Basic**, **Standard**, and **Premium** plans on the [Subscriptions page](https://www.percona.com/software/percona-platform/subscription) and in the tables below:
 
 
 ### Configuration Advisors

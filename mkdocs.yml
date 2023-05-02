@@ -127,7 +127,7 @@ nav:
       - connect-pmm.md
   - Advisor checks for PMM:
       - advisors.md
-  - Launch free Kubernetes clusters:
-      - create-free-k8.md
+  - Launch PMM environment:
+      - launch_PMM.md
   - Network configuration:
       - network.md
