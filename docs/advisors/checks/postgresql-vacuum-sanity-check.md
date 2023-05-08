@@ -24,7 +24,7 @@ In the above example, the foobar table will autovacuum when 100,000 rows have be
 
 For vacuum cost settings, keep the following in mind.
 
-During the execution of VACUUM and ANALYZE commands, the system maintains an internal counter that keeps track of the estimated cost of the various I/O operations that are performed. When the accumulated cost reaches a limit specified in the vacuum\_cost\_limit parameter, the process performing the operation will sleep for a time, as specified by vacuum\_cost\_delay. Then it will reset the counter and continue execution.
+During the execution of VACUUM and ANALYZE commands, the system maintains an internal counter that keeps track of the estimated cost of the various I/O operations that are performed. When the accumulated cost reaches a limit specified in the **vacuum\_cost\_limit** parameter, the process performing the operation will sleep for a time, as specified by **vacuum\_cost\_delay**. Then it will reset the counter and continue execution.
 
 These costs are determined using the following logic and the default settings which can be changed as shown below:
 
