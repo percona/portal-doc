@@ -8,7 +8,7 @@ When the [automatic_sp_privileges](https://dev.mysql.com/doc/refman/8.0/en/serve
 
 ## Resolution
 
-Consider setting automatic_sp_privileges to 1 (ON). 
+Consider enabling the **automatic_sp_privileges** by setting this variable to **1**.
 
 
 ## Need more support from Percona?
