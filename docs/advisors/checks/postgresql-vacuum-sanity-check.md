@@ -36,7 +36,7 @@ These costs are determined using the following logic and the default settings wh
 *   **vacuum\_cost\_page\_miss** is the cost for vacuuming a buffer that has to be read from disk. This represents the effort to lock the buffer pool, look up the shared hash table, read the desired block in from the disk and scan its content. Unless changed, the default value of 10 gets added to the counter.
 *   **vacuum\_cost\_page\_dirty** is the cost when vacuum modifies a block that was previously clean. It represents the extra I/O required to flush the dirty block out to disk again. Unless changed, the default value of 20 gets added to the counter.
 
-The intent of this feature is to allow administrators to reduce the I/O impact of these commands on concurrent database activity.
+This feature aims to enable administrators to reduce the I/O impact of these commands on concurrent database activity.
 
 There are many situations where it is not important that maintenance commands like VACUUM and ANALYZE finish quickly; however, it is usually very important that these commands do not significantly interfere with the ability of the system to perform other database operations. Cost-based vacuum delay provides a way for administrators to achieve this.
 
