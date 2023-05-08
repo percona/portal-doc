@@ -3,7 +3,7 @@
 
 ## Description
 
-This check performs a quick gathering of some basic vacuum parameters and alerts if some default values are found along with the critical alert for autovacuum not being enabled.
+This checks basic VACUUM parameters and notifies if default values are found. In addition, it alerts you if the _autovacuum_ feature is not enabled in your settings.
 
 ## Resolution
 *   Autovacuum is critical for PostgreSQL to maintain table bloat under control along with transaction wraparound. If autovacuum is turned off, this could lead to serious table bloat, performance issues and an accelerated path to transaction wraparound. Typically, the autovacuum parameter is turned off only because there is a very specific and special reason for it and most likely another task may be vacuuming on a different schedule. If this is not the case, consider enabling this as soon as possible.
