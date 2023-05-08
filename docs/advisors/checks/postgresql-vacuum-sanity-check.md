@@ -6,7 +6,7 @@
 This checks basic VACUUM parameters and notifies if default values are found. In addition, it alerts you if the _autovacuum_ feature is not enabled in your settings.
 
 ## Resolution
-* Auto-vacuuming is critical for PostgreSQL to keep table bloat and transaction wraparound under control. Disabling autovacuum could lead to serious table bloat, performance issues, and an accelerated path to transaction wraparound. Typically, the autovacuum parameter is turned off only because there is a very specific and special reason for it, and most likely another task may be vacuuming on a different schedule. If this is not the case, consider enabling this as soon as possible.
+* Autovacuuming is critical for PostgreSQL to keep table bloat and transaction wraparound under control. Disabling autovacuum could lead to serious table bloat, performance issues, and an accelerated path to transaction wraparound. Typically, the autovacuum parameter is turned off only because there is a very specific and special reason for it, and most likely another task may be vacuuming on a different schedule. If this is not the case, consider enabling this as soon as possible.
 *   If **autovacuum\_max\_workers** is set to the default value of **3**, and you find that the vacuum is not cleaning up as expected, adjust this parameter to increase the autovacuum process count.
 *   The default value for **autovacuum\_scale\_factor** is 20%. This means that a table will not get autovacuumed until 20% of the data in it has been updated or deleted + a threshold.  For small tables, this is not too much of a concern. However, on large tables, this can be problematic. 
 
