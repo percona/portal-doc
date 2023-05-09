@@ -28,7 +28,7 @@ Perform either of the following steps:
 
 - Issue an index build db.collection.createIndex() from a mongos instance. The operation only builds the collection's index on the shard(s) missing the index.
 
-**To resolve where the index properties differ across the shards,**
+**The index properties differ across the shards,**
 
 Drop the incorrect index from the collection on the affected shard(s) and rebuild the index by using the above method.
 
