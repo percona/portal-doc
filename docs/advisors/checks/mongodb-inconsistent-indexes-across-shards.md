@@ -30,7 +30,7 @@ Perform either of the following steps:
 
 **The index properties differ across the shards,**
 
-Drop the incorrect index from the collection on the affected shard(s) and rebuild the index by using the above method.
+Drop the incorrect index from the collection on the affected shards and rebuild the index by using the above method.
 
 
 ## Need more support from Percona?
