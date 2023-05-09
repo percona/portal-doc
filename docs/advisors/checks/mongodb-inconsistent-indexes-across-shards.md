@@ -16,7 +16,11 @@ Additionally running the serverStatus command on the config server primary will 
 
 If shardedIndexConsistency reports any index inconsistencies, you can identify the missing index or any inconsistent properties across the collection’s shards by running a specific  aggregation pipeline that returns results on inconsistencies. That pipeline script can be found in the [Manage Indexes section of MongoDB Documentation](https://www.mongodb.com/docs/manual/tutorial/manage-indexes/).
 
-**To resolve the inconsistency where an index is missing from the collection on a particular shard(s), you can either -** 
+## Resolution
+
+**The inconsistency where an index is missing from the collection on a particular shard(s)** 
+
+Perform either of the following steps: 
 
 - Perform a rolling index build for the collection on the affected shard(s) to make sure indexes are built consistently across all involved shards.
 
