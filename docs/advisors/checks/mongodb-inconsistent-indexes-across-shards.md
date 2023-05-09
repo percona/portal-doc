@@ -11,7 +11,7 @@ A sharded collection has an inconsistent index if the collection does not have t
 
 - When a user is creating an index across the shards in a rolling manner - manually building the index individually across the shards one by one. The index could be inconsistent across all shards if the manual process either fails to build the index for an associated shard or incorrectly builds an index with different specifications for one or more shards. Indexes are often created this way when the shards are very large or when there are a high number of shards.
 
-Starting in MongoDB 4.2.6 and 4.4 and onwards, the config server primary checks for index inconsistencies across the shards for sharded collections by default.
+Starting with MongoDB 4.2.6 and 4.4, the config server primarily checks for index inconsistencies across the shards for sharded collections by default.
 Additionally, running the **serverStatus** command on the config server primary will return the field **shardedIndexConsistency** to report the number of sharded collections with index inconsistencies.
 
 If **shardedIndexConsistency** reports any index inconsistencies, you can identify the missing index or any inconsistent properties across the collection’s shards by running a specific aggregation pipeline that returns results on inconsistencies. You can find this pipeline script in the [Manage Indexes section of the MongoDB Documentation](https://www.mongodb.com/docs/manual/tutorial/manage-indexes/).
