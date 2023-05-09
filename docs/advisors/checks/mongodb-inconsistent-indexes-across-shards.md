@@ -22,7 +22,7 @@ If **shardedIndexConsistency** reports any index inconsistencies, you can identi
 
 Perform either of the following steps: 
 
-- Perform a rolling index build for the collection on the affected shard(s) to make sure indexes are built consistently across all involved shards.
+- Perform a rolling index build for the collection on the affected shards to make sure indexes are built consistently across all involved shards.
 
 (OR)
 
