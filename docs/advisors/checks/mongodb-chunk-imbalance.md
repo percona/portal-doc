@@ -25,7 +25,7 @@ The choice of shard key impacts the way chunks are created and distributed acros
 4. Reads should be done from particular shards.
 5. Writes should get written across all shards.
 
-Starting in MongoDB 5.0, you can reshard a collection by changing a collection's shard key. Follow the [MongoDB Documentation](https://www.mongodb.com/docs/manual/core/sharding-reshard-a-collection/#std-label-sharding-resharding) on how to change the shard key.
+Starting with MongoDB 5.0, you can reshard collections by changing their shard keys. For information on changing the shard key, check out [MongoDB documentation](https://www.mongodb.com/docs/manual/core/sharding-reshard-a-collection/#std-label-sharding-resharding).```
 
 - **Clear the jumbo chunks:**
 To prevent the situation described above, we should check for jumbo chunks and remove the jumbo flag. Kindly refer to the [blog](https://www.percona.com/blog/finding-undetected-jumbo-chunks-in-mongodb/) on how to detect the jumbo chunks and split them.
