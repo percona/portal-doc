@@ -4,7 +4,7 @@
 This check warns if the chunks are imbalanced across shards.
 
 
-In a sharded cluster, chunk imbalances can occur when the data is not evenly distributed among the shards. This can lead to some shards having more chunks than others. This can cause performance issues and slower query times.
+In a sharded cluster, chunk imbalances can occur when the data is not evenly distributed among the shards. This can lead to some shards having more chunks than others, which can cause performance issues and slower query times.
 
 There are a few possible reasons for chunk imbalance:
 
