@@ -12,6 +12,8 @@ There are a few possible reasons for chunk imbalance:
 
 - **Jumbo chunks:** Jumbo chunks can be another cause of chunk imbalances in a sharded cluster . Jumbo chunks are chunks that have grown beyond the maximum size that is allowed by MongoDB. When a chunk becomes jumbo, MongoDB cannot split it further automatically and the balancer won’t distribute the associated data across the shards. Jumbo chunks are often caused by low cardinality or too high frequency of elements in a shard key.
 
+## Resolution
+
 To address chunk imbalance, you can:
 
 - **Select a good shard key:** 
