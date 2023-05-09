@@ -17,7 +17,7 @@ There are a few possible reasons for chunk imbalance:
 To address chunk imbalance, you can:
 
 - **Select a good shard key:** 
-The choice of shard key affects the creation and distribution of chunks across the available shards. While selecting the shard key, consider below points:
+The choice of shard key impacts the way chunks are created and distributed across the available shards. While selecting the shard key, consider the following factors:
 
 1. High Cardinality.
 2. Non-monotonic is nature.
