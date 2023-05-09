@@ -26,7 +26,7 @@ Perform either of the following steps:
 
 (OR)
 
-- Issue an index build db.collection.createIndex() from a mongos instance. The operation only builds the collection's index on the shard(s) missing the index.
+- Issue an index build **db.collection.createIndex()** from a mongos instance. The operation only builds the collection's index on the shards missing the index.
 
 **The index properties differ across the shards,**
 
