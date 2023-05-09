@@ -14,7 +14,7 @@ A sharded collection has an inconsistent index if the collection does not have t
 Starting in MongoDB 4.2.6 and 4.4 and onwards, the config server primary checks for index inconsistencies across the shards for sharded collections by default.
 Additionally, running the **serverStatus** command on the config server primary will return the field **shardedIndexConsistency** to report the number of sharded collections with index inconsistencies.
 
-If shardedIndexConsistency reports any index inconsistencies, you can identify the missing index or any inconsistent properties across the collection’s shards by running a specific  aggregation pipeline that returns results on inconsistencies. That pipeline script can be found in the [Manage Indexes section of MongoDB Documentation](https://www.mongodb.com/docs/manual/tutorial/manage-indexes/).
+If **shardedIndexConsistency** reports any index inconsistencies, you can identify the missing index or any inconsistent properties across the collection’s shards by running a specific aggregation pipeline that returns results on inconsistencies. You can find this pipeline script in the [Manage Indexes section of the MongoDB Documentation](https://www.mongodb.com/docs/manual/tutorial/manage-indexes/).
 
 ## Resolution
 
