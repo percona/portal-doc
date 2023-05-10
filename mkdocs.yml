@@ -89,6 +89,12 @@ plugins:
   search:
     separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   git-revision-date: {}
+  meta-descriptions:
+    export_csv: false
+    quiet: false
+    enable_checks: false
+    min_length: 50
+    max_length: 160
   with-pdf:
     output_path: "PerconaPortal-2023-02-08.pdf"
     cover_title: "Percona Portal Documentation"
