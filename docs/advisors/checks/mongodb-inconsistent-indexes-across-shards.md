@@ -3,7 +3,6 @@
 ## Description
 This check warns if there are inconsistent indexes across shards for sharded collections. Missing or inconsistent indexes across the shards can have a negative impact on performance.
 
-## Resolution
 
 A sharded collection has an inconsistent index if the collection does not have the exact same indexes (including the index options) on each shard that contains chunks for the collection. Although inconsistent indexes should not occur during normal operations, they can occur in some situations. Examples of those situations are the following:
 
