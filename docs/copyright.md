@@ -1,7 +1,6 @@
-# Copyright and Licensing Information
+# Copyright and licensing information
 
-## Documentation Licensing
+## Documentation licensing
 
-This software documentation is (C)2009-2023 Percona LLC and/or its affiliates and is distributed under the [Creative Commons Attribution-ShareAlike 2.0 Generic](http://creativecommons.org/licenses/by-sa/2.0/) license.
+Percona Platform documentation is (C)2009-2023 Percona LLC and/or its affiliates and is distributed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
-## Software License
